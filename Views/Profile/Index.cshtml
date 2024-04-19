@@ -1,0 +1,423 @@
+﻿@using Microsoft.AspNetCore.Mvc;
+@using Microsoft.AspNetCore.Mvc.Rendering;
+
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="~/js/chat.js"></script>
+@{
+    var account = ViewBag.Account;
+    var blogList = ViewBag.blogList;
+    var currentUser = ViewBag.currentUser;
+}
+
+<div class="body_container margin_auto">
+    <div class="d-flex flex-column gap-4 p-3 profile_container" style="background-image: url(@account.ImageUrl)">
+        <div class="d-flex profile_header gap-4 align-items-center">
+            <div class="profile_photo position-relative">
+                <div class="profile_img_container">
+                    <img style="border-radius: 100%;" id="profile_photo" class="w-100 photo_image_border" src="@account.ImageUrl" />
+                </div>
+                @if ( currentUser.Id == account.Id )
+                {
+                    <div class="profile_changePhoto position-absolute top-0 w-100 h-100 justify-content-center align-items-center">
+                        <a class="w-100">
+                            <label for="profile_photo_input">
+                                <i class="profile_icon bi bi-camera"></i>
+                            </label>
+                        </a>
+                    </div>
+                }
+            </div>
+
+            <div class="d-flex flex-column profile_info">
+                <div class="d-flex gap-4 align-items-center">
+                    <h1 id="user_name_h1" class="profile_username mw-100">
+                        @account.UserName
+                    </h1>
+                    <input type="text" oninput="syncInputs(this.value,'input2')" style="min-width: 100%; font-size: 1.4rem; background-color: #282b2d; margin-bottom: 8px;" value="@account.UserName" id="input_username_edit" class="hidden w-100 form-control text-white input_change_username" />
+                    @if ( currentUser.Id == account.Id )
+                    {
+                        <a onclick="toogleEditUsername()" class="text-white hover_class">
+                            <i class="pen_icon bi bi-pen"></i>
+                        </a>
+                    }
+                </div>
+                <p class="profile_date fst-italic">Date created: @account.DateCreated.ToShortDateString()</p>
+                <div id="profile_request_friend">
+                    @if ( currentUser.Id != account.Id )
+                    {
+                        if (ViewBag.IsRequested(currentUser.Id, account.Id) == false)
+                        {
+                            if (ViewBag.IsFriend(currentUser.Id, account.Id) == true)
+                            {
+                                <div>
+                                    <a onclick="handleUnFriend('@currentUser.Id', '@account.Id')" class="btn btn-outline-light">Unfriend</a>
+                                </div>
+                            } else
+                            {
+                                <div>
+                                    <a onclick="handleAddFriendProfile('@currentUser.Id', '@account.Id')" class="btn btn-outline-light">Add friend</a>
+                                </div>
+                            }
+                        } else
+                        {
+                            if (ViewBag.IsBeingRequested(currentUser.Id, account.Id) == true )
+                            {
+                                <div>
+                                    <a asp-route-userId="@currentUser.Id" asp-route-friendId="@account.Id" asp-action="AcceptFriend" asp-controller="Profile" class="btn btn-outline-light">Accept Friend Request</a>
+                                </div>
+                            }
+                            else
+                            {
+                                <div>
+                                    <a class="btn btn-outline-light disabled">Requested</a>
+                                </div>   
+                            }
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @if ( currentUser.Id == account.Id )
+    {
+        <div class="flex-column justify-content-end my-3" id="saveChange_button">
+            <form asp-action="Edit" method="Post" enctype="multipart/form-data">
+                <input value="@account.ImageUrl" name="profile_photo" hidden type="file" accept="image/*" id="profile_photo_input" />
+                <input value="@account.UserName" onchange="handleEdituserName()" name="user_name" hidden type="text" id="input2" />
+                <button type="submit" class="btn btn-outline-light">Save Changes</button>
+            </form>
+        </div>
+
+        <div class="partial_section">
+            <partial name="_LoginPartial" />
+        </div>
+    } 
+    <div class="blog_container">
+        @if ( currentUser.Id == account.Id )
+        {
+            <h1>My Blogs</h1>
+        } else
+        {
+            <h1>Blogs</h1>
+        }
+        @if (blogList.Count != 0 )
+        {
+            @foreach (var item in blogList)
+            {
+                <div class="blog_card">
+                    <div class="blog_userInfo">
+                        <div class="blog_img_date">
+                            <div class="d-flex align-items-end">
+                                <div class="blog_card_img_container" style="width: 65px; height: 65px;">
+                                    <img src="@(ViewBag.GetPhotoById(item.AccountId))"
+                                            class="w-100 h-100 photo_image_border"
+                                            style="border-radius: 100%; object-fit: cover;"
+                                        alt="user_profile image"
+                                    />
+                                </div>
+                                <p class="blog_username mb-0 fw-bold">@(ViewBag.GetUserName(item.AccountId))</p>
+                            </div>
+                             @if ( item.ReferenceId == null )
+                            {
+                                <p class="mt-2">
+                                    Publish at: @item.PublishDate.ToShortDateString()
+                                </p>
+                            } else
+                            {
+                                <p class="mt-2">
+                                    Shared <a asp-action="Details" asp-controller="Blog" asp-route-id="@item.ReferenceId" class="text-white">@ViewBag.GetUserNameByBlogId(item.ReferenceId)</a>'s post - @item.PublishDate.ToShortDateString()
+                                </p>
+                            }
+                        </div>
+
+                        @if (currentUser?.Id == item.AccountId)
+                        {
+                            <div style="position: relative;">
+                                <a class="text-white" href="#" onclick="handleToggle(@item.Id)">
+                                    <i style="font-size: 32px;" class="bi bi-three-dots-vertical"></i>
+                                </a>
+                                <div id="@item.Id" class="hidden actions_ud" style="top:-10px; right: 20px; position: absolute; background-color: #282b2d; padding: 16px; border-radius: 12px 12px 0 0;" aria-hidden="true">
+                                    <a asp-controller="Blog" asp-route-id="@item.Id" asp-action="Edit" class="btn btn-outline-light">Edit</a>
+                                    <a onclick="handleDeleteBlog(@item.Id)" class="btn btn-outline-light">Delete</a>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <div class="heading">
+                        <div class="d-flex justify-content-between">
+                            <h1 style="max-width: 80%">@item.Title</h1>
+                        </div>
+                        <p class="mt-4">@item.Description</p>
+                    </div>
+
+                    <div class="BlogCard_Img">
+                        <img src="@item.BlogImageUrl" />
+                    </div>
+
+                    <div id="content_@item.Id" class="Blogcard_Content mt-4 temp_hidden">
+                        <p>@Html.Raw(item.Content.Replace("\n", "<br>"))</p>
+                    </div>
+
+                    <div class="toggle_more justify-content-center d-flex">
+                        <a onclick="handleToggleMore(@item.Id)" href="#">
+                            <i id="toggle_icon_@item.Id" class="icon_up_down bi bi-arrow-down-circle text-white" style="font-size: 24px;"></i>
+                        </a>
+                    </div>
+
+                    <div class="blog_actions mt-2 d-flex flex-column">
+                        <div class="d-flex justify-content-around">
+                            <div class="action_container">
+                                @if ( ViewBag.IsCurrentUserLiked(item.Id, currentUser?.Id) == true )
+                                        {
+                                            <a onclick="handleUnLike(@item.Id)" id="action_like_@item.Id" href="#" class="actions_item">
+                                                <p>Like</p>
+                                                <i style="color: #c66b6b;" id="like_icon_@item.Id" class="bi bi-heart-fill"></i>
+                                            </a>
+                                            <p class="badge bg-secondary text-center">@ViewBag.GetBlogLikesCount(item.Id)</p>
+                                        } else
+                                        {
+                                            <a onclick="handleLike(@item.Id)" id="action_like_@item.Id" href="#" class="actions_item">
+                                                <p>Like</p>
+                                                <i style="color: #c66b6b;" id="like_icon_@item.Id" class="bi bi-heart"></i>
+                                            </a>
+                                            <p class="badge bg-secondary text-center">@ViewBag.GetBlogLikesCount(item.Id)</p>
+                                        }
+                                    <form id="like_form_@item.Id" hidden method="post">
+                                        <input type="text" value="@currentUser?.Id" name="like_accountId" />
+                                        <input type="number" value="@item.Id" name="like_blogId" />
+                                    </form>
+                            </div>
+                            <div class="action_container">
+                                <label for="form_input_comment_@item.Id" class="actions_item">
+                                    <p>Comment</p>
+                                    <i class="bi bi-chat"></i>
+                                    <p class="badge bg-secondary text-center">@ViewBag.GetBlogCommentsCount(item.Id)</p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a onclick="handleLoadAllComments(@item.Id)" class="btn btn-outline-light text-white button_all_cmt">All Comments</a>
+                    </div>
+                    <div class="comment_container">
+                        @if ( currentUser != null )
+                        {
+                            <div class="comment_container_upper">
+                                <div class="user_photo_comment_container">
+                                    <img class="user_photo_comment" src="@(ViewBag.GetPhotoById(currentUser.Id))" />
+                                </div>
+
+                                @* <form id="form_comment_@item.Id" asp-action="AddComment" method="post"> *@
+                                <form class="form_comment" id="form_comment_@item.Id" method="post">
+                                    <input value="@item.Id" type="number" hidden name="comment_blogid"/>
+                                    <input value="@currentUser.Id" type="text" hidden name="comment_accountid"/>
+                                    <input id="form_input_comment_@item.Id" onkeypress="handleKeyPress(event, @item.Id)" type="text" name="comment_content" style="background-color: #282b2d" class="form-control text-white" placeholder="Add comment..." />
+                                </form>
+                            </div>
+                            @if (ViewBag.GetAllBlogComments(item.Id) != null )
+                            {
+                                <div id="comment_container_lower_@item.Id" class="comment_container_lower">
+                                    @foreach (var comment in ViewBag.GetAllBlogComments(item.Id))
+                                    {
+                                        <div class="comment_card">
+                                            <div class="comment_card_img_container">
+                                                <img src="@(ViewBag.GetPhotoById(comment.AccountId))" class="comment_card_img" />
+                                            </div>
+                                            <div class="comment_card_content">
+                                                <p class="fw-bold">@(ViewBag.GetUserName(comment.AccountId)) <span class="comment_card_date">@comment.CommentDate</span> </p>
+                                                <p id="p_content_@comment.Id" class="fw-normal">@comment.Content</p>
+                                                <form method="post" id="edit_form_cmt_@comment.Id">
+                                                    <input type="number" name="edit_cmt_id" hidden value="@comment.Id" />
+                                                    <input type="text" name="edit_cmt_accountid" value="@comment.AccountId" hidden />
+                                                    <input type="number" name="edit_cmt_blogid" value="@item.Id" hidden />
+                                                    <input onkeypress="handleKeyPressInputEditComment(event, @item.Id, @comment.Id)" type="text" name="edit_cmt_content" value="@comment.Content" id="comment_form_@comment.Id" class="text-white hidden comments_inputs p-2" style="border: none;" />
+                                                </form>
+                                            </div>
+
+                                            <div class="comment_card_actions position-relative">
+                                                @if (comment.AccountId == currentUser.Id)
+                                                {
+                                                    <a onclick="toggleActionComment(@comment.Id)" href="#" class="text-white">
+                                                        <i class="bi bi-three-dots-vertical"></i>
+                                                    </a>
+                                                }
+
+                                                <div id="comments_actions_@comment.Id" class="comments_actions hidden">
+                                                    <a onclick="handleEditToggleComment(@comment.Id)" class="btn btn-outline-light">Edit</a>
+                                                    <a onclick="handleDeleteBlog(@item.Id)" class="btn btn-outline-light">Delete</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    } 
+                                </div>
+                            }
+                        }
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <h3></h3>
+        }
+    </div>
+</div>
+@section NavContent {
+    <ul class="d-flex flex-column list-unstyled text-white gap-3 my-2 mx-2 navItems">
+        <div class="nav_item">
+            <div class="logo_container d-flex gap-2 w-100 justify-content-center">
+                <div class="logo_image_container">
+                    <img src="/images/logo_2.png" class="logo_image" />
+                </div>
+                <h2 style="font-family: fantasy" class="navTitle m-auto">WebCommun</h2>
+            </div>
+        </div>
+        <a asp-controller="Blog" asp-action="Index" class="nav_item">
+            <div class="navIcon text-center">
+                <i class="icon bi bi-house-door-fill"></i>
+            </div>
+            <div class="navTitle w-75 fs-4 text-start my-auto">
+                Blogs
+            </div>
+        </a>
+        @if (SignInManager.IsSignedIn(User))
+        {
+            <a asp-action="Index" asp-controller="Friend" id="navFriends" class="nav_item">
+                <div class="navIcon text-center">
+                    <i class="icon bi bi-people-fill"></i>
+                </div>
+                <div class="navTitle w-75 fs-4 text-start my-auto">
+                    Friends
+                </div>
+            </a>
+
+            <div class="position-relative">
+                <div id="nof_icon_container">
+                    <a asp-action="Nofitications" asp-controller="Blog" id="navNofitication" class="nof_icon text-center">
+                        <i class="navIcon icon bi bi-bell-fill"></i>
+                        <p class="navTitle w-75 fs-4 text-start my-auto">Nofitications</p>
+                    </a>
+                </div>
+                <div id="nav_item_nofitications" class="hidden nav_item_nofitications position-absolute">
+                    
+                    <div class="d-flex justify-content-between">
+                        <strong>Nofitication</strong>
+                        <a class="reload_icon" onclick="reloadAllNof('@currentUser?.Id')">
+                            <i class="bi bi-arrow-clockwise"></i>
+                        </a>
+                    </div>
+
+                    <div id="nav_item_nofitications_container" class="nav_item_nofitications_container">
+                        @if (ViewBag.GetAllNofOfUser(currentUser?.Id) != null)
+                        {
+                            @foreach (var nof in ViewBag.GetAllNofOfUser(currentUser?.Id))
+                            {
+                                switch ( nof.Type )
+                                {
+                                    case "Addfriend":
+                                        if (ViewBag.IsRequested(nof.SenderAccountId, nof.RecieveAccountId) == true )
+                                        {
+                                            <div class="nofi_card">
+                                                <div class="nofi_card_content">
+                                                    <a asp-action="Index" asp-controller="Profile" asp-route-id="@nof.SenderAccountId">@ViewBag.GetUserName(nof.SenderAccountId)</a> @nof.Content
+                                                    <span class="nofi_card_date">@nof.Date</span>
+                                                    <div id="nofi_card_actions_@nof.Id" class="nofi_card_actions">
+                                                        <a onclick="handleAccept('@currentUser?.Id', @nof.Id)" class="btn btn-outline-dark">Accept</a>
+                                                        <a onclick="handleDeny('@currentUser?.Id', @nof.Id)" class="btn btn-outline-dark">Deny</a>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <a onclick="handleDeleteNofitication(@nof.Id)">
+                                                        <i class="close_icon bi bi-x"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        }
+                                    
+                                        break;
+                                    case "Comment" :
+                                        <div class="nofi_card">
+                                            <p class="nofi_card_content">
+                                                <a asp-action="Index" asp-controller="Profile" asp-route-id="@nof.SenderAccountId">@ViewBag.GetUserName(nof.SenderAccountId)</a> @nof.Content <a asp-route-id="@nof.BlogId" asp-action="Details" asp-controller="Blog">Link to blog</a>
+                                                <span class="nofi_card_date">@nof.Date</span>
+                                            </p>
+                                            <div>
+                                                <a onclick="handleDeleteNofitication(@nof.Id)">
+                                                    <i class="close_icon bi bi-x"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        break;
+                                    case "Like" :
+                                        <div class="nofi_card">
+                                            <p class="nofi_card_content">
+                                                <a asp-action="Index" asp-controller="Profile" asp-route-id="@nof.SenderAccountId">@ViewBag.GetUserName(nof.SenderAccountId)</a> @nof.Content <a asp-route-id="@nof.BlogId" asp-action="Details" asp-controller="Blog">Link to blog</a>
+                                                <span class="nofi_card_date">@nof.Date</span>
+                                            </p>
+                                            <div>
+                                                <a onclick="handleDeleteNofitication(@nof.Id)">
+                                                    <i class="close_icon bi bi-x"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        break;
+                                    default:
+                                
+                                        break;
+                                }
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+        <a asp-controller="Chat" asp-action="Index" class="nav_item">
+            @* <a asp-controller="Profile" asp-route-id="@UserManager.GetUserId(User)" asp-action="Index" class="nav_item"> *@
+            <div class="navIcon text-center">
+                <i class="icon bi bi-wechat"></i>
+            </div>
+            <div class="navTitle w-75 fs-4 text-start my-auto">
+                Messages
+            </div>
+        </a>
+        <a href="/Profile" class="nav_item">
+            @* <a asp-controller="Profile" asp-route-id="@UserManager.GetUserId(User)" asp-action="Index" class="nav_item"> *@
+            <div class="navIcon text-center">
+                <i class="icon bi bi-person-circle"></i>
+            </div>
+            <div class="navTitle w-75 fs-4 text-start my-auto">
+                Profile
+            </div>
+        </a>
+    </ul>
+    <div id="theme_container" class="theme_container">
+        @* <button onclick="handleChangeTheme()" class="btn btn-outline-light" id="theme-toggle" title="Toggles light & dark" aria-label="auto" aria-live="polite">
+            <i id="theme_icon" class="bi bi-brightness-high-fill"></i>
+        </button> *@
+    </div>
+}
+<script>
+    if (!sessionStorage.getItem('theme')) {
+        var defaultTheme = '@Url.Content("~/css/light.css")'; // Giá trị mặc định, có thể là bất kỳ giá trị nào bạn muốn
+        sessionStorage.setItem('theme', defaultTheme);
+    }
+    function handleChangeTheme() {
+        var currentTheme = getSavedTheme();
+        var newTheme = currentTheme.includes('site.css') ? '@Url.Content("~/css/light.css")' : '@Url.Content("~/css/site.css")';
+
+        // Lưu trạng thái chủ đề mới
+        saveTheme(newTheme);
+
+        // Áp dụng chủ đề mới
+        applyTheme(newTheme);
+
+        handlehandleChangeIconTheme();
+    }
+</script>
+
+

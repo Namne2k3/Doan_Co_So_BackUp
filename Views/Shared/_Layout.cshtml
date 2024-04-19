@@ -1,0 +1,68 @@
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Doan_Web_CK</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link id="theme-css" rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Doan_Web_CK.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="d-flex flex-column vh-100">
+        <div class="nav_container h-100 position-relative">
+            <div class="navIcons justify-content-between d-flex flex-column" style="border-right: 1px solid #ccc">
+                @RenderSection("NavContent", required: false)
+                @if (!SignInManager.IsSignedIn(User))
+                {
+                    <partial hidden name="_LoginPartial" />
+                }
+            </div>
+            <div class="body_section" style="background-color: #212529">
+                <main class="main" role="main" class="pb-3">
+                    @RenderBody()
+                </main>
+            </div>
+            <!-- Flexbox container for aligning the toasts -->
+            <div id="toast_container" aria-live="polite" aria-atomic="true"
+                class="position-fixed w-100 toast_container">
+
+                <!-- Then put toasts within -->
+                @* <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                <img src="" class="rounded me-2" alt="...">
+                <strong class="me-auto">Somebody has open a call message</strong>
+                <small>11 mins ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                <button class="btn btn-outline-dark">Join Call</button>
+                <button class="btn btn-outline-danger">Cancel</button>
+                </div>
+                </div> *@
+            </div>
+        </div>
+    </div>
+    <footer class="border-top footer text-muted bg-dark">
+        <div class="container">
+            &copy; 2024 - Doan_Web_CK - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/signalr/dist/browser/signalr.js"></script>
+    <script src="~/js/chat.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

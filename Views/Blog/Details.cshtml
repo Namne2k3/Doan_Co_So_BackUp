@@ -1,0 +1,369 @@
+﻿@model Doan_Web_CK.Models.Blog
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@{
+    ViewData["Title"] = "Details";
+    var currentUser = ViewBag.CurrentUser;
+}
+
+<div class="my-3">
+    <a class="back_btn btn btn-outline-light" asp-action="Index">Back to Blogs</a>
+</div>
+
+<div class="blog_card margin_auto">
+    <div class="blog_userInfo">
+        <div class="blog_img_date">
+            <div class="d-flex align-items-end">
+                <div oncontextmenu="handleRightClick(@Model.Id)" id="blog_card_author_img_@Model.Id" class="blog_card_author_img">
+                    <a asp-action="Index" asp-controller="Profile" asp-route-id="@Model.AccountId">
+                        <img src="@(ViewBag.GetPhotoById(Model.AccountId))"
+                             class="w-100 h-100 photo_image_border"
+                             style="border-radius: 100%; object-fit: cover;"
+                             alt="user_profile image" />
+                    </a>
+                    @if (SignInManager.IsSignedIn(User))
+                    {
+                        <div id="right_click_menu_@Model.Id" class="right_click_menu hidden">
+                            <div id="right_click_menu_container_@Model.Id" class="d-flex gap-2 flex-column">
+                                <a asp-action="Index" asp-controller="Profile" asp-route-id="@Model.AccountId" class="btn btn-dark">View Profile</a>
+                                @if (UserManager.GetUserId(User) != Model.AccountId)
+                                {
+                                    if (ViewBag.HasRelation(UserManager.GetUserId(User), Model.AccountId))
+                                    {
+                                        @if (ViewBag.IsRequested(UserManager.GetUserId(User), Model.AccountId) == true)
+                                        {
+                                            <a onclick=" handleAddFriend(' @Model.AccountId', @Model.Id) " class="btn btn-dark disabled">Requested</a>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <a onclick=" handleAddFriend(' @Model.AccountId', @Model.Id) " class="btn btn-dark">Add Friend</a>
+                                    }
+                                }
+                            </div>
+
+                            <form hidden id="form_add_friend_@Model.Id">
+                                <input value="@UserManager.GetUserId(User)" type="text" name="form_add_friend_userid" />
+                                <input value="@Model.AccountId" type="text" name="form_add_friend_friendid" />
+                            </form>
+                        </div>
+                    }
+                </div>
+                <!-- End Section rightclick-->
+                <a class="text-decoration-none" asp-action="Index" asp-controller="Profile" asp-route-id="@Model.AccountId">
+                    <p class="blog_username mb-0 fw-bold">@(ViewBag.GetUserName(Model.AccountId))</p>
+                </a>
+            </div>
+            <p class="mt-2">
+                Publish at: @Model.PublishDate.ToShortDateString()
+            </p>
+        </div>
+
+        @if (currentUser?.Id == Model.AccountId)
+        {
+            <div style="position: relative;">
+                <a class="text-white" href="#" onclick="handleToggle(@Model.Id)">
+                    <i style="font-size: 32px;" class="bi bi-three-dots-vertical"></i>
+                </a>
+                <div id="@Model.Id" class="hidden actions_ud" style="top:-10px; right: 20px; position: absolute; background-color: #282b2d; padding: 16px; border-radius: 12px 12px 0 0;" aria-hidden="true">
+                    <a asp-controller="Blog" asp-route-id="@Model.Id" asp-action="Edit" class="btn btn-outline-light">Edit</a>
+                    <a class="btn btn-outline-light">Delete</a>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="heading">
+        <div class="d-flex justify-content-between">
+            <h1 class="blog_details_title" style="max-width: 80%">@Model.Title</h1>
+        </div>
+        <p class="mt-4 blog_details_desc">@Model.Description</p>
+    </div>
+
+    <div class="BlogCard_Img">
+        <img src="@Model.BlogImageUrl" />
+    </div>
+
+    <div id="content_@Model.Id" class="Blogcard_Content mt-4 temp_hidden">
+        <p class="blog_details_content">@Html.Raw(@Model.Content.Replace("\n", "<br>"))</p>
+    </div>
+
+    <div class="toggle_more justify-content-center d-flex">
+        <a onclick="handleToggleMore(@Model.Id)" >
+            <i id="toggle_icon_@Model.Id" class="icon_up_down bi bi-arrow-down-circle text-white" style="font-size: 24px;"></i>
+        </a>
+    </div>
+
+    <div class="blog_actions mt-2 d-flex flex-column">
+        <div class="d-flex justify-content-around">
+
+            <!-- Start Section likes action-->
+            <div class="action_container">
+                @if (ViewBag.IsCurrentUserLiked(Model.Id, currentUser?.Id) == true)
+                {
+                    <a onclick="handleUnLike(@Model.Id)" id="action_like_@Model.Id" class="actions_item">
+                        <p>Like</p>
+                        <i style="color: #c66b6b;" id="like_icon_@Model.Id" class="bi bi-heart-fill"></i>
+                    </a>
+                    <p class="badge bg-secondary text-center">@ViewBag.GetBlogLikesCount(Model.Id)</p>
+                }
+                else
+                {
+                    <a onclick="handleLike(@Model.Id)" id="action_like_@Model.Id" class="actions_item">
+                        <p>Like</p>
+                        <i style="color: #c66b6b;" id="like_icon_@Model.Id" class="bi bi-heart"></i>
+                    </a>
+                    <p class="badge bg-secondary text-center">@ViewBag.GetBlogLikesCount(Model.Id)</p>
+                }
+                <form id="like_form_@Model.Id" hidden method="post">
+                    <input type="text" value="@currentUser?.Id" name="like_accountId" />
+                    <input type="number" value="@Model.Id" name="like_blogId" />
+                </form>
+            </div>
+            <!-- End Section likes action-->
+
+            <div class="action_container">
+                <label for="form_input_comment_@Model.Id" class="actions_item">
+                    <p>Comment</p>
+                    <i class="bi bi-chat"></i>
+                    <p class="badge bg-secondary text-center">@ViewBag.GetBlogCommentsCount(Model.Id)</p>
+                </label>
+            </div>
+            <!-- Start Section share action-->
+            <!-- Start Section share action-->
+            @if (currentUser?.Id != Model.AccountId)
+            {
+                <div class="action_container position-relative">
+                    <a onclick="handleToggleShareActions(@Model.Id)" class="actions_item">
+                        <p>Share</p>
+                        <i class="bi bi-share"></i>
+                    </a>
+                    <div id="share_actions_@Model.Id" class="share_actions hidden position-absolute">
+                        <a onclick="handleShareBlog(@Model.Id)" class="btn btn-outline-light" >Share blog</a>
+                    </div>
+
+                    <form id="share_form_@Model.Id" hidden method="post" enctype="multipart/form-data">
+                        <input value="@Model.Id" type="number" name="share_blog_refId" />
+                        <input value="@currentUser?.Id" type="text" name="share_blog_accountId" />
+                        <input value="@Model.Title" type="text" name="share_blog_title" />
+                        <input value="@Model.Description" type="text" name="share_blog_desc" />
+                        <textarea type="text" name="share_blog_content">@Model.Content</textarea>
+                        <input type="text" value="@Model.BlogImageUrl" name="share_blog_imageUrl" />
+                        <select name="share_blog_categoryId" itemid="@Model.CategoryId" asp-items="@ViewBag.Categories"></select>
+                    </form>
+                </div>
+            }
+            <!-- End Section share action-->
+            <!-- End Section share action-->
+        </div>
+    </div>
+
+    <div>
+        <a onclick="handleLoadAllComments(@Model.Id)" class="btn btn-outline-dark text-white button_all_cmt">All Comments</a>
+    </div>
+
+    <div class="comment_container">
+        @if (currentUser != null)
+        {
+            <div class="comment_container_upper">
+                <div class="user_photo_comment_container">
+                    <img class="user_photo_comment" src="@(ViewBag.GetPhotoById(currentUser.Id))" />
+                </div>
+
+                @* <form id="form_comment_@item.Id" asp-action="AddComment" method="post"> *@
+                <form id="form_comment_@Model.Id" method="post">
+                    <input value="@Model.Id" type="number" hidden name="comment_blogid" />
+                    <input value="@currentUser.Id" type="text" hidden name="comment_accountid" />
+                    <input id="form_input_comment_@Model.Id" onkeypress="handleKeyPress(event, @Model.Id)" type="text" name="comment_content" style="background-color: #282b2d" class="form-control text-white" placeholder="Add comment..." />
+                </form>
+            </div>
+        }
+        @if (ViewBag.GetAllBlogComments(Model.Id) != null)
+        {
+            <div id="comment_container_lower_@Model.Id" class="comment_container_lower">
+                @foreach (var comment in ViewBag.GetAllBlogComments(Model.Id))
+                {
+                    <div class="comment_card">
+                        <div class="comment_card_img_container">
+                            <img src="@(ViewBag.GetPhotoById(comment.AccountId))" class="comment_card_img" />
+                        </div>
+                        <div class="comment_card_content">
+                            <p class="fw-bold">@(ViewBag.GetUserName(comment.AccountId)) <span class="comment_card_date">@comment.CommentDate</span> </p>
+                            <p id="p_content_@comment.Id" class="fw-normal">@comment.Content</p>
+                            <form method="post" id="edit_form_cmt_@comment.Id">
+                                <input type="number" name="edit_cmt_id" hidden value="@comment.Id" />
+                                <input type="text" name="edit_cmt_accountid" value="@comment.AccountId" hidden />
+                                <input type="number" name="edit_cmt_blogid" value="@Model.Id" hidden />
+                                <input onkeypress="handleKeyPressInputEditComment(event, @Model.Id, @comment.Id)" type="text" name="edit_cmt_content" value="@comment.Content" id="comment_form_@comment.Id" class="text-white hidden comments_inputs p-2" style="border: none;" />
+                            </form>
+                        </div>
+
+                        <div class="comment_card_actions position-relative">
+                            @if (comment.AccountId == currentUser?.Id)
+                            {
+                                <a onclick="toggleActionComment(@comment.Id)" class="text-white">
+                                    <i class="bi bi-three-dots-vertical"></i>
+                                </a>
+                            }
+
+                            <div id="comments_actions_@comment.Id" class="comments_actions hidden">
+                                <a onclick="handleEditToggleComment(@comment.Id)" class="btn btn-outline-light">Edit</a>
+                                <a onclick="handleDeleteBlog(@Model.Id)" class="btn btn-outline-light">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</div>
+@section NavContent {
+    <ul class="d-flex flex-column list-unstyled text-white gap-3 my-2 mx-2 navItems">
+        <div class="nav_item">
+            <div class="logo_container d-flex gap-2 w-100 justify-content-center">
+                <div class="logo_image_container">
+                    <img src="/images/logo_2.png" class="logo_image" />
+                </div>
+                <h2 style="font-family: fantasy" class="navTitle m-auto">WebCommun</h2>
+            </div>
+        </div>
+        <a asp-controller="Blog" asp-action="Index" class="nav_item">
+            <div class="navIcon text-center">
+                <i class="icon bi bi-house-door-fill"></i>
+            </div>
+            <div class="navTitle w-75 fs-4 text-start my-auto">
+                Blogs
+            </div>
+        </a>
+        @if (SignInManager.IsSignedIn(User))
+        {
+            <a asp-action="Index" asp-controller="Friend" id="navFriends" class="nav_item">
+                <div class="navIcon text-center">
+                    <i class="icon bi bi-people-fill"></i>
+                </div>
+                <div class="navTitle w-75 fs-4 text-start my-auto">
+                    Friends
+                </div>
+            </a>
+
+            <div class="position-relative">
+                <div id="nof_icon_container">
+                    <a asp-action="Nofitications" asp-controller="Blog" id="navNofitication" class="nof_icon text-center">
+                        <i class="navIcon icon bi bi-bell-fill"></i>
+                        <p class="navTitle w-75 fs-4 text-start my-auto">Nofitications</p>
+                    </a>
+                </div>
+                <div id="nav_item_nofitications" class="hidden nav_item_nofitications position-absolute">
+
+                    <div class="d-flex justify-content-between">
+                        <strong>Nofitication</strong>
+                        <a class="reload_icon" onclick="reloadAllNof('@currentUser?.Id')">
+                            <i class="bi bi-arrow-clockwise"></i>
+                        </a>
+                    </div>
+
+                    <div id="nav_item_nofitications_container" class="nav_item_nofitications_container">
+                        @if (ViewBag.GetAllNofOfUser(currentUser?.Id) != null)
+                        {
+                            @foreach (var nof in ViewBag.GetAllNofOfUser(currentUser?.Id))
+                            {
+                                switch (nof.Type)
+                                {
+                                    case "Addfriend":
+                                        if (ViewBag.IsRequested(nof.SenderAccountId, nof.RecieveAccountId) == true)
+                                        {
+                                            <div class="nofi_card">
+                                                <div class="nofi_card_content">
+                                                    <a asp-action="Index" asp-controller="Profile" asp-route-id="@nof.SenderAccountId">@ViewBag.GetUserName(nof.SenderAccountId)</a> @nof.Content
+                                                    <span class="nofi_card_date">@nof.Date</span>
+                                                    <div id="nofi_card_actions_@nof.Id" class="nofi_card_actions">
+                                                        <a onclick="handleAccept('@currentUser?.Id', @nof.Id)" class="btn btn-outline-dark">Accept</a>
+                                                        <a onclick="handleDeny('@currentUser?.Id', @nof.Id)" class="btn btn-outline-dark">Deny</a>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <a onclick="handleDeleteNofitication(@nof.Id)">
+                                                        <i class="close_icon bi bi-x"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        }
+
+                                        break;
+                                    case "Comment":
+                                        <div class="nofi_card">
+                                            <p class="nofi_card_content">
+                                                <a asp-action="Index" asp-controller="Profile" asp-route-id="@nof.SenderAccountId">@ViewBag.GetUserName(nof.SenderAccountId)</a> @nof.Content <a asp-route-id="@nof.BlogId" asp-action="Details" asp-controller="Blog">Link to blog</a>
+                                                <span class="nofi_card_date">@nof.Date</span>
+                                            </p>
+                                            <div>
+                                                <a onclick="handleDeleteNofitication(@nof.Id)">
+                                                    <i class="close_icon bi bi-x"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        break;
+                                    case "Like":
+                                        <div class="nofi_card">
+                                            <p class="nofi_card_content">
+                                                <a asp-action="Index" asp-controller="Profile" asp-route-id="@nof.SenderAccountId">@ViewBag.GetUserName(nof.SenderAccountId)</a> @nof.Content <a asp-route-id="@nof.BlogId" asp-action="Details" asp-controller="Blog">Link to blog</a>
+                                                <span class="nofi_card_date">@nof.Date</span>
+                                            </p>
+                                            <div>
+                                                <a onclick="handleDeleteNofitication(@nof.Id)">
+                                                    <i class="close_icon bi bi-x"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        break;
+                                    default:
+
+                                        break;
+                                }
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+        <a asp-controller="Chat" asp-action="Index" class="nav_item">
+            @* <a asp-controller="Profile" asp-route-id="@UserManager.GetUserId(User)" asp-action="Index" class="nav_item"> *@
+            <div class="navIcon text-center">
+                <i class="icon bi bi-wechat"></i>
+            </div>
+            <div class="navTitle w-75 fs-4 text-start my-auto">
+                Messages
+            </div>
+        </a>
+        <a asp-controller="Profile" asp-action="Index" class="nav_item">
+            @* <a asp-controller="Profile" asp-route-id="@UserManager.GetUserId(User)" asp-action="Index" class="nav_item"> *@
+            <div class="navIcon text-center">
+                <i class="icon bi bi-person-circle"></i>
+            </div>
+            <div class="navTitle w-75 fs-4 text-start my-auto">
+                Profile
+            </div>
+        </a>
+    </ul>
+    <div class="theme_container">
+        <button onclick="handleChangeTheme()" class="btn btn-outline-light" id="theme-toggle" title="Toggles light & dark" aria-label="auto" aria-live="polite">
+            <i id="theme_icon" class="bi bi-brightness-high-fill"></i>
+        </button>
+    </div>
+}
+<script>
+    // Kiểm tra nếu có trạng thái chủ đề được lưu trữ và áp dụng nó khi trang được tải lại
+    function handleChangeTheme() {
+        var currentTheme = getSavedTheme();
+        var newTheme = currentTheme.includes('site.css') ? '@Url.Content("~/css/light.css")' : '@Url.Content("~/css/site.css")';
+
+        // Lưu trạng thái chủ đề mới
+        saveTheme(newTheme);
+
+        // Áp dụng chủ đề mới
+        applyTheme(newTheme);
+
+        handlehandleChangeIconTheme();
+    }
+</script>

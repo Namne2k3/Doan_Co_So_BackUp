@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "defaultProvider": "unpkg",
+  "libraries": [
+    {
+      "library": "@microsoft/signalr@latest",
+      "destination": "wwwroot/js/signalr"
+    },
+    {
+      "library": "peerjs@1.5.2",
+      "destination": "wwwroot/js/peerjs/"
+    }
+  ]
+}
