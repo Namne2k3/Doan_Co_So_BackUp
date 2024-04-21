@@ -1,21 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\",
+  "WorkspaceRootPath": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4131FC8F-82A7-4FEE-BC4A-DA7E153F3299}|Doan_Web_CK.csproj|d:\\file\\code\\asp .net core\\doan_co_so\\doan_web_ck\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4131FC8F-82A7-4FEE-BC4A-DA7E153F3299}|Doan_Web_CK.csproj|d:\\file\\code\\asp .net core\\doan_co_so\\views\\profile\\updateprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4131FC8F-82A7-4FEE-BC4A-DA7E153F3299}|Doan_Web_CK.csproj|solutionrelative:views\\profile\\updateprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4131FC8F-82A7-4FEE-BC4A-DA7E153F3299}|Doan_Web_CK.csproj|d:\\file\\code\\asp .net core\\doan_co_so\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4131FC8F-82A7-4FEE-BC4A-DA7E153F3299}|Doan_Web_CK.csproj|solutionrelative:views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4131FC8F-82A7-4FEE-BC4A-DA7E153F3299}|Doan_Web_CK.csproj|d:\\file\\code\\asp .net core\\doan_co_so\\doan_web_ck\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4131FC8F-82A7-4FEE-BC4A-DA7E153F3299}|Doan_Web_CK.csproj|d:\\file\\code\\asp .net core\\doan_co_so\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4131FC8F-82A7-4FEE-BC4A-DA7E153F3299}|Doan_Web_CK.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4131FC8F-82A7-4FEE-BC4A-DA7E153F3299}|Doan_Web_CK.csproj|d:\\file\\code\\asp .net core\\doan_co_so\\doan_web_ck\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{4131FC8F-82A7-4FEE-BC4A-DA7E153F3299}|Doan_Web_CK.csproj|d:\\file\\code\\asp .net core\\doan_co_so\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{4131FC8F-82A7-4FEE-BC4A-DA7E153F3299}|Doan_Web_CK.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4131FC8F-82A7-4FEE-BC4A-DA7E153F3299}|Doan_Web_CK.csproj|d:\\file\\code\\asp .net core\\doan_co_so\\doan_web_ck\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{4131FC8F-82A7-4FEE-BC4A-DA7E153F3299}|Doan_Web_CK.csproj|d:\\file\\code\\asp .net core\\doan_co_so\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{4131FC8F-82A7-4FEE-BC4A-DA7E153F3299}|Doan_Web_CK.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,55 +50,64 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAcAAAA",
+              "DocumentIndex": 0,
+              "Title": "UpdateProfile.cshtml",
+              "DocumentMoniker": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Views\\Profile\\UpdateProfile.cshtml",
+              "RelativeDocumentMoniker": "Views\\Profile\\UpdateProfile.cshtml",
+              "ToolTip": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Views\\Profile\\UpdateProfile.cshtml",
+              "RelativeToolTip": "Views\\Profile\\UpdateProfile.cshtml",
+              "ViewState": "AQIAAMQAAAAAAAAAAAAAANIAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-18T13:51:56.708Z",
+              "WhenOpened": "2024-04-20T04:54:10.517Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "site.js",
-              "DocumentMoniker": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\site.js",
-              "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
-              "ToolTip": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\site.js",
-              "RelativeToolTip": "wwwroot\\js\\site.js",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAmwB4AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-04-18T13:46:16.115Z",
-              "EditorCaption": ""
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-18T13:51:56.708Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "site.css",
-              "DocumentMoniker": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AQIAAE4AAAAAAAAAAADwv1gAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-18T13:46:05.711Z",
-              "EditorCaption": ""
+              "Title": "site.js",
+              "DocumentMoniker": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
+              "ToolTip": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "wwwroot\\js\\site.js",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAmwB4AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-18T13:46:16.115Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AQIAAE4AAAAAAAAAAADwv1gAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-18T13:46:05.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\Views\\Blog\\Index.cshtml",
+              "DocumentMoniker": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Views\\Blog\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Blog\\Index.cshtml",
-              "ToolTip": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\Views\\Blog\\Index.cshtml",
+              "ToolTip": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Views\\Blog\\Index.cshtml",
               "RelativeToolTip": "Views\\Blog\\Index.cshtml",
-              "ViewState": "AQIAAPQBAAAAAAAAAAAAAPgBAAAXAAAA",
+              "ViewState": "AQIAAPQBAAAAAAAAAAAAAA0CAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-18T13:45:23.366Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-18T13:45:23.366Z"
             }
           ]
         },

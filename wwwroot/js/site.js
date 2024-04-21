@@ -1,4 +1,25 @@
-﻿
+﻿function handleSearchFriend(event) {
+    var hostname = window.location.hostname;
+    var protocol = window.location.protocol;
+    console.log("Check event target value >>> ", event.target.value, protocol, hostname);
+    setTimeout(() => {
+        window.location.href = `${protocol}//${hostname}/Friend?search=${event.target.value}`;
+    }, 2000)
+}
+
+function handleSearchFriends(event) {
+    var hostname = window.location.hostname;
+    var protocol = window.location.protocol;
+    console.log("Check event target value >>> ", event.target.value, protocol, hostname);
+    setTimeout(() => {
+        window.location.href = `${protocol}//${hostname}/Friend/Friend?search=${event.target.value}`;
+    }, 2000)
+}
+
+async function fetchDataFriend() {
+
+}
+
 function handlehandleChangeIconTheme() {
     var element = document.getElementById('theme_icon');
     if (element) {
@@ -180,7 +201,7 @@ function handleAddFriendProfile(userId, friendId) {
             return response.json();
         })
         .then(data => {
-            // xử lý dữ liệu trả về
+
             console.log(data);
             var element = document.getElementById("profile_request_friend")
             if (element) {
@@ -219,7 +240,39 @@ $(document).ready(function () {
             `
     }
 });
+function handleDeleteBlogDetail(blogId) {
+    fetch(`/Blog/Delete?blogId=${blogId}`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
 
+            console.log(data);
+            var port = window.location.port;
+            var protocol = window.location.protocol;
+            var domain = window.location.domain;
+            var hostname = window.location.hostname;
+            var href = window.location.href;
+
+            console.log("check port >>> ", port)
+            console.log("check protocol >>> ", protocol)
+            console.log("check domain >>> ", domain)
+            console.log("check hostname >>> ", hostname)
+            console.log("check href >>> ", href)
+
+            if (window.location.href.toString().includes('Profile')) {
+                window.location.href = protocol + "//" + hostname + "/Profile"
+            } else {
+                window.location.href = protocol + "//" + hostname;
+            }
+        })
+        .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+        });
+}
 function handleDeleteBlog(blogId) {
     fetch(`/Blog/Delete?blogId=${blogId}`)
         .then(response => {
@@ -229,13 +282,14 @@ function handleDeleteBlog(blogId) {
             return response.json();
         })
         .then(data => {
-            // xử lý dữ liệu trả về
             console.log(data);
-            var port = window.location.port;
-            if (window.location.href.indexOf("Profile") !== -1) { // Sử dụng indexOf() để kiểm tra chuỗi con
-                window.location.href = "https://localhost:" + port + "/Profile";
+
+            if (data.message == 'success') {
+                showElement("update_success_blog_" + blogId)
+                var domEle = document.getElementById("blog_card_" + blogId);
+                domEle.remove();
             } else {
-                window.location.href = "https://localhost:" + port;
+                showElement("update_fail_blog_" + blogId)
             }
         })
         .catch(error => {
@@ -252,10 +306,10 @@ function handleDeleteComment(commentId, blogId) {
             return response.json();
         })
         .then(data => {
-            // xử lý dữ liệu trả về
+
             console.log(data);
             console.log(blogId);
-            // cập nhật giao diện người dùng với dữ liệu mới
+
             var commentContainer = document.getElementById("comment_container_lower_" + blogId);
             if (data.message == 'success') {
                 showElement("update_success")
@@ -279,7 +333,7 @@ function handleDeleteNofitication(nofId) {
             return response.json();
         })
         .then(data => {
-            // xử lý dữ liệu trả về
+
             console.log(data);
             var element = document.getElementById("nav_item_nofitications_container")
             if (element) {
@@ -301,7 +355,7 @@ function reloadAllNof(userId) {
             return response.json();
         })
         .then(data => {
-            // xử lý dữ liệu trả về
+
             console.log(data.newHtml);
             // cập nhật giao diện người dùng với dữ liệu mới
             var element = document.getElementById("nav_item_nofitications_container")
@@ -323,38 +377,78 @@ function handleToggleNofs() {
         element.classList.add("hidden");
     }
 }
+async function handleAddBlog(event) {
 
-function editblog() {
+    const form = event.target;
+    const formContent = document.querySelector('.ck-content');
+    console.log(formContent.innerHTML);
+
+    let urlImage = form.BlogImageUrl.value.replace("C:\\fakepath\\", "/images/")
+
+    // const bodyData = {
+    //     Title: form.Title.value,
+    //     Desc: form.Description.value,
+    //     Content: formContent.innerHTML.toString(),
+    //     BlogImageUrl: urlImage.toString(),
+    //     CategoryId: form.CategoryId.value
+    // }
+    const bodyData = new URLSearchParams();
+    bodyData.append('Title', form.Title.value);
+    bodyData.append('Description', form.Description.value);
+    bodyData.append('Content', formContent.innerHTML.toString());
+    bodyData.append('BlogImageUrl', urlImage.toString());
+    bodyData.append('CategoryId', form.CategoryId.value);
+
+    const response = await fetch('/Blog/Add', {
+        method: "POST",
+        headers: {
+            // "Content-Type": "application/json",
+            'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: bodyData
+    })
+    const data = await response.json();
+    console.log("Check data return >>> ", data)
+}
+async function editblog(event) {
     event.preventDefault();
-    var formData = new FormData(document.getElementById("edit_form"));
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "/Blog/Edit", true);
-    xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest"); // Đảm bảo yêu cầu được nhận biết là AJAX
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === XMLHttpRequest.DONE) {
-            if (xhr.status === 200) {
-                var response = JSON.parse(xhr.responseText);
-                if (response) {
-                    console.log("CHECK response >>> ", response)
-                    if (response.message == 'failed') {
+    const form = event.target;
+    const formContent = document.querySelector('.ck-content');
+    console.log(formContent.innerHTML);
 
-                        showElement("update_fail");
-                    } else {
+    let urlImage = form.BlogImageUrl.value.replace("C:\\fakepath\\", "/images/")
+    const bodyData = new URLSearchParams();
 
-                        showElement("update_success");
-                        // Lấy thông tin về cổng của localhost hiện tại
-                        var port = window.location.port;
+    bodyData.append('Id', form.Id.value);
+    bodyData.append('Title', form.Title.value);
+    bodyData.append('Description', form.Description.value);
+    bodyData.append('Content', formContent.innerHTML.toString());
+    bodyData.append('BlogImageUrl', urlImage.toString());
+    bodyData.append('CategoryId', form.CategoryId.value);
 
-                        // Chuyển hướng trang đến localhost với cổng hiện tại
-                        window.location.href = "https://localhost:" + port;
-                    }
-                }
-            } else {
-                // Xử lý lỗi
-            }
-        }
-    };
-    xhr.send(formData);
+    const response = await fetch('/Blog/Edit', {
+        method: "POST",
+        headers: {
+            // "Content-Type": "application/json",
+            'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: bodyData
+    })
+    const data = await response.json();
+    console.log("Check data return >>> ", data)
+    if (data.message == 'success') {
+        showElement("update_success");
+        // // Lấy thông tin về cổng của localhost hiện tại
+        // var port = window.location.port;
+        // var domain = window.location.hostname;
+        // var protocol = window.location.protocol
+
+        // // Chuyển hướng trang đến domain hiện tại
+        // window.location.href = domain + ":" + port;
+        // // Chuyển hướng trang đến localhost với cổng hiện tại
+    } else {
+        showElement("update_fail");
+    }
 }
 
 function handleAccept(userId, nofId) {
@@ -366,7 +460,7 @@ function handleAccept(userId, nofId) {
             return response.json();
         })
         .then(data => {
-            // xử lý dữ liệu trả về
+
             console.log(data.commentHtml);
             // cập nhật giao diện người dùng với dữ liệu mới
             var element = document.getElementById("nofi_card_actions_" + nofId);
@@ -428,7 +522,7 @@ function handleDeny(userId, nofId) {
             return response.json();
         })
         .then(data => {
-            // xử lý dữ liệu trả về
+
             console.log(data.commentHtml);
             // cập nhật giao diện người dùng với dữ liệu mới
             var element = document.getElementById("nofi_card_actions_" + nofId);
@@ -451,7 +545,7 @@ function handleUnFriend(userId, friendId, itemId) {
             return response.json();
         })
         .then(data => {
-            // xử lý dữ liệu trả về
+
             console.log(data);
             var elementFriendIndex = document.getElementById("friend_card_actions_" + itemId)
             var elementProfileIndex = document.getElementById("profile_request_friend")
@@ -575,7 +669,7 @@ function handleLoadAllComments(blogId) {
             return response.json();
         })
         .then(data => {
-            // xử lý dữ liệu trả về
+
             console.log(data.commentHtml);
             // cập nhật giao diện người dùng với dữ liệu mới
             var commentContainer = document.getElementById("comment_container_lower_" + blogId);

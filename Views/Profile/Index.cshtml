@@ -108,7 +108,14 @@
         {
             @foreach (var item in blogList)
             {
-                <div class="blog_card">
+                <div id="update_success_blog_@item.Id" class="p-4 text-white text-success bg-success rounded-3 hidden_blog">
+                    Delete Success
+                </div>
+
+                <div id="update_fail_blog_@item.Id" class="p-4 text-white text-danger bg-danger rounded-3 hidden_blog">
+                    Delete Failed
+                </div>
+                <div class="blog_card" id="blog_card_@item.Id">
                     <div class="blog_userInfo">
                         <div class="blog_img_date">
                             <div class="d-flex align-items-end">
@@ -151,7 +158,7 @@
                         <div class="d-flex justify-content-between">
                             <h1 style="max-width: 80%">@item.Title</h1>
                         </div>
-                        <p class="mt-4">@item.Description</p>
+                        <p class="mt-4 blog_card_desc">@item.Description</p>
                     </div>
 
                     <div class="BlogCard_Img">

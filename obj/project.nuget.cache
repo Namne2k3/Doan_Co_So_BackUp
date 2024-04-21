@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jMnvyT+Yu34Jmcrhwf8xoLhfhpPjCablus9sIWeBaEmrZnmFRoKx7wDL6luHR7ZD7RJ41Z14RwxrpVMD6OrpTQ==",
+  "dgSpecHash": "k7uFpOc07t66UmU5jlwkNu6gISejT1qI5IxjX/9qY+4MismLXlpEnWDAFfeOEpJfsngr1fohUmovTUrXoK0CWw==",
   "success": true,
-  "projectFilePath": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\Doan_Web_CK.csproj",
+  "projectFilePath": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Co_So.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nhpn2\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\nhpn2\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

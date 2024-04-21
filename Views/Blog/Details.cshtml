@@ -12,7 +12,7 @@
     <a class="back_btn btn btn-outline-light" asp-action="Index">Back to Blogs</a>
 </div>
 
-<div class="blog_card margin_auto">
+<div class="blog_card margin_auto" id="blog_card_@Model.Id">
     <div class="blog_userInfo">
         <div class="blog_img_date">
             <div class="d-flex align-items-end">
@@ -69,7 +69,7 @@
                 </a>
                 <div id="@Model.Id" class="hidden actions_ud" style="top:-10px; right: 20px; position: absolute; background-color: #282b2d; padding: 16px; border-radius: 12px 12px 0 0;" aria-hidden="true">
                     <a asp-controller="Blog" asp-route-id="@Model.Id" asp-action="Edit" class="btn btn-outline-light">Edit</a>
-                    <a class="btn btn-outline-light">Delete</a>
+                    <a onclick="handleDeleteBlogDetail(@Model.Id)" class="btn btn-outline-light">Delete</a>
                 </div>
             </div>
         }
@@ -346,16 +346,21 @@
             </div>
         </a>
     </ul>
-    <div class="theme_container">
-        <button onclick="handleChangeTheme()" class="btn btn-outline-light" id="theme-toggle" title="Toggles light & dark" aria-label="auto" aria-live="polite">
+   
+    <div id="theme_container" class="theme_container">
+        @* <button onclick="handleChangeTheme()" class="btn btn-outline-light" id="theme-toggle" title="Toggles light & dark" aria-label="auto" aria-live="polite">
             <i id="theme_icon" class="bi bi-brightness-high-fill"></i>
-        </button>
+        </button> *@
     </div>
 }
 <script>
-    // Kiểm tra nếu có trạng thái chủ đề được lưu trữ và áp dụng nó khi trang được tải lại
+    if (!sessionStorage.getItem('theme')) {
+        var defaultTheme = '@Url.Content("~/css/site.css")'; // Giá trị mặc định, có thể là bất kỳ giá trị nào bạn muốn
+        sessionStorage.setItem('theme', defaultTheme);
+    }
     function handleChangeTheme() {
         var currentTheme = getSavedTheme();
+        
         var newTheme = currentTheme.includes('site.css') ? '@Url.Content("~/css/light.css")' : '@Url.Content("~/css/site.css")';
 
         // Lưu trạng thái chủ đề mới

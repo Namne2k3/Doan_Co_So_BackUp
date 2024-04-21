@@ -1,28 +1,43 @@
 let userId = null
 let localStream = null
+
 function handleChangeIconVideoActions(type) {
     if (type == 'mic') {
         var element = document.getElementById('mic_icon');
+        var element2 = document.getElementById('mic_icon_temp');
         if (element) {
             if (element.classList.contains('bi-mic-fill')) {
                 element.classList.remove("bi-mic-fill")
                 element.classList.add("bi-mic-mute-fill")
+
+                element2.classList.remove("bi-mic-fill")
+                element2.classList.add("bi-mic-mute-fill")
             } else {
                 element.classList.remove('bi-mic-mute-fill')
                 element.classList.add('bi-mic-fill')
+
+                element2.classList.remove('bi-mic-mute-fill')
+                element2.classList.add('bi-mic-fill')
             }
             handleToggleMicro()
         }
     }
     if (type == 'video') {
         var element = document.getElementById('video_icon');
+        var element2 = document.getElementById('video_icon_temp');
         if (element) {
             if (element.classList.contains('bi-camera-video-fill')) {
                 element.classList.remove("bi-camera-video-fill")
                 element.classList.add("bi-camera-video-off-fill")
+
+                element2.classList.remove("bi-camera-video-fill")
+                element2.classList.add("bi-camera-video-off-fill")
             } else {
                 element.classList.remove('bi-camera-video-off-fill')
                 element.classList.add('bi-camera-video-fill')
+
+                element2.classList.remove('bi-camera-video-off-fill')
+                element2.classList.add('bi-camera-video-fill')
             }
             handleToogleCamera()
         }

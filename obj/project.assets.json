@@ -8782,11 +8782,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\Doan_Web_CK.csproj",
-      "projectName": "Doan_Web_CK",
-      "projectPath": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\Doan_Web_CK.csproj",
+      "projectUniqueName": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Co_So.csproj",
+      "projectName": "Doan_Co_So",
+      "projectPath": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Co_So.csproj",
       "packagesPath": "C:\\Users\\nhpn2\\.nuget\\packages\\",
-      "outputPath": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\obj\\",
+      "outputPath": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Microsoft Visual Studio\\2022\\Shared\\NuGetPackages"

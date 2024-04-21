@@ -19,6 +19,7 @@ namespace Doan_Web_CK.Controllers
         private readonly ILikeRepository _likeRepository;
         private readonly IFriendShipRepository _friendShipRepository;
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly IImageService _imageService;
 
         public BlogController(
             UserManager<ApplicationUser> userManager,
@@ -29,7 +30,8 @@ namespace Doan_Web_CK.Controllers
             IAccountRepository accountRepository,
             ICommentRepository commentRepository,
             ILikeRepository likeRepository,
-            IFriendShipRepository friendShipRepository
+            IFriendShipRepository friendShipRepository,
+            IImageService imageService
         )
         {
             _blogRepository = blogRepository;
@@ -41,6 +43,7 @@ namespace Doan_Web_CK.Controllers
             _commentRepository = commentRepository;
             _likeRepository = likeRepository;
             _friendShipRepository = friendShipRepository;
+            _imageService = imageService;
         }
         public async Task<bool> IsBeingRequestedAsync(string currentUserId, string accountId)
         {
@@ -919,11 +922,45 @@ namespace Doan_Web_CK.Controllers
             task.Wait();
             return task.Result;
         }
+        [Authorize]
         [HttpPost]
-        public async Task<IActionResult> Edit(Blog blog, IFormFile BlogImageUrl)
+        public async Task<IActionResult> Add(Blog blog)
+        {
+
+            var user = await _userManager.GetUserAsync(User);
+            var account = await _accountRepository.GetByIdAsync(user.Id);
+            if (account.Blogs == null)
+            {
+                account.Blogs = new List<Blog>();
+            }
+            if (blog.BlogImageUrl == null)
+            {
+                return RedirectToAction("Index");
+            }
+
+            var newBlog = new Blog
+            {
+                Title = blog.Title,
+                Description = blog.Description,
+                Content = blog.Content,
+                CategoryId = blog.CategoryId,
+                PublishDate = DateTime.Now,
+                BlogImageUrl = blog.BlogImageUrl,
+                AccountId = user.Id
+            };
+
+            if (blog.BlogImageUrl != null)
+            {
+                await _imageService.SaveImageAsync(blog.BlogImageUrl);
+            }
+            await _accountRepository.AddBlogAsync(account, newBlog);
+            return RedirectToAction("Index");
+        }
+        [HttpPost]
+        public async Task<IActionResult> Edit(Blog blog)
         {
             var update = await _blogRepository.GetByIdAsync(blog.Id);
-            if (BlogImageUrl == null)
+            if (blog.BlogImageUrl == null)
             {
                 var categories = await _categoryRepository.GetAllAsync();
                 ViewBag.Categories = new SelectList(categories, "Id", "Name");
@@ -936,10 +973,11 @@ namespace Doan_Web_CK.Controllers
             {
                 var user = await _userManager.GetUserAsync(User);
                 update.Title = blog.Title;
+                update.Description = blog.Description;
                 update.Content = blog.Content;
-                update.IsAccepted = true;
+                update.CategoryId = blog.CategoryId;
                 update.AccountId = user.Id;
-                update.BlogImageUrl = await SaveImage(BlogImageUrl);
+                update.BlogImageUrl = blog.BlogImageUrl;
                 update.PublishDate = DateTime.Now;
             }
 
@@ -999,39 +1037,6 @@ namespace Doan_Web_CK.Controllers
             return View();
         }
 
-        [Authorize]
-        [HttpPost]
-        public async Task<IActionResult> Add(Blog blog, IFormFile BlogImageUrl)
-        {
-
-            var user = await _userManager.GetUserAsync(User);
-            var account = await _accountRepository.GetByIdAsync(user.Id);
-            if (account.Blogs == null)
-            {
-                account.Blogs = new List<Blog>();
-            }
-            var newBlog = new Blog
-            {
-                Title = blog.Title,
-                Description = blog.Description,
-                Content = blog.Content,
-                CategoryId = blog.CategoryId,
-                PublishDate = DateTime.Now,
-                AccountId = user.Id,
-            };
-            if (BlogImageUrl == null)
-            {
-                return RedirectToAction("Index");
-            }
-            else
-            {
-                newBlog.BlogImageUrl = await SaveImage(BlogImageUrl);
-            }
-            await _accountRepository.AddBlogAsync(account, newBlog);
-            return RedirectToAction("Index");
-
-
-        }
         private async Task<string> SaveImage(IFormFile imageFile)
         {
             var savePath = Path.Combine("wwwroot/images", imageFile.FileName);

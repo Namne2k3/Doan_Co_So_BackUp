@@ -4,6 +4,27 @@ html {
     height: 100vh;
 }
 
+.friend_search_container {
+    margin: 16px 0;
+    max-width: 50%;
+}
+
+.ck {
+    height: 250px;
+}
+
+.ck-widget__type-around {
+    display: none !important;
+}
+
+strong {
+    color: #000 !important;
+}
+
+.modal-header a {
+    color: #000 !important;
+}
+
 .admin_account_section {
     margin-top: 24px;
     display: flex;
@@ -270,7 +291,6 @@ footer {
 }
 
 main {
-    margin: 1.5rem;
     background-color: #f0f2f5 !important;
     height: 100%;
 }
@@ -289,6 +309,7 @@ main {
 }
 
 .chatroom_container {
+    margin-top: 16px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -342,7 +363,8 @@ main {
 }
 
 .messages_container {
-    height: 95vh;
+    margin-top: 16px;
+    height: 96vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -406,7 +428,7 @@ main {
 }
 
 .messages_info a {
-    color: #fff;
+    color: #000;
     font-weight: bold;
     text-decoration: none;
 }
@@ -470,7 +492,7 @@ main {
 
 .message_section_container {
     display: flex;
-    gap: 8px;
+    gap: 16px;
     height: 100%;
 }
 
@@ -866,6 +888,10 @@ body {
     color: #fff;
 }
 
+.container-fluid {
+    padding: 0;
+}
+
 .nof_icon:hover,
 .nav_item:hover {
     background-color: #ccc;
@@ -1051,8 +1077,8 @@ body {
     flex-direction: column;
     gap: 20px;
     padding: 0 16px 16px 16px;
-    margin: -16px;
-    height: 100vh;
+    /* margin: -16px; */
+    /* height: 100vh; */
     overflow-y: auto;
     scrollbar-width: none;
     margin-top: 8px;
@@ -1282,7 +1308,7 @@ form button {
 
 .profile_container {
     background-position: center;
-    border-radius: 16px;
+    /* border-radius: 16px; */
     margin-bottom: 12px;
     background-repeat: no-repeat, repeat;
     background-size: cover;
@@ -1328,8 +1354,24 @@ form button {
     object-fit: cover;
 }
 
+@media (max-width: 450px) {
+    .filter_modal {
+        margin-right: 24px;
+    }
+}
+
+.message_call_btn_container a {
+    color: #000 !important;
+    border: 1px solid #000;
+}
+
 .profile_photo {
     z-index: 1;
+}
+
+.long_text a {
+    color: #000;
+    border: 1px solid #000;
 }
 
 .profile_photo:hover .profile_changePhoto {
@@ -1392,9 +1434,10 @@ form button {
 }
 
 .body_section {
-    max-height: 100vh;
     width: 100%;
+    max-height: 100vh;
     overflow-y: auto;
+    padding: 0 1.5rem;
     scrollbar-width: none;
     background-color: #f0f2f5 !important;
 }
@@ -1490,7 +1533,7 @@ form button {
     }
 
     .margin_auto {
-        max-width: 85% !important;
+        max-width: 90% !important;
     }
 }
 

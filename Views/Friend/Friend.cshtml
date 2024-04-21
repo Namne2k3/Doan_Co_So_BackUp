@@ -1,0 +1,219 @@
+@model IEnumerable<Doan_Web_CK.Models.ApplicationUser>
+@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@{
+    ViewData["Title"] = "Friends";
+    var search = ViewBag.Search;
+    var currentUser = ViewBag.currentUser;
+}
+
+<div class="body_container mt-4">
+    <h1 class="friend_search_title">Friends</h1>
+    <nav class="nav nav-pills nav-justified gap-2">
+        <a asp-controller="Friend" asp-action="Index" class="btn btn-outline-light">My Friends</a>
+        <a asp-controller="Friend" asp-action="Friend" asp-route-search="" class="btn btn-outline-light active">Friends</a>
+    </nav>
+    <nav class="navbar">
+        <form class="container-fluid">
+            <div class="input-group">
+            <span style="box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;" class="input-group-text" id="basic-addon1">@@</span>
+            <input value="@search" oninput="handleSearchFriends(event)" type="text" class="form-control" placeholder="Username & Email..." aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+        </form>
+    </nav>
+    <div class="friends_container">
+        @if (currentUser != null )
+        {
+            foreach (var f in Model)
+            {
+                    <div class="friend_card">
+                        <div class="friend_card_img_container">
+                            <img alt="user profile image" class="friend_card_img" src="@f.ImageUrl" />
+                        </div>
+
+                        <div class="friend_card_info_container">
+                            
+                            <a class="friend_card_name" asp-action="Index" asp-controller="Profile" asp-route-id="@f.Id">@f.UserName</a>
+                            <p class="friend_card_date">Date created: @f.DateCreated</p>
+                            
+                            <div id="friend_card_actions_@f.Id" class="friend_card_actions">
+                                <a class="btn btn-outline-light" asp-action="Index" asp-controller="Profile" asp-route-id="@f.Id">View Profile</a>
+                                @if (ViewBag.IsFriend(currentUser.Id, f.Id) == true) {
+                                    <a onclick="handleUnFriend('@currentUser.Id', '@f.Id')" class="btn btn-outline-light">Unfriend</a>
+                                } else {
+                                    <a onclick="handleAddFriendProfile('@currentUser.Id', '@f.Id')" class="btn btn-outline-light">Add Friend</a>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <div id="friend_card_status_@f.Id" class="hidden friend_card_status">
+                        <div class="friend_card_status_success bg-success">
+                            You have Unfrieneded
+                        </div>
+                        <div class="friend_card_status_failed bg-danger">
+                            Something went wrong
+                        </div>
+                    </div>
+                }
+            }
+            
+        }
+    </div>
+</div>
+@section NavContent {
+    <ul class="d-flex flex-column list-unstyled text-white gap-3 my-2 mx-2 navItems">
+        <div class="nav_item">
+            <div class="logo_container d-flex gap-2 w-100 justify-content-center">
+                <div class="logo_image_container">
+                    <img src="/images/logo_2.png" class="logo_image" />
+                </div>
+                <h2 style="font-family: fantasy" class="navTitle m-auto">WebCommun</h2>
+            </div>
+        </div>
+        <a asp-controller="Blog" asp-action="Index" class="nav_item">
+            <div class="navIcon text-center">
+                <i class="icon bi bi-house-door-fill"></i>
+            </div>
+            <div class="navTitle w-75 text-start my-auto">
+                Blogs
+            </div>
+        </a>
+        @if (SignInManager.IsSignedIn(User))
+        {
+            <a asp-action="Index" asp-controller="Friend" id="navFriends" class="nav_item">
+                <div class="navIcon text-center">
+                    <i class="icon bi bi-people-fill"></i>
+                </div>
+                <div class="navTitle w-75 text-start my-auto">
+                    Friends
+                </div>
+            </a>
+
+            <div class="position-relative">
+                <div id="nof_icon_container">
+                    <a asp-action="Nofitications" asp-controller="Blog" id="navNofitication" class="nof_icon text-center">
+                        <i class="navIcon icon bi bi-bell-fill"></i>
+                        <p class="navTitle w-75 text-start my-auto">Nofitications</p>
+                    </a>
+                </div>
+                <div id="nav_item_nofitications" class="hidden nav_item_nofitications position-absolute">
+                    
+                    <div class="d-flex justify-content-between">
+                        <strong>Nofitication</strong>
+                        <a class="reload_icon" onclick="reloadAllNof('@currentUser?.Id')">
+                            <i class="bi bi-arrow-clockwise"></i>
+                        </a>
+                    </div>
+
+                    <div id="nav_item_nofitications_container" class="nav_item_nofitications_container">
+                        @if (ViewBag.GetAllNofOfUser(currentUser?.Id) != null)
+                        {
+                            @foreach (var nof in ViewBag.GetAllNofOfUser(currentUser?.Id))
+                            {
+                                switch ( nof.Type )
+                                {
+                                    case "Addfriend":
+                                        if (ViewBag.IsRequested(nof.SenderAccountId, nof.RecieveAccountId) == true )
+                                        {
+                                            <div class="nofi_card">
+                                                <div class="nofi_card_content">
+                                                    <a asp-action="Index" asp-controller="Profile" asp-route-id="@nof.SenderAccountId">@ViewBag.GetUserName(nof.SenderAccountId)</a> @nof.Content
+                                                    <span class="nofi_card_date">@nof.Date</span>
+                                                    <div id="nofi_card_actions_@nof.Id" class="nofi_card_actions">
+                                                        <a onclick="handleAccept('@currentUser?.Id', @nof.Id)" class="btn btn-outline-dark">Accept</a>
+                                                        <a onclick="handleDeny('@currentUser?.Id', @nof.Id)" class="btn btn-outline-dark">Deny</a>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <a onclick="handleDeleteNofitication(@nof.Id)">
+                                                        <i class="close_icon bi bi-x"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        }
+                                    
+                                        break;
+                                    case "Comment" :
+                                        <div class="nofi_card">
+                                            <p class="nofi_card_content">
+                                                <a asp-action="Index" asp-controller="Profile" asp-route-id="@nof.SenderAccountId">@ViewBag.GetUserName(nof.SenderAccountId)</a> @nof.Content <a asp-route-id="@nof.BlogId" asp-action="Details" asp-controller="Blog">Link to blog</a>
+                                                <span class="nofi_card_date">@nof.Date</span>
+                                            </p>
+                                            <div>
+                                                <a onclick="handleDeleteNofitication(@nof.Id)">
+                                                    <i class="close_icon bi bi-x"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        break;
+                                    case "Like" :
+                                        <div class="nofi_card">
+                                            <p class="nofi_card_content">
+                                                <a asp-action="Index" asp-controller="Profile" asp-route-id="@nof.SenderAccountId">@ViewBag.GetUserName(nof.SenderAccountId)</a> @nof.Content <a asp-route-id="@nof.BlogId" asp-action="Details" asp-controller="Blog">Link to blog</a>
+                                                <span class="nofi_card_date">@nof.Date</span>
+                                            </p>
+                                            <div>
+                                                <a onclick="handleDeleteNofitication(@nof.Id)">
+                                                    <i class="close_icon bi bi-x"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        break;
+                                    default:
+                                
+                                        break;
+                                }
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+        <a asp-controller="Chat" asp-action="Index" class="nav_item">
+            @* <a asp-controller="Profile" asp-route-id="@UserManager.GetUserId(User)" asp-action="Index" class="nav_item"> *@
+            <div class="navIcon text-center">
+                <i class="icon bi bi-wechat"></i>
+            </div>
+            <div class="navTitle w-75 text-start my-auto">
+                Messages
+            </div>
+        </a>
+        <a asp-controller="Profile" asp-action="Index" class="nav_item">
+            @* <a asp-controller="Profile" asp-route-id="@UserManager.GetUserId(User)" asp-action="Index" class="nav_item"> *@
+            <div class="navIcon text-center">
+                <i class="icon bi bi-person-circle"></i>
+            </div>
+            <div class="navTitle w-75 text-start my-auto">
+                Profile
+            </div>
+        </a>
+    </ul>
+
+    <div id="theme_container" class="theme_container">
+        @* <button onclick="handleChangeTheme()" class="btn btn-outline-light" id="theme-toggle" title="Toggles light & dark" aria-label="auto" aria-live="polite">
+            <i id="theme_icon" class="bi bi-brightness-high-fill"></i>
+        </button> *@
+    </div>
+}
+<script>
+    if (!sessionStorage.getItem('theme')) {
+        var defaultTheme = '@Url.Content("~/css/light.css")'; // Giá trị mặc định, có thể là bất kỳ giá trị nào bạn muốn
+        sessionStorage.setItem('theme', defaultTheme);
+    }
+    function handleChangeTheme() {
+        var currentTheme = getSavedTheme();
+        var newTheme = currentTheme.includes('site.css') ? '@Url.Content("~/css/light.css")' : '@Url.Content("~/css/site.css")';
+
+        // Lưu trạng thái chủ đề mới
+        saveTheme(newTheme);
+
+        // Áp dụng chủ đề mới
+        applyTheme(newTheme);
+
+        handlehandleChangeIconTheme();
+    }
+</script>
+

@@ -78,17 +78,82 @@ namespace Doan_Web_CK.Controllers
             }
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string search)
         {
-            var currentUser = await _userManager.GetUserAsync(User);
-            var account = await _accountRepository.GetByIdAsync(currentUser.Id);
-            ViewBag.GetAllNofOfUser = new Func<string, IEnumerable<Nofitication>>(GetAllNofOfUser);
-            ViewBag.IsRequested = new Func<string, string, bool>(IsRequested);
-            ViewBag.GetUserName = new Func<string, string>(GetUserName);
-            ViewBag.currentUser = account;
-            var friends = await _friendShipRepository.GetAllAsync();
-            var filtered = friends.Where(p => p.UserId == account.Id || p.FriendId == account.Id).ToList();
-            return View(filtered);
+            if (search == null)
+            {
+                var currentUser = await _userManager.GetUserAsync(User);
+                var account = await _accountRepository.GetByIdAsync(currentUser.Id);
+                ViewBag.GetAllNofOfUser = new Func<string, IEnumerable<Nofitication>>(GetAllNofOfUser);
+                ViewBag.IsRequested = new Func<string, string, bool>(IsRequested);
+                ViewBag.GetUserName = new Func<string, string>(GetUserName);
+                ViewBag.currentUser = account;
+                var friends = await _friendShipRepository.GetAllAsync();
+                var filtered = friends.Where(p => p.UserId == account.Id || p.FriendId == account.Id).ToList();
+                return View(filtered);
+            }
+            else
+            {
+                var currentUser = await _userManager.GetUserAsync(User);
+                var account = await _accountRepository.GetByIdAsync(currentUser.Id);
+                ViewBag.GetAllNofOfUser = new Func<string, IEnumerable<Nofitication>>(GetAllNofOfUser);
+                ViewBag.IsRequested = new Func<string, string, bool>(IsRequested);
+                ViewBag.GetUserName = new Func<string, string>(GetUserName);
+                ViewBag.currentUser = account;
+                ViewBag.Search = search;
+                var friends = await _friendShipRepository.GetAllAsync();
+                var filtered = friends.Where(
+                    p => p.UserId == account.Id && p.Friend.UserName.ToLower().Contains(search.ToLower())
+                    || p.FriendId == account.Id && p.User.UserName.ToLower().Contains(search.ToLower())
+                ).ToList();
+                return View(filtered);
+            }
+        }
+        public async Task<bool> IsFriendAsync(string userId, string friendId)
+        {
+            var friendship = await _friendShipRepository.GetAllAsync();
+            var finded = friendship.SingleOrDefault(p => p.UserId == userId && p.FriendId == friendId || p.UserId == friendId && p.FriendId == userId);
+            if (finded != null && finded.IsConfirmed == true)
+            {
+                return true;
+            }
+            return false;
+        }
+        public bool IsFriend(string userId, string friendId)
+        {
+            var task = IsFriendAsync(userId, friendId);
+            task.Wait();
+            return task.Result;
+        }
+        public async Task<IActionResult> Friend(string search)
+        {
+            if (search == null)
+            {
+                var currentUser = await _userManager.GetUserAsync(User);
+                var account = await _accountRepository.GetByIdAsync(currentUser.Id);
+                ViewBag.GetAllNofOfUser = new Func<string, IEnumerable<Nofitication>>(GetAllNofOfUser);
+                ViewBag.IsRequested = new Func<string, string, bool>(IsRequested);
+                ViewBag.GetUserName = new Func<string, string>(GetUserName);
+                ViewBag.IsFriend = new Func<string, string, bool>(IsFriend);
+                ViewBag.currentUser = account;
+                var friends = await _accountRepository.GetAllAsync();
+                var filterd = friends.Where(p => p.Id != currentUser.Id).ToList();
+                return View(filterd);
+            }
+            else
+            {
+                var currentUser = await _userManager.GetUserAsync(User);
+                var account = await _accountRepository.GetByIdAsync(currentUser.Id);
+                ViewBag.GetAllNofOfUser = new Func<string, IEnumerable<Nofitication>>(GetAllNofOfUser);
+                ViewBag.IsRequested = new Func<string, string, bool>(IsRequested);
+                ViewBag.GetUserName = new Func<string, string>(GetUserName);
+                ViewBag.currentUser = account;
+                ViewBag.Search = search;
+                ViewBag.IsFriend = new Func<string, string, bool>(IsFriend);
+                var friends = await _accountRepository.GetAllAsync();
+                var filterd = friends.Where(p => p.UserName.ToLower().Contains(search.ToLower()) && p.Id != currentUser.Id);
+                return View(filterd);
+            }
         }
         public async Task<string> GetUserNameByIdAsync(string id)
         {

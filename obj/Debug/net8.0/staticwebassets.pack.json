@@ -1,1404 +1,1744 @@
 {
   "Files": [
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Doan_Web_CK.bundle.scp.css",
-      "PackagePath": "staticwebassets\\Doan_Web_CK.bundle.scp.css"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Doan_Co_So.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Doan_Co_So.bundle.scp.css"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\css\\light.css",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\css\\light.css",
       "PackagePath": "staticwebassets\\css\\light.css"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\css\\site.css",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\favicon.ico",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\10-VHTT-1009463.jpg",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\10-VHTT-1009463.jpg",
       "PackagePath": "staticwebassets\\images\\10-VHTT-1009463.jpg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\2024-cdc-issued-alert-u-791532-5624-8782-1711775510.png",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\2024-cdc-issued-alert-u-791532-5624-8782-1711775510.png",
       "PackagePath": "staticwebassets\\images\\2024-cdc-issued-alert-u-791532-5624-8782-1711775510.png"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\20240326-21-1375991-l-jpeg-171-3190-7304-1711771395.jpg",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\20240326-21-1375991-l-jpeg-171-3190-7304-1711771395.jpg",
       "PackagePath": "staticwebassets\\images\\20240326-21-1375991-l-jpeg-171-3190-7304-1711771395.jpg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\DSC03816-JPG-5625-1713240384.jpg",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\242808526_576030456926290_4222095203703955447_n.jpg",
+      "PackagePath": "staticwebassets\\images\\242808526_576030456926290_4222095203703955447_n.jpg"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\BNDU3751 (2).JPEG",
+      "PackagePath": "staticwebassets\\images\\BNDU3751 (2).JPEG"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\BNDU3751.JPEG",
+      "PackagePath": "staticwebassets\\images\\BNDU3751.JPEG"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\CDA5B9B1-B54C-4C62-92AB-993EB2102375.png",
+      "PackagePath": "staticwebassets\\images\\CDA5B9B1-B54C-4C62-92AB-993EB2102375.png"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\DSC03816-JPG-5625-1713240384.jpg",
       "PackagePath": "staticwebassets\\images\\DSC03816-JPG-5625-1713240384.jpg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\DSCF0894-5532-1712845905.jpg",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\DSCF0894-5532-1712845905.jpg",
       "PackagePath": "staticwebassets\\images\\DSCF0894-5532-1712845905.jpg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\E4NXNZtVkAUQTP1.jpg",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\E4NXNZtVkAUQTP1.jpg",
       "PackagePath": "staticwebassets\\images\\E4NXNZtVkAUQTP1.jpg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\IMG_20240223_181241.jpg",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\IMG_20240223_181241.jpg",
       "PackagePath": "staticwebassets\\images\\IMG_20240223_181241.jpg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\MSI-Bravo-15-Ryzen-5-5600H-RX-5500M-02.jpg",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\MSI-Bravo-15-Ryzen-5-5600H-RX-5500M-02.jpg",
       "PackagePath": "staticwebassets\\images\\MSI-Bravo-15-Ryzen-5-5600H-RX-5500M-02.jpg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\ND-02-VISITA-ENDRICK-PRESIDENT-6864-8406-1711703356.jpg",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\ND-02-VISITA-ENDRICK-PRESIDENT-6864-8406-1711703356.jpg",
       "PackagePath": "staticwebassets\\images\\ND-02-VISITA-ENDRICK-PRESIDENT-6864-8406-1711703356.jpg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\Nhóm 7 - 21DTHD2 - Web_Blog_Chat_Call_Tuần 2.jpg",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\Nhóm 7 - 21DTHD2 - Web_Blog_Chat_Call_Tuần 2.jpg",
       "PackagePath": "staticwebassets\\images\\Nhóm 7 - 21DTHD2 - Web_Blog_Chat_Call_Tuần 2.jpg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\PhieuDangKyDeTai_2.jpg",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\PhieuDangKyDeTai_2.jpg",
       "PackagePath": "staticwebassets\\images\\PhieuDangKyDeTai_2.jpg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\Screen-Shot-2020-04-15-at-15-1-3148-5252-1710404281.png",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\Screen-Shot-2020-04-15-at-15-1-3148-5252-1710404281.png",
       "PackagePath": "staticwebassets\\images\\Screen-Shot-2020-04-15-at-15-1-3148-5252-1710404281.png"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\Screenshot-2024-03-21-at-22-07-8483-2995-1711033946.png",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\Screenshot-2024-03-21-at-22-07-8483-2995-1711033946.png",
       "PackagePath": "staticwebassets\\images\\Screenshot-2024-03-21-at-22-07-8483-2995-1711033946.png"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\TikTok-2242-1712647094.jpg",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\TikTok-2242-1712647094.jpg",
       "PackagePath": "staticwebassets\\images\\TikTok-2242-1712647094.jpg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\Wb8pUe4iWjBf2Gx8ky5rLA-1200-80-1846-2148-1711726599.jpg",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\Wb8pUe4iWjBf2Gx8ky5rLA-1200-80-1846-2148-1711726599.jpg",
       "PackagePath": "staticwebassets\\images\\Wb8pUe4iWjBf2Gx8ky5rLA-1200-80-1846-2148-1711726599.jpg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\a1-2752-1712909280.jpg",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\a1-2752-1712909280.jpg",
       "PackagePath": "staticwebassets\\images\\a1-2752-1712909280.jpg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\ai-baidu-6486-1678986788-9225-1713277277.jpg",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\ai-baidu-6486-1678986788-9225-1713277277.jpg",
       "PackagePath": "staticwebassets\\images\\ai-baidu-6486-1678986788-9225-1713277277.jpg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\ai-coding-1710410299-6906-1710410348.jpg",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\ai-coding-1710410299-6906-1710410348.jpg",
       "PackagePath": "staticwebassets\\images\\ai-coding-1710410299-6906-1710410348.jpg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\cau-chuyen-y-nghia-1.jpg",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\cau-chuyen-y-nghia-1.jpg",
       "PackagePath": "staticwebassets\\images\\cau-chuyen-y-nghia-1.jpg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\cdn-vox-cdn-7896-1710813178.png",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\cdn-vox-cdn-7896-1710813178.png",
       "PackagePath": "staticwebassets\\images\\cdn-vox-cdn-7896-1710813178.png"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\huang-8025-1711281340.jpg",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\huang-8025-1711281340.jpg",
       "PackagePath": "staticwebassets\\images\\huang-8025-1711281340.jpg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\iphone-4534-1712890018.jpg",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\iphone-4534-1712890018.jpg",
       "PackagePath": "staticwebassets\\images\\iphone-4534-1712890018.jpg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\jim-5002-1711350034.jpg",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\jim-5002-1711350034.jpg",
       "PackagePath": "staticwebassets\\images\\jim-5002-1711350034.jpg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\logo.png",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\logo.png",
       "PackagePath": "staticwebassets\\images\\logo.png"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\logo_2.png",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\logo_2.png",
       "PackagePath": "staticwebassets\\images\\logo_2.png"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\logo_noneBG.png",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\logo_noneBG.png",
       "PackagePath": "staticwebassets\\images\\logo_noneBG.png"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\m1-vs-m2-air-feature-toned-dow-5823-4792-1711124712.jpg",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\m1-vs-m2-air-feature-toned-dow-5823-4792-1711124712.jpg",
       "PackagePath": "staticwebassets\\images\\m1-vs-m2-air-feature-toned-dow-5823-4792-1711124712.jpg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\nu-dieu-duong-ep-tim-cuu-du-khach-nga-guc-o-da-nang-1711517649.jpg",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\nu-dieu-duong-ep-tim-cuu-du-khach-nga-guc-o-da-nang-1711517649.jpg",
       "PackagePath": "staticwebassets\\images\\nu-dieu-duong-ep-tim-cuu-du-khach-nga-guc-o-da-nang-1711517649.jpg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\openai-website-7159-1711777550.png",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\openai-website-7159-1711777550.png",
       "PackagePath": "staticwebassets\\images\\openai-website-7159-1711777550.png"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\terminator-style-robot-7003-1710840287.png",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\phuongvu-5541-1713180088.jpg",
+      "PackagePath": "staticwebassets\\images\\phuongvu-5541-1713180088.jpg"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\terminator-style-robot-7003-1710840287.png",
       "PackagePath": "staticwebassets\\images\\terminator-style-robot-7003-1710840287.png"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\tiktok-10-9960-1646278205-3630-1710600720.png",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\tiktok-10-9960-1646278205-3630-1710600720.png",
       "PackagePath": "staticwebassets\\images\\tiktok-10-9960-1646278205-3630-1710600720.png"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\top1-8768-1710951272.jpg",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\top1-8768-1710951272.jpg",
       "PackagePath": "staticwebassets\\images\\top1-8768-1710951272.jpg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\troussier-viet-nam-jpeg-171160-7699-6182-1711603194.jpg",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\troussier-viet-nam-jpeg-171160-7699-6182-1711603194.jpg",
       "PackagePath": "staticwebassets\\images\\troussier-viet-nam-jpeg-171160-7699-6182-1711603194.jpg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\user_profile.png",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\user_profile.png",
       "PackagePath": "staticwebassets\\images\\user_profile.png"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\viet-nam-indonesia-vong-loai-h-5869-6385-1711788575.jpg",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\viet-nam-indonesia-vong-loai-h-5869-6385-1711788575.jpg",
       "PackagePath": "staticwebassets\\images\\viet-nam-indonesia-vong-loai-h-5869-6385-1711788575.jpg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\windows-11-stock-orange-abstract-dark-background-3840x2400-8960.png",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\windows-11-stock-orange-abstract-dark-background-3840x2400-8960.png",
       "PackagePath": "staticwebassets\\images\\windows-11-stock-orange-abstract-dark-background-3840x2400-8960.png"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\z3394636124217_acf172236cf388992dd2d2d53a4110e3.jpg",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\z3394636124217_acf172236cf388992dd2d2d53a4110e3.jpg",
       "PackagePath": "staticwebassets\\images\\z3394636124217_acf172236cf388992dd2d2d53a4110e3.jpg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\z5111718551586_c6cdb6f81d00f3a0136609fdc4021eaf.jpg",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\z5111718551586_c6cdb6f81d00f3a0136609fdc4021eaf.jpg",
       "PackagePath": "staticwebassets\\images\\z5111718551586_c6cdb6f81d00f3a0136609fdc4021eaf.jpg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\z5178780316377-54425f52b2bc47f-9277-1115-1710612305.jpg",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\z5178780316377-54425f52b2bc47f-9277-1115-1710612305.jpg",
       "PackagePath": "staticwebassets\\images\\z5178780316377-54425f52b2bc47f-9277-1115-1710612305.jpg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\z5280418533623-cc40cbdf0af8195-7614-8673-1711285089.jpg",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\z5280418533623-cc40cbdf0af8195-7614-8673-1711285089.jpg",
       "PackagePath": "staticwebassets\\images\\z5280418533623-cc40cbdf0af8195-7614-8673-1711285089.jpg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\z5282321523365-ecbe0f3620d4955-3599-2882-1711342559.jpg",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\z5282321523365-ecbe0f3620d4955-3599-2882-1711342559.jpg",
       "PackagePath": "staticwebassets\\images\\z5282321523365-ecbe0f3620d4955-3599-2882-1711342559.jpg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\images\\z5310242644787_0927019ed7e5d8a29c52b1e592d13674.jpg",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\z5310242644787_0927019ed7e5d8a29c52b1e592d13674.jpg",
       "PackagePath": "staticwebassets\\images\\z5310242644787_0927019ed7e5d8a29c52b1e592d13674.jpg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\call.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\call.js",
       "PackagePath": "staticwebassets\\js\\call.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\chat.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\chat.js",
       "PackagePath": "staticwebassets\\js\\chat.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\chat.min.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\chat.min.js",
       "PackagePath": "staticwebassets\\js\\chat.min.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\peerjs\\LICENSE",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\peerjs\\LICENSE",
       "PackagePath": "staticwebassets\\js\\peerjs"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\peerjs\\README.md",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\peerjs\\README.md",
       "PackagePath": "staticwebassets\\js\\peerjs\\README.md"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\peerjs\\dist\\bundler.cjs",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\peerjs\\dist\\bundler.cjs",
       "PackagePath": "staticwebassets\\js\\peerjs\\dist\\bundler.cjs"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\peerjs\\dist\\bundler.cjs.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\peerjs\\dist\\bundler.cjs.map",
       "PackagePath": "staticwebassets\\js\\peerjs\\dist\\bundler.cjs.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\peerjs\\dist\\bundler.mjs",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\peerjs\\dist\\bundler.mjs",
       "PackagePath": "staticwebassets\\js\\peerjs\\dist\\bundler.mjs"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\peerjs\\dist\\bundler.mjs.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\peerjs\\dist\\bundler.mjs.map",
       "PackagePath": "staticwebassets\\js\\peerjs\\dist\\bundler.mjs.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\peerjs\\dist\\peerjs.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\peerjs\\dist\\peerjs.js",
       "PackagePath": "staticwebassets\\js\\peerjs\\dist\\peerjs.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\peerjs\\dist\\peerjs.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\peerjs\\dist\\peerjs.js.map",
       "PackagePath": "staticwebassets\\js\\peerjs\\dist\\peerjs.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\peerjs\\dist\\peerjs.min.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\peerjs\\dist\\peerjs.min.js",
       "PackagePath": "staticwebassets\\js\\peerjs\\dist\\peerjs.min.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\peerjs\\dist\\peerjs.min.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\peerjs\\dist\\peerjs.min.js.map",
       "PackagePath": "staticwebassets\\js\\peerjs\\dist\\peerjs.min.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\peerjs\\dist\\serializer.cbor.mjs",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\peerjs\\dist\\serializer.cbor.mjs",
       "PackagePath": "staticwebassets\\js\\peerjs\\dist\\serializer.cbor.mjs"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\peerjs\\dist\\serializer.cbor.mjs.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\peerjs\\dist\\serializer.cbor.mjs.map",
       "PackagePath": "staticwebassets\\js\\peerjs\\dist\\serializer.cbor.mjs.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\peerjs\\dist\\serializer.msgpack.mjs",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\peerjs\\dist\\serializer.msgpack.mjs",
       "PackagePath": "staticwebassets\\js\\peerjs\\dist\\serializer.msgpack.mjs"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\peerjs\\dist\\serializer.msgpack.mjs.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\peerjs\\dist\\serializer.msgpack.mjs.map",
       "PackagePath": "staticwebassets\\js\\peerjs\\dist\\serializer.msgpack.mjs.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\peerjs\\dist\\types.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\peerjs\\dist\\types.d.ts",
       "PackagePath": "staticwebassets\\js\\peerjs\\dist\\types.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\peerjs\\dist\\types.d.ts.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\peerjs\\dist\\types.d.ts.map",
       "PackagePath": "staticwebassets\\js\\peerjs\\dist\\types.d.ts.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\peerjs\\package.json",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\peerjs\\package.json",
       "PackagePath": "staticwebassets\\js\\peerjs\\package.json"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\README.md",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\README.md",
       "PackagePath": "staticwebassets\\js\\signalr\\README.md"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\browser\\signalr.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\browser\\signalr.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\browser\\signalr.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\browser\\signalr.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\browser\\signalr.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\browser\\signalr.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\browser\\signalr.min.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\browser\\signalr.min.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\browser\\signalr.min.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\browser\\signalr.min.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\browser\\signalr.min.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\browser\\signalr.min.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\AbortController.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\AbortController.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\AbortController.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\AbortController.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\AbortController.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\AbortController.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\AccessTokenHttpClient.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\AccessTokenHttpClient.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\AccessTokenHttpClient.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\AccessTokenHttpClient.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\AccessTokenHttpClient.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\AccessTokenHttpClient.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\DefaultHttpClient.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\DefaultHttpClient.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\DefaultHttpClient.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\DefaultHttpClient.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\DefaultHttpClient.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\DefaultHttpClient.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\DefaultReconnectPolicy.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\DefaultReconnectPolicy.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\DefaultReconnectPolicy.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\DefaultReconnectPolicy.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\DefaultReconnectPolicy.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\DefaultReconnectPolicy.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\DynamicImports.browser.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\DynamicImports.browser.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\DynamicImports.browser.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\DynamicImports.browser.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\DynamicImports.browser.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\DynamicImports.browser.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\DynamicImports.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\DynamicImports.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\DynamicImports.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\DynamicImports.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\DynamicImports.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\DynamicImports.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\Errors.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\Errors.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\Errors.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\Errors.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\Errors.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\Errors.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\FetchHttpClient.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\FetchHttpClient.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\FetchHttpClient.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\FetchHttpClient.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\FetchHttpClient.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\FetchHttpClient.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\HandshakeProtocol.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\HandshakeProtocol.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\HandshakeProtocol.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\HandshakeProtocol.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\HandshakeProtocol.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\HandshakeProtocol.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\HeaderNames.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\HeaderNames.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\HeaderNames.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\HeaderNames.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\HeaderNames.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\HeaderNames.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\HttpClient.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\HttpClient.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\HttpClient.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\HttpClient.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\HttpClient.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\HttpClient.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\HttpConnection.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\HttpConnection.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\HttpConnection.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\HttpConnection.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\HttpConnection.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\HttpConnection.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\HubConnection.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\HubConnection.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\HubConnection.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\HubConnection.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\HubConnection.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\HubConnection.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\HubConnectionBuilder.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\HubConnectionBuilder.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\HubConnectionBuilder.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\HubConnectionBuilder.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\HubConnectionBuilder.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\HubConnectionBuilder.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\IConnection.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\IConnection.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\IConnection.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\IConnection.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\IConnection.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\IConnection.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\IHttpConnectionOptions.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\IHttpConnectionOptions.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\IHttpConnectionOptions.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\IHttpConnectionOptions.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\IHttpConnectionOptions.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\IHttpConnectionOptions.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\IHubProtocol.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\IHubProtocol.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\IHubProtocol.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\IHubProtocol.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\IHubProtocol.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\IHubProtocol.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\ILogger.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\ILogger.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\ILogger.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\ILogger.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\ILogger.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\ILogger.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\IRetryPolicy.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\IRetryPolicy.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\IRetryPolicy.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\IRetryPolicy.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\IRetryPolicy.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\IRetryPolicy.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\IStatefulReconnectOptions.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\IStatefulReconnectOptions.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\IStatefulReconnectOptions.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\IStatefulReconnectOptions.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\IStatefulReconnectOptions.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\IStatefulReconnectOptions.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\ITransport.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\ITransport.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\ITransport.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\ITransport.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\ITransport.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\ITransport.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\JsonHubProtocol.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\JsonHubProtocol.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\JsonHubProtocol.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\JsonHubProtocol.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\JsonHubProtocol.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\JsonHubProtocol.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\Loggers.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\Loggers.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\Loggers.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\Loggers.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\Loggers.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\Loggers.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\LongPollingTransport.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\LongPollingTransport.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\LongPollingTransport.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\LongPollingTransport.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\LongPollingTransport.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\LongPollingTransport.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\MessageBuffer.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\MessageBuffer.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\MessageBuffer.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\MessageBuffer.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\MessageBuffer.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\MessageBuffer.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\Polyfills.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\Polyfills.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\Polyfills.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\Polyfills.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\Polyfills.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\Polyfills.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\ServerSentEventsTransport.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\ServerSentEventsTransport.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\ServerSentEventsTransport.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\ServerSentEventsTransport.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\ServerSentEventsTransport.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\ServerSentEventsTransport.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\Stream.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\Stream.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\Stream.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\Stream.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\Stream.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\Stream.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\Subject.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\Subject.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\Subject.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\Subject.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\Subject.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\Subject.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\TextMessageFormat.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\TextMessageFormat.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\TextMessageFormat.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\TextMessageFormat.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\TextMessageFormat.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\TextMessageFormat.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\Utils.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\Utils.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\Utils.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\Utils.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\Utils.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\Utils.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\WebSocketTransport.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\WebSocketTransport.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\WebSocketTransport.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\WebSocketTransport.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\WebSocketTransport.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\WebSocketTransport.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\XhrHttpClient.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\XhrHttpClient.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\XhrHttpClient.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\XhrHttpClient.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\XhrHttpClient.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\XhrHttpClient.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\browser-index.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\browser-index.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\browser-index.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\browser-index.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\browser-index.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\browser-index.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\index.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\index.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\index.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\cjs\\index.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\cjs\\index.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\cjs\\index.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\AbortController.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\AbortController.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\AbortController.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\AbortController.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\AbortController.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\AbortController.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\AbortController.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\AbortController.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\AbortController.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\AccessTokenHttpClient.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\AccessTokenHttpClient.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\AccessTokenHttpClient.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\AccessTokenHttpClient.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\AccessTokenHttpClient.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\AccessTokenHttpClient.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\AccessTokenHttpClient.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\AccessTokenHttpClient.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\AccessTokenHttpClient.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\DefaultHttpClient.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\DefaultHttpClient.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\DefaultHttpClient.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\DefaultHttpClient.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\DefaultHttpClient.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\DefaultHttpClient.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\DefaultHttpClient.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\DefaultHttpClient.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\DefaultHttpClient.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\DefaultReconnectPolicy.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\DefaultReconnectPolicy.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\DefaultReconnectPolicy.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\DefaultReconnectPolicy.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\DefaultReconnectPolicy.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\DefaultReconnectPolicy.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\DefaultReconnectPolicy.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\DefaultReconnectPolicy.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\DefaultReconnectPolicy.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\DynamicImports.browser.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\DynamicImports.browser.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\DynamicImports.browser.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\DynamicImports.browser.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\DynamicImports.browser.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\DynamicImports.browser.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\DynamicImports.browser.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\DynamicImports.browser.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\DynamicImports.browser.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\DynamicImports.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\DynamicImports.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\DynamicImports.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\DynamicImports.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\DynamicImports.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\DynamicImports.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\DynamicImports.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\DynamicImports.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\DynamicImports.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\Errors.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\Errors.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\Errors.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\Errors.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\Errors.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\Errors.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\Errors.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\Errors.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\Errors.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\FetchHttpClient.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\FetchHttpClient.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\FetchHttpClient.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\FetchHttpClient.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\FetchHttpClient.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\FetchHttpClient.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\FetchHttpClient.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\FetchHttpClient.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\FetchHttpClient.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\HandshakeProtocol.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\HandshakeProtocol.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\HandshakeProtocol.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\HandshakeProtocol.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\HandshakeProtocol.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\HandshakeProtocol.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\HandshakeProtocol.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\HandshakeProtocol.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\HandshakeProtocol.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\HeaderNames.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\HeaderNames.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\HeaderNames.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\HeaderNames.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\HeaderNames.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\HeaderNames.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\HeaderNames.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\HeaderNames.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\HeaderNames.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\HttpClient.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\HttpClient.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\HttpClient.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\HttpClient.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\HttpClient.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\HttpClient.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\HttpClient.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\HttpClient.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\HttpClient.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\HttpConnection.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\HttpConnection.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\HttpConnection.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\HttpConnection.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\HttpConnection.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\HttpConnection.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\HttpConnection.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\HttpConnection.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\HttpConnection.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\HubConnection.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\HubConnection.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\HubConnection.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\HubConnection.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\HubConnection.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\HubConnection.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\HubConnection.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\HubConnection.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\HubConnection.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\HubConnectionBuilder.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\HubConnectionBuilder.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\HubConnectionBuilder.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\HubConnectionBuilder.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\HubConnectionBuilder.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\HubConnectionBuilder.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\HubConnectionBuilder.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\HubConnectionBuilder.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\HubConnectionBuilder.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\IConnection.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\IConnection.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\IConnection.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\IConnection.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\IConnection.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\IConnection.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\IConnection.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\IConnection.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\IConnection.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\IHttpConnectionOptions.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\IHttpConnectionOptions.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\IHttpConnectionOptions.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\IHttpConnectionOptions.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\IHttpConnectionOptions.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\IHttpConnectionOptions.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\IHttpConnectionOptions.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\IHttpConnectionOptions.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\IHttpConnectionOptions.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\IHubProtocol.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\IHubProtocol.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\IHubProtocol.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\IHubProtocol.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\IHubProtocol.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\IHubProtocol.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\IHubProtocol.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\IHubProtocol.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\IHubProtocol.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\ILogger.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\ILogger.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\ILogger.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\ILogger.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\ILogger.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\ILogger.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\ILogger.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\ILogger.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\ILogger.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\IRetryPolicy.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\IRetryPolicy.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\IRetryPolicy.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\IRetryPolicy.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\IRetryPolicy.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\IRetryPolicy.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\IRetryPolicy.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\IRetryPolicy.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\IRetryPolicy.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\IStatefulReconnectOptions.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\IStatefulReconnectOptions.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\IStatefulReconnectOptions.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\IStatefulReconnectOptions.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\IStatefulReconnectOptions.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\IStatefulReconnectOptions.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\IStatefulReconnectOptions.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\IStatefulReconnectOptions.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\IStatefulReconnectOptions.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\ITransport.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\ITransport.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\ITransport.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\ITransport.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\ITransport.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\ITransport.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\ITransport.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\ITransport.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\ITransport.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\JsonHubProtocol.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\JsonHubProtocol.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\JsonHubProtocol.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\JsonHubProtocol.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\JsonHubProtocol.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\JsonHubProtocol.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\JsonHubProtocol.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\JsonHubProtocol.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\JsonHubProtocol.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\Loggers.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\Loggers.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\Loggers.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\Loggers.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\Loggers.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\Loggers.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\Loggers.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\Loggers.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\Loggers.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\LongPollingTransport.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\LongPollingTransport.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\LongPollingTransport.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\LongPollingTransport.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\LongPollingTransport.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\LongPollingTransport.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\LongPollingTransport.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\LongPollingTransport.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\LongPollingTransport.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\MessageBuffer.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\MessageBuffer.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\MessageBuffer.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\MessageBuffer.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\MessageBuffer.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\MessageBuffer.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\MessageBuffer.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\MessageBuffer.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\MessageBuffer.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\Polyfills.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\Polyfills.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\Polyfills.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\Polyfills.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\Polyfills.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\Polyfills.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\Polyfills.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\Polyfills.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\Polyfills.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\ServerSentEventsTransport.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\ServerSentEventsTransport.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\ServerSentEventsTransport.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\ServerSentEventsTransport.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\ServerSentEventsTransport.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\ServerSentEventsTransport.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\ServerSentEventsTransport.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\ServerSentEventsTransport.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\ServerSentEventsTransport.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\Stream.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\Stream.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\Stream.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\Stream.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\Stream.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\Stream.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\Stream.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\Stream.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\Stream.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\Subject.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\Subject.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\Subject.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\Subject.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\Subject.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\Subject.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\Subject.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\Subject.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\Subject.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\TextMessageFormat.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\TextMessageFormat.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\TextMessageFormat.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\TextMessageFormat.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\TextMessageFormat.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\TextMessageFormat.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\TextMessageFormat.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\TextMessageFormat.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\TextMessageFormat.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\Utils.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\Utils.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\Utils.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\Utils.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\Utils.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\Utils.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\Utils.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\Utils.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\Utils.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\WebSocketTransport.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\WebSocketTransport.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\WebSocketTransport.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\WebSocketTransport.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\WebSocketTransport.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\WebSocketTransport.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\WebSocketTransport.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\WebSocketTransport.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\WebSocketTransport.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\XhrHttpClient.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\XhrHttpClient.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\XhrHttpClient.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\XhrHttpClient.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\XhrHttpClient.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\XhrHttpClient.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\XhrHttpClient.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\XhrHttpClient.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\XhrHttpClient.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\browser-index.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\browser-index.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\browser-index.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\browser-index.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\browser-index.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\browser-index.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\browser-index.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\browser-index.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\browser-index.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\index.d.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\index.d.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\index.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\index.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\index.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\index.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\esm\\index.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\esm\\index.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\esm\\index.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\webworker\\signalr.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\webworker\\signalr.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\webworker\\signalr.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\webworker\\signalr.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\webworker\\signalr.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\webworker\\signalr.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\webworker\\signalr.min.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\webworker\\signalr.min.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\webworker\\signalr.min.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\dist\\webworker\\signalr.min.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\dist\\webworker\\signalr.min.js.map",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\webworker\\signalr.min.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\package.json",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\package.json",
       "PackagePath": "staticwebassets\\js\\signalr\\package.json"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\AbortController.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\AbortController.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\AbortController.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\AccessTokenHttpClient.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\AccessTokenHttpClient.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\AccessTokenHttpClient.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\DefaultHttpClient.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\DefaultHttpClient.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\DefaultHttpClient.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\DefaultReconnectPolicy.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\DefaultReconnectPolicy.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\DefaultReconnectPolicy.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\DynamicImports.browser.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\DynamicImports.browser.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\DynamicImports.browser.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\DynamicImports.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\DynamicImports.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\DynamicImports.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\Errors.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\Errors.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\Errors.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\FetchHttpClient.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\FetchHttpClient.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\FetchHttpClient.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\HandshakeProtocol.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\HandshakeProtocol.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\HandshakeProtocol.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\HeaderNames.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\HeaderNames.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\HeaderNames.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\HttpClient.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\HttpClient.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\HttpClient.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\HttpConnection.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\HttpConnection.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\HttpConnection.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\HubConnection.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\HubConnection.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\HubConnection.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\HubConnectionBuilder.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\HubConnectionBuilder.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\HubConnectionBuilder.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\IConnection.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\IConnection.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\IConnection.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\IHttpConnectionOptions.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\IHttpConnectionOptions.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\IHttpConnectionOptions.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\IHubProtocol.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\IHubProtocol.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\IHubProtocol.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\ILogger.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\ILogger.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\ILogger.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\IRetryPolicy.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\IRetryPolicy.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\IRetryPolicy.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\IStatefulReconnectOptions.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\IStatefulReconnectOptions.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\IStatefulReconnectOptions.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\ITransport.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\ITransport.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\ITransport.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\JsonHubProtocol.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\JsonHubProtocol.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\JsonHubProtocol.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\Loggers.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\Loggers.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\Loggers.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\LongPollingTransport.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\LongPollingTransport.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\LongPollingTransport.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\MessageBuffer.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\MessageBuffer.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\MessageBuffer.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\Polyfills.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\Polyfills.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\Polyfills.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\ServerSentEventsTransport.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\ServerSentEventsTransport.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\ServerSentEventsTransport.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\Stream.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\Stream.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\Stream.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\Subject.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\Subject.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\Subject.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\TextMessageFormat.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\TextMessageFormat.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\TextMessageFormat.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\Utils.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\Utils.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\Utils.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\WebSocketTransport.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\WebSocketTransport.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\WebSocketTransport.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\XhrHttpClient.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\XhrHttpClient.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\XhrHttpClient.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\browser-index.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\browser-index.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\browser-index.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\index.ts",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\index.ts",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\index.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\signalr\\src\\third-party-notices.txt",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\signalr\\src\\third-party-notices.txt",
       "PackagePath": "staticwebassets\\js\\signalr\\src\\third-party-notices.txt"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\site.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\js\\site.min.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\site.min.js",
       "PackagePath": "staticwebassets\\js\\site.min.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\README.md",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\README.md"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor.d.ts",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor.d.ts"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor.js.map",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor.js.map"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\index.html",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\index.html"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\sample\\css\\sample.css",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\sample\\css\\sample.css"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\sample\\img\\bg.png",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\sample\\img\\bg.png"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\sample\\img\\github.svg",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\sample\\img\\github.svg"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\sample\\img\\logo.svg",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\sample\\img\\logo.svg"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\sample\\img\\umbrellas.jpg",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\sample\\img\\umbrellas.jpg"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\af.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\af.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\ar.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\ar.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\ast.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\ast.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\az.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\az.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\bg.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\bg.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\bn.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\bn.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\bs.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\bs.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\ca.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\ca.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\cs.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\cs.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\da.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\da.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\de-ch.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\de-ch.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\de.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\de.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\el.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\el.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\en-au.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\en-au.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\en-gb.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\en-gb.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\eo.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\eo.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\es-co.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\es-co.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\es.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\es.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\et.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\et.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\eu.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\eu.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\fa.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\fa.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\fi.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\fi.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\fr.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\fr.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\gl.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\gl.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\gu.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\gu.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\he.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\he.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\hi.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\hi.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\hr.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\hr.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\hu.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\hu.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\hy.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\hy.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\id.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\id.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\it.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\it.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\ja.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\ja.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\jv.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\jv.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\km.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\km.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\kn.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\kn.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\ko.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\ko.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\ku.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\ku.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\lt.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\lt.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\lv.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\lv.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\ms.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\ms.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\nb.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\nb.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\ne.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\ne.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\nl.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\nl.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\no.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\no.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\oc.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\oc.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\pl.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\pl.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\pt-br.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\pt-br.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\pt.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\pt.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\ro.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\ro.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\ru.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\ru.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\si.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\si.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\sk.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\sk.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\sl.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\sl.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\sq.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\sq.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\sr-latn.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\sr-latn.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\sr.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\sr.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\sv.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\sv.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\th.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\th.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\tk.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\tk.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\tr.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\tr.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\tt.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\tt.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\ug.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\ug.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\uk.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\uk.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\ur.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\ur.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\uz.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\uz.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\vi.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\vi.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\zh-cn.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\zh-cn.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\translations\\zh.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\translations\\zh.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Web_CK\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Doan_Web_CK.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Doan_Co_So.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Doan_Web_CK.props",
-      "PackagePath": "build\\Doan_Web_CK.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Doan_Co_So.props",
+      "PackagePath": "build\\Doan_Co_So.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Doan_Web_CK.props",
-      "PackagePath": "buildMultiTargeting\\Doan_Web_CK.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Doan_Co_So.props",
+      "PackagePath": "buildMultiTargeting\\Doan_Co_So.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Doan_Web_CK.props",
-      "PackagePath": "buildTransitive\\Doan_Web_CK.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Doan_Co_So.props",
+      "PackagePath": "buildTransitive\\Doan_Co_So.props"
     }
   ],
   "ElementsToRemove": []

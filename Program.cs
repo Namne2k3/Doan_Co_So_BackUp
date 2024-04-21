@@ -32,6 +32,7 @@ builder.Services.AddScoped<ILikeRepository, EFLikeRepository>();
 builder.Services.AddScoped<IFriendShipRepository, EFFriendShipRepository>();
 builder.Services.AddScoped<IMessageRepository, EFMessageRepository>();
 builder.Services.AddScoped<IChatRoomRepository, EFChatRoomRepository>();
+builder.Services.AddScoped<IImageService, ImageService>();
 builder.Services.AddTransient<ISenderEmail, EmailSender>();
 
 builder.Services.AddLogging(builder => builder.AddConsole());

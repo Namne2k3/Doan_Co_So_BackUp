@@ -15,13 +15,13 @@
     </div>
     <div class="video_actions">
         <div class="video_action_item">
-            <a class="btn btn-outline-light">
-                <i class="bi bi-mic-fill"></i>
+            <a onclick="handleChangeIconVideoActions('mic')" class="btn btn-outline-light">
+                <i id="mic_icon_temp" class="bi bi-mic-fill"></i>
             </a>
         </div>
         <div class="video_action_item">
-            <a class="btn btn-outline-light">
-                <i class="bi bi-camera-video-fill"></i>
+            <a onclick="handleChangeIconVideoActions('video')" class="btn btn-outline-light">
+                <i id="video_icon_temp" class="bi bi-camera-video-fill"></i>
             </a>
         </div>
         @* <div class="video_action_item">
@@ -103,6 +103,7 @@
                 }
             </div>
             <input id="userInput" value="@currentUser.Id" hidden />
+            <input hidden id="chatRoom_Id" value="@currentChatroom.Id" />
             @if (currentUser?.Id == currentChatroom?.UserId)
             {
                 <input id="receiverId" value="@currentChatroom?.FriendId" hidden />

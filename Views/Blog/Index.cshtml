@@ -51,16 +51,17 @@
         }
         @* Modal *@
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div style="max-width: 600px;" class="modal-dialog">
+            <div style="max-width: 850px;" class="modal-dialog">
                 <div style="background-color: #212529;" class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Create new Blog</h5>
                         <a type="button" style="background-color: transparent;" data-bs-dismiss="modal" aria-label="Close">
-                            <i class="bi bi-x-lg text-white fs-5"></i>
+                            <i class="bi bi-x-lg fs-5"></i>
                         </a>
                     </div>
                     <div class="modal-body">
-                        <form class="d-flex flex-column gap-3" asp-action="Add" method="post" enctype="multipart/form-data">
+                        <form class="d-flex flex-column gap-3" onsubmit="handleAddBlog(event)" method="post" enctype="multipart/form-data">
+                        @* <form class="d-flex flex-column gap-3" asp-action="Add" method="post" enctype="multipart/form-data"> *@
                             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                             <div class="input-group">
                                 <span class="input-group-text" id="title-addon">Title</span>
@@ -72,9 +73,9 @@
                                 <input style="height: 70px" type="text" placeholder="Description" aria-label="Description" aria-describedby="description-addon" asp-for="Description" class="form-control" />
                                 <span asp-validation-for="Description" class="text-danger"></span>
                             </div>
-                            <div class="input-group">
-                                <span class="input-group-text" id="Content-addon">Content</span>
-                                <textarea style="height: 200px" aria-label="Content" aria-describedby="Content-addon" asp-for="Content" class="form-control"></textarea>
+                            <div class="">
+                                @* <span class="input-group-text" id="Content-addon">Content</span> *@
+                                <textarea id="editor" asp-for="Content"></textarea>
                                 <span asp-validation-for="Content" class="text-danger"></span>
                             </div>
                             <div class="input-group">
@@ -94,13 +95,12 @@
             </div>
         </div>
 
-
         <div class="blog_container">
             @if (blogList.Count != 0 )
             {
                 @foreach (var item in blogList)
                 {
-                    <div id="update_success_blod_@item.Id" class="p-4 text-white text-success bg-success rounded-3 hidden_blog">
+                    <div id="update_success_blog_@item.Id" class="p-4 text-white text-success bg-success rounded-3 hidden_blog">
                         Delete Success
                     </div>
 
@@ -108,7 +108,7 @@
                         Delete Failed
                     </div>
 
-                    <div class="blog_card">
+                    <div class="blog_card" id="blog_card_@item.Id">
                         <div class="blog_userInfo">
                             <div class="blog_img_date">
                                 <div class="d-flex align-items-end">
@@ -219,7 +219,9 @@
                                         @if ( ViewBag.IsCurrentUserLiked(item.Id, currentUser?.Id) == true )
                                         {
                                             <a onclick="handleUnLike(@item.Id)" id="action_like_@item.Id" href="#" class="actions_item">
-                                                <p>Like</p>
+                                                <p class="position-relative">
+                                                    Like
+                                                </p>
                                                 <i style="color: #c66b6b;" id="like_icon_@item.Id" class="bi bi-heart-fill"></i>
                                             </a>
                                             <p class="badge bg-secondary text-center">@ViewBag.GetBlogLikesCount(item.Id)</p>
@@ -335,13 +337,6 @@
                                             </div>
                                         </div>
                                     } 
-                                </div>
-                                <div id="update_success" class="p-4 text-white text-success bg-success rounded-3">
-                                    Delete Success
-                                </div>
-
-                                <div id="update_fail" class="p-4 text-white text-danger bg-danger rounded-3">
-                                    Delete Failed
                                 </div>
                             }
                         </div>
