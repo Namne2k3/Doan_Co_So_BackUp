@@ -9,6 +9,10 @@ html {
     max-width: 50%;
 }
 
+.input-group label {
+    color: #000 !important;
+}
+
 .friend_search_title {
     color: #fff;
 }
@@ -768,6 +772,10 @@ main {
     box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
+form label {
+    color: #fff !important;
+}
+
 .nofitications_content_container {
     display: flex;
     max-width: 100%;
@@ -963,6 +971,10 @@ body {
     display: block;
 }
 
+.form-check-label {
+    color: #fff !important;
+}
+
 .container-fluid {
     padding: 0;
 }
@@ -1150,7 +1162,6 @@ input {
     border: 1px solid #fff;
 }
 
-.filter_modal label,
 .filter_modal h3 {
     color: #fff !important;
 }
@@ -1175,6 +1186,11 @@ input {
 
 .profile_username {
     font-size: 1.5rem;
+    color: #fff;
+}
+
+.profile_date {
+    color: #fff;
 }
 
 .profile_info {

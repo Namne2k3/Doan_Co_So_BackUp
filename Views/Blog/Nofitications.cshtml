@@ -183,6 +183,19 @@
                 Profile
             </div>
         </a>
+        @if ( currentUser != null ) {
+            if (await UserManager.IsInRoleAsync(currentUser, "Admin"))
+            {
+                <a class="nav_item" asp-action="Index" asp-controller="Admin" asp-area="Admin">
+                    <div class="navIcon text-center">
+                        <i class="icon bi bi-person-workspace"></i>
+                    </div>
+                    <div class="navTitle w-75 text-start my-auto">
+                        Admin
+                    </div>
+                </a>
+            }
+        }
     </ul>
 
     <div id="theme_container" class="theme_container">

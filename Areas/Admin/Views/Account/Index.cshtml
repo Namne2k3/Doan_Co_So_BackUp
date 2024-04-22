@@ -22,9 +22,24 @@
             </div>
             <div class="admin_account_action">
                 <a asp-action="Details" asp-route-id="@item.Id" asp-controller="Account"
-                    class="admin_account_action_item btn btn-outline-light">Details</a>
+                    class="admin_account_action_item btn btn-outline-info">Details</a>
                 <button data-bs-target="#exampleModal_@item.Id" data-bs-toggle="modal"
-                    class="admin_account_action_item btn btn-outline-light">Delete</button>
+                    class="admin_account_action_item btn btn-outline-danger">Delete
+                </button>
+                @if (item.LockoutEnd >= DateTime.Now)
+                {
+                    <a asp-controller="Account" asp-action="UnlockUser" asp-route-email="@item.Email"
+                        class="btn btn-outline-success">
+                        <i class="bi bi-unlock-fill"></i>
+                    </a>
+                }
+                else
+                {
+                    <a asp-controller="Account" asp-action="LockUser" asp-route-email="@item.Email"
+                        class="btn btn-outline-warning">
+                        <i class="bi bi-lock-fill"></i>
+                    </a>
+                }
             </div>
         </div>
         <div class="modal fade text-black" id="exampleModal_@item.Id" tabindex="-1" aria-labelledby="exampleModalLabel"

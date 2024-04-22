@@ -4,6 +4,6 @@ namespace Doan_Web_CK.Repository
 {
     public interface IImageService
     {
-        Task<string> SaveImageAsync(string imagePath);
+        string SaveImageAsync(string imagePath);
     }
 }

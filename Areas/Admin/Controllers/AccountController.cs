@@ -20,6 +20,7 @@ namespace Doan_Web_CK.Areas.Admin.Controllers
         private readonly INotifiticationRepository _notifiticationRepository;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IChatRoomRepository _chatRoomRepository;
+        private readonly DateTime EndDate;
         public AccountController(
             UserManager<ApplicationUser> userManager,
             IAccountRepository accountRepository,
@@ -43,8 +44,38 @@ namespace Doan_Web_CK.Areas.Admin.Controllers
             _notifiticationRepository = noticeRepository;
             _signInManager = signInManager;
             _chatRoomRepository = chatRoomRepository;
+            EndDate = new DateTime(2222, 06, 06);
         }
+        public IActionResult LockUser(string email, DateTime? endDate)
+        {
+            if (endDate == null)
+                endDate = DateTime.Now.AddYears(1);
 
+            var userTask = _userManager.FindByEmailAsync(email);
+            userTask.Wait();
+            var user = userTask.Result;
+
+            var lockUserTask = _userManager.SetLockoutEnabledAsync(user, true);
+            lockUserTask.Wait();
+
+            var lockDateTask = _userManager.SetLockoutEndDateAsync(user, endDate);
+            lockDateTask.Wait();
+
+            return RedirectToAction("Index");
+        }
+        public async Task<IActionResult> UnlockUser(string email)
+        {
+            var user = await _userManager.FindByEmailAsync(email);
+
+            if (user == null)
+            {
+                // Xử lý khi không tìm thấy tài khoản
+                return NotFound();
+            }
+            user.LockoutEnd = DateTime.Now - TimeSpan.FromMinutes(1);
+            await _accountRepository.UpdateAsync(user);
+            return RedirectToAction("Index");
+        }
         [HttpGet]
         [Route("/Admin/Account/GetAllAccountAsync")]
         public async Task<IActionResult> GetAllAccountAsync(string search)

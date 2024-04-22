@@ -32,7 +32,6 @@ builder.Services.AddScoped<ILikeRepository, EFLikeRepository>();
 builder.Services.AddScoped<IFriendShipRepository, EFFriendShipRepository>();
 builder.Services.AddScoped<IMessageRepository, EFMessageRepository>();
 builder.Services.AddScoped<IChatRoomRepository, EFChatRoomRepository>();
-builder.Services.AddScoped<IImageService, ImageService>();
 builder.Services.AddTransient<ISenderEmail, EmailSender>();
 
 builder.Services.AddLogging(builder => builder.AddConsole());
@@ -71,18 +70,19 @@ app.MapRazorPages();
 
 app.UseEndpoints(endpoints =>
 {
+
     endpoints.MapAreaControllerRoute(
         name: "Admin",
         areaName: "Admin",
         pattern: "Admin/{controller=Admin}/{action=Index}"
     );
 
-
     endpoints.MapControllerRoute(
         name: "default",
         pattern: "{controller=Blog}/{action=Index}/{id?}");
 
     endpoints.MapHub<ChatHub>("/chatHub").RequireAuthorization();
+
 });
 using (var scope = app.Services.CreateScope())
 {

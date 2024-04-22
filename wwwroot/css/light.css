@@ -833,9 +833,19 @@ main {
     color: #000;
 }
 
+.nav a {
+    color: #000;
+    border: 1px solid #000;
+}
+
 .nav_item_title {
     position: fixed;
     background-color: #36393b;
+}
+
+.active {
+    background-color: #000 !important;
+    color: #fff !important;
 }
 
 .share_actions {
@@ -1286,6 +1296,13 @@ input {
     color: #000;
     border: 1px solid #000;
 }
+
+.option_friend,
+.option_feed {
+    color: #000;
+    border: 1px solid #000;
+}
+
 
 .navIcons {
     max-height: 100vh;

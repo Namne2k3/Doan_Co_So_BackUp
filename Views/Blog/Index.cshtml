@@ -17,6 +17,10 @@
         {
             <div class="mt-3 d-flex justify-content-between align-items-center">
                 <div class="d-flex flex-column gap-2"> 
+                    <div class="option_feed_container">
+                        <a class="option_feed btn btn-outline-light active">Feed</a>
+                        <a asp-controller="Blog" asp-action="FriendBlogs" class="option_friend btn btn-outline-light">Friends</a>
+                    </div>
                     <div class="input_add" style="width: 210px">
                         <input class="form-control w-50 text-white w-100" placeholder="Share your blog now..." style="background-color: #282b2d" data-bs-toggle="modal" data-bs-target="#exampleModal" />
                     </div>
@@ -494,6 +498,20 @@
                 Profile
             </div>
         </a>
+        @if ( currentUser != null ) {
+            if (await UserManager.IsInRoleAsync(currentUser, "Admin"))
+            {
+                <a class="nav_item" asp-action="Index" asp-controller="Admin" asp-area="Admin">
+                    <div class="navIcon text-center">
+                        <i class="icon bi bi-person-workspace"></i>
+                    </div>
+                    <div class="navTitle w-75 text-start my-auto">
+                        Admin
+                    </div>
+                </a>
+            }
+        }
+        
     </ul>
 
     <div id="theme_container" class="theme_container">

@@ -8,12 +8,16 @@
 }
 
 function handleSearchFriends(event) {
-    var hostname = window.location.hostname;
-    var protocol = window.location.protocol;
-    console.log("Check event target value >>> ", event.target.value, protocol, hostname);
-    setTimeout(() => {
+    if (event.keyCode == 13) {
+        event.preventDefault()
+        var hostname = window.location.hostname;
+        var protocol = window.location.protocol;
+        console.log("Check event target value >>> ", event.target.value, protocol, hostname);
         window.location.href = `${protocol}//${hostname}/Friend/Friend?search=${event.target.value}`;
-    }, 2000)
+        // setTimeout(() => {
+        //     window.location.href = `${protocol}//${hostname}/Friend/Friend?search=${event.target.value}`;
+        // }, 2000)
+    }
 }
 
 async function fetchDataFriend() {
@@ -385,31 +389,61 @@ async function handleAddBlog(event) {
 
     let urlImage = form.BlogImageUrl.value.replace("C:\\fakepath\\", "/images/")
 
-    // const bodyData = {
-    //     Title: form.Title.value,
-    //     Desc: form.Description.value,
-    //     Content: formContent.innerHTML.toString(),
-    //     BlogImageUrl: urlImage.toString(),
-    //     CategoryId: form.CategoryId.value
-    // }
-    const bodyData = new URLSearchParams();
+    const inputImage = form.BlogImageUrl;
+    const file = inputImage.files[0];
+    const bodyData = new FormData();
     bodyData.append('Title', form.Title.value);
     bodyData.append('Description', form.Description.value);
     bodyData.append('Content', formContent.innerHTML.toString());
     bodyData.append('BlogImageUrl', urlImage.toString());
     bodyData.append('CategoryId', form.CategoryId.value);
+    bodyData.append('imageFile', file);
 
     const response = await fetch('/Blog/Add', {
         method: "POST",
-        headers: {
-            // "Content-Type": "application/json",
-            'Content-Type': 'application/x-www-form-urlencoded',
-        },
+        // headers: {
+        //     // "Content-Type": "application/json",
+        //     'Content-Type': 'application/x-www-form-urlencoded',
+        // },
         body: bodyData
     })
     const data = await response.json();
     console.log("Check data return >>> ", data)
 }
+
+async function saveImage(imageUrl) {
+    try {
+        // Tải ảnh từ URL
+        const response = await fetch(imageUrl);
+        if (!response.ok) {
+            console.error("Lỗi khi tải ảnh:", response.statusText);
+            return null;
+        }
+
+        // Chuyển đổi ảnh thành mảng byte
+        const imageBlob = await response.blob();
+
+        // Tạo một URL cho ảnh
+        const imageURL = URL.createObjectURL(imageBlob);
+
+        // Tạo một thẻ <a> ẩn và sử dụng nó để tải ảnh
+        const link = document.createElement('a');
+        link.href = imageURL;
+        link.download = 'image.png'; // Tên tệp khi tải xuống
+        document.body.appendChild(link);
+        link.click();
+
+        // Xóa URL sau khi đã sử dụng
+        URL.revokeObjectURL(imageURL);
+
+        return "Ảnh đã được tải xuống thành công";
+    } catch (error) {
+        console.error("Lỗi khi lưu ảnh:", error.message);
+        return null;
+    }
+}
+
+
 async function editblog(event) {
     event.preventDefault();
     const form = event.target;

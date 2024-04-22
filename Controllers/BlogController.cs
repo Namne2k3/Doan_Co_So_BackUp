@@ -19,7 +19,6 @@ namespace Doan_Web_CK.Controllers
         private readonly ILikeRepository _likeRepository;
         private readonly IFriendShipRepository _friendShipRepository;
         private readonly UserManager<ApplicationUser> _userManager;
-        private readonly IImageService _imageService;
 
         public BlogController(
             UserManager<ApplicationUser> userManager,
@@ -30,8 +29,7 @@ namespace Doan_Web_CK.Controllers
             IAccountRepository accountRepository,
             ICommentRepository commentRepository,
             ILikeRepository likeRepository,
-            IFriendShipRepository friendShipRepository,
-            IImageService imageService
+            IFriendShipRepository friendShipRepository
         )
         {
             _blogRepository = blogRepository;
@@ -43,7 +41,6 @@ namespace Doan_Web_CK.Controllers
             _commentRepository = commentRepository;
             _likeRepository = likeRepository;
             _friendShipRepository = friendShipRepository;
-            _imageService = imageService;
         }
         public async Task<bool> IsBeingRequestedAsync(string currentUserId, string accountId)
         {
@@ -115,6 +112,7 @@ namespace Doan_Web_CK.Controllers
             ViewBag.GetAllNofOfUser = new Func<string, IEnumerable<Nofitication>>(GetAllNofOfUser);
             ViewBag.HasRelation = new Func<string, string, bool>(HasRelation);
             ViewBag.IsBeingRequested = new Func<string, string, bool>(IsBeingRequested);
+            ViewBag.IsFriend = new Func<string, string, bool>(IsFriend);
             if (currentUser != null)
             {
                 ViewBag.MyBlogs = blogs.Where(p => p.AccountId == currentUser.Id);
@@ -197,6 +195,57 @@ namespace Doan_Web_CK.Controllers
                 blog.Likes = new List<Like>();
             }
             return blog.Likes.Count();
+        }
+
+
+        public async Task<IActionResult> FriendBlogs()
+        {
+            var currentUser = await _userManager.GetUserAsync(User);
+            var allFriends = await _friendShipRepository.GetAllAsync();
+            var filteredFriends = allFriends.Where(p => p.FriendId == currentUser.Id || p.UserId == currentUser.Id);
+            var blogs = await _blogRepository.GetAllAsync();
+            var blogList = blogs.Where(p => p.IsAccepted == true).ToList();
+            var categories = await _categoryRepository.GetAllAsync();
+            var listFriends = new List<ApplicationUser>();
+
+            foreach (var item in filteredFriends)
+            {
+                if (item.UserId != currentUser.Id)
+                {
+                    var account = await _accountRepository.GetByIdAsync(item.UserId);
+                    listFriends.Add(account);
+                }
+                else
+                {
+                    var account = await _accountRepository.GetByIdAsync(item.FriendId);
+                    listFriends.Add(account);
+                }
+            }
+
+            if (currentUser != null)
+            {
+                ViewBag.CurrentUser = currentUser;
+            }
+            ViewBag.ListFriends = listFriends;
+            ViewBag.Categories = new SelectList(categories, "Id", "Name");
+            ViewBag.BlogList = blogList;
+            ViewBag.GetUserName = new Func<string, string>(GetUserName);
+            ViewBag.GetPhotoById = new Func<string, string>(GetPhotoById);
+            ViewBag.GetAllBlogComments = new Func<int, IEnumerable<Comment>>(GetAllBlogComments);
+            ViewBag.IsCurrentUserLiked = new Func<int, string, bool>(IsCurrentUserLiked);
+            ViewBag.GetUserNameByBlogId = new Func<int, string>(GetUserNameByBlogId);
+            ViewBag.GetBlogLikesCount = new Func<int, int>(GetBlogLikesCount);
+            ViewBag.GetBlogCommentsCount = new Func<int, int>(GetBlogCommentsCount);
+            ViewBag.IsRequested = new Func<string, string, bool>(IsRequested);
+            ViewBag.GetAllNofOfUser = new Func<string, IEnumerable<Nofitication>>(GetAllNofOfUser);
+            ViewBag.HasRelation = new Func<string, string, bool>(HasRelation);
+            ViewBag.IsFriend = new Func<string, string, bool>(IsFriend);
+            ViewBag.IsBeingRequested = new Func<string, string, bool>(IsBeingRequested);
+            if (currentUser != null)
+            {
+                ViewBag.MyBlogs = blogList.Where(p => p.AccountId == currentUser.Id);
+            }
+            return View();
         }
         public async Task<IActionResult> Index()
         {
@@ -924,7 +973,7 @@ namespace Doan_Web_CK.Controllers
         }
         [Authorize]
         [HttpPost]
-        public async Task<IActionResult> Add(Blog blog)
+        public async Task<IActionResult> Add(Blog blog, IFormFile imageFile)
         {
 
             var user = await _userManager.GetUserAsync(User);
@@ -945,14 +994,9 @@ namespace Doan_Web_CK.Controllers
                 Content = blog.Content,
                 CategoryId = blog.CategoryId,
                 PublishDate = DateTime.Now,
-                BlogImageUrl = blog.BlogImageUrl,
+                BlogImageUrl = await SaveImage(imageFile),
                 AccountId = user.Id
             };
-
-            if (blog.BlogImageUrl != null)
-            {
-                await _imageService.SaveImageAsync(blog.BlogImageUrl);
-            }
             await _accountRepository.AddBlogAsync(account, newBlog);
             return RedirectToAction("Index");
         }

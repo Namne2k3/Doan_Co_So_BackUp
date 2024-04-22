@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\images\\242808526_576030456926290_4222095203703955447_n.jpg"
     },
     {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\80105865-1-copy-9426-1713279744.jpg",
+      "PackagePath": "staticwebassets\\images\\80105865-1-copy-9426-1713279744.jpg"
+    },
+    {
       "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\BNDU3751 (2).JPEG",
       "PackagePath": "staticwebassets\\images\\BNDU3751 (2).JPEG"
     },
@@ -105,6 +109,10 @@
       "PackagePath": "staticwebassets\\images\\ai-coding-1710410299-6906-1710410348.jpg"
     },
     {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\amazon-5-4256-1713621257.jpg",
+      "PackagePath": "staticwebassets\\images\\amazon-5-4256-1713621257.jpg"
+    },
+    {
       "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\cau-chuyen-y-nghia-1.jpg",
       "PackagePath": "staticwebassets\\images\\cau-chuyen-y-nghia-1.jpg"
     },
@@ -139,6 +147,10 @@
     {
       "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\m1-vs-m2-air-feature-toned-dow-5823-4792-1711124712.jpg",
       "PackagePath": "staticwebassets\\images\\m1-vs-m2-air-feature-toned-dow-5823-4792-1711124712.jpg"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\menu.png",
+      "PackagePath": "staticwebassets\\images\\menu.png"
     },
     {
       "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\nu-dieu-duong-ep-tim-cuu-du-khach-nga-guc-o-da-nang-1711517649.jpg",
@@ -203,6 +215,10 @@
     {
       "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\z5310242644787_0927019ed7e5d8a29c52b1e592d13674.jpg",
       "PackagePath": "staticwebassets\\images\\z5310242644787_0927019ed7e5d8a29c52b1e592d13674.jpg"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\z5366758178679_24be27842bf482f6a88ab4d6c98b38a0.jpg",
+      "PackagePath": "staticwebassets\\images\\z5366758178679_24be27842bf482f6a88ab4d6c98b38a0.jpg"
     },
     {
       "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\js\\call.js",
