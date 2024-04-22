@@ -568,6 +568,7 @@ namespace Doan_Web_CK.Controllers
             return NotFound();
         }
 
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> Delete(int blogId)
         {
@@ -588,6 +589,7 @@ namespace Doan_Web_CK.Controllers
             });
         }
 
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> DeleteComment(int commentId, int blogId)
         {
@@ -642,6 +644,7 @@ namespace Doan_Web_CK.Controllers
             }
         }
 
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> AddComment(int comment_blogid, string comment_accountid, string comment_content)
         {
@@ -1000,30 +1003,31 @@ namespace Doan_Web_CK.Controllers
             await _accountRepository.AddBlogAsync(account, newBlog);
             return RedirectToAction("Index");
         }
+        [Authorize]
         [HttpPost]
-        public async Task<IActionResult> Edit(Blog blog)
+        public async Task<IActionResult> Edit(Blog blog, IFormFile imageFile)
         {
             var update = await _blogRepository.GetByIdAsync(blog.Id);
-            if (blog.BlogImageUrl == null)
+
+            if (update == null)
             {
-                var categories = await _categoryRepository.GetAllAsync();
-                ViewBag.Categories = new SelectList(categories, "Id", "Name");
                 return Json(new
                 {
                     message = "failed"
                 });
+
             }
-            else
+            update.Title = blog.Title;
+            update.Description = blog.Description;
+            update.Content = blog.Content;
+            update.CategoryId = blog.CategoryId;
+            update.PublishDate = DateTime.Now;
+
+            if (imageFile != null)
             {
-                var user = await _userManager.GetUserAsync(User);
-                update.Title = blog.Title;
-                update.Description = blog.Description;
-                update.Content = blog.Content;
-                update.CategoryId = blog.CategoryId;
-                update.AccountId = user.Id;
-                update.BlogImageUrl = blog.BlogImageUrl;
-                update.PublishDate = DateTime.Now;
+                update.BlogImageUrl = await SaveImage(imageFile);
             }
+
 
             await _blogRepository.UpdateAsync(update);
 
