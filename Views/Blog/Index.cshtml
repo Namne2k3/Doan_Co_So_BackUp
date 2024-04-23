@@ -12,6 +12,15 @@
 }
 <div class="body_blog_section d-flex gap-4 justify-content-center">
     <div class="body_container" style="width: 75%">
+        @* <form asp-controller="Blog" asp-action="CheckImageSensitiveContent" method="post" enctype="multipart/form-data">
+            <input type="file" name="imageFile" accept="image/*" />
+            <button type="submit">Kiểm tra hình ảnh</button>
+        </form>
+        
+        <form asp-action="AnalyzeSentiment" asp-controller="Blog" method="post">
+            <input class="form-control" type="text" name="text" value="" />
+            <button class="btn btn-outline-success" type="submit">Phân tích nội dung</button>
+        </form> *@
         @* <h1>WebCommun</h1> *@
         @if ( currentUser != null )
         {
@@ -59,6 +68,15 @@
                 <div style="background-color: #212529;" class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Create new Blog</h5>
+                        <div id="sensitive_content_image" class="p-3 text-white text-danger bg-danger rounded-3 hidden_blog">
+                            Your image contains sensitive content
+                        </div>
+                        <div id="add_blog_success" class="p-3 text-white bg-success rounded-3 hidden_blog">
+                            Your Blog has been uploaded, Thank you for sharing.
+                        </div>
+                        <div id="warning_not_image_upload" class="p-3 text-white bg-warning rounded-3 hidden_blog">
+                            You must provide images
+                        </div>
                         <a type="button" style="background-color: transparent;" data-bs-dismiss="modal" aria-label="Close">
                             <i class="bi bi-x-lg fs-5"></i>
                         </a>

@@ -73,6 +73,10 @@
       "PackagePath": "staticwebassets\\images\\ND-02-VISITA-ENDRICK-PRESIDENT-6864-8406-1711703356.jpg"
     },
     {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\NSFW.png",
+      "PackagePath": "staticwebassets\\images\\NSFW.png"
+    },
+    {
       "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\Nhóm 7 - 21DTHD2 - Web_Blog_Chat_Call_Tuần 2.jpg",
       "PackagePath": "staticwebassets\\images\\Nhóm 7 - 21DTHD2 - Web_Blog_Chat_Call_Tuần 2.jpg"
     },

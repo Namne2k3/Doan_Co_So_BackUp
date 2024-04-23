@@ -1,5 +1,8 @@
 ﻿using Doan_Web_CK.Models;
 using Doan_Web_CK.Repository;
+using Google.Apis.Auth.OAuth2;
+using Google.Cloud.Language.V1;
+using Google.Cloud.Vision.V1;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -19,8 +22,10 @@ namespace Doan_Web_CK.Controllers
         private readonly ILikeRepository _likeRepository;
         private readonly IFriendShipRepository _friendShipRepository;
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly GoogleCredential _credentials;
 
         public BlogController(
+            GoogleCredential credentials,
             UserManager<ApplicationUser> userManager,
             IBlogRepository blogRepository,
             ICategoryRepository categoryRepository,
@@ -41,6 +46,80 @@ namespace Doan_Web_CK.Controllers
             _commentRepository = commentRepository;
             _likeRepository = likeRepository;
             _friendShipRepository = friendShipRepository;
+            _credentials = credentials;
+        }
+
+        [HttpPost]
+        public IActionResult CheckImageSensitiveContent(IFormFile imageFile)
+        {
+            if (imageFile != null && imageFile.Length > 0)
+            {
+                var credentials = GoogleCredential.FromFile("credentials.json");
+                // Tạo phiên làm việc với API Vision
+                var clientBuilder = new ImageAnnotatorClientBuilder
+                {
+                    CredentialsPath = "credentials.json"
+                };
+                var client = clientBuilder.Build();
+
+                // Đọc dữ liệu hình ảnh từ IFormFile
+                using (var stream = imageFile.OpenReadStream())
+                {
+                    var image = Image.FromStream(stream);
+
+                    // Phân tích hình ảnh
+                    var response = client.DetectSafeSearch(image);
+
+                    // Kiểm tra xem hình ảnh có chứa nội dung nhạy cảm người lớn hay không
+                    var adultContentLikelihood = response.Adult;
+                    var isAdultContent = adultContentLikelihood != Likelihood.VeryUnlikely && adultContentLikelihood != Likelihood.Unknown;
+
+                    // Xử lý kết quả
+                    return Json(new
+                    {
+                        isAdultContent = isAdultContent
+                    });
+                }
+            }
+            return Json(new
+            {
+                message = "Image file not provided"
+            });
+        }
+        [HttpPost]
+        public IActionResult AnalyzeSentiment(string text)
+        {
+            if (text != null)
+            {
+                var credentials = GoogleCredential.FromFile("credentials.json");
+
+                // Tạo phiên làm việc với API Cloud Natural Language
+                var clientBuilder = new LanguageServiceClientBuilder
+                {
+                    CredentialsPath = "credentials.json"
+                };
+
+                var client = clientBuilder.Build();
+
+                // Giờ bạn có thể sử dụng client để gọi các phương thức của API Cloud Natural Language
+                // Ví dụ: phương thức AnalyzeSentiment
+                var response = client.AnalyzeSentiment(new Document()
+                {
+                    Content = text,
+                    Type = Document.Types.Type.PlainText
+                });
+
+                // Xử lý kết quả
+                var sentiment = response.DocumentSentiment.Score;
+                return Json(new
+                {
+                    sentiment = sentiment.ToString()
+                });
+            }
+            return Json(new
+            {
+                text = "Not found"
+            });
         }
         public async Task<bool> IsBeingRequestedAsync(string currentUserId, string accountId)
         {
@@ -998,7 +1077,8 @@ namespace Doan_Web_CK.Controllers
                 CategoryId = blog.CategoryId,
                 PublishDate = DateTime.Now,
                 BlogImageUrl = await SaveImage(imageFile),
-                AccountId = user.Id
+                AccountId = user.Id,
+                IsAccepted = true
             };
             await _accountRepository.AddBlogAsync(account, newBlog);
             return RedirectToAction("Index");

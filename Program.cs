@@ -2,9 +2,12 @@ using Doan_Web_CK;
 using Doan_Web_CK.Hubs;
 using Doan_Web_CK.Models;
 using Doan_Web_CK.Repository;
+using Google.Apis.Auth.OAuth2;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
+var credentials = GoogleCredential.FromFile("credentials.json");
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -22,7 +25,7 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddRazorPages();
-
+builder.Services.AddSingleton(credentials);
 builder.Services.AddScoped<IBlogRepository, EFBlogRepository>();
 builder.Services.AddScoped<ICategoryRepository, EFCategoryRepository>();
 builder.Services.AddScoped<ICommentRepository, EFCommentRepository>();
@@ -33,6 +36,7 @@ builder.Services.AddScoped<IFriendShipRepository, EFFriendShipRepository>();
 builder.Services.AddScoped<IMessageRepository, EFMessageRepository>();
 builder.Services.AddScoped<IChatRoomRepository, EFChatRoomRepository>();
 builder.Services.AddTransient<ISenderEmail, EmailSender>();
+
 
 builder.Services.AddLogging(builder => builder.AddConsole());
 

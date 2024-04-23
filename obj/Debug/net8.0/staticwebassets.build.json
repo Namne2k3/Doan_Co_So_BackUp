@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RkdlMf+yr50WAGoyABVlx+kihtuNqHbMqYSHnRw4tx0=",
+  "Hash": "O3z7CGv/vKLns+Qxrd7RR2Nz638MRM3zceIHLzlbqIo=",
   "Source": "Doan_Co_So",
   "BasePath": "_content/Doan_Co_So",
   "Mode": "Default",
@@ -1801,6 +1801,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Nhóm 7 - 21DTHD2 - Web_Blog_Chat_Call_Tuần 2.jpg"
+    },
+    {
+      "Identity": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\NSFW.png",
+      "SourceId": "Doan_Co_So",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\",
+      "BasePath": "_content/Doan_Co_So",
+      "RelativePath": "images/NSFW.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\NSFW.png"
     },
     {
       "Identity": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\nu-dieu-duong-ep-tim-cuu-du-khach-nga-guc-o-da-nang-1711517649.jpg",

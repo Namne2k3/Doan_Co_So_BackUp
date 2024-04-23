@@ -1,4 +1,26 @@
-﻿function handleSearchFriend(event) {
+﻿async function isImageSensitive(file) {
+    const bodyData = new FormData();
+    bodyData.append('imageFile', file);
+
+    try {
+        const response = await fetch("/Blog/CheckImageSensitiveContent", {
+            method: "POST",
+            body: bodyData
+        });
+        const data = await response.json();
+        console.log("Check data sensitive >>> ", data);
+
+        if (data.message) {
+            return data.message;
+        }
+
+        return data.isAdultContent;
+    } catch (err) {
+        console.log("Check error >>> ", err.toString());
+        return false; // Trả về false nếu có lỗi
+    }
+}
+function handleSearchFriend(event) {
     var hostname = window.location.hostname;
     var protocol = window.location.protocol;
     console.log("Check event target value >>> ", event.target.value, protocol, hostname);
@@ -392,41 +414,88 @@ async function editblog(event) {
 
     const inputImage = form.BlogImageUrl;
     const file = inputImage.files[0];
-    const bodyData = new FormData();
-    bodyData.append('Id', form.Id.value);
-    bodyData.append('Title', form.Title.value);
-    bodyData.append('Description', form.Description.value);
-    bodyData.append('Content', formContent.innerHTML.toString());
-    bodyData.append('BlogImageUrl', urlImage.toString());
-    bodyData.append('CategoryId', form.CategoryId.value);
-    bodyData.append('imageFile', file);
 
-    const response = await fetch('/Blog/Edit', {
-        method: "POST",
-        // headers: {
-        //     // "Content-Type": "application/json",
-        //     'Content-Type': 'application/x-www-form-urlencoded',
-        // },
-        body: bodyData
-    })
-    const data = await response.json();
-    console.log("Check data return >>> ", data)
-    if (data.message == 'success') {
-        showElement("update_success");
-        // // Lấy thông tin về cổng của localhost hiện tại
-        // var port = window.location.port;
-        // var domain = window.location.hostname;
-        // var protocol = window.location.protocol
+    const isAdultImage = await isImageSensitive(file);
+    console.log("IsAdultImage >>> ", isAdultImage)
+    if (isAdultImage == false) {
+        const bodyData = new FormData();
+        bodyData.append('Id', form.Id.value);
+        bodyData.append('Title', form.Title.value);
+        bodyData.append('Description', form.Description.value);
+        bodyData.append('Content', formContent.innerHTML.toString());
+        bodyData.append('BlogImageUrl', urlImage.toString());
+        bodyData.append('CategoryId', form.CategoryId.value);
+        bodyData.append('imageFile', file);
+        try {
+            const response = await fetch('/Blog/Edit', {
+                method: "POST",
+                // headers: {
+                //     // "Content-Type": "application/json",
+                //     'Content-Type': 'application/x-www-form-urlencoded',
+                // },
+                body: bodyData
+            })
+            const data = await response.json();
+            console.log("Check data return >>> ", data)
+            if (data.message == 'success') {
+                showElement("update_success");
+                // // Lấy thông tin về cổng của localhost hiện tại
+                // var port = window.location.port;
+                // var domain = window.location.hostname;
+                // var protocol = window.location.protocol
 
-        // // Chuyển hướng trang đến domain hiện tại
-        // window.location.href = domain + ":" + port;
-        // // Chuyển hướng trang đến localhost với cổng hiện tại
-    } else {
-        showElement("update_fail");
+                // // Chuyển hướng trang đến domain hiện tại
+                // window.location.href = domain + ":" + port;
+                // // Chuyển hướng trang đến localhost với cổng hiện tại
+            } else {
+                showElement("update_fail");
+            }
+        } catch (err) {
+            console.log(err.toString());
+        }
+    } else if (isAdultImage == true) {
+        showElement('sensitive_content_image')
+    }
+    else {
+        const bodyData = new FormData();
+        bodyData.append('Id', form.Id.value);
+        bodyData.append('Title', form.Title.value);
+        bodyData.append('Description', form.Description.value);
+        bodyData.append('Content', formContent.innerHTML.toString());
+        bodyData.append('BlogImageUrl', urlImage.toString());
+        bodyData.append('CategoryId', form.CategoryId.value);
+        bodyData.append('imageFile', file);
+        try {
+            const response = await fetch('/Blog/Edit', {
+                method: "POST",
+                // headers: {
+                //     // "Content-Type": "application/json",
+                //     'Content-Type': 'application/x-www-form-urlencoded',
+                // },
+                body: bodyData
+            })
+            const data = await response.json();
+            console.log("Check data return >>> ", data)
+            if (data.message == 'success') {
+                showElement("update_success");
+                // // Lấy thông tin về cổng của localhost hiện tại
+                // var port = window.location.port;
+                // var domain = window.location.hostname;
+                // var protocol = window.location.protocol
+
+                // // Chuyển hướng trang đến domain hiện tại
+                // window.location.href = domain + ":" + port;
+                // // Chuyển hướng trang đến localhost với cổng hiện tại
+            } else {
+                showElement("update_fail");
+            }
+        } catch (err) {
+            console.log(err.toString());
+        }
     }
 }
 async function handleAddBlog(event) {
-
+    event.preventDefault();
     const form = event.target;
     const formContent = document.querySelector('.ck-content');
     console.log(formContent.innerHTML);
@@ -435,24 +504,35 @@ async function handleAddBlog(event) {
 
     const inputImage = form.BlogImageUrl;
     const file = inputImage.files[0];
-    const bodyData = new FormData();
-    bodyData.append('Title', form.Title.value);
-    bodyData.append('Description', form.Description.value);
-    bodyData.append('Content', formContent.innerHTML.toString());
-    bodyData.append('BlogImageUrl', urlImage.toString());
-    bodyData.append('CategoryId', form.CategoryId.value);
-    bodyData.append('imageFile', file);
 
-    const response = await fetch('/Blog/Add', {
-        method: "POST",
-        // headers: {
-        //     // "Content-Type": "application/json",
-        //     'Content-Type': 'application/x-www-form-urlencoded',
-        // },
-        body: bodyData
-    })
-    const data = await response.json();
-    console.log("Check data return >>> ", data)
+    const isAdultImage = await isImageSensitive(file);
+    console.log("IsAdultImage >>> ", isAdultImage)
+    if (isAdultImage == false) {
+
+        const bodyData = new FormData();
+        bodyData.append('Title', form.Title.value);
+        bodyData.append('Description', form.Description.value);
+        bodyData.append('Content', formContent.innerHTML.toString());
+        bodyData.append('BlogImageUrl', urlImage.toString());
+        bodyData.append('CategoryId', form.CategoryId.value);
+        bodyData.append('imageFile', file);
+        try {
+            showElement('add_blog_success');
+            const response = await fetch('/Blog/Add', {
+                method: "POST",
+                body: bodyData
+            })
+            const data = await response.json();
+            console.log("Check data return >>> ", data)
+        } catch (err) {
+            console.log(err.toString());
+        }
+    } else if (isAdultImage == true) {
+        showElement('sensitive_content_image')
+    }
+    else {
+        showElement('warning_not_image_upload')
+    }
 }
 
 async function saveImage(imageUrl) {
