@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "XUFwKUyZ3ZvUEKQc19oMoXOckwc/eMeL3gSUi36PBgf4PD3t/mWGtRhD62hJUsY1MgUC8+yCXt/Waan7hlvYkA==",
+  "dgSpecHash": "jNN1kkH4XwhvtF57xupnf8EZAfpr/AEthQ0sLJsXrgB3uqT27d/2VvlVKF3/DnJ78cNKRrmaP1o9ON1roZN68Q==",
   "success": true,
   "projectFilePath": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\Doan_Co_So.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nhpn2\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\nhpn2\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\nhpn2\\.nuget\\packages\\ckeditor-full\\4.24.0\\ckeditor-full.4.24.0.nupkg.sha512",
     "C:\\Users\\nhpn2\\.nuget\\packages\\google.api.commonprotos\\2.15.0\\google.api.commonprotos.2.15.0.nupkg.sha512",
     "C:\\Users\\nhpn2\\.nuget\\packages\\google.api.gax\\4.8.0\\google.api.gax.4.8.0.nupkg.sha512",
     "C:\\Users\\nhpn2\\.nuget\\packages\\google.api.gax.grpc\\4.8.0\\google.api.gax.grpc.4.8.0.nupkg.sha512",

@@ -69,13 +69,20 @@
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Create new Blog</h5>
                         <div id="sensitive_content_image" class="p-3 text-white text-danger bg-danger rounded-3 hidden_blog">
+                            <i class="bi bi-exclamation-circle-fill"></i>
                             Your image contains sensitive content
                         </div>
                         <div id="add_blog_success" class="p-3 text-white bg-success rounded-3 hidden_blog">
+                            <i class="bi bi-check-circle"></i>
                             Your Blog has been uploaded, Thank you for sharing.
                         </div>
                         <div id="warning_not_image_upload" class="p-3 text-white bg-warning rounded-3 hidden_blog">
+                            <i class="bi bi-info-circle-fill"></i>
                             You must provide images
+                        </div>
+                        <div id="sensitive_content" class="p-3 text-white bg-danger rounded-3 hidden_blog">
+                            <i class="bi bi-info-circle-fill"></i>
+                            Your content contains sensitive content
                         </div>
                         <a type="button" style="background-color: transparent;" data-bs-dismiss="modal" aria-label="Close">
                             <i class="bi bi-x-lg fs-5"></i>
@@ -194,7 +201,7 @@
                                     </p>
                                 } else
                                 {
-                                    <p class="mt-2">
+                                    <p class="mt-2 share_status_blog">
                                         Shared <a asp-action="Details" asp-controller="Blog" asp-route-id="@item.ReferenceId" class="text-white">@ViewBag.GetUserNameByBlogId(item.ReferenceId)</a>'s post - @item.PublishDate.ToShortDateString()
                                     </p>
                                 }
@@ -296,10 +303,10 @@
                                 }
                                 <!-- End Section share action-->
                             </div>
-                            <div class="share_status_success bg-success" id="share_status_success">
+                            <div class="share_status_success bg-success" id="share_status_success_@item.Id">
                                 <p>You shared this blog</p>
                             </div>
-                            <div class="share_status_failed bg-danger" id="share_status_failed">
+                            <div class="share_status_failed bg-danger" id="share_status_failed_@item.Id">
                                 <p>You haven't shared this blog</p>
                             </div>
                         </div>

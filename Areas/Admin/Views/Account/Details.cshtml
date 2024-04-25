@@ -92,7 +92,7 @@
                             </form>
                         </div>
                     }
-                    @if (account.LockoutEnd != null)
+                    @if (account.LockoutEnd > DateTime.Now)
                     {
                         <a asp-controller="Account" asp-action="UnlockUser" asp-route-email="@account.Email"
                             class="btn btn-outline-success">

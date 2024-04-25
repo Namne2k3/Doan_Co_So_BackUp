@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace Doan_Web_CK.Controllers
 {
@@ -91,6 +92,7 @@ namespace Doan_Web_CK.Controllers
         {
             if (text != null)
             {
+                var plainText = Regex.Replace(text, "<.*?>", string.Empty);
                 var credentials = GoogleCredential.FromFile("credentials.json");
 
                 // Tạo phiên làm việc với API Cloud Natural Language
@@ -105,7 +107,7 @@ namespace Doan_Web_CK.Controllers
                 // Ví dụ: phương thức AnalyzeSentiment
                 var response = client.AnalyzeSentiment(new Document()
                 {
-                    Content = text,
+                    Content = plainText,
                     Type = Document.Types.Type.PlainText
                 });
 

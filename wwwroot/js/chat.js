@@ -317,6 +317,8 @@ connection.on('ReceiveToastMessage', function (userName, connectionRoomCall, use
         toastDiv.remove()
     }, toastTimeout);
 })
+
+
 function handleAddToastMessageCall(userId, receiverId, connectionRoomCall) {
 
     connection.invoke("SendToastMessage", userId, receiverId, connectionRoomCall).catch(function (err) {

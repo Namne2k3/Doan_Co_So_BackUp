@@ -1,4 +1,5 @@
-﻿async function isImageSensitive(file) {
+﻿
+async function isImageSensitive(file) {
     const bodyData = new FormData();
     bodyData.append('imageFile', file);
 
@@ -17,16 +18,45 @@
         return data.isAdultContent;
     } catch (err) {
         console.log("Check error >>> ", err.toString());
+    }
+}
+async function isSensitiveContent(content) {
+    const bodyData = new FormData()
+    bodyData.append('text', content);
+
+    try {
+        const response = await fetch("/Blog/AnalyzeSentiment", {
+            method: "POST",
+            body: bodyData
+        });
+        const data = await response.json();
+        console.log("Check content sensitive >>> ", data);
+        if (data.sentiment < -0.1) {
+            return true;
+        } else {
+            return false;
+        }
+    } catch (err) {
+        console.log("Check error >>> ", err.toString());
         return false; // Trả về false nếu có lỗi
     }
 }
 function handleSearchFriend(event) {
-    var hostname = window.location.hostname;
-    var protocol = window.location.protocol;
-    console.log("Check event target value >>> ", event.target.value, protocol, hostname);
-    setTimeout(() => {
-        window.location.href = `${protocol}//${hostname}/Friend?search=${event.target.value}`;
-    }, 2000)
+    if (event.keyCode == 13) {
+        var hostname = window.location.hostname;
+        var protocol = window.location.protocol;
+        var port = window.location.port;
+
+        console.log("Check event target value >>> ", event.target.value, protocol, hostname);
+        setTimeout(() => {
+            console.log("Check port >>> ", port)
+            if (port) {
+                window.location.href = `${protocol}//${hostname}:${port}/Friend?search=${event.target.value}`;
+            } else {
+                window.location.href = `${protocol}//${hostname}/Friend?search=${event.target.value}`;
+            }
+        }, 0)
+    }
 }
 
 function handleSearchFriends(event) {
@@ -34,16 +64,17 @@ function handleSearchFriends(event) {
         event.preventDefault()
         var hostname = window.location.hostname;
         var protocol = window.location.protocol;
-        console.log("Check event target value >>> ", event.target.value, protocol, hostname);
-        window.location.href = `${protocol}//${hostname}/Friend/Friend?search=${event.target.value}`;
-        // setTimeout(() => {
-        //     window.location.href = `${protocol}//${hostname}/Friend/Friend?search=${event.target.value}`;
-        // }, 2000)
+        var port = window.location.port;
+
+        setTimeout(() => {
+            console.log("Check port >>> ", port)
+            if (port) {
+                window.location.href = `${protocol}//${hostname}:${port}/Friend/Friend?search=${event.target.value}`;
+            } else {
+                window.location.href = `${protocol}//${hostname}/Friend/Friend?search=${event.target.value}`;
+            }
+        }, 0)
     }
-}
-
-async function fetchDataFriend() {
-
 }
 
 function handlehandleChangeIconTheme() {
@@ -416,8 +447,9 @@ async function editblog(event) {
     const file = inputImage.files[0];
 
     const isAdultImage = await isImageSensitive(file);
+    const isAdultContent = await isSensitiveContent(formContent.innerHTML.toString())
     console.log("IsAdultImage >>> ", isAdultImage)
-    if (isAdultImage == false) {
+    if (isAdultImage == false && isAdultContent == false) {
         const bodyData = new FormData();
         bodyData.append('Id', form.Id.value);
         bodyData.append('Title', form.Title.value);
@@ -453,6 +485,9 @@ async function editblog(event) {
         } catch (err) {
             console.log(err.toString());
         }
+    }
+    else if (isAdultContent == true) {
+        showElement('sensitive_content');
     } else if (isAdultImage == true) {
         showElement('sensitive_content_image')
     }
@@ -468,10 +503,6 @@ async function editblog(event) {
         try {
             const response = await fetch('/Blog/Edit', {
                 method: "POST",
-                // headers: {
-                //     // "Content-Type": "application/json",
-                //     'Content-Type': 'application/x-www-form-urlencoded',
-                // },
                 body: bodyData
             })
             const data = await response.json();
@@ -506,8 +537,10 @@ async function handleAddBlog(event) {
     const file = inputImage.files[0];
 
     const isAdultImage = await isImageSensitive(file);
+    const isAdultContent = await isSensitiveContent(formContent.innerHTML.toString())
+
     console.log("IsAdultImage >>> ", isAdultImage)
-    if (isAdultImage == false) {
+    if (isAdultImage == false && isAdultContent == false) {
 
         const bodyData = new FormData();
         bodyData.append('Title', form.Title.value);
@@ -527,7 +560,11 @@ async function handleAddBlog(event) {
         } catch (err) {
             console.log(err.toString());
         }
-    } else if (isAdultImage == true) {
+    }
+    else if (isAdultContent == true) {
+        showElement('sensitive_content');
+    }
+    else if (isAdultImage == true) {
         showElement('sensitive_content_image')
     }
     else {
@@ -735,9 +772,9 @@ function handleShareBlog(id) {
                 var response = JSON.parse(xhr.responseText);
                 if (response) {
                     console.log("CHECK response >>> ", response)
-                    showElement("share_status_success");
+                    showElement("share_status_success_" + id);
                 } else {
-                    showElement("share_status_failed")
+                    showElement("share_status_failed_" + id)
                 }
             } else {
                 // Xử lý lỗi

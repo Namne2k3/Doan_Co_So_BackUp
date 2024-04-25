@@ -11,19 +11,21 @@
 }
 
 <div class="body_container mt-4">
-    <h1 class="friend_search_title">Friends</h1>
-    <nav class="nav nav-pills nav-justified gap-2">
-        <a asp-controller="Friend" asp-action="Index" class="btn btn-outline-light active">My Friends</a>
-        <a asp-controller="Friend" asp-action="Friend" asp-route-search="" class="btn btn-outline-light">Friends</a>
-    </nav>
-    <nav class="navbar">
-        <form class="container-fluid">
-            <div class="input-group">
-            <span style="box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;" class="input-group-text" id="basic-addon1">@@</span>
-            <input value="@searchQuery" oninput="handleSearchFriend(event)" type="text" class="form-control" placeholder="Username & Email..." aria-label="Username" aria-describedby="basic-addon1">
-            </div>
-        </form>
-    </nav>
+    <div>
+        <h1 class="friend_search_title">Friends</h1>
+        <nav class="nav nav-pills nav-justified gap-2">
+            <a asp-controller="Friend" asp-action="Index" class="btn btn-outline-light active">My Friends</a>
+            <a asp-controller="Friend" asp-action="Friend" asp-route-search="" class="btn btn-outline-light">Friends</a>
+        </nav>
+        <nav class="navbar">
+            <form class="container-fluid">
+                <div class="input-group">
+                <span style="box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;" class="input-group-text" id="basic-addon1">@@</span>
+                <input value="@searchQuery" onkeypress="handleSearchFriend(event)" type="text" class="form-control" placeholder="Search friends with username & email..." aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+            </form>
+        </nav>
+    </div>
     <div class="friends_container">
         @if (currentUser != null )
         {
