@@ -4,6 +4,10 @@ html {
     height: 100vh;
 }
 
+.mic_room_icon {}
+
+.video_room_icon {}
+
 .friend_search_container {
     margin: 16px 0;
     max-width: 50%;
@@ -800,8 +804,8 @@ body {
 }
 
 .nav_item {
-    padding: 1rem;
-    border-radius: 16px;
+    padding: 6px 0;
+    border-radius: 6px;
     background-color: #212529;
     display: flex;
     align-content: center;
@@ -1011,8 +1015,8 @@ body {
 }
 
 .nof_icon {
-    padding: 1rem;
-    border-radius: 12px;
+    padding: 6px 0;
+    border-radius: 6px;
     background-color: #212529;
     display: flex;
     align-content: center;
@@ -1391,6 +1395,7 @@ input {
     }
 
     .messages_container {
+        margin-top: 0 !important;
         height: 81vh !important;
     }
 

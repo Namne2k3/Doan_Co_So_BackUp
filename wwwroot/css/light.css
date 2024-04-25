@@ -4,6 +4,10 @@ html {
     height: 100vh;
 }
 
+.mic_room_icon {}
+
+.video_room_icon {}
+
 .friend_search_container {
     margin: 16px 0;
     max-width: 50%;
@@ -256,6 +260,8 @@ strong {
 }
 
 .video_action_item a {
+    color: #000;
+    border: 1px solid;
     border-radius: 50%;
     padding: 16px !important;
     font-size: 24px;
@@ -309,12 +315,11 @@ main {
 }
 
 .chatroom_container {
-    margin-top: 16px;
     display: flex;
     flex-direction: column;
     gap: 16px;
     width: 30%;
-    min-height: 100vh;
+    justify-content: flex-start;
     overflow-y: auto;
     scrollbar-width: none;
 }
@@ -363,7 +368,6 @@ main {
 }
 
 .messages_container {
-    margin-top: 16px;
     height: 96vh;
     width: 100%;
     display: flex;
@@ -494,6 +498,7 @@ main {
     display: flex;
     gap: 16px;
     height: 100%;
+
 }
 
 #update_fail_blog,
@@ -888,8 +893,8 @@ body {
 }
 
 .nav_item {
-    padding: 1rem;
-    border-radius: 16px;
+    padding: 6px 0;
+    border-radius: 6px;
     background-color: #f0f2f5;
     display: flex;
     color: #000 !important;
@@ -1110,8 +1115,8 @@ body {
 }
 
 .nof_icon {
-    padding: 1rem;
-    border-radius: 12px;
+    padding: 6px 0;
+    border-radius: 6px;
     background-color: #f0f2f5;
     display: flex;
     color: #000 !important;
@@ -1179,8 +1184,8 @@ body {
     /* overflow-y: auto; */
     /* max-height: 100vh; */
     /* scrollbar-width: none; */
-    justify-content: center;
     height: 100%;
+    align-items: center;
     /*margin: auto;*/
 }
 
@@ -1595,6 +1600,7 @@ form button {
     }
 
     .messages_container {
+        margin-top: 0 !important;
         height: 81vh !important;
     }
 

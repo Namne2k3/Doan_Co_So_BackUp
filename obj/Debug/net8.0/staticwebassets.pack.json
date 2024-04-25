@@ -5,1584 +5,324 @@
       "PackagePath": "staticwebassets\\Doan_Co_So.bundle.scp.css"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\.nupkg.metadata",
-      "PackagePath": "staticwebassets\\ckeditor\\.nupkg.metadata"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\LICENSE.md",
+      "PackagePath": "staticwebassets\\ckeditor\\LICENSE.md"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\.signature.p7s",
-      "PackagePath": "staticwebassets\\ckeditor\\.signature.p7s"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\README.md",
+      "PackagePath": "staticwebassets\\ckeditor\\README.md"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\ckeditor-full.4.24.0.nupkg",
-      "PackagePath": "staticwebassets\\ckeditor\\ckeditor-full.4.24.0.nupkg"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\ckeditor.d.ts",
+      "PackagePath": "staticwebassets\\ckeditor\\ckeditor.d.ts"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\ckeditor-full.4.24.0.nupkg.sha512",
-      "PackagePath": "staticwebassets\\ckeditor\\ckeditor-full.4.24.0.nupkg.sha512"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\ckeditor.js",
+      "PackagePath": "staticwebassets\\ckeditor\\ckeditor.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\ckeditor-full.nuspec",
-      "PackagePath": "staticwebassets\\ckeditor\\ckeditor-full.nuspec"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\ckeditor.js.map",
+      "PackagePath": "staticwebassets\\ckeditor\\ckeditor.js.map"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\CHANGES.md",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\CHANGES.md"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\index.html",
+      "PackagePath": "staticwebassets\\ckeditor\\index.html"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\LICENSE.md",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\LICENSE.md"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\sample\\css\\sample.css",
+      "PackagePath": "staticwebassets\\ckeditor\\sample\\css\\sample.css"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\README.md",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\README.md"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\sample\\img\\bg.png",
+      "PackagePath": "staticwebassets\\ckeditor\\sample\\img\\bg.png"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\SECURITY.md",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\SECURITY.md"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\sample\\img\\github.svg",
+      "PackagePath": "staticwebassets\\ckeditor\\sample\\img\\github.svg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\adapters\\jquery.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\adapters\\jquery.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\sample\\img\\logo.svg",
+      "PackagePath": "staticwebassets\\ckeditor\\sample\\img\\logo.svg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\ckeditor.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\ckeditor.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\sample\\img\\umbrellas.jpg",
+      "PackagePath": "staticwebassets\\ckeditor\\sample\\img\\umbrellas.jpg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\config.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\config.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\af.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\af.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\contents.css",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\contents.css"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\ar.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\ar.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\af.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\af.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\ast.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\ast.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\ar.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\ar.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\az.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\az.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\az.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\az.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\bg.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\bg.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\bg.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\bg.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\bn.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\bn.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\bn.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\bn.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\bs.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\bs.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\bs.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\bs.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\ca.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\ca.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\ca.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\ca.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\cs.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\cs.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\cs.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\cs.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\da.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\da.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\cy.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\cy.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\de-ch.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\de-ch.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\da.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\da.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\de.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\de.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\de-ch.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\de-ch.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\el.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\el.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\de.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\de.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\en-au.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\en-au.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\el.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\el.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\en-gb.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\en-gb.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\en-au.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\en-au.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\eo.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\eo.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\en-ca.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\en-ca.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\es-co.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\es-co.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\en-gb.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\en-gb.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\es.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\es.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\en.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\en.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\et.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\et.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\eo.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\eo.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\eu.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\eu.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\es-mx.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\es-mx.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\fa.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\fa.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\es.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\es.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\fi.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\fi.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\et.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\et.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\fr.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\fr.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\eu.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\eu.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\gl.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\gl.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\fa.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\fa.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\gu.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\gu.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\fi.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\fi.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\he.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\he.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\fo.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\fo.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\hi.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\hi.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\fr-ca.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\fr-ca.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\hr.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\hr.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\fr.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\fr.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\hu.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\hu.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\gl.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\gl.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\hy.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\hy.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\gu.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\gu.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\id.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\id.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\he.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\he.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\it.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\it.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\hi.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\hi.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\ja.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\ja.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\hr.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\hr.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\jv.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\jv.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\hu.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\hu.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\km.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\km.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\id.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\id.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\kn.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\kn.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\is.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\is.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\ko.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\ko.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\it.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\it.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\ku.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\ku.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\ja.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\ja.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\lt.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\lt.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\ka.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\ka.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\lv.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\lv.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\km.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\km.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\ms.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\ms.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\ko.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\ko.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\nb.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\nb.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\ku.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\ku.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\ne.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\ne.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\lt.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\lt.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\nl.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\nl.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\lv.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\lv.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\no.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\no.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\mk.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\mk.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\oc.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\oc.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\mn.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\mn.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\pl.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\pl.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\ms.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\ms.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\pt-br.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\pt-br.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\nb.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\nb.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\pt.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\pt.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\nl.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\nl.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\ro.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\ro.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\no.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\no.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\ru.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\ru.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\oc.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\oc.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\si.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\si.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\pl.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\pl.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\sk.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\sk.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\pt-br.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\pt-br.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\sl.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\sl.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\pt.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\pt.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\sq.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\sq.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\ro.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\ro.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\sr-latn.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\sr-latn.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\ru.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\ru.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\sr.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\sr.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\si.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\si.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\sv.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\sv.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\sk.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\sk.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\th.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\th.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\sl.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\sl.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\tk.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\tk.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\sq.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\sq.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\tr.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\tr.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\sr-latn.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\sr-latn.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\tt.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\tt.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\sr.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\sr.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\ug.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\ug.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\sv.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\sv.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\uk.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\uk.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\th.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\th.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\ur.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\ur.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\tr.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\tr.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\uz.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\uz.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\tt.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\tt.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\vi.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\vi.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\ug.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\ug.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\zh-cn.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\zh-cn.js"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\uk.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\uk.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\vi.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\vi.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\zh-cn.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\zh-cn.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\lang\\zh.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\lang\\zh.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\package.json",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\package.json"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\a11yhelp.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\a11yhelp.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\_translationstatus.txt",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\_translationstatus.txt"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\af.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\af.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\ar.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\ar.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\az.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\az.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\bg.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\bg.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\ca.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\ca.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\cs.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\cs.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\cy.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\cy.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\da.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\da.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\de-ch.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\de-ch.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\de.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\de.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\el.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\el.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\en-au.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\en-au.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\en-gb.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\en-gb.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\en.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\en.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\eo.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\eo.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\es-mx.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\es-mx.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\es.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\es.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\et.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\et.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\eu.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\eu.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\fa.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\fa.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\fi.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\fi.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\fo.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\fo.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\fr-ca.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\fr-ca.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\fr.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\fr.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\gl.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\gl.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\gu.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\gu.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\he.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\he.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\hi.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\hi.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\hr.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\hr.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\hu.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\hu.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\id.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\id.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\it.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\it.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\ja.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\ja.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\km.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\km.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\ko.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\ko.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\ku.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\ku.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\lt.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\lt.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\lv.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\lv.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\mk.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\mk.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\mn.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\mn.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\nb.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\nb.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\nl.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\nl.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\no.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\no.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\oc.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\oc.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\pl.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\pl.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\pt-br.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\pt-br.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\pt.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\pt.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\ro.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\ro.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\ru.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\ru.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\si.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\si.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\sk.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\sk.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\sl.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\sl.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\sq.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\sq.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\sr-latn.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\sr-latn.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\sr.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\sr.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\sv.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\sv.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\th.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\th.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\tr.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\tr.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\tt.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\tt.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\ug.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\ug.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\uk.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\uk.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\vi.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\vi.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\zh-cn.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\zh-cn.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\zh.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\a11yhelp\\dialogs\\lang\\zh.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\about\\dialogs\\about.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\about\\dialogs\\about.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\about\\dialogs\\hidpi\\logo_ckeditor.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\about\\dialogs\\hidpi\\logo_ckeditor.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\about\\dialogs\\logo_ckeditor.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\about\\dialogs\\logo_ckeditor.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\clipboard\\dialogs\\paste.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\clipboard\\dialogs\\paste.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\colordialog\\dialogs\\colordialog.css",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\colordialog\\dialogs\\colordialog.css"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\colordialog\\dialogs\\colordialog.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\colordialog\\dialogs\\colordialog.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\copyformatting\\cursors\\cursor-disabled.svg",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\copyformatting\\cursors\\cursor-disabled.svg"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\copyformatting\\cursors\\cursor.svg",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\copyformatting\\cursors\\cursor.svg"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\copyformatting\\styles\\copyformatting.css",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\copyformatting\\styles\\copyformatting.css"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\dialog\\dialogDefinition.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\dialog\\dialogDefinition.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\dialog\\styles\\dialog.css",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\dialog\\styles\\dialog.css"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\div\\dialogs\\div.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\div\\dialogs\\div.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\CHANGELOG.md",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\CHANGELOG.md"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\LICENSE.md",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\LICENSE.md"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\README.md",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\README.md"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\plugindefinition.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\plugindefinition.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\_helpers\\tools.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\_helpers\\tools.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\authentication.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\authentication.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\exportpdf.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\exportpdf.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\configfilename.html",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\configfilename.html"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\configfilename.md",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\configfilename.md"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\emptyeditor.html",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\emptyeditor.html"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\emptyeditor.md",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\emptyeditor.md"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\integration.html",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\integration.html"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\integration.md",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\integration.md"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\integrations\\easyimage.html",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\integrations\\easyimage.html"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\integrations\\easyimage.md",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\integrations\\easyimage.md"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\notifications.html",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\notifications.html"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\notifications.md",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\notifications.md"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\notificationsasync.html",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\notificationsasync.html"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\notificationsasync.md",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\notificationsasync.md"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\paperformat.html",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\paperformat.html"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\paperformat.md",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\paperformat.md"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\readonly.html",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\readonly.html"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\readonly.md",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\readonly.md"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\stylesheets.html",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\stylesheets.html"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\stylesheets.md",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\stylesheets.md"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\tokenfetching.html",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\tokenfetching.html"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\tokenfetching.md",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\tokenfetching.md"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\tokentwoeditorscorrect.html",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\tokentwoeditorscorrect.html"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\tokentwoeditorscorrect.md",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\tokentwoeditorscorrect.md"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\tokentwoeditorswrong.html",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\tokentwoeditorswrong.html"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\tokentwoeditorswrong.md",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\tokentwoeditorswrong.md"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\tokenwithouturl.html",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\tokenwithouturl.html"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\tokenwithouturl.md",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\tokenwithouturl.md"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\wrongendpoint.html",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\wrongendpoint.html"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\wrongendpoint.md",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\manual\\wrongendpoint.md"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\notification.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\notification.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\resourcespaths.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\resourcespaths.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\statistics.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\statistics.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\stylesheets.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\exportpdf\\tests\\stylesheets.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\find\\dialogs\\find.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\find\\dialogs\\find.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\forms\\dialogs\\button.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\forms\\dialogs\\button.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\forms\\dialogs\\checkbox.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\forms\\dialogs\\checkbox.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\forms\\dialogs\\form.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\forms\\dialogs\\form.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\forms\\dialogs\\hiddenfield.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\forms\\dialogs\\hiddenfield.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\forms\\dialogs\\radio.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\forms\\dialogs\\radio.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\forms\\dialogs\\select.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\forms\\dialogs\\select.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\forms\\dialogs\\textarea.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\forms\\dialogs\\textarea.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\forms\\dialogs\\textfield.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\forms\\dialogs\\textfield.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\forms\\images\\hiddenfield.gif",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\forms\\images\\hiddenfield.gif"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\icons.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\icons.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\icons_hidpi.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\icons_hidpi.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\iframe\\dialogs\\iframe.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\iframe\\dialogs\\iframe.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\iframe\\images\\placeholder.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\iframe\\images\\placeholder.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\image\\dialogs\\image.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\image\\dialogs\\image.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\image\\images\\noimage.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\image\\images\\noimage.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\link\\dialogs\\anchor.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\link\\dialogs\\anchor.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\link\\dialogs\\link.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\link\\dialogs\\link.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\link\\images\\anchor.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\link\\images\\anchor.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\link\\images\\hidpi\\anchor.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\link\\images\\hidpi\\anchor.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\liststyle\\dialogs\\liststyle.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\liststyle\\dialogs\\liststyle.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\magicline\\images\\hidpi\\icon-rtl.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\magicline\\images\\hidpi\\icon-rtl.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\magicline\\images\\hidpi\\icon.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\magicline\\images\\hidpi\\icon.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\magicline\\images\\icon-rtl.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\magicline\\images\\icon-rtl.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\magicline\\images\\icon.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\magicline\\images\\icon.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\pagebreak\\images\\pagebreak.gif",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\pagebreak\\images\\pagebreak.gif"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\pastefromgdocs\\filter\\default.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\pastefromgdocs\\filter\\default.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\pastefromlibreoffice\\filter\\default.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\pastefromlibreoffice\\filter\\default.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\pastefromword\\filter\\default.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\pastefromword\\filter\\default.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\pastetools\\filter\\common.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\pastetools\\filter\\common.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\pastetools\\filter\\image.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\pastetools\\filter\\image.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\preview\\images\\pagebreak.gif",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\preview\\images\\pagebreak.gif"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\preview\\preview.html",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\preview\\preview.html"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\preview\\styles\\screen.css",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\preview\\styles\\screen.css"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\scayt\\CHANGELOG.md",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\scayt\\CHANGELOG.md"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\scayt\\LICENSE.md",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\scayt\\LICENSE.md"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\scayt\\README.md",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\scayt\\README.md"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\scayt\\dialogs\\dialog.css",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\scayt\\dialogs\\dialog.css"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\scayt\\dialogs\\options.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\scayt\\dialogs\\options.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\scayt\\dialogs\\toolbar.css",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\scayt\\dialogs\\toolbar.css"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\scayt\\skins\\moono-lisa\\scayt.css",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\scayt\\skins\\moono-lisa\\scayt.css"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\showblocks\\images\\block_address.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\showblocks\\images\\block_address.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\showblocks\\images\\block_blockquote.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\showblocks\\images\\block_blockquote.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\showblocks\\images\\block_div.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\showblocks\\images\\block_div.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\showblocks\\images\\block_h1.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\showblocks\\images\\block_h1.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\showblocks\\images\\block_h2.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\showblocks\\images\\block_h2.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\showblocks\\images\\block_h3.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\showblocks\\images\\block_h3.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\showblocks\\images\\block_h4.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\showblocks\\images\\block_h4.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\showblocks\\images\\block_h5.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\showblocks\\images\\block_h5.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\showblocks\\images\\block_h6.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\showblocks\\images\\block_h6.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\showblocks\\images\\block_p.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\showblocks\\images\\block_p.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\showblocks\\images\\block_pre.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\showblocks\\images\\block_pre.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\dialogs\\smiley.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\dialogs\\smiley.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\angel_smile.gif",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\angel_smile.gif"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\angel_smile.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\angel_smile.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\angry_smile.gif",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\angry_smile.gif"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\angry_smile.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\angry_smile.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\broken_heart.gif",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\broken_heart.gif"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\broken_heart.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\broken_heart.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\confused_smile.gif",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\confused_smile.gif"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\confused_smile.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\confused_smile.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\cry_smile.gif",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\cry_smile.gif"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\cry_smile.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\cry_smile.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\devil_smile.gif",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\devil_smile.gif"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\devil_smile.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\devil_smile.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\embaressed_smile.gif",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\embaressed_smile.gif"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\embarrassed_smile.gif",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\embarrassed_smile.gif"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\embarrassed_smile.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\embarrassed_smile.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\envelope.gif",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\envelope.gif"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\envelope.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\envelope.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\heart.gif",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\heart.gif"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\heart.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\heart.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\kiss.gif",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\kiss.gif"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\kiss.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\kiss.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\lightbulb.gif",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\lightbulb.gif"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\lightbulb.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\lightbulb.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\omg_smile.gif",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\omg_smile.gif"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\omg_smile.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\omg_smile.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\regular_smile.gif",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\regular_smile.gif"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\regular_smile.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\regular_smile.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\sad_smile.gif",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\sad_smile.gif"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\sad_smile.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\sad_smile.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\shades_smile.gif",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\shades_smile.gif"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\shades_smile.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\shades_smile.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\teeth_smile.gif",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\teeth_smile.gif"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\teeth_smile.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\teeth_smile.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\thumbs_down.gif",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\thumbs_down.gif"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\thumbs_down.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\thumbs_down.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\thumbs_up.gif",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\thumbs_up.gif"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\thumbs_up.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\thumbs_up.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\tongue_smile.gif",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\tongue_smile.gif"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\tongue_smile.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\tongue_smile.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\tounge_smile.gif",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\tounge_smile.gif"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\whatchutalkingabout_smile.gif",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\whatchutalkingabout_smile.gif"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\whatchutalkingabout_smile.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\whatchutalkingabout_smile.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\wink_smile.gif",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\wink_smile.gif"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\wink_smile.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\smiley\\images\\wink_smile.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\_translationstatus.txt",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\_translationstatus.txt"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\af.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\af.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\ar.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\ar.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\az.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\az.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\bg.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\bg.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\ca.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\ca.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\cs.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\cs.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\cy.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\cy.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\da.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\da.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\de-ch.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\de-ch.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\de.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\de.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\el.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\el.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\en-au.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\en-au.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\en-ca.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\en-ca.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\en-gb.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\en-gb.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\en.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\en.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\eo.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\eo.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\es-mx.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\es-mx.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\es.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\es.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\et.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\et.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\eu.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\eu.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\fa.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\fa.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\fi.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\fi.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\fr-ca.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\fr-ca.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\fr.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\fr.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\gl.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\gl.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\he.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\he.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\hr.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\hr.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\hu.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\hu.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\id.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\id.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\it.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\it.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\ja.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\ja.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\km.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\km.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\ko.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\ko.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\ku.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\ku.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\lt.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\lt.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\lv.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\lv.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\nb.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\nb.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\nl.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\nl.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\no.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\no.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\oc.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\oc.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\pl.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\pl.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\pt-br.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\pt-br.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\pt.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\pt.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\ro.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\ro.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\ru.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\ru.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\si.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\si.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\sk.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\sk.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\sl.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\sl.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\sq.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\sq.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\sr-latn.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\sr-latn.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\sr.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\sr.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\sv.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\sv.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\th.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\th.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\tr.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\tr.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\tt.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\tt.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\ug.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\ug.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\uk.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\uk.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\vi.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\vi.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\zh-cn.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\zh-cn.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\zh.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\lang\\zh.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\specialchar.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\specialchar\\dialogs\\specialchar.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\table\\dialogs\\table.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\table\\dialogs\\table.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\tableselection\\styles\\tableselection.css",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\tableselection\\styles\\tableselection.css"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\tabletools\\dialogs\\tableCell.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\tabletools\\dialogs\\tableCell.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\templates\\dialogs\\templates.css",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\templates\\dialogs\\templates.css"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\templates\\dialogs\\templates.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\templates\\dialogs\\templates.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\templates\\templatedefinition.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\templates\\templatedefinition.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\templates\\templates\\default.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\templates\\templates\\default.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\templates\\templates\\images\\template1.gif",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\templates\\templates\\images\\template1.gif"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\templates\\templates\\images\\template2.gif",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\templates\\templates\\images\\template2.gif"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\templates\\templates\\images\\template3.gif",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\templates\\templates\\images\\template3.gif"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\widget\\images\\handle.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\plugins\\widget\\images\\handle.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\dialog.css",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\dialog.css"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\dialog_ie.css",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\dialog_ie.css"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\dialog_ie8.css",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\dialog_ie8.css"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\dialog_iequirks.css",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\dialog_iequirks.css"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\editor.css",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\editor.css"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\editor_gecko.css",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\editor_gecko.css"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\editor_ie.css",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\editor_ie.css"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\editor_ie8.css",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\editor_ie8.css"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\editor_iequirks.css",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\editor_iequirks.css"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\icons.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\icons.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\icons_hidpi.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\icons_hidpi.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\images\\arrow.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\images\\arrow.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\images\\close.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\images\\close.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\images\\hidpi\\close.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\images\\hidpi\\close.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\images\\hidpi\\lock-open.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\images\\hidpi\\lock-open.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\images\\hidpi\\lock.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\images\\hidpi\\lock.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\images\\hidpi\\refresh.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\images\\hidpi\\refresh.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\images\\lock-open.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\images\\lock-open.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\images\\lock.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\images\\lock.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\images\\refresh.png",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\images\\refresh.png"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\images\\spinner.gif",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\images\\spinner.gif"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\readme.md",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\skins\\moono-lisa\\readme.md"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\styles.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\styles.js"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\content\\Scripts\\ckeditor\\vendor\\promise.js",
-      "PackagePath": "staticwebassets\\ckeditor\\content\\Scripts\\ckeditor\\vendor\\promise.js"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\ckeditor\\translations\\zh.js",
+      "PackagePath": "staticwebassets\\ckeditor\\translations\\zh.js"
     },
     {
       "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\css\\light.css",

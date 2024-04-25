@@ -92,7 +92,7 @@ function handlehandleChangeIconTheme() {
 function getSavedTheme() {
     return sessionStorage.getItem('theme');
 }
-var defaultTheme = '/css/site.css';
+var defaultTheme = '/css/light.css';
 
 // Hàm lưu giá trị chủ đề vào sessionStorage
 function saveTheme(theme) {
