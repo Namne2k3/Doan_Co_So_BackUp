@@ -40,7 +40,7 @@ namespace Doan_Web_CK
             var currentChatRoom = chatRooms.Where(p =>
                 p.ConnectionRoomCall == roomId
                 &&
-                p.UserId == currentUser.Id || p.FriendId == currentUser.Id
+                p.Users[0].Id == currentUser.Id || p.Users[1].Id == currentUser.Id
             ).ToList();
 
             var findedChatroom = currentChatRoom.SingleOrDefault(p => p.ConnectionRoomCall == roomId);

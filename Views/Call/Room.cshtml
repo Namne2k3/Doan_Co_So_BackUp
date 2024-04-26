@@ -33,14 +33,14 @@
     @if ( currentChatroom != null )
     {
         <div class="messages_container messages_container_room_call">
-            @if (currentUser.Id == currentChatroom?.UserId)
+            @if (currentUser.Id == currentChatroom.Users[0].Id)
                 {
                     <div class="messages_info_container_flex">
                         <div class="messages_info_img_container">
-                            <img src="@currentChatroom?.Friend?.ImageUrl" alt="messages_info_img" />
+                            <img src="@currentChatroom.Users[1].ImageUrl" alt="messages_info_img" />
                         </div>
                         <div class="messages_info">
-                            <a asp-action="Index" asp-controller="Profile" asp-route-id="@currentChatroom?.Friend?.Id" asp->@currentChatroom?.Friend?.UserName</a>
+                            <a asp-action="Index" asp-controller="Profile" asp-route-id="@currentChatroom.Users[1].Id" asp->@currentChatroom.Users[1].UserName</a>
                         </div>
                     </div>
                 }
@@ -48,10 +48,10 @@
                 {
                     <div class="messages_info_container_flex">
                         <div class="messages_info_img_container">
-                            <img src="@currentChatroom?.User?.ImageUrl" alt="messages_info_img" />
+                            <img src="@currentChatroom.Users[0].ImageUrl" alt="messages_info_img" />
                         </div>
                         <div class="messages_info">
-                            <a asp-action="Index" asp-controller="Profile" asp-route-id="@currentChatroom?.User?.Id" asp->@currentChatroom?.User?.UserName</a>
+                            <a asp-action="Index" asp-controller="Profile" asp-route-id="@currentChatroom.Users[0].Id" asp->@currentChatroom.Users[0].UserName</a>
                         </div>
                     </div>
                 }
@@ -104,12 +104,12 @@
             </div>
             <input id="userInput" value="@currentUser.Id" hidden />
             <input hidden id="chatRoom_Id" value="@currentChatroom.Id" />
-            @if (currentUser?.Id == currentChatroom?.UserId)
+            @if (currentUser?.Id == currentChatroom.Users[0].Id)
             {
-                <input id="receiverId" value="@currentChatroom?.FriendId" hidden />
+                <input id="receiverId" value="@currentChatroom.Users[1].Id" hidden />
             } else
             {
-                <input id="receiverId" value="@currentChatroom?.UserId" hidden />
+                <input id="receiverId" value="@currentChatroom.Users[0].Id" hidden />
             }
             <div class="message_input_container">
                 <input id="messageInput" onkeypress="handleSendMessage(event)" placeholder="Writing something ... " type="text" class="form-control message_input" />
@@ -261,9 +261,44 @@
                 Profile
             </div>
         </a>
+        @if (currentUser != null)
+        {
+            if (await UserManager.IsInRoleAsync(currentUser, "Admin"))
+            {
+                <a class="nav_item" asp-action="Index" asp-controller="Admin" asp-area="Admin">
+                    <div class="navIcon text-center">
+                        <i class="icon bi bi-person-workspace"></i>
+                    </div>
+                    <div class="navTitle w-75 text-start my-auto">
+                        Admin
+                    </div>
+                </a>
+            }
+        }
     </ul>
+    <div id="theme_container" class="theme_container">
+        @* <button onclick="handleChangeTheme()" class="btn btn-outline-light" id="theme-toggle" title="Toggles light & dark" aria-label="auto" aria-live="polite">
+    <i id="theme_icon" class="bi bi-brightness-high-fill"></i>
+    </button> *@
+    </div>
 }
 <script>
     const ROOM_ID = '@ViewBag.roomId'
+    if (!sessionStorage.getItem('theme')) {
+            var defaultTheme = '@Url.Content("~/css/site.css")'; // Giá trị mặc định, có thể là bất kỳ giá trị nào bạn muốn
+            sessionStorage.setItem('theme', defaultTheme);
+        }
+        function handleChangeTheme() {
+            var currentTheme = getSavedTheme();
+            var newTheme = currentTheme.includes('site.css') ? '@Url.Content("~/css/light.css")' : '@Url.Content("~/css/site.css")';
+
+            // Lưu trạng thái chủ đề mới
+            saveTheme(newTheme);
+
+            // Áp dụng chủ đề mới
+            applyTheme(newTheme);
+
+            handlehandleChangeIconTheme();
+        }
 </script>
 <script src="~/js/call.js"></script>

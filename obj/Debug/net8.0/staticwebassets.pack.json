@@ -2441,6 +2441,326 @@
       "PackagePath": "staticwebassets\\lib\\ckeditor5-image\\theme\\textalternativeform.css"
     },
     {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\README.md",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\README.md"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\ckeditor.d.ts",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\ckeditor.d.ts"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\ckeditor.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\ckeditor.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\ckeditor.js.map",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\ckeditor.js.map"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\index.html",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\index.html"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\sample\\css\\sample.css",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\sample\\css\\sample.css"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\sample\\img\\bg.png",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\sample\\img\\bg.png"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\sample\\img\\github.svg",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\sample\\img\\github.svg"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\sample\\img\\logo.svg",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\sample\\img\\logo.svg"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\sample\\img\\umbrellas.jpg",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\sample\\img\\umbrellas.jpg"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\af.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\af.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\ar.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\ar.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\ast.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\ast.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\az.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\az.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\bg.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\bg.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\bn.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\bn.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\bs.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\bs.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\ca.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\ca.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\cs.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\cs.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\da.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\da.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\de-ch.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\de-ch.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\de.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\de.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\el.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\el.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\en-au.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\en-au.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\en-gb.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\en-gb.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\eo.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\eo.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\es-co.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\es-co.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\es.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\es.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\et.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\et.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\eu.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\eu.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\fa.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\fa.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\fi.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\fi.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\fr.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\fr.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\gl.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\gl.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\gu.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\gu.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\he.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\he.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\hi.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\hi.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\hr.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\hr.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\hu.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\hu.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\hy.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\hy.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\id.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\id.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\it.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\it.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\ja.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\ja.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\jv.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\jv.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\km.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\km.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\kn.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\kn.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\ko.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\ko.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\ku.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\ku.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\lt.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\lt.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\lv.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\lv.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\ms.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\ms.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\nb.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\nb.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\ne.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\ne.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\nl.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\nl.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\no.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\no.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\oc.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\oc.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\pl.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\pl.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\pt-br.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\pt-br.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\pt.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\pt.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\ro.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\ro.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\ru.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\ru.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\si.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\si.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\sk.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\sk.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\sl.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\sl.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\sq.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\sq.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\sr-latn.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\sr-latn.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\sr.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\sr.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\sv.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\sv.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\th.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\th.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\tk.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\tk.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\tr.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\tr.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\tt.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\tt.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\ug.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\ug.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\uk.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\uk.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\ur.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\ur.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\uz.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\uz.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\vi.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\vi.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\zh-cn.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\zh-cn.js"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\zh.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5-build-classic\\ckeditor\\translations\\zh.js"
+    },
+    {
       "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\lib\\ckfinder\\CHANGELOG.html",
       "PackagePath": "staticwebassets\\lib\\ckfinder\\CHANGELOG.html"
     },

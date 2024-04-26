@@ -20,6 +20,16 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddRoles<IdentityRole>();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins", policy =>
+    {
+        policy.AllowAnyOrigin();
+        policy.AllowAnyMethod();
+        policy.AllowAnyHeader();
+    });
+});
+
 builder.Services.AddAuthentication();
 builder.Services.AddSignalR();
 builder.Services.AddHttpContextAccessor();
@@ -67,12 +77,12 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
+app.UseCors("AllowAllOrigins");
 app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapRazorPages();
-
 app.UseEndpoints(endpoints =>
 {
 

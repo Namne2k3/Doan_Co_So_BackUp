@@ -17,10 +17,25 @@ namespace Doan_Web_CK.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.3")
+                .HasAnnotation("ProductVersion", "8.0.4")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("ApplicationUserChatRoom", b =>
+                {
+                    b.Property<int>("ChatroomsId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UsersId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("ChatroomsId", "UsersId");
+
+                    b.HasIndex("UsersId");
+
+                    b.ToTable("ApplicationUserChatRoom");
+                });
 
             modelBuilder.Entity("Doan_Web_CK.Models.Blog", b =>
                 {
@@ -100,21 +115,11 @@ namespace Doan_Web_CK.Migrations
                     b.Property<string>("ConnectionRoomCall")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("FriendId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<string>("roomName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("FriendId");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("chatRooms");
                 });
@@ -508,6 +513,21 @@ namespace Doan_Web_CK.Migrations
                     b.HasDiscriminator().HasValue("ApplicationUser");
                 });
 
+            modelBuilder.Entity("ApplicationUserChatRoom", b =>
+                {
+                    b.HasOne("Doan_Web_CK.Models.ChatRoom", null)
+                        .WithMany()
+                        .HasForeignKey("ChatroomsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Doan_Web_CK.Models.ApplicationUser", null)
+                        .WithMany()
+                        .HasForeignKey("UsersId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("Doan_Web_CK.Models.Blog", b =>
                 {
                     b.HasOne("Doan_Web_CK.Models.ApplicationUser", "Account")
@@ -525,23 +545,6 @@ namespace Doan_Web_CK.Migrations
                     b.Navigation("Account");
 
                     b.Navigation("Category");
-                });
-
-            modelBuilder.Entity("Doan_Web_CK.Models.ChatRoom", b =>
-                {
-                    b.HasOne("Doan_Web_CK.Models.ApplicationUser", "Friend")
-                        .WithMany()
-                        .HasForeignKey("FriendId")
-                        .OnDelete(DeleteBehavior.NoAction);
-
-                    b.HasOne("Doan_Web_CK.Models.ApplicationUser", "User")
-                        .WithMany("Chatrooms")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.NoAction);
-
-                    b.Navigation("Friend");
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Doan_Web_CK.Models.Comment", b =>
@@ -707,8 +710,6 @@ namespace Doan_Web_CK.Migrations
             modelBuilder.Entity("Doan_Web_CK.Models.ApplicationUser", b =>
                 {
                     b.Navigation("Blogs");
-
-                    b.Navigation("Chatrooms");
 
                     b.Navigation("Friendships");
 

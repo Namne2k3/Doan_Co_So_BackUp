@@ -389,13 +389,12 @@ namespace Doan_Web_CK.Controllers
                 var chatroom = new ChatRoom
                 {
                     roomName = finded.User.UserName,
-                    User = finded.Friend,
-                    UserId = userId,
-                    FriendId = finded.UserId,
-                    Friend = finded.User,
                     Messages = new List<Message>(),
+                    Users = new List<ApplicationUser>(),
                     ConnectionRoomCall = Guid.NewGuid().ToString()
                 };
+                chatroom.Users.Add(finded.Friend);
+                chatroom.Users.Add(finded.User);
 
                 await _chatRoomRepository.AddAsync(chatroom);
 
@@ -426,13 +425,15 @@ namespace Doan_Web_CK.Controllers
                 var chatroom = new ChatRoom
                 {
                     roomName = finded.User.UserName,
-                    User = finded.Friend,
-                    UserId = userId,
-                    FriendId = finded.UserId,
-                    Friend = finded.User,
+                    // User = finded.Friend,
+                    // UserId = userId,
+                    // FriendId = finded.UserId,
+                    // Friend = finded.User,
                     Messages = new List<Message>(),
                     ConnectionRoomCall = Guid.NewGuid().ToString()
                 };
+                chatroom.Users.Add(finded.Friend);
+                chatroom.Users.Add(finded.User);
 
                 await _chatRoomRepository.AddAsync(chatroom);
 

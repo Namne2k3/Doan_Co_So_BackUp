@@ -1,7 +1,9 @@
 ﻿@model IEnumerable<Doan_Web_CK.Models.ChatRoom>
 @using Microsoft.AspNetCore.Identity
+
 @inject SignInManager<ApplicationUser> SignInManager
 @inject UserManager<ApplicationUser> UserManager
+
 @{
     ViewData["Title"] = "Chat";
     var currentUser = ViewBag.currentUser;
@@ -11,29 +13,23 @@
 <div class="body_container">
     <div class="message_section_container">
         <div class="chatroom_container">
+            <a asp-controller="Chat" asp-action="Create" class="btn_create_group btn btn-outline-dark">Create Group Chat</a>
             @foreach (var cr in Model)
             {
                 <a asp-controller="Chat" asp-action="Details" asp-route-id="@cr?.Id" onclick="handleToggleMessages(@cr.Id)" class="chatroom_card">
                     <div class="chatroom_card_img_container">
-                        @if (currentUser.Id == cr.UserId)
+                        @if (currentUser.Id == cr.Users[0].Id)
                         {
-                            <img alt="chatroom_card_img" class="chatroom_card_img" src="@cr?.Friend?.ImageUrl" />
+                            <img alt="chatroom_card_img" class="chatroom_card_img" src="@cr.Users[1].ImageUrl" />
                         }
                         else
                         {
-                            <img alt="chatroom_card_img" class="chatroom_card_img" src="@cr?.User?.ImageUrl" />
+                            <img alt="chatroom_card_img" class="chatroom_card_img" src="@cr.Users[0].ImageUrl" />
                         }
                     </div>
 
                     <div class="chatroom_card_info">
-                        @if (currentUser.Id == cr.UserId)
-                        {
-                            <p>@@@cr?.Friend?.UserName</p>
-                        }
-                        else
-                        {
-                            <p>@@@cr?.User?.UserName</p>
-                        }
+                        <p>@cr.roomName</p>
                     </div>
                 </a>
             }
@@ -44,30 +40,30 @@
             <div class="messages_container">
 
                 <div class="messages_info_container">
-                    @if (currentUser.Id == currentChatroom?.UserId)
+                    @if (currentUser.Id == currentChatroom.Users[0].Id)
                     {
-                        <div class="d-flex">
+                        <div class="messages_info_container_flex">
                             <div class="messages_info_img_container">
-                                <img src="@currentChatroom?.Friend?.ImageUrl" alt="messages_info_img" />
+                                <img src="@currentChatroom.Users[1].ImageUrl" alt="messages_info_img" />
                             </div>
                             <div class="messages_info">
-                                <a asp-action="Index" asp-controller="Profile" asp-route-id="@currentChatroom?.Friend?.Id" asp->@currentChatroom?.Friend?.UserName</a>
+                                <a asp-action="Index" asp-controller="Profile" asp-route-id="@currentChatroom.Users[1].Id" asp->@currentChatroom.Users[1].UserName</a>
                             </div>
                         </div>
                     }
                     else
                     {
-                        <div class="d-flex">
+                        <div class="messages_info_container_flex">
                             <div class="messages_info_img_container">
-                                <img src="@currentChatroom?.User?.ImageUrl" alt="messages_info_img" />
+                                <img src="@currentChatroom.Users[0].ImageUrl" alt="messages_info_img" />
                             </div>
                             <div class="messages_info">
-                                <a asp-action="Index" asp-controller="Profile" asp-route-id="@currentChatroom?.User?.Id" asp->@currentChatroom?.User?.UserName</a>
+                                <a asp-action="Index" asp-controller="Profile" asp-route-id="@currentChatroom.Users[0].Id" asp->@currentChatroom.Users[0].UserName</a>
                             </div>
                         </div>
                     }
 
-                    <div>
+                    <div class="message_call_btn_container">
                         <a onclick="handleSendCallMessage('@currentChatroom.ConnectionRoomCall', '@currentUser.UserName')" asp-action="Room" asp-controller="Call" asp-route-roomId="@currentChatroom.ConnectionRoomCall" class="btn btn-outline-light">
                             <i class="bi bi-telephone"></i>
                         </a>
@@ -86,17 +82,17 @@
                                         <div class="message_item_img_container">
                                             <img src="@ms.ApplicationUser.ImageUrl" alt="user_image" />
                                         </div>
-                                        <p>
+                                        <p class="long_text">
                                             @ms.Text
                                             @if (ms.Type != null)
                                             {
-                                                <a onclick="handleSendCallMessage('@ms.connectionRoomCall', '@currentUser.UserName')" asp-action="Room" asp-controller="Call" asp-route-roomId="@ms.connectionRoomCall" class="btn btn-outline-light call_icon">
+                                                <a asp-action="Room" asp-controller="Call" asp-route-roomId="@ms.connectionRoomCall" class="btn btn-outline-light call_icon">
                                                     <i class="bi bi-telephone-outbound"></i>
                                                 </a>
                                             }
                                         </p>
                                     </div>
-                                    <p style="text-align: right;">@ms.Time</p>
+                                    <p class="message_item_date" style="text-align: right;">@ms.Time</p>
                                 </div>
                             }
                             else
@@ -110,13 +106,13 @@
                                             @ms.Text
                                             @if (ms.Type != null)
                                             {
-                                                <a onclick="handleSendCallMessage('@ms.connectionRoomCall', '@currentUser.UserName')" asp-action="Room" asp-controller="Call" asp-route-roomId="@ms.connectionRoomCall" class="btn btn-outline-light call_icon">
+                                                <a asp-action="Room" asp-controller="Call" asp-route-roomId="@ms.connectionRoomCall" class="btn btn-outline-light call_icon">
                                                     <i class="bi bi-telephone-outbound"></i>
                                                 </a>
                                             }
                                         </p>
                                     </div>
-                                    <p style="text-align: left;">@ms.Time</p>
+                                    <p class="message_item_date" style="text-align: left;">@ms.Time</p>
                                 </div>
                             }
                         }
@@ -124,13 +120,13 @@
                 </div>
                 <input id="userInput" value="@currentUser.Id" hidden />
                 <input hidden id="chatRoom_Id" value="@currentChatroom.Id" />
-                @if (currentUser?.Id == currentChatroom?.UserId)
+                @if (currentUser?.Id == currentChatroom.Users[0].Id)
                 {
-                    <input id="receiverId" value="@currentChatroom?.FriendId" hidden />
+                    <input id="receiverId" value="@currentChatroom.Users[1].Id" hidden />
                 }
                 else
                 {
-                    <input id="receiverId" value="@currentChatroom?.UserId" hidden />
+                    <input id="receiverId" value="@currentChatroom.Users[0].Id" hidden />
                 }
                 <div class="message_input_container">
                     <input id="messageInput" onkeypress="handleSendMessage(event)" placeholder="Writing something ... " type="text" class="form-control message_input" />
@@ -248,7 +244,7 @@
             </div>
         }
         <a asp-controller="Chat" asp-action="Index" class="nav_item">
-            
+            @* <a asp-controller="Profile" asp-route-id="@UserManager.GetUserId(User)" asp-action="Index" class="nav_item"> *@
             <div class="navIcon text-center">
                 <i class="icon bi bi-wechat"></i>
             </div>
@@ -257,7 +253,7 @@
             </div>
         </a>
         <a asp-controller="Profile" asp-action="Index" class="nav_item">
-            
+            @* <a asp-controller="Profile" asp-route-id="@UserManager.GetUserId(User)" asp-action="Index" class="nav_item"> *@
             <div class="navIcon text-center">
                 <i class="icon bi bi-person-circle"></i>
             </div>
@@ -268,14 +264,13 @@
     </ul>
     <div id="theme_container" class="theme_container">
         @* <button onclick="handleChangeTheme()" class="btn btn-outline-light" id="theme-toggle" title="Toggles light & dark" aria-label="auto" aria-live="polite">
-            <i id="theme_icon" class="bi bi-brightness-high-fill"></i>
-        </button> *@
+    <i id="theme_icon" class="bi bi-brightness-high-fill"></i>
+    </button> *@
     </div>
 }
 <script>
     if (!sessionStorage.getItem('theme')) {
         var defaultTheme = '@Url.Content("~/css/site.css")'; // Giá trị mặc định, có thể là bất kỳ giá trị nào bạn muốn
-        console.log(defaultTheme)
         sessionStorage.setItem('theme', defaultTheme);
     }
     function handleChangeTheme() {

@@ -23,6 +23,67 @@ namespace Doan_Web_CK.Controllers
             _notificationRepository = notificationRepository;
         }
 
+        [HttpGet]
+        public async Task<IActionResult> SearchMembers(string query)
+        {
+            var currentUser = await _userManager.GetUserAsync(User);
+            var friends = await _friendShipRepository.GetAllAsync();
+            var filtered = friends.Where(p => p.UserId == currentUser.Id || p.FriendId == currentUser.Id).ToList();
+            filtered = filtered.Where(p => p.IsConfirmed == true).ToList();
+            if (query != null)
+            {
+                filtered = filtered.Where(p => p.User.UserName.ToLower().Contains(query.ToLower()) || p.Friend.UserName.ToLower().Contains(query.ToLower())).ToList();
+            }
+
+            if (filtered.Count == 0)
+            {
+                return Json(new
+                {
+                    message = "not found",
+                });
+            }
+            return Json(new
+            {
+                message = "found",
+                html = GenerateFriendCards(filtered, currentUser.Id)
+            });
+
+        }
+        public string GenerateFriendCards(List<Friendship> friends, string currentUser)
+        {
+            StringBuilder sb = new StringBuilder();
+
+            foreach (var friend in friends)
+            {
+                sb.Append("<div class=\"create_friend_card\">");
+                sb.Append("<div class=\"create_friend_img_container\">");
+                if (friend.UserId == currentUser)
+                {
+                    sb.Append($"<img style=\"width: 100%; height: 100%;\" src=\"{friend.Friend?.ImageUrl}\" alt=\"friend_card_image\" />");
+                }
+                else
+                {
+                    sb.Append($"<img style=\"width: 100%; height: 100%;\" src=\"{friend.User?.ImageUrl}\" alt=\"friend_card_image\" />");
+                }
+                sb.Append("</div>");
+
+                sb.Append("<div class=\"create_friend_action\">");
+                if (friend.UserId == currentUser)
+                {
+                    sb.Append($"<a class=\"create_friend_username\" asp-controller=\"Profile\" asp-action=\"Index\" asp-route-id=\"{friend.Friend?.Id}\">{friend.Friend?.UserName}</a>");
+                    sb.Append($"<a onclick=\"handleAddUserToGroup('{friend.Friend.Id}', '{friend.Friend.ImageUrl}', '{friend.Friend.UserName}')\" class=\"btn btn-outline-dark\">Add User</a>");
+                }
+                else
+                {
+                    sb.Append($"<a class=\"create_friend_username\" asp-controller=\"Profile\" asp-action=\"Index\" asp-route-id=\"{friend.User?.Id}\">{friend.User?.UserName}</a>");
+                    sb.Append($"<a onclick=\"handleAddUserToGroup('{friend.User.Id}', '{friend.User.ImageUrl}', '{friend.User.UserName}')\" class=\"btn btn-outline-dark\">Add User</a>");
+                }
+                sb.Append("</div>");
+                sb.Append("</div>");
+            }
+
+            return sb.ToString();
+        }
         public async Task<IActionResult> UnFriend(string userId, string friendId)
         {
             var currnentUser = await _userManager.GetUserAsync(User);

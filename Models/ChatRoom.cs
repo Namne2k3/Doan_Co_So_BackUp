@@ -8,11 +8,12 @@ namespace Doan_Web_CK.Models
 
         [Required]
         public string roomName { get; set; }
-        public string? UserId { get; set; }
-        public ApplicationUser? User { get; set; }
+        // public string? UserId { get; set; }
+        // public ApplicationUser? User { get; set; }
 
-        public string? FriendId { get; set; }
-        public ApplicationUser? Friend { get; set; }
+        // public string? FriendId { get; set; }
+        // public ApplicationUser? Friend { get; set; }
+        public List<ApplicationUser> Users { get; set; }
 
         public List<Message>? Messages { get; set; }
 

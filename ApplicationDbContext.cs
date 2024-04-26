@@ -24,18 +24,6 @@ namespace Doan_Web_CK
             modelBuilder.Entity<ChatRoom>()
                 .HasKey(cr => cr.Id);
 
-            modelBuilder.Entity<ChatRoom>()
-                .HasOne(cr => cr.User)
-                .WithMany(u => u.Chatrooms)
-                .HasForeignKey(cr => cr.UserId)
-                .OnDelete(DeleteBehavior.NoAction); // Thiết lập UserId trong ChatRoom thành null khi User bị xóa
-
-            modelBuilder.Entity<ChatRoom>()
-                .HasOne(cr => cr.Friend)
-                .WithMany()
-                .HasForeignKey(cr => cr.FriendId)
-                .OnDelete(DeleteBehavior.NoAction); // Thiết lập FriendId trong ChatRoom thành null khi Friend bị xóa
-
             modelBuilder.Entity<Nofitication>()
                 .HasOne(n => n.Blog)
                 .WithMany()

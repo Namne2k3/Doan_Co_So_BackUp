@@ -16,7 +16,39 @@ namespace Doan_Web_CK.Controllers
         private readonly IChatRoomRepository _chatRoomRepository;
         private readonly INotifiticationRepository _notifiticationRepository;
 
+        [HttpPost]
+        public async Task<IActionResult> Create(string roomName, List<string> members)
+        {
+            var chatRoom = new ChatRoom
+            {
+                roomName = roomName,
+                Users = new List<ApplicationUser>(),
+                ConnectionRoomCall = Guid.NewGuid().ToString()
+            };
 
+            foreach (var id in members)
+            {
+                chatRoom.Users.Add(await _accountRepository.GetByIdAsync(id));
+            }
+
+            await _chatRoomRepository.AddAsync(chatRoom);
+
+            return RedirectToAction("Index");
+        }
+        public async Task<IActionResult> Create()
+        {
+            var account = await _accountRepository.GetByIdAsync(_userManager.GetUserId(User));
+            var friends = await _friendShipRepository.GetAllAsync();
+            var filtered = friends.Where(p => p.UserId == account.Id || p.FriendId == account.Id).ToList();
+            filtered = filtered.Where(p => p.IsConfirmed == true).ToList();
+            ViewBag.currentUser = account;
+            ViewBag.GetUserName = new Func<string, string>(GetUserName);
+            ViewBag.IsRequested = new Func<string, string, bool>(IsRequested);
+            ViewBag.Friends = filtered;
+            ViewBag.GetAllNofOfUser = new Func<string, IEnumerable<Nofitication>>(GetAllNofOfUser);
+            var ownChatRoom = await _chatRoomRepository.GetAllChatRoomByUserIdAsync(account?.Id);
+            return View();
+        }
         public ChatController(UserManager<ApplicationUser> userManager, IAccountRepository accountRepository, IMessageRepository messageRepository, IChatRoomRepository chatRoomRepository, IFriendShipRepository friendShipRepository, INotifiticationRepository notifiticationRepository)
         {
             _userManager = userManager;

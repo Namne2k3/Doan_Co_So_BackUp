@@ -13,28 +13,22 @@
 <div class="body_container">
     <div class="message_section_container">
         <div class="chatroom_container">
+            <a asp-controller="Chat" asp-action="Create" class="btn_create_group btn btn-outline-dark">Create Group Chat</a>
             @foreach ( var cr in Model)
             {
                 <a asp-controller="Chat" asp-action="Details" asp-route-id="@cr?.Id" onclick="handleToggleMessages(@cr.Id)" class="chatroom_card">
                     <div class="chatroom_card_img_container">
-                        @if ( currentUser.Id == cr.UserId )
+                        @if ( currentUser.Id == cr.Users[0].Id )
                         {
-                            <img alt="chatroom_card_img" class="chatroom_card_img" src="@cr?.Friend?.ImageUrl" />
+                            <img alt="chatroom_card_img" class="chatroom_card_img" src="@cr.Users[1].ImageUrl" />
                         } else
                         {
-                            <img alt="chatroom_card_img" class="chatroom_card_img" src="@cr?.User?.ImageUrl" />
+                            <img alt="chatroom_card_img" class="chatroom_card_img" src="@cr.Users[0].ImageUrl" />
                         }
                     </div>
 
                     <div class="chatroom_card_info">
-                        @if (currentUser.Id == cr.UserId)
-                        {
-                            <p>@@@cr?.Friend?.UserName</p>
-                        }
-                        else
-                        {
-                            <p>@@@cr?.User?.UserName</p>    
-                        }
+                       <p>@cr.roomName</p>
                     </div>
                 </a>
             }
@@ -45,14 +39,14 @@
             <div class="messages_container">
 
                 <div class="messages_info_container">
-                    @if (currentUser.Id == currentChatroom?.UserId)
+                    @if (currentUser.Id == currentChatroom.Users[0].Id)
                     {
                         <div class="messages_info_container_flex">
                             <div class="messages_info_img_container">
-                                <img src="@currentChatroom?.Friend?.ImageUrl" alt="messages_info_img" />
+                                <img src="@currentChatroom.Users[1].ImageUrl" alt="messages_info_img" />
                             </div>
                             <div class="messages_info">
-                                <a asp-action="Index" asp-controller="Profile" asp-route-id="@currentChatroom?.Friend?.Id" asp->@currentChatroom?.Friend?.UserName</a>
+                                <a asp-action="Index" asp-controller="Profile" asp-route-id="@currentChatroom.Users[1].Id" asp->@currentChatroom.Users[1].UserName</a>
                             </div>
                         </div>
                     }
@@ -60,10 +54,10 @@
                     {
                         <div class="messages_info_container_flex">
                             <div class="messages_info_img_container">
-                                <img src="@currentChatroom?.User?.ImageUrl" alt="messages_info_img" />
+                                <img src="@currentChatroom.Users[0].ImageUrl" alt="messages_info_img" />
                             </div>
                             <div class="messages_info">
-                                <a asp-action="Index" asp-controller="Profile" asp-route-id="@currentChatroom?.User?.Id" asp->@currentChatroom?.User?.UserName</a>
+                                <a asp-action="Index" asp-controller="Profile" asp-route-id="@currentChatroom.Users[0].Id" asp->@currentChatroom.Users[0].UserName</a>
                             </div>
                         </div>
                     }
@@ -124,12 +118,12 @@
                 </div>
                 <input id="userInput" value="@currentUser.Id" hidden />
                 <input hidden id="chatRoom_Id" value="@currentChatroom.Id" />
-                @if (currentUser?.Id == currentChatroom?.UserId)
+                @if (currentUser?.Id == currentChatroom.Users[0].Id)
                 {
-                    <input id="receiverId" value="@currentChatroom?.FriendId" hidden />
+                    <input id="receiverId" value="@currentChatroom.Users[1].Id" hidden />
                 } else
                 {
-                    <input id="receiverId" value="@currentChatroom?.UserId" hidden />
+                    <input id="receiverId" value="@currentChatroom.Users[0].Id" hidden />
                 }
                 <div class="message_input_container">
                     <input id="messageInput" onkeypress="handleSendMessage(event)" placeholder="Writing something ... " type="text" class="form-control message_input" />

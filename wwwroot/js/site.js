@@ -1,4 +1,120 @@
 ﻿
+var arrayMember = [];
+async function handleCreateGroup(event) {
+    event.preventDefault()
+    const form = event.target;
+    const roomName = form.roomName.value;
+    const membersString = arrayMember.join(',');
+
+    const bodyData = new FormData();
+    bodyData.append('roomName', roomName);
+    for (const memberId of arrayMember) {
+        bodyData.append('members', memberId);
+    }
+    console.log("Check arrayMember >>> ", arrayMember)
+    try {
+        const response = await fetch("/Chat/Create", {
+            method: "POST",
+            body: bodyData
+        });
+    } catch (err) {
+        console.log("Check error >>> ", err.toString());
+    }
+}
+async function handleSearchMember(event) {
+    if (event.keyCode == 13) {
+
+        if (event.target.value) {
+            await fetch(`/Friend/SearchMembers?query=${event.target.value}`)
+                .then(response => {
+                    return response.json()
+                })
+                .then(data => {
+                    // ...
+                    if (data.html) {
+                        var container = document.getElementById('create_friend_card_container')
+                        container.innerHTML = ''
+                        container.innerHTML = data.html;
+
+                    } else {
+                        showElement('not_found_user_status')
+                    }
+                })
+                .catch(err => console.log(err.toString()))
+        } else {
+            await fetch(`/Friend/SearchMembers`)
+                .then(response => {
+                    return response.json()
+                })
+                .then(data => {
+                    // ...
+                    if (data.html) {
+                        var container = document.getElementById('create_friend_card_container')
+                        container.innerHTML = ''
+                        container.innerHTML = data.html;
+
+                    } else {
+                        showElement('not_found_user_status')
+                    }
+                })
+                .catch(err => console.log(err.toString()))
+        }
+    }
+}
+
+function handleAddUserToGroup(userId, imageUrl, username, currentUser) {
+    if (!arrayMember.includes(currentUser)) {
+        arrayMember.push(currentUser)
+    }
+    console.log("Check arrayMember >>> ", arrayMember)
+    if (!arrayMember.includes(userId)) {
+        arrayMember.push(userId);
+        var container = document.getElementById('create_chatroom_listfriend')
+        var listItem = createListItem(userId, imageUrl, username);
+        container.appendChild(listItem);
+    }
+    else {
+        showElement('addded_user_status')
+    }
+    // ... 
+}
+function createListItem(userId, imageUrl, username) {
+    const listItem = document.createElement("li");
+    listItem.classList.add("list-group-item", "d-flex", "justify-content-between", "align-content-center");
+
+    const imageDiv = document.createElement("div");
+    imageDiv.classList.add("d-flex", "flex-row");
+
+    const image = document.createElement("img");
+    image.src = imageUrl;
+    image.width = 40;
+
+    const contentDiv = document.createElement("div");
+    contentDiv.classList.add("ml-2");
+
+    const name = document.createElement("h6");
+    name.textContent = username;
+    name.classList.add("mb-0");
+
+    const checkboxDiv = document.createElement("div");
+    checkboxDiv.classList.add("check");
+
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.name = "a";
+    checkbox.checked = true;
+    checkbox.value = userId
+
+    // Add elements to their parents
+    imageDiv.appendChild(image);
+    contentDiv.appendChild(name);
+    imageDiv.appendChild(contentDiv);
+    listItem.appendChild(imageDiv);
+    checkboxDiv.appendChild(checkbox);
+    listItem.appendChild(checkboxDiv);
+
+    return listItem;
+}
 async function isImageSensitive(file) {
     const bodyData = new FormData();
     bodyData.append('imageFile', file);
