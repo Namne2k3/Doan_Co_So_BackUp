@@ -18,5 +18,6 @@ namespace Doan_Web_CK.Models
         public List<Message>? Messages { get; set; }
 
         public string? ConnectionRoomCall { get; set; }
+        public string? ChatRoomImage { get; set; }
     }
 }

@@ -23,7 +23,8 @@ namespace Doan_Web_CK.Controllers
             {
                 roomName = roomName,
                 Users = new List<ApplicationUser>(),
-                ConnectionRoomCall = Guid.NewGuid().ToString()
+                ConnectionRoomCall = Guid.NewGuid().ToString(),
+                ChatRoomImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDXWIPPDsd2vImhX-d9OHdABO2iwj3yS9y_6YEVKpi3A&s"
             };
 
             foreach (var id in members)

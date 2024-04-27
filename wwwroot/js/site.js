@@ -734,6 +734,7 @@ function handleAccept(userId, nofId) {
             // cập nhật giao diện người dùng với dữ liệu mới
             var element = document.getElementById("nofi_card_actions_" + nofId);
             if (element) {
+                console.log(data.newHtml)
                 element.innerHTML = '';
                 element.innerHTML = data.newHtml;
             }

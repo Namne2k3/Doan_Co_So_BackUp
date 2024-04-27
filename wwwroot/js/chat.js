@@ -3,7 +3,8 @@ var connection = new signalR.HubConnectionBuilder().withUrl("/chatHub").build();
 
 //Disable send button until connection is established
 //document.getElementById("sendButton").disabled = true;
-connection.on("ReceiveMessage", function (user, message, imageUrl, leftOrRight, time, type, connectionRoomCall) {
+connection.on("ReceiveMessage", function (user, message, imageUrl, leftOrRight, time, chatRoomGroupId, type, connectionRoomCall) {
+    const url = window.location.href;
     var msg = message.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
     var encodedMsg = message;
 
@@ -62,43 +63,48 @@ connection.on("ReceiveMessage", function (user, message, imageUrl, leftOrRight, 
                 messages_display_container.scrollTop = messages_display_container.scrollHeight;
             }
         } else {
-            var divMessageItem = document.createElement("div");
-            divMessageItem.classList.add("message_item");
+            if (url.includes(chatRoomGroupId)) {
+                var divMessageItem = document.createElement("div");
+                divMessageItem.classList.add("message_item");
 
-            var divMessageItemFriendText = document.createElement("div");
-            divMessageItemFriendText.classList.add("message_item_friend_text");
+                var divMessageItemFriendText = document.createElement("div");
+                divMessageItemFriendText.classList.add("message_item_friend_text");
 
-            var divMessageItemImgContainer = document.createElement("div");
-            divMessageItemImgContainer.classList.add("message_item_img_container");
-            var img = document.createElement("img");
-            img.src = imageUrl; // Thay đổi đường dẫn ảnh tùy theo imageUrl
-            img.alt = "user_image";
-            divMessageItemImgContainer.appendChild(img);
+                var divMessageItemImgContainer = document.createElement("div");
+                divMessageItemImgContainer.classList.add("message_item_img_container");
+                var img = document.createElement("img");
+                img.src = imageUrl; // Thay đổi đường dẫn ảnh tùy theo imageUrl
+                img.alt = "user_image";
+                divMessageItemImgContainer.appendChild(img);
 
-            var pTextLeft = document.createElement("p");
-            pTextLeft.classList.add("long_text");
-            pTextLeft.textContent = encodedMsg;
+                var pTextLeft = document.createElement("p");
+                pTextLeft.classList.add("long_text");
+                pTextLeft.textContent = encodedMsg;
 
-            // Ghép các phần tử vào nhau
-            divMessageItemFriendText.appendChild(divMessageItemImgContainer);
-            divMessageItemFriendText.appendChild(pTextLeft);
+                // Ghép các phần tử vào nhau
+                divMessageItemFriendText.appendChild(divMessageItemImgContainer);
+                divMessageItemFriendText.appendChild(pTextLeft);
 
-            var p_time = document.createElement("p");
-            p_time.textContent = time
-            p_time.style.textAlign = "left"
+                var p_time = document.createElement("p");
+                p_time.textContent = time
+                p_time.style.textAlign = "left"
 
-            divMessageItem.appendChild(divMessageItemFriendText);
-            divMessageItem.appendChild(p_time);
+                divMessageItem.appendChild(divMessageItemFriendText);
+                divMessageItem.appendChild(p_time);
 
-            // Thêm div vào danh sách tin nhắn
-            document.getElementById("messages_display_container").appendChild(divMessageItem);
-            var messages_display_container = document.getElementById("messages_display_container")
-            if (messages_display_container) {
-                messages_display_container.scrollTop = messages_display_container.scrollHeight;
+                // Thêm div vào danh sách tin nhắn
+                document.getElementById("messages_display_container").appendChild(divMessageItem);
+                var messages_display_container = document.getElementById("messages_display_container")
+                if (messages_display_container) {
+                    messages_display_container.scrollTop = messages_display_container.scrollHeight;
+                }
             }
         }
         // Tạo các phần tử HTML
     } else {
+
+
+
         if (type == "call") {
             var divMessageItem = document.createElement("div");
             divMessageItem.classList.add("message_item");
@@ -319,28 +325,28 @@ connection.on('ReceiveToastMessage', function (userName, connectionRoomCall, use
 })
 
 
-function handleAddToastMessageCall(userId, receiverId, connectionRoomCall) {
+function handleAddToastMessageCall(userId, receiverId, connectionRoomCall, chatRoomId) {
 
-    connection.invoke("SendToastMessage", userId, receiverId, connectionRoomCall).catch(function (err) {
+    connection.invoke("SendToastMessage", userId, receiverId, connectionRoomCall, chatRoomId).catch(function (err) {
         return console.error(err.toString());
     })
 }
 
-function handleSendCallMessage(connectionRoomCall, userName) {
+function handleSendCallMessage(connectionRoomCall, userName, chatRoomId) {
     var user = document.getElementById("userInput").value;
     var receiverConnectionId = document.getElementById("receiverId").value;
     var message = userName + " has opened a call message!";
     if (message != " ") {
-        connection.invoke("SendCallMessageToUser", user, receiverConnectionId, message, connectionRoomCall).catch(function (err) {
-            return console.error(err.toString());
+        connection.invoke("SendCallMessageToUser", user, receiverConnectionId, message, connectionRoomCall, chatRoomId).catch(function (err) {
+            return console.log(err.toString());
         });
-        handleAddToastMessageCall(user, receiverConnectionId, connectionRoomCall)
+        handleAddToastMessageCall(user, receiverConnectionId, connectionRoomCall, chatRoomId)
     }
     window.location.href = `/call/${connectionRoomCall}`
 }
 
-function handleAddToastMessage(userId, receiverId, message, chatRoomId) {
-    connection.invoke("SendToastMessageNof", userId, receiverId, message, chatRoomId).catch(function (err) {
+function handleAddToastMessage(userId, message, chatRoomId) {
+    connection.invoke("SendToastMessageNof", userId, message, chatRoomId).catch(function (err) {
         return console.error(err.toString());
     })
 }
@@ -353,10 +359,10 @@ function handleSendMessage(event) {
             var message = document.getElementById("messageInput").value;
             var chatRoomId = document.getElementById('chatRoom_Id').value;
             if (message != " ") {
-                connection.invoke("SendToUser", user, receiverConnectionId, message).catch(function (err) {
-                    return console.error(err.toString());
+                connection.invoke("SendToUser", user, message, chatRoomId).catch(function (err) {
+                    return console.log(err.toString());
                 });
-                handleAddToastMessage(user, receiverConnectionId, message, chatRoomId)
+                handleAddToastMessage(user, message, chatRoomId)
             }
             event.preventDefault();
         }

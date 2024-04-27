@@ -37,11 +37,7 @@ namespace Doan_Web_CK
 
             var chatRooms = await _chatRoomRepository.GetAllAsync();
 
-            var currentChatRoom = chatRooms.Where(p =>
-                p.ConnectionRoomCall == roomId
-                &&
-                p.Users[0].Id == currentUser.Id || p.Users[1].Id == currentUser.Id
-            ).ToList();
+            var currentChatRoom = chatRooms.Where(p => p.Users.Contains(currentUser)).ToList();
 
             var findedChatroom = currentChatRoom.SingleOrDefault(p => p.ConnectionRoomCall == roomId);
 

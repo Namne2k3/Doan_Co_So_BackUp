@@ -389,9 +389,10 @@ namespace Doan_Web_CK.Controllers
                 var chatroom = new ChatRoom
                 {
                     roomName = finded.User.UserName,
-                    Messages = new List<Message>(),
                     Users = new List<ApplicationUser>(),
-                    ConnectionRoomCall = Guid.NewGuid().ToString()
+                    Messages = new List<Message>(),
+                    ConnectionRoomCall = Guid.NewGuid().ToString(),
+                    ChatRoomImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDXWIPPDsd2vImhX-d9OHdABO2iwj3yS9y_6YEVKpi3A&s"
                 };
                 chatroom.Users.Add(finded.Friend);
                 chatroom.Users.Add(finded.User);
@@ -429,8 +430,10 @@ namespace Doan_Web_CK.Controllers
                     // UserId = userId,
                     // FriendId = finded.UserId,
                     // Friend = finded.User,
+                    Users = new List<ApplicationUser>(),
                     Messages = new List<Message>(),
-                    ConnectionRoomCall = Guid.NewGuid().ToString()
+                    ConnectionRoomCall = Guid.NewGuid().ToString(),
+                    ChatRoomImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDXWIPPDsd2vImhX-d9OHdABO2iwj3yS9y_6YEVKpi3A&s"
                 };
                 chatroom.Users.Add(finded.Friend);
                 chatroom.Users.Add(finded.User);

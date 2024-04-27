@@ -33,7 +33,17 @@
     @if ( currentChatroom != null )
     {
         <div class="messages_container messages_container_room_call">
-            @if (currentUser.Id == currentChatroom.Users[0].Id)
+            @if ( currentChatroom.Users.Count > 2 ) {
+                <div class="messages_info_container_flex">
+                    <div class="messages_info_img_container">
+                        <img src="@currentChatroom.ChatRoomImage" alt="messages_info_img" />
+                    </div>
+                    <div class="messages_info">
+                        <a>@currentChatroom.roomName</a>
+                    </div>
+                </div>
+            } else {
+                @if (currentUser.Id == currentChatroom.Users[0].Id)
                 {
                     <div class="messages_info_container_flex">
                         <div class="messages_info_img_container">
@@ -55,6 +65,7 @@
                         </div>
                     </div>
                 }
+            }
             <div id="messages_display_container" class="messages_display_container">
                 @if (currentChatroom?.Messages != null )
                 {

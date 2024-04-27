@@ -18,17 +18,32 @@
             {
                 <a asp-controller="Chat" asp-action="Details" asp-route-id="@cr?.Id" onclick="handleToggleMessages(@cr.Id)" class="chatroom_card">
                     <div class="chatroom_card_img_container">
-                        @if ( currentUser.Id == cr.Users[0].Id )
-                        {
-                            <img alt="chatroom_card_img" class="chatroom_card_img" src="@cr.Users[1].ImageUrl" />
-                        } else
-                        {
-                            <img alt="chatroom_card_img" class="chatroom_card_img" src="@cr.Users[0].ImageUrl" />
+                        @if ( cr.Users.Count > 2 ) {
+                            <img alt="chatroom_card_img" class="chatroom_card_img" src="@cr.ChatRoomImage" />
+                            
+                        } else {
+                            @if ( currentUser.Id == cr.Users[0].Id )
+                            {
+                                <img alt="chatroom_card_img" class="chatroom_card_img" src="@cr.Users[1].ImageUrl" />
+                            } else
+                            {
+                                <img alt="chatroom_card_img" class="chatroom_card_img" src="@cr.Users[0].ImageUrl" />
+                            }
                         }
                     </div>
 
                     <div class="chatroom_card_info">
-                       <p>@cr.roomName</p>
+                        @if (@cr.Users.Count > 2 ) {
+                            <p>@cr.roomName</p>
+                        } else {
+                            @if ( currentUser.Id == cr.Users[0].Id )
+                            {
+                                <p>@cr.Users[1].UserName</p>
+                            }else
+                            {
+                                <p>@cr.Users[0].UserName</p>
+                            }
+                        }
                     </div>
                 </a>
             }
@@ -39,31 +54,42 @@
             <div class="messages_container">
 
                 <div class="messages_info_container">
-                    @if (currentUser.Id == currentChatroom.Users[0].Id)
-                    {
+                    @if ( currentChatroom.Users.Count > 2 ) {
                         <div class="messages_info_container_flex">
                             <div class="messages_info_img_container">
-                                <img src="@currentChatroom.Users[1].ImageUrl" alt="messages_info_img" />
+                                <img src="@currentChatroom.ChatRoomImage" alt="messages_info_img" />
                             </div>
                             <div class="messages_info">
-                                <a asp-action="Index" asp-controller="Profile" asp-route-id="@currentChatroom.Users[1].Id" asp->@currentChatroom.Users[1].UserName</a>
+                                <a>@currentChatroom.roomName</a>
                             </div>
                         </div>
-                    }
-                    else
-                    {
-                        <div class="messages_info_container_flex">
-                            <div class="messages_info_img_container">
-                                <img src="@currentChatroom.Users[0].ImageUrl" alt="messages_info_img" />
+                    } else {
+                        @if (currentUser.Id == currentChatroom.Users[0].Id)
+                        {
+                            <div class="messages_info_container_flex">
+                                <div class="messages_info_img_container">
+                                    <img src="@currentChatroom.Users[1].ImageUrl" alt="messages_info_img" />
+                                </div>
+                                <div class="messages_info">
+                                    <a asp-action="Index" asp-controller="Profile" asp-route-id="@currentChatroom.Users[1].Id" asp->@currentChatroom.Users[1].UserName</a>
+                                </div>
                             </div>
-                            <div class="messages_info">
-                                <a asp-action="Index" asp-controller="Profile" asp-route-id="@currentChatroom.Users[0].Id" asp->@currentChatroom.Users[0].UserName</a>
+                        }
+                        else
+                        {
+                            <div class="messages_info_container_flex">
+                                <div class="messages_info_img_container">
+                                    <img src="@currentChatroom.Users[0].ImageUrl" alt="messages_info_img" />
+                                </div>
+                                <div class="messages_info">
+                                    <a asp-action="Index" asp-controller="Profile" asp-route-id="@currentChatroom.Users[0].Id" asp->@currentChatroom.Users[0].UserName</a>
+                                </div>
                             </div>
-                        </div>
+                        }
                     }
 
                     <div class="message_call_btn_container">
-                        <a onclick="handleSendCallMessage('@currentChatroom.ConnectionRoomCall', '@currentUser.UserName')" asp-action="Room" asp-controller="Call" asp-route-roomId="@currentChatroom.ConnectionRoomCall" class="btn btn-outline-light">
+                        <a onclick="handleSendCallMessage('@currentChatroom.ConnectionRoomCall', '@currentUser.UserName', '@currentChatroom.Id')" asp-action="Room" asp-controller="Call" asp-route-roomId="@currentChatroom.ConnectionRoomCall" class="btn btn-outline-light">
                             <i class="bi bi-telephone"></i>
                         </a>
                     </div>

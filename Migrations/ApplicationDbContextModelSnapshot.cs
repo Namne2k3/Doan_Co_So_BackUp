@@ -112,6 +112,9 @@ namespace Doan_Web_CK.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("ChatRoomImage")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("ConnectionRoomCall")
                         .HasColumnType("nvarchar(max)");
 
