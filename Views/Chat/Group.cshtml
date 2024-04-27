@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Doan_Web_CK.Models.ChatRoom>
+@model IEnumerable<Doan_Web_CK.Models.ChatRoom>
 @using Microsoft.AspNetCore.Identity
 
 @inject SignInManager<ApplicationUser> SignInManager
@@ -13,15 +13,16 @@
 <div class="body_container">
     <div class="message_section_container">
         <div class="message_section_navigation">
-            <a class="btn btn-outline-dark active" asp-controller="Chat" asp-action="Index">Chat</a>
-            <a class="btn btn-outline-dark" asp-controller="Chat" asp-action="Group">Group Chat</a>
+            <a class="btn btn-outline-dark" asp-controller="Chat" asp-action="Index">Chat</a>
+            <a class="btn btn-outline-dark active" asp-controller="Chat" asp-action="Group">Group Chat</a>
         </div>
         <div class="chatroom_container">
+            <a asp-controller="Chat" asp-action="Create" class="btn_create_group btn btn-outline-dark">Create Group</a>
             @foreach ( var cr in Model)
             {
                 <div class="chatroom_card_item">
 
-                <a asp-controller="Chat" asp-action="Details" asp-route-id="@cr?.Id" onclick="handleToggleMessages(@cr.Id)" class="chatroom_card">
+                <a asp-controller="Chat" asp-action="DetailsGroup" asp-route-id="@cr?.Id" onclick="handleToggleMessages(@cr.Id)" class="chatroom_card">
                     <div class="chatroom_card_img_container">
                         @if ( cr.Users.Count > 2 ) {
                             <img alt="chatroom_card_img" class="chatroom_card_img" src="@cr.ChatRoomImage" />

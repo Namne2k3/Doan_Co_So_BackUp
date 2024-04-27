@@ -392,7 +392,6 @@ namespace Doan_Web_CK.Controllers
                     Users = new List<ApplicationUser>(),
                     Messages = new List<Message>(),
                     ConnectionRoomCall = Guid.NewGuid().ToString(),
-                    ChatRoomImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDXWIPPDsd2vImhX-d9OHdABO2iwj3yS9y_6YEVKpi3A&s"
                 };
                 chatroom.Users.Add(finded.Friend);
                 chatroom.Users.Add(finded.User);
@@ -433,7 +432,6 @@ namespace Doan_Web_CK.Controllers
                     Users = new List<ApplicationUser>(),
                     Messages = new List<Message>(),
                     ConnectionRoomCall = Guid.NewGuid().ToString(),
-                    ChatRoomImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDXWIPPDsd2vImhX-d9OHdABO2iwj3yS9y_6YEVKpi3A&s"
                 };
                 chatroom.Users.Add(finded.Friend);
                 chatroom.Users.Add(finded.User);

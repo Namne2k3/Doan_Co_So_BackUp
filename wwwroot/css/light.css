@@ -4,6 +4,10 @@ html {
     height: 100vh;
 }
 
+.message_section_navigation a {
+    margin-bottom: 8px;
+}
+
 .create_friend_card_container {
     display: flex;
     flex-direction: column;
@@ -1686,10 +1690,6 @@ form button {
         padding: 12px;
         border-radius: 12px;
         border: 1px solid #000;
-    }
-
-    .chatroom_container {
-        min-height: 0;
     }
 
     .message_section_container {
