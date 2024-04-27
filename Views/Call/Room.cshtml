@@ -30,7 +30,7 @@
             </a>
         </div> *@
     </div>
-    @if ( currentChatroom != null )
+    @* @if ( currentChatroom != null )
     {
         <div class="messages_container messages_container_room_call">
             @if ( currentChatroom.Users.Count > 2 ) {
@@ -126,7 +126,7 @@
                 <input id="messageInput" onkeypress="handleSendMessage(event)" placeholder="Writing something ... " type="text" class="form-control message_input" />
             </div>
         </div>
-    }
+    } *@
     <div class="video_actions_mobile">
         <div class="video_action_item">
             <a onclick="handleChangeIconVideoActions('mic')" class="btn btn-outline-light mic_room_icon">

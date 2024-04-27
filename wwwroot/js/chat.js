@@ -9,61 +9,63 @@ connection.on("ReceiveMessage", function (user, message, imageUrl, leftOrRight, 
     var encodedMsg = message;
 
     if (leftOrRight == "left") {
-        if (type == "call") {
-            var divMessageItem = document.createElement("div");
-            divMessageItem.classList.add("message_item");
+        if (url.includes(chatRoomGroupId)) {
 
-            var divMessageItemFriendText = document.createElement("div");
-            divMessageItemFriendText.classList.add("message_item_friend_text");
+            if (type == "call") {
+                var divMessageItem = document.createElement("div");
+                divMessageItem.classList.add("message_item");
 
-            var divMessageItemImgContainer = document.createElement("div");
-            divMessageItemImgContainer.classList.add("message_item_img_container");
-            var img = document.createElement("img");
-            img.src = imageUrl; // Thay đổi đường dẫn ảnh tùy theo imageUrl
-            img.alt = "user_image";
-            divMessageItemImgContainer.appendChild(img);
+                var divMessageItemFriendText = document.createElement("div");
+                divMessageItemFriendText.classList.add("message_item_friend_text");
 
-            var pTextLeft = document.createElement("p");
-            pTextLeft.classList.add("long_text");
-            pTextLeft.textContent = encodedMsg;
+                var divMessageItemImgContainer = document.createElement("div");
+                divMessageItemImgContainer.classList.add("message_item_img_container");
+                var img = document.createElement("img");
+                img.src = imageUrl; // Thay đổi đường dẫn ảnh tùy theo imageUrl
+                img.alt = "user_image";
+                divMessageItemImgContainer.appendChild(img);
 
-            // Ghép các phần tử vào nhau
-            divMessageItemFriendText.appendChild(divMessageItemImgContainer);
+                var pTextLeft = document.createElement("p");
+                pTextLeft.classList.add("long_text");
+                pTextLeft.textContent = encodedMsg;
 
-            // Tạo một thẻ a
-            var anchorElement = document.createElement('a');
+                // Ghép các phần tử vào nhau
+                divMessageItemFriendText.appendChild(divMessageItemImgContainer);
 
-            // Thêm các thuộc tính và giá trị cho thẻ a
+                // Tạo một thẻ a
+                var anchorElement = document.createElement('a');
 
-            anchorElement.href = `/call/${connectionRoomCall}`
-            anchorElement.classList.add('btn', 'btn-outline-light', 'call_icon');
+                // Thêm các thuộc tính và giá trị cho thẻ a
 
-            // Tạo một thẻ i
-            var iconElement = document.createElement('i');
-            iconElement.classList.add('bi', 'bi-telephone-outbound');
+                anchorElement.href = `/call/${connectionRoomCall}`
+                anchorElement.classList.add('btn', 'btn-outline-light', 'call_icon');
 
-            // Thêm thẻ i vào thẻ a
-            anchorElement.appendChild(iconElement);
+                // Tạo một thẻ i
+                var iconElement = document.createElement('i');
+                iconElement.classList.add('bi', 'bi-telephone-outbound');
 
-            pTextLeft.appendChild(anchorElement)
+                // Thêm thẻ i vào thẻ a
+                anchorElement.appendChild(iconElement);
 
-            divMessageItemFriendText.appendChild(pTextLeft);
+                pTextLeft.appendChild(anchorElement)
 
-            var p_time = document.createElement("p");
-            p_time.textContent = time
-            p_time.style.textAlign = "left"
+                divMessageItemFriendText.appendChild(pTextLeft);
 
-            divMessageItem.appendChild(divMessageItemFriendText);
-            divMessageItem.appendChild(p_time);
+                var p_time = document.createElement("p");
+                p_time.textContent = time
+                p_time.style.textAlign = "left"
 
-            // Thêm div vào danh sách tin nhắn
-            document.getElementById("messages_display_container").appendChild(divMessageItem);
-            var messages_display_container = document.getElementById("messages_display_container")
-            if (messages_display_container) {
-                messages_display_container.scrollTop = messages_display_container.scrollHeight;
-            }
-        } else {
-            if (url.includes(chatRoomGroupId)) {
+                divMessageItem.appendChild(divMessageItemFriendText);
+                divMessageItem.appendChild(p_time);
+
+                // Thêm div vào danh sách tin nhắn
+                document.getElementById("messages_display_container").appendChild(divMessageItem);
+                var messages_display_container = document.getElementById("messages_display_container")
+                if (messages_display_container) {
+                    messages_display_container.scrollTop = messages_display_container.scrollHeight;
+                }
+            } else {
+
                 var divMessageItem = document.createElement("div");
                 divMessageItem.classList.add("message_item");
 
@@ -102,9 +104,6 @@ connection.on("ReceiveMessage", function (user, message, imageUrl, leftOrRight, 
         }
         // Tạo các phần tử HTML
     } else {
-
-
-
         if (type == "call") {
             var divMessageItem = document.createElement("div");
             divMessageItem.classList.add("message_item");
