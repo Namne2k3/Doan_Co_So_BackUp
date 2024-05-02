@@ -140,7 +140,10 @@ namespace Doan_Web_CK.Controllers
             var ownChatRoom = await _chatRoomRepository.GetAllChatRoomByUserIdAsync(account?.Id);
             ownChatRoom = ownChatRoom.Where(p => p.ChatRoomImage != null).ToList();
             var currentChatRoom = ownChatRoom.FirstOrDefault();
-
+            if (currentChatRoom == null)
+            {
+                return View();
+            }
 
             return RedirectToAction("DetailsGroup", new { id = currentChatRoom?.Id });
         }
@@ -155,6 +158,10 @@ namespace Doan_Web_CK.Controllers
             var ownChatRoom = await _chatRoomRepository.GetAllChatRoomByUserIdAsync(account?.Id);
             ownChatRoom = ownChatRoom.Where(p => p.ChatRoomImage == null).ToList();
             var currentChatRoom = ownChatRoom.FirstOrDefault();
+            if (currentChatRoom == null)
+            {
+                return View();
+            }
 
             return RedirectToAction("Details", new { id = currentChatRoom?.Id });
         }

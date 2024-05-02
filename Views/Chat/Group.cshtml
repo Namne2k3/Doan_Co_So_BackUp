@@ -9,7 +9,6 @@
     var currentUser = ViewBag.currentUser;
     var currentChatroom = ViewBag.currentChatRoom;
 }
-
 <div class="body_container">
     <div class="message_section_container">
         <div class="message_section_navigation">
@@ -18,41 +17,43 @@
         </div>
         <div class="chatroom_container">
             <a asp-controller="Chat" asp-action="Create" class="btn_create_group btn btn-outline-dark">Create Group</a>
-            @foreach ( var cr in Model)
-            {
-                <div class="chatroom_card_item">
+            @if ( currentChatroom != null ) {
+                @foreach ( var cr in Model)
+                {
+                    <div class="chatroom_card_item">
 
-                <a asp-controller="Chat" asp-action="DetailsGroup" asp-route-id="@cr?.Id" onclick="handleToggleMessages(@cr.Id)" class="chatroom_card">
-                    <div class="chatroom_card_img_container">
-                        @if ( cr.Users.Count > 2 ) {
-                            <img alt="chatroom_card_img" class="chatroom_card_img" src="@cr.ChatRoomImage" />
-                            
-                        } else {
-                            @if ( currentUser.Id == cr.Users[0].Id )
-                            {
-                                <img alt="chatroom_card_img" class="chatroom_card_img" src="@cr.Users[1].ImageUrl" />
-                            } else
-                            {
-                                <img alt="chatroom_card_img" class="chatroom_card_img" src="@cr.Users[0].ImageUrl" />
+                    <a asp-controller="Chat" asp-action="DetailsGroup" asp-route-id="@cr?.Id" onclick="handleToggleMessages(@cr.Id)" class="chatroom_card">
+                        <div class="chatroom_card_img_container">
+                            @if ( cr.Users.Count > 2 ) {
+                                <img alt="chatroom_card_img" class="chatroom_card_img" src="@cr.ChatRoomImage" />
+                                
+                            } else {
+                                @if ( currentUser.Id == cr.Users[0].Id )
+                                {
+                                    <img alt="chatroom_card_img" class="chatroom_card_img" src="@cr.Users[1].ImageUrl" />
+                                } else
+                                {
+                                    <img alt="chatroom_card_img" class="chatroom_card_img" src="@cr.Users[0].ImageUrl" />
+                                }
                             }
-                        }
-                    </div>
+                        </div>
 
-                    <div class="chatroom_card_info">
-                        @if (@cr.Users.Count > 2 ) {
-                            <p>@cr.roomName</p>
-                        } else {
-                            @if ( currentUser.Id == cr.Users[0].Id )
-                            {
-                                <p>@cr.Users[1].UserName</p>
-                            }else
-                            {
-                                <p>@cr.Users[0].UserName</p>
+                        <div class="chatroom_card_info">
+                            @if (@cr.Users.Count > 2 ) {
+                                <p>@cr.roomName</p>
+                            } else {
+                                @if ( currentUser.Id == cr.Users[0].Id )
+                                {
+                                    <p>@cr.Users[1].UserName</p>
+                                }else
+                                {
+                                    <p>@cr.Users[0].UserName</p>
+                                }
                             }
-                        }
+                        </div>
+                    </a>
                     </div>
-                </a>
-                </div>
+                }
             }
         </div>
         

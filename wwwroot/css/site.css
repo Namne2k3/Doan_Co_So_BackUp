@@ -3,14 +3,17 @@ html {
     scroll-behavior: smooth;
     height: 100vh;
 }
+
 .create_friend_card_container {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
+
 .create_friend_card {
     display: flex;
 }
+
 .create_friends_container {
     overflow-y: scroll;
     /*scrollbar-width: none;*/
@@ -18,28 +21,40 @@ html {
     flex-direction: column;
     gap: 16px;
 }
+
+.create_friends_container h3 {
+    color: #fff;
+}
+
+.title_members {
+    color: #fff;
+}
+
 .create_friend_action {
     display: flex;
     margin-left: 12px;
     flex-direction: column;
 }
+
 .create_friend_username {
     color: #000;
     padding: 12px 0;
     font-weight: bold;
     text-decoration: none;
 }
+
 .create_friend_img_container {
     width: 100px;
     height: 100px;
 }
+
 .create_friend_img_container img {
     border-radius: 100%;
     object-fit: cover;
     border: 2px solid;
 }
-.mic_room_icon {
-}
+
+.mic_room_icon {}
 
 .video_room_icon {}
 
@@ -290,19 +305,35 @@ html {
     height: 65px;
 }
 
+.message_section_navigation a {
+    border: 1px solid #fff;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.title_create_cr {
+    color: #fff;
+}
+
 .video_container {
+    max-height: 100vh;
+    padding: 12px 0;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
     border-radius: 12px;
-    gap: 12px;
+    gap: 4px;
 }
 
 .video_container video {
+    max-width: 49%;
+    max-height: 50%;
+    width: 100%;
     display: flex;
     flex: 1;
-    max-width: 100%;
     border: 1px solid #ccc;
     border-radius: 12px;
     object-fit: cover;
@@ -456,7 +487,7 @@ main {
 }
 
 .messages_info a {
-    color: #fff;
+    color: #fff !important;
     font-weight: bold;
     text-decoration: none;
 }
