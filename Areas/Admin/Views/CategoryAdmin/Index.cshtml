@@ -1,19 +1,18 @@
-﻿@model IEnumerable<Doan_Web_CK.Models.Category>
-
+@model IEnumerable<Doan_Web_CK.Models.Category>
 @{
-    ViewData["Title"] = "Manage Categories";
+    ViewData["Title"] = "Danh mục bài viết";
 }
 
-<h1>Manage Categories</h1>
+<h1>Danh mục</h1>
 
 <p>
-    <a class="btn btn-outline-light" asp-action="Create">Create New</a>
+    <a class="btn btn-outline-light" asp-action="Create">Tạo danh mục mới</a>
 </p>
 <table class="table text-white">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Name)
+                Tên danh mục
             </th>
             <th></th>
         </tr>
@@ -26,9 +25,9 @@
                     @Html.DisplayFor(modelItem => item.Name)
                 </td>
                 <td>
-                    <a class="btn btn-outline-light" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
-                    <a class="btn btn-outline-light" asp-action="Details" asp-route-id="@item.Id">Details</a>
-                    <a class="btn btn-outline-light" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    <a class="btn btn-outline-light" asp-action="Edit" asp-route-id="@item.Id">Chỉnh sửa</a>
+                    <a class="btn btn-outline-light" asp-action="Details" asp-route-id="@item.Id">Chi tiết</a>
+                    <a class="btn btn-outline-light" asp-action="Delete" asp-route-id="@item.Id">Xóa</a>
                 </td>
             </tr>
         }

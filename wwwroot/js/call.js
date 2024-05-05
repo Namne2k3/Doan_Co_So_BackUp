@@ -1,5 +1,5 @@
 let userId = null
-let localStream = null
+var localStream = null
 
 function handleChangeIconVideoActions(type) {
     if (type == 'mic') {
@@ -94,13 +94,16 @@ const myVideo = document.createElement('video')
 myVideo.muted = false;
 
 // ( hàm này chỉ được gọi lần đầu tiên )
-navigator.mediaDevices.getUserMedia({
-    audio: true,
-    video: true,
-}).then(stream => {
-    addVideoStream(myVideo, stream)
-    localStream = stream
-})
+function initLocalStream() {
+    navigator.mediaDevices.getUserMedia({
+        audio: true,
+        video: true,
+    }).then(stream => {
+        addVideoStream(myVideo, stream)
+        localStream = stream
+    })
+}
+initLocalStream();
 
 callconnection.on('user-connected', id => {
 
@@ -113,7 +116,7 @@ callconnection.on('user-connected', id => {
         return;
 
     console.log(`User connected: ${id}`)
-    connectNewUser(id, localStream);
+    connectNewUser(id);
 })
 
 callconnection.on("user-disconnected", id => {
@@ -184,7 +187,7 @@ const addVideoStream = (video, stream) => {
     videoGrid.appendChild(video)
 }
 
-const connectNewUser = (userId, localStream) => {
+const connectNewUser = (userId) => {
     const userVideo = document.createElement('video')
     const call = myPeer.call(userId, localStream)
 

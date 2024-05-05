@@ -437,6 +437,10 @@
       "PackagePath": "staticwebassets\\images\\a1-2752-1712909280.jpg"
     },
     {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\abc.jpg",
+      "PackagePath": "staticwebassets\\images\\abc.jpg"
+    },
+    {
       "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\ai-baidu-6486-1678986788-9225-1713277277.jpg",
       "PackagePath": "staticwebassets\\images\\ai-baidu-6486-1678986788-9225-1713277277.jpg"
     },

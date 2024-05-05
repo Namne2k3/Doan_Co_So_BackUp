@@ -1,0 +1,27 @@
+@model Doan_Web_CK.Models.Category
+
+@{
+    ViewData["Title"] = "Xóa danh mục";
+}
+
+<h1>Xóa danh mục</h1>
+
+<h3>Bạn có chắc chắn xóa danh mục này?</h3>
+<div>
+    <h4>Danh mục</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Tên danh mục
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" value="Delete" class="btn btn-danger">Xóa</button>
+    </form>
+    <a class="mt-3 btn btn-outline-light" asp-action="Index">Trở về trang danh mục</a>
+</div>
