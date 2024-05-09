@@ -29,35 +29,54 @@
         {
             foreach (var f in Model)
             {
-                    <div class="friend_card">
-                        <div class="friend_card_img_container">
-                            <img alt="user profile image" class="friend_card_img" src="@f.ImageUrl" />
-                        </div>
+                <div class="friend_card">
+                    <div class="friend_card_img_container">
+                        <img alt="user profile image" class="friend_card_img" src="@f.ImageUrl" />
+                    </div>
 
-                        <div class="friend_card_info_container">
-                            
-                            <a class="friend_card_name" asp-action="Index" asp-controller="Profile" asp-route-id="@f.Id">@f.UserName</a>
-                            <p class="friend_card_date">Date created: @f.DateCreated</p>
-                            
-                            <div id="friend_card_actions_@f.Id" class="friend_card_actions">
-                                <a class="btn btn-outline-light" asp-action="Index" asp-controller="Profile" asp-route-id="@f.Id">View Profile</a>
-                                @if (ViewBag.IsFriend(currentUser.Id, f.Id) == true) {
-                                    <a onclick="handleUnFriend('@currentUser.Id', '@f.Id')" class="btn btn-outline-light">Unfriend</a>
+                    <div class="friend_card_info_container">
+                        
+                        <a class="friend_card_name" asp-action="Index" asp-controller="Profile" asp-route-id="@f.Id">@f.UserName</a>
+                        <p class="friend_card_date">Date created: @f.DateCreated</p>
+                        
+                        <div id="friend_card_actions_@f.Id" class="friend_card_actions">
+                            <a class="btn btn-outline-light" asp-action="Index" asp-controller="Profile" asp-route-id="@f.Id">View Profile</a>
+                            @if ( currentUser.Id != f.Id ) {
+                                @if (ViewBag.IsRequested(currentUser.Id, f.Id) == false) {
+                                    @if (ViewBag.IsFriend(currentUser.Id, f.Id) == true) 
+                                    {
+                                        <a id="un_fr_profile_element_@f.Id" onclick="handleUnFriend('@currentUser.Id', '@f.Id')" class="btn btn-outline-light">Unfriend</a>
+                                    } 
+                                    else 
+                                    {
+                                        <a id="add_fr_profile_element_@f.Id" onclick="handleAddFriendProfile('@currentUser.Id', '@f.Id')" class="btn btn-outline-light">Add Friend</a>
+                                    }
                                 } else {
-                                    <a onclick="handleAddFriendProfile('@currentUser.Id', '@f.Id')" class="btn btn-outline-light">Add Friend</a>
+                                    if ( ViewBag.IsBeingRequested(currentUser.Id, f.Id) == true) 
+                                    {
+                                        <div>
+                                            <a asp-route-userId="@currentUser.Id" asp-route-friendId="@f.Id" asp-action="AcceptFriend" asp-controller="Profile" class="btn btn-outline-light">Accept Friend Request</a>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div>
+                                            <a class="btn btn-outline-light disabled">Requested</a>
+                                        </div>   
+                                    }
                                 }
-                            </div>
+                            }
                         </div>
                     </div>
-                    <div id="friend_card_status_@f.Id" class="hidden friend_card_status">
-                        <div class="friend_card_status_success bg-success">
-                            You have Unfrieneded
-                        </div>
-                        <div class="friend_card_status_failed bg-danger">
-                            Something went wrong
-                        </div>
+                </div>
+                <div id="friend_card_status_@f.Id" class="hidden friend_card_status">
+                    <div class="friend_card_status_success bg-success">
+                        You have Unfrieneded
                     </div>
-                }
+                    <div class="friend_card_status_failed bg-danger">
+                        Something went wrong
+                    </div>
+                </div>
             }
             
         }
@@ -211,7 +230,7 @@
         </button> *@
     </div>
 }
-@* <script>
+<script>
     if (!sessionStorage.getItem('theme')) {
         var defaultTheme = '@Url.Content("~/css/light.css")'; // Giá trị mặc định, có thể là bất kỳ giá trị nào bạn muốn
         sessionStorage.setItem('theme', defaultTheme);
@@ -228,5 +247,5 @@
 
         handlehandleChangeIconTheme();
     }
-</script> *@
+</script>
 

@@ -11,13 +11,14 @@
 }
 
 <div class="body_container">
+    <div class="message_section_navigation">
+        <a class="btn btn-outline-dark active" asp-controller="Chat" asp-action="Index">Chat</a>
+        <a class="btn btn-outline-dark" asp-controller="Chat" asp-action="Group">Group Chat</a>
+        <input class="form-control mb-2" type="text" placeholder="Enter name ###" />
+    </div>
     <div class="message_section_container">
-        <div class="message_section_navigation">
-            <a class="btn btn-outline-dark active" asp-controller="Chat" asp-action="Index">Chat</a>
-            <a class="btn btn-outline-dark" asp-controller="Chat" asp-action="Group">Group Chat</a>
-        </div>
         <div class="chatroom_container">
-            @if ( currentChatroom != null ) {    
+            
                 @foreach ( var cr in Model)
                 {
                     <div class="chatroom_card_item">
@@ -54,12 +55,12 @@
                     </a>
                     </div>
                 }
-            }
+            
         </div>
         
         @if ( currentChatroom != null )
         {
-            <div class="messages_container">
+            <div hidden class="messages_container">
 
                 <div class="messages_info_container">
                     @if ( currentChatroom.Users.Count > 2 ) {

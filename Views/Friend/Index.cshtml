@@ -62,11 +62,17 @@
                                     {
                                         <a class="btn btn-outline-light" asp-action="Index" asp-controller="Profile" asp-route-id="@f.Friend.Id">View Profile</a>
                                         <a onclick="handleUnFriend('@f.UserId','@f.FriendId', @f.Id)" class="btn btn-outline-light">Unfriend</a>
+                                        <a onclick="handleChangeToChatDetail('@currentUser.Id', '@f.Friend.Id')" class="btn btn-outline-light">
+                                            <i class="bi bi-messenger"></i>
+                                        </a>
                                     }
                                     else
                                     {
                                         <a class="btn btn-outline-light" asp-action="Index" asp-controller="Profile" asp-route-id="@f.User.Id">View Profile</a>
                                         <a onclick="handleUnFriend('@f.UserId','@f.FriendId', @f.Id)" class="btn btn-outline-light">Unfriend</a>
+                                        <a onclick="handleChangeToChatDetail('@currentUser.Id', '@f.User.Id')" class="btn btn-outline-light">
+                                            <i class="bi bi-messenger"></i>
+                                        </a>
                                     }
                                 </div>
                             </div>

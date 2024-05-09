@@ -160,6 +160,7 @@ namespace Doan_Web_CK.Controllers
                 ViewBag.GetAllNofOfUser = new Func<string, IEnumerable<Nofitication>>(GetAllNofOfUser);
                 ViewBag.IsRequested = new Func<string, string, bool>(IsRequested);
                 ViewBag.GetUserName = new Func<string, string>(GetUserName);
+                ViewBag.IsBeingRequested = new Func<string, string, bool>(IsBeingRequested);
                 ViewBag.currentUser = account;
                 ViewBag.Search = search;
                 var friends = await _friendShipRepository.GetAllAsync();
@@ -186,6 +187,22 @@ namespace Doan_Web_CK.Controllers
             task.Wait();
             return task.Result;
         }
+        public async Task<bool> IsBeingRequestedAsync(string currentUserId, string accountId)
+        {
+            var friendships = await _friendShipRepository.GetAllAsync();
+            var finded = friendships.SingleOrDefault(p => p.FriendId == currentUserId && p.UserId == accountId);
+            if (finded != null)
+            {
+                return true;
+            }
+            return false;
+        }
+        public bool IsBeingRequested(string currentUserId, string accountId)
+        {
+            var task = IsBeingRequestedAsync(currentUserId, accountId);
+            task.Wait();
+            return task.Result;
+        }
         public async Task<IActionResult> Friend(string search)
         {
             if (search == null)
@@ -196,6 +213,7 @@ namespace Doan_Web_CK.Controllers
                 ViewBag.IsRequested = new Func<string, string, bool>(IsRequested);
                 ViewBag.GetUserName = new Func<string, string>(GetUserName);
                 ViewBag.IsFriend = new Func<string, string, bool>(IsFriend);
+                ViewBag.IsBeingRequested = new Func<string, string, bool>(IsBeingRequested);
                 ViewBag.currentUser = account;
                 var friends = await _accountRepository.GetAllAsync();
                 var filterd = friends.Where(p => p.Id != currentUser.Id).ToList();
@@ -208,6 +226,7 @@ namespace Doan_Web_CK.Controllers
                 ViewBag.GetAllNofOfUser = new Func<string, IEnumerable<Nofitication>>(GetAllNofOfUser);
                 ViewBag.IsRequested = new Func<string, string, bool>(IsRequested);
                 ViewBag.GetUserName = new Func<string, string>(GetUserName);
+                ViewBag.IsBeingRequested = new Func<string, string, bool>(IsBeingRequested);
                 ViewBag.currentUser = account;
                 ViewBag.Search = search;
                 ViewBag.IsFriend = new Func<string, string, bool>(IsFriend);
@@ -244,8 +263,8 @@ namespace Doan_Web_CK.Controllers
         public async Task<bool> IsRequestedAsync(string userId, string friendId)
         {
             var friendships = await _friendShipRepository.GetAllAsync();
-            var finded = friendships.SingleOrDefault(p => p.UserId == userId && p.FriendId == friendId && p.IsConfirmed == false);
-            if (finded != null)
+            var finded = friendships.SingleOrDefault(p => p.UserId == userId && p.FriendId == friendId || p.UserId == friendId && p.FriendId == userId);
+            if (finded != null && finded.IsConfirmed == false)
             {
                 return true;
             }

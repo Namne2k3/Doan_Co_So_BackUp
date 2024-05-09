@@ -10,36 +10,22 @@
     var friends = ViewBag.Friends;
 }
 <div class="body_container">
-    <h1 class="title_create_cr">Create ChatRoom</h1>
-    <hr />
-    <div class="row create_chatromm_container">
-        <div class="col-md-6 create_members_container">
-            <form onsubmit="handleCreateGroup(event)" asp-action="Create" id="create_chatroom_form">
-                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                <div class="form-group">
-                    <label asp-for="roomName" class="control-label">Room Name</label>
-                    <input asp-for="roomName" class="form-control" placeholder="example: Conference Room ... " />
-                    <span asp-validation-for="roomName" class="text-danger"></span>
-                </div>
-                <div class="form-group hidden">
-                    <label asp-for="ConnectionRoomCall" class="control-label"></label>
-                    <input asp-for="ConnectionRoomCall" class="form-control" />
-                    <span asp-validation-for="ConnectionRoomCall" class="text-danger"></span>
-                </div>
-                <div class="form-group mt-2">
-                    <button type="submit" value="Create" class="btn btn-outline-success">Create</button>
-                </div>
-            </form>
-            <div class="d-flex justify-content-center my-3 flex-column">
-                <h3 class="title_members">Members</h3>
-                <ul id="create_chatroom_listfriend" class="gap-2 create_chatroom_listfriend mt-2 list-group text-white w-100 p-0">
-
-                </ul>
-            </div>
+    <div>
+        <h1 class="title_create_cr">Create ChatRoom</h1>
+        <div class="my-2">
+            <a asp-action="Index" class="btn btn-outline-dark">Back to List</a>
+        </div>
+        
+    </div>
+    <div class="create_friends_container_section">
+        <div id="addded_user_status" class="p-2 my-2 text-white text-warning bg-warning rounded-3 hidden_blog">
+            User has already added to group
+        </div>
+        <div id="warm_members_user_status" class="p-2 my-2 text-white text-warning bg-warning rounded-3 hidden_blog">
+            Chat Group must be 3 or more
         </div>
 
-
-        <div class="col-md-6 create_friends_container">
+        <div class="create_friends_container">
             <h3>Friends</h3>
             <div class="create_friends_search_container">
                 <input onkeypress="handleSearchMember(event)" type="text" placeholder="Search your friends... " class="form-control" />
@@ -72,13 +58,33 @@
                 }
             </div>
         </div>
-    </div>
 
-    <div class="my-2">
-        <a asp-action="Index" class="btn btn-outline-dark">Back to List</a>
-    </div>
-    <div id="addded_user_status" class="w-50 p-4 text-white text-warning bg-warning rounded-3 hidden_blog">
-        User has already added to group
+        <div class="create_members_container">
+            <form onsubmit="handleCreateGroup(event)" asp-action="Create" id="create_chatroom_form">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="roomName" class="control-label mb-2">
+                        <h3>Room Name</h3>
+                    </label>
+                    <input asp-for="roomName" class="form-control" placeholder="example: Conference Room ... " />
+                    <span asp-validation-for="roomName" class="text-danger"></span>
+                </div>
+                <div class="form-group hidden">
+                    <label asp-for="ConnectionRoomCall" class="control-label"></label>
+                    <input asp-for="ConnectionRoomCall" class="form-control" />
+                    <span asp-validation-for="ConnectionRoomCall" class="text-danger"></span>
+                </div>
+                <div class="form-group mt-2">
+                    <button type="submit" value="Create" class="btn btn-outline-success">Create</button>
+                </div>
+            </form>
+            <div class="d-flex justify-content-center my-3 flex-column">
+                <h3 class="title_members">Members</h3>
+                <ul id="create_chatroom_listfriend" class="gap-2 create_chatroom_listfriend mt-2 list-group text-white w-100 p-0">
+
+                </ul>
+            </div>
+        </div>
     </div>
     <div id="not_found_user_status" class="w-50 p-4 text-white text-warning bg-warning rounded-3 hidden_blog">
         Not found username

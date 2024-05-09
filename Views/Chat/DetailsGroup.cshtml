@@ -11,12 +11,14 @@
 }
 
 <div class="body_container">
+    <div class="message_section_navigation">
+        <a class="btn btn-outline-dark" asp-controller="Chat" asp-action="Group">
+            <i class="bi bi-arrow-left-circle-fill mr-2"></i> 
+            Back
+        </a>
+    </div>
     <div class="message_section_container">
-        <div class="message_section_navigation">
-            <a class="btn btn-outline-dark" asp-controller="Chat" asp-action="Index">Chat</a>
-            <a class="btn btn-outline-light active" asp-controller="Chat" asp-action="Group">Group Chat</a>
-        </div>
-        <div class="chatroom_container">
+        <div class="chatroom_container_details">
             <a asp-controller="Chat" asp-action="Create" class="btn_create_group btn btn-outline-dark">Create Group</a>
             @foreach ( var cr in Model)
             {
@@ -58,7 +60,7 @@
         
         @if ( currentChatroom != null )
         {
-            <div class="messages_container">
+            <div class="messages_container_details">
 
                 <div class="messages_info_container">
                     @if ( currentChatroom.Users.Count > 2 ) {

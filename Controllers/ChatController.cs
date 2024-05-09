@@ -16,6 +16,14 @@ namespace Doan_Web_CK.Controllers
         private readonly IChatRoomRepository _chatRoomRepository;
         private readonly INotifiticationRepository _notifiticationRepository;
 
+        public async Task AddMember(ChatRoom chatRoom, IEnumerable<string> members)
+        {
+
+            foreach (string id in members)
+            {
+                chatRoom.Users.Add(await _accountRepository.GetByIdAsync(id));
+            }
+        }
         [HttpPost]
         public async Task<IActionResult> Create(string roomName, List<string> members)
         {
@@ -27,14 +35,18 @@ namespace Doan_Web_CK.Controllers
                 ChatRoomImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDXWIPPDsd2vImhX-d9OHdABO2iwj3yS9y_6YEVKpi3A&s"
             };
 
-            foreach (var id in members)
-            {
-                chatRoom.Users.Add(await _accountRepository.GetByIdAsync(id));
-            }
-
+            await AddMember(chatRoom, members);
             await _chatRoomRepository.AddAsync(chatRoom);
 
-            return RedirectToAction("Index");
+            if (chatRoom.Users.Count < 3)
+            {
+                return Json(new
+                {
+                    message = "failed"
+                });
+            }
+
+            return RedirectToAction("Group");
         }
         public async Task<IActionResult> Create()
         {
@@ -101,6 +113,44 @@ namespace Doan_Web_CK.Controllers
             task.Wait();
             return task.Result;
         }
+
+
+        [HttpGet]
+        public async Task<IActionResult> GetChatRoomId(string userId, string friendId)
+        {
+            var chatRooms = await _chatRoomRepository.GetAllAsync();
+            var user = await _accountRepository.GetByIdAsync(userId);
+            var friend = await _accountRepository.GetByIdAsync(friendId);
+            var finded = chatRooms.FirstOrDefault(p => p.Users.Contains(user) && p.Users.Contains(friend) && p.ChatRoomImage == null);
+            if (finded != null)
+            {
+                return Json(new
+                {
+                    message = "found",
+                    chatRoomId = finded.Id
+                });
+            }
+            else
+            {
+                var chatRoom = new ChatRoom
+                {
+                    roomName = friend.UserName,
+                    Users = new List<ApplicationUser>(),
+                    Messages = new List<Message>(),
+                    ConnectionRoomCall = Guid.NewGuid().ToString(),
+                };
+                chatRoom.Users.Add(user);
+                chatRoom.Users.Add(friend);
+
+                await _chatRoomRepository.AddAsync(chatRoom);
+
+                return Json(new
+                {
+                    message = "found",
+                    chatRoomId = chatRoom.Id
+                });
+            }
+        }
         public async Task<IActionResult> DetailsGroup(int id)
         {
             var account = await _accountRepository.GetByIdAsync(_userManager.GetUserId(User));
@@ -140,12 +190,13 @@ namespace Doan_Web_CK.Controllers
             var ownChatRoom = await _chatRoomRepository.GetAllChatRoomByUserIdAsync(account?.Id);
             ownChatRoom = ownChatRoom.Where(p => p.ChatRoomImage != null).ToList();
             var currentChatRoom = ownChatRoom.FirstOrDefault();
+            ViewBag.currentChatRoom = currentChatRoom;
             if (currentChatRoom == null)
             {
                 return View();
             }
 
-            return RedirectToAction("DetailsGroup", new { id = currentChatRoom?.Id });
+            return View(ownChatRoom);
         }
         public async Task<IActionResult> Index()
         {
@@ -158,12 +209,12 @@ namespace Doan_Web_CK.Controllers
             var ownChatRoom = await _chatRoomRepository.GetAllChatRoomByUserIdAsync(account?.Id);
             ownChatRoom = ownChatRoom.Where(p => p.ChatRoomImage == null).ToList();
             var currentChatRoom = ownChatRoom.FirstOrDefault();
-            if (currentChatRoom == null)
+            ViewBag.currentChatRoom = currentChatRoom;
+            if (ownChatRoom == null)
             {
                 return View();
             }
-
-            return RedirectToAction("Details", new { id = currentChatRoom?.Id });
+            return View(ownChatRoom);
         }
 
         public async Task<IActionResult> GetMessages(int roomId)

@@ -411,7 +411,7 @@ namespace Doan_Web_CK.Controllers
         {
             var friendShip = await _friendShipRepository.GetAllAsync();
             var nof = await _notifiticationRepository.GetByIdAsync(nofId);
-
+            var allChatRooms = await _chatRoomRepository.GetAllAsync();
             var finded = friendShip.SingleOrDefault(p => p.FriendId == userId && p.UserId == nof.SenderAccountId);
             StringBuilder newHtml = new StringBuilder();
             if (finded != null)
@@ -422,24 +422,21 @@ namespace Doan_Web_CK.Controllers
 
                 var account = await _accountRepository.GetByIdAsync(finded.FriendId);
 
-                var chatroom = new ChatRoom
+                if (allChatRooms.Any(p => p.Users.Contains(finded.Friend) && p.Users.Contains(finded.User)) == false)
                 {
-                    roomName = finded.User.UserName,
-                    // User = finded.Friend,
-                    // UserId = userId,
-                    // FriendId = finded.UserId,
-                    // Friend = finded.User,
-                    Users = new List<ApplicationUser>(),
-                    Messages = new List<Message>(),
-                    ConnectionRoomCall = Guid.NewGuid().ToString(),
-                };
-                chatroom.Users.Add(finded.Friend);
-                chatroom.Users.Add(finded.User);
+                    var chatroom = new ChatRoom
+                    {
+                        roomName = finded.User.UserName,
+                        Users = new List<ApplicationUser>(),
+                        Messages = new List<Message>(),
+                        ConnectionRoomCall = Guid.NewGuid().ToString(),
+                    };
+                    chatroom.Users.Add(finded.Friend);
+                    chatroom.Users.Add(finded.User);
 
-                await _chatRoomRepository.AddAsync(chatroom);
+                    await _chatRoomRepository.AddAsync(chatroom);
+                }
 
-                //< a onclick = "handleAccept(' @currentUser?.Id ', @nof.Id)" class="btn btn-outline-dark">Accept</a>
-                //<a class="btn btn-outline-dark">Deny</a>
                 newHtml.Append("<a class=\"disabled btn btn-outline-dark\">Accepted</a>");
                 return Json(new
                 {

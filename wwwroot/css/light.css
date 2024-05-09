@@ -4,11 +4,19 @@ html {
     height: 100vh;
 }
 
+.chatroom_card_item {
+    padding: 6px;
+    border: 1px solid;
+    border-radius: 12px;
+}
+
 .message_section_navigation a {
     margin-bottom: 8px;
 }
 
 .create_friend_card_container {
+    overflow-y: scroll;
+    max-height: 100%;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -16,11 +24,15 @@ html {
 
 .create_friend_card {
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .create_friends_container {
+    flex: 1;
+    max-height: 100%;
     overflow-y: scroll;
-    /*scrollbar-width: none;*/
+    scrollbar-width: none;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -40,8 +52,8 @@ html {
 }
 
 .create_friend_img_container {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
 }
 
 .create_friend_img_container img {
@@ -367,11 +379,21 @@ main {
     gap: 20px;
 }
 
-.chatroom_container {
+.chatroom_container_details {
     display: flex;
     flex-direction: column;
     gap: 16px;
     width: 30%;
+    justify-content: flex-start;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.chatroom_container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
     justify-content: flex-start;
     overflow-y: auto;
     scrollbar-width: none;
@@ -382,15 +404,15 @@ main {
     background-color: #fff;
     border-radius: 12px;
     gap: 8px;
-    padding: 12px;
+    padding: 6px;
     color: white;
     text-decoration: none;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
 }
 
 .chatroom_card_img_container {
-    min-width: 50px;
-    height: 50px;
+    max-width: 60px;
+    min-width: 60px;
+    height: 60px;
 }
 
 .chatroom_card_img {
@@ -420,8 +442,20 @@ main {
     font-weight: bold;
 }
 
+.messages_container_details {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
 .messages_container {
-    height: 96vh;
+    height: 94%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -550,7 +584,7 @@ main {
 .message_section_container {
     display: flex;
     gap: 16px;
-    height: 100%;
+    height: 91%;
 
 }
 
@@ -594,7 +628,8 @@ main {
 
 .friends_container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
     gap: 12px;
     max-height: 100vh;
     overflow-y: auto;
@@ -684,6 +719,16 @@ h3 {
     margin-bottom: 0;
 }
 
+.create_members_container {
+    flex: 1;
+}
+
+.create_friends_container_section {
+    display: flex;
+    gap: 12px;
+    max-height: 100%;
+}
+
 .admin_nav_container {
     width: 25%;
     display: flex;
@@ -702,12 +747,13 @@ h3 {
 }
 
 @media (max-width: 768px) {
-    .create_members_container {
+    /* .create_members_container {
         margin-top: 24px;
-    }
+    } */
 
     .create_chatromm_container {
         flex-direction: column-reverse;
+        height: unset;
     }
 
     .video_actions {
@@ -885,6 +931,7 @@ h3 {
 
 .nav_item_nofitications {
     left: 100%;
+    height: 100%;
     top: 0;
     padding: 12px;
     width: 120px;
@@ -895,7 +942,7 @@ h3 {
     width: 400px;
     overflow-y: auto;
     scrollbar-width: none;
-    max-height: 350px;
+    height: 350px;
     z-index: 100;
 }
 
@@ -1380,6 +1427,7 @@ input {
 
 
 .navIcons {
+    border-right: 1px solid;
     max-height: 100vh;
     z-index: 100;
 }
@@ -1400,7 +1448,7 @@ form button {
 
 .profile_container {
     background-position: center;
-    /* border-radius: 16px; */
+    border-radius: 6px;
     margin-bottom: 12px;
     background-repeat: no-repeat, repeat;
     background-size: cover;
@@ -1528,7 +1576,7 @@ form button {
 .body_section {
     width: 100%;
     max-height: 100vh;
-    overflow-y: auto;
+    /* overflow-y: auto; */
     padding: 0 1.5rem;
     scrollbar-width: none;
     background-color: #f0f2f5 !important;
@@ -1630,6 +1678,10 @@ form button {
 }
 
 @media (max-width: 550px) {
+    .chatroom_container_details {
+        display: none;
+    }
+
     .messages_container_room_call {
         max-height: 50vh !important;
     }
@@ -1666,8 +1718,9 @@ form button {
     }
 
     .messages_container {
+        display: none;
         margin-top: 0 !important;
-        height: 81vh !important;
+        height: 100% !important;
     }
 
     footer {
@@ -1676,27 +1729,25 @@ form button {
 
     .main {
         margin: 0 !important;
-        padding: 0 12px 12px 12px !important;
+        padding: 0 12px !important;
     }
 
     .chatroom_card {
         padding: 0;
-        border-radius: 100%;
-    }
-
-    .chatroom_card_info {
-        display: none;
     }
 
     .chatroom_container {
-        flex-direction: row;
+        display: flex;
+        height: 100%;
+        border-radius: 6px;
+        flex-direction: column;
         width: 100%;
         overflow-x: scroll;
         scrollbar-width: none;
         background-color: #fff;
         padding: 12px;
-        border-radius: 12px;
         border: 1px solid #000;
+        margin-bottom: 12px;
     }
 
     .message_section_container {
@@ -1770,6 +1821,7 @@ form button {
     .navIcons {
         flex-direction: row !important;
         width: 100%;
+        border-right: 0;
         /* position: fixed; */
     }
 

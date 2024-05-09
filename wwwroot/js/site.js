@@ -4,7 +4,7 @@ async function handleCreateGroup(event) {
     event.preventDefault()
     const form = event.target;
     const roomName = form.roomName.value;
-    const membersString = arrayMember.join(',');
+    // const membersString = arrayMember.join(',');
 
     const bodyData = new FormData();
     bodyData.append('roomName', roomName);
@@ -13,10 +13,18 @@ async function handleCreateGroup(event) {
     }
     console.log("Check arrayMember >>> ", arrayMember)
     try {
-        const response = await fetch("/Chat/Create", {
+        await fetch("/Chat/Create", {
             method: "POST",
             body: bodyData
-        });
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data)
+                showElement('warm_members_user_status')
+            })
+        if (data.message) {
+            showElement('warm_members_user_status')
+        }
     } catch (err) {
         console.log("Check error >>> ", err.toString());
     }
@@ -78,10 +86,15 @@ function handleAddUserToGroup(userId, imageUrl, username, currentUser) {
     }
     // ... 
 }
+function handleUnaddMember(userId) {
+    const member_item_delete = document.getElementById(`member_item_${userId}`)
+    member_item_delete.remove();
+    arrayMember = arrayMember.filter(p => p != userId);
+}
 function createListItem(userId, imageUrl, username) {
     const listItem = document.createElement("li");
     listItem.classList.add("list-group-item", "d-flex", "justify-content-between", "align-content-center");
-
+    listItem.id = `member_item_${userId}`
     const imageDiv = document.createElement("div");
     imageDiv.classList.add("d-flex", "flex-row");
 
@@ -104,6 +117,9 @@ function createListItem(userId, imageUrl, username) {
     checkbox.name = "a";
     checkbox.checked = true;
     checkbox.value = userId
+    checkbox.onchange = function () {
+        handleUnaddMember(userId);
+    }
 
     // Add elements to their parents
     imageDiv.appendChild(image);
@@ -377,6 +393,12 @@ function handleAddFriendProfile(userId, friendId) {
 
             console.log(data);
             var element = document.getElementById("profile_request_friend")
+            var add_fr_profile_element = document.getElementById(`add_fr_profile_element_${friendId}`)
+            if (add_fr_profile_element) {
+                add_fr_profile_element.classList.add('disabled')
+                add_fr_profile_element.textContent = ''
+                add_fr_profile_element.textContent = 'Requested'
+            }
             if (element) {
                 element.innerHTML = ''
                 element.innerHTML = data.newHtml
@@ -719,7 +741,17 @@ async function saveImage(imageUrl) {
         return null;
     }
 }
-
+function w3_open() {
+    document.getElementById("main").style.marginLeft = "25%";
+    document.getElementById("mySidebar").style.width = "25%";
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+    document.getElementById("main").style.marginLeft = "0%";
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("openNav").style.display = "inline-block";
+}
 function handleAccept(userId, nofId) {
     fetch(`/Profile/AcceptFriendRequest?userId=${userId}&nofId=${nofId}`)
         .then(response => {
@@ -730,13 +762,16 @@ function handleAccept(userId, nofId) {
         })
         .then(data => {
 
-            console.log(data.commentHtml);
-            // cập nhật giao diện người dùng với dữ liệu mới
-            var element = document.getElementById("nofi_card_actions_" + nofId);
-            if (element) {
-                console.log(data.newHtml)
-                element.innerHTML = '';
-                element.innerHTML = data.newHtml;
+            // console.log(data.commentHtml);
+            // // cập nhật giao diện người dùng với dữ liệu mới
+            // var element = document.getElementById("nofi_card_actions_" + nofId);
+            // if (element) {
+            //     console.log(data.newHtml)
+            //     element.innerHTML = '';
+            //     element.innerHTML = data.newHtml;
+            // }
+            if (data) {
+                window.location.href = "/Blog";
             }
         })
         .catch(error => {
@@ -805,7 +840,24 @@ function handleDeny(userId, nofId) {
             console.error('There was a problem with the fetch operation:', error);
         });
 }
-
+async function handleChangeToChatDetail(userId, friendId) {
+    await fetch(`/Chat/GetChatRoomId?userId=${userId}&friendId=${friendId}`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log("check data >>> ", data)
+            if (data.chatRoomId) {
+                window.location.href = `/Chat/Details/${data.chatRoomId}`
+            }
+        })
+        .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+        });
+}
 function handleUnFriend(userId, friendId, itemId) {
     fetch(`/Friend/UnFriend?userId=${userId}&friendId=${friendId}`,)
         .then(response => {
@@ -817,24 +869,34 @@ function handleUnFriend(userId, friendId, itemId) {
         .then(data => {
 
             console.log(data);
-            var elementFriendIndex = document.getElementById("friend_card_actions_" + itemId)
-            var elementProfileIndex = document.getElementById("profile_request_friend")
-            var elementBLogIndex = document.getElementById("right_click_menu_container_" + itemId)
-            if (elementBLogIndex) {
-                elementBLogIndex.innerHTML = ''
-                elementBLogIndex.innerHTML = data.sbBlogIndex
-            }
-            if (elementProfileIndex) {
-                elementProfileIndex.innerHTML = ''
-                elementProfileIndex.innerHTML = data.sbProfile
-            }
-            if (elementFriendIndex) {
-                elementFriendIndex.innerHTML = ''
-                elementFriendIndex.innerHTML = data.sbFriendIndex
-                showElement("friend_card_status_" + itemId)
-            }
+            if (itemId) {
+                var elementFriendIndex = document.getElementById("friend_card_actions_" + itemId)
+                var elementProfileIndex = document.getElementById("profile_request_friend")
+                var elementBLogIndex = document.getElementById("right_click_menu_container_" + itemId)
+                if (elementBLogIndex) {
+                    elementBLogIndex.innerHTML = ''
+                    elementBLogIndex.innerHTML = data.sbBlogIndex
+                }
+                if (elementProfileIndex) {
+                    elementProfileIndex.innerHTML = ''
+                    elementProfileIndex.innerHTML = data.sbProfile
+                }
+                if (elementFriendIndex) {
+                    elementFriendIndex.innerHTML = ''
+                    elementFriendIndex.innerHTML = data.sbFriendIndex
+                    showElement("friend_card_status_" + itemId)
+                }
+            } else {
+                console.log(data);
 
+                var un_fr_profile_element = document.getElementById(`un_fr_profile_element_${friendId}`)
+                if (un_fr_profile_element) {
+                    un_fr_profile_element.classList.add('disabled')
+                    un_fr_profile_element.textContent = ''
+                    un_fr_profile_element.textContent = 'Add Friend'
+                }
 
+            }
         })
         .catch(error => {
             console.error('There was a problem with the fetch operation:', error);
