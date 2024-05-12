@@ -8,11 +8,13 @@ namespace Doan_Web_CK.Hubs
 {
     public class ChatHub : Hub
     {
+        private readonly IWebHostEnvironment _environment;
         private readonly IChatRoomRepository _chatRoomRepository;
         private readonly IAccountRepository _accountRepository;
         private readonly UserManager<ApplicationUser> _userManager;
-        public ChatHub(IChatRoomRepository chatRoomRepository, IAccountRepository accountRepository, UserManager<ApplicationUser> userManager)
+        public ChatHub(IWebHostEnvironment environment, IChatRoomRepository chatRoomRepository, IAccountRepository accountRepository, UserManager<ApplicationUser> userManager)
         {
+            _environment = environment;
             _userManager = userManager;
             _chatRoomRepository = chatRoomRepository;
             _accountRepository = accountRepository;
@@ -90,7 +92,22 @@ namespace Doan_Web_CK.Hubs
                 }
             }
         }
-        public async Task SendToUser(string user, string message, string chatRoomId)
+        public async Task UnSendMessageToUser(string userId, int messageId, int chatRoomId)
+        {
+            var currentUser = await _accountRepository.GetByIdAsync(userId);
+            var chatRoom = await _chatRoomRepository.GetByIdAsync(chatRoomId);
+            if (messageId != null & chatRoomId != null)
+            {
+                foreach (var user in chatRoom.Users)
+                {
+                    if (user.Id != currentUser.Id)
+                    {
+                        Clients.User(user.Id).SendAsync("ReceiveUnsendMessage", userId, messageId, chatRoomId);
+                    }
+                }
+            }
+        }
+        public async Task SendToUser(string user, string message, string chatRoomId, List<string> arrayImageMessages)
         {
             var currentUser = await _accountRepository.GetByIdAsync(user);
             var chatRoomGroup = await _chatRoomRepository.GetByIdAsync(int.Parse(chatRoomId));
@@ -98,6 +115,7 @@ namespace Doan_Web_CK.Hubs
             {
                 var sender = await _accountRepository.GetByIdAsync(user);
                 var time = DateTime.Now;
+                var msId = "";
                 if (chatRoomGroup != null)
                 {
                     var newMessage = new Message
@@ -112,22 +130,50 @@ namespace Doan_Web_CK.Hubs
                     };
                     await _chatRoomRepository.AddMessagesAsync(chatRoomGroup, newMessage);
                     time = newMessage.Time;
+                    msId = newMessage.Id.ToString();
                 }
 
                 foreach (var userItem in chatRoomGroup.Users)
                 {
                     if (userItem.Id == currentUser.Id)
                     {
-                        await Clients.User(userItem.Id).SendAsync("ReceiveMessage", userItem.Id, message, sender.ImageUrl, "right", time.ToString(), chatRoomGroup.Id);
+                        await Clients.User(userItem.Id).SendAsync("ReceiveMessage", userItem.Id, message, sender.ImageUrl, "right", time.ToString(), chatRoomGroup.Id, "", "", msId);
                     }
                     else
                     {
-                        await Clients.User(userItem.Id).SendAsync("ReceiveMessage", userItem.Id, message, sender.ImageUrl, "left", time.ToString(), chatRoomGroup.Id);
+                        await Clients.User(userItem.Id).SendAsync("ReceiveMessage", userItem.Id, message, sender.ImageUrl, "left", time.ToString(), chatRoomGroup.Id, "", "", msId);
                     }
                 }
             }
         }
+        public async Task UploadImage(string imageData)
+        {
+            try
+            {
+                // Parse the data URI and extract the base64-encoded data
+                var base64Data = imageData.Split(",")[1];
 
+                // Convert base64-encoded data to byte array
+                var bytes = Convert.FromBase64String(base64Data);
+
+                // Generate unique file name
+                var fileName = $"{Guid.NewGuid().ToString()}.png";
+
+                // Get the absolute path to the wwwroot/images directory
+                var imagePath = Path.Combine(_environment.WebRootPath, "images", fileName);
+
+                // Write the byte array to the file
+                await File.WriteAllBytesAsync(imagePath, bytes);
+
+                // Notify clients about the new image
+                await Clients.Caller.SendAsync("ImageUploaded", $"/images/{fileName}");
+            }
+            catch (Exception ex)
+            {
+                // Handle any errors
+                Console.WriteLine($"Error uploading image: {ex.Message}");
+            }
+        }
         public string GetConnectionId() => Context.UserIdentifier;
     }
 }

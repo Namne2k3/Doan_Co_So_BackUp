@@ -3,6 +3,7 @@ using Doan_Web_CK.Repository;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.DataAnnotations;
 
 namespace Doan_Web_CK.Controllers
 {
@@ -36,7 +37,6 @@ namespace Doan_Web_CK.Controllers
             };
 
             await AddMember(chatRoom, members);
-            await _chatRoomRepository.AddAsync(chatRoom);
 
             if (chatRoom.Users.Count < 3)
             {
@@ -45,9 +45,42 @@ namespace Doan_Web_CK.Controllers
                     message = "failed"
                 });
             }
+            else
+            {
+                await _chatRoomRepository.AddAsync(chatRoom);
+            }
 
-            return RedirectToAction("Group");
+            return Json(new
+            {
+                message = "success"
+            });
         }
+
+        [HttpGet]
+        public async Task<IActionResult> UnsendMessage(int messageId)
+        {
+            var message = await _messageRepository.GetAsync(messageId);
+            if (message != null)
+            {
+                message.Text = "Unsended";
+            }
+            else
+            {
+                return Json(new
+                {
+                    message = "null",
+                    status = "failed"
+                });
+            }
+
+            await _messageRepository.UpdateAsync(message);
+            return Json(new
+            {
+                message = message,
+                status = "success"
+            });
+        }
+
         public async Task<IActionResult> Create()
         {
             var account = await _accountRepository.GetByIdAsync(_userManager.GetUserId(User));

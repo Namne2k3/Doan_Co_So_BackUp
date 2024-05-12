@@ -1,4 +1,33 @@
 ﻿
+function showMenu(e, msId) {
+    var el = document.getElementById(`more_${msId}`);
+    var btn = document.getElementById(`more-btn_${msId}`);
+    var menu = document.getElementById(`more-menu_${msId}`);
+    var visible = false;
+
+    e.preventDefault();
+    if (!visible) {
+        visible = true;
+        el.classList.add('show-more-menu');
+        menu.setAttribute('aria-hidden', false);
+        document.addEventListener('mousedown', function (event) {
+            hideMenu(event, btn, el, menu, visible); // Truyền tham số vào hideMenu
+        }, false);
+    }
+}
+
+function hideMenu(e, btn, el, menu, visible) {
+    if (btn.contains(e.target)) {
+        return;
+    }
+    if (visible) {
+        visible = false;
+        el.classList.remove('show-more-menu');
+        menu.setAttribute('aria-hidden', true);
+        document.removeEventListener('mousedown', hideMenu);
+    }
+}
+
 var arrayMember = [];
 async function handleCreateGroup(event) {
     event.preventDefault()
@@ -11,24 +40,37 @@ async function handleCreateGroup(event) {
     for (const memberId of arrayMember) {
         bodyData.append('members', memberId);
     }
-    console.log("Check arrayMember >>> ", arrayMember)
-    try {
-        await fetch("/Chat/Create", {
-            method: "POST",
-            body: bodyData
-        })
-            .then(response => response.json())
-            .then(data => {
-                console.log(data)
+
+    await fetch("/Chat/Create", {
+        method: "POST",
+        body: bodyData
+    })
+        .then(response => response.json())
+        .then(data => {
+            // console.log(data)
+            if (data.message == 'failed') {
                 showElement('warm_members_user_status')
-            })
-        if (data.message) {
-            showElement('warm_members_user_status')
+            } else {
+                window.location.href = "/Chat/Group"
+            }
+        })
+    if (data.message) {
+        showElement('warm_members_user_status')
+    }
+
+}
+
+function handleToggleEmoji(event) {
+    const emoji_container = document.getElementById('emoji_container')
+    if (emoji_container) {
+        if (emoji_container.classList.contains('hidden')) {
+            emoji_container.classList.remove('hidden')
+        } else {
+            emoji_container.classList.add('hidden')
         }
-    } catch (err) {
-        console.log("Check error >>> ", err.toString());
     }
 }
+
 async function handleSearchMember(event) {
     if (event.keyCode == 13) {
 

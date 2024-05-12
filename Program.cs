@@ -13,7 +13,7 @@ var credentials = GoogleCredential.FromFile("credentials.json");
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
+//builder.WebHost.UseUrls("https://4415krnq-5102.asse.devtunnels.ms/");
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddDefaultTokenProviders()
                 .AddDefaultUI()
@@ -22,16 +22,17 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAllOrigins", policy =>
-    {
-        policy.AllowAnyOrigin();
-        policy.AllowAnyMethod();
-        policy.AllowAnyHeader();
-    });
+    options.AddPolicy("AllowOrigins",
+            builder => builder.WithOrigins("http://localhost:5102", "https://4415krnq-5102.asse.devtunnels.ms")
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .AllowCredentials());
 });
 
 builder.Services.AddAuthentication();
-builder.Services.AddSignalR();
+
+builder.Services.AddSignalR(options => options.MaximumReceiveMessageSize = 10240000);
+builder.Services.AddSignalR(options => options.EnableDetailedErrors = true);
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddEndpointsApiExplorer();
 
@@ -49,7 +50,7 @@ builder.Services.AddScoped<IChatRoomRepository, EFChatRoomRepository>();
 builder.Services.AddTransient<ISenderEmail, EmailSender>();
 
 
-builder.Services.AddLogging(builder => builder.AddConsole());
+// builder.Services.AddLogging(builder => builder.AddConsole());
 
 builder.Services.AddAuthentication()
     .AddFacebook(op =>
@@ -66,6 +67,7 @@ builder.Services.AddAuthentication()
 
 var app = builder.Build();
 
+//app.UseWebSockets();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
@@ -77,7 +79,7 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
-app.UseCors("AllowAllOrigins");
+app.UseCors("AllowOrigins");
 app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();

@@ -111,18 +111,51 @@
                             {
                                 <div class="message_item">
                                     <div class="message_item_user_text">
+                                        
                                         <div class="message_item_img_container">
                                             <img src="@ms.ApplicationUser.ImageUrl" alt="user_image" />
                                         </div>
-                                        <p class="long_text">
-                                            @ms.Text
-                                            @if ( ms.Type != null )
-                                            {
-                                                <a asp-action="Room" asp-controller="Call" asp-route-roomId="@ms.connectionRoomCall" class="btn btn-outline-light call_icon">
-                                                    <i class="bi bi-telephone-outbound"></i>
-                                                </a>
-                                            }
-                                        </p>
+                                        @if ( ms.Text == "Unsended" ) {
+                                            <p class="long_text_unsend" id="message_text_@ms.Id">
+                                                @ms.Text
+                                                @if ( ms.Type != null )
+                                                {
+                                                    <a asp-action="Room" asp-controller="Call" asp-route-roomId="@ms.connectionRoomCall" class="btn btn-outline-light call_icon">
+                                                        <i class="bi bi-telephone-outbound"></i>
+                                                    </a>
+                                                }
+                                            </p>
+                                        } else {
+                                            <p class="long_text" id="message_text_@ms.Id">
+                                                @ms.Text
+                                                @if ( ms.Type != null )
+                                                {
+                                                    <a asp-action="Room" asp-controller="Call" asp-route-roomId="@ms.connectionRoomCall" class="btn btn-outline-light call_icon">
+                                                        <i class="bi bi-telephone-outbound"></i>
+                                                    </a>
+                                                }
+                                            </p>
+                                        }
+                                        @if ( ms.Type != "call" ) {
+                                            <div class="option_message_icon_container">
+                                                <div class="more position-relative" id="more_@ms.Id" >
+                                                    <button onclick="showMenu(event, @ms.Id)" id="more-btn_@ms.Id" class="more-btn">
+                                                        <i class="bi bi-three-dots-vertical"></i>
+                                                    </button>
+                                                    <div class="more-menu" id="more-menu_@ms.Id">
+                                                        <div class="more-menu-caret">
+                                                            <div class="more-menu-caret-outer"></div>
+                                                            <div class="more-menu-caret-inner"></div>
+                                                        </div>
+                                                        <ul class="more-menu-items" tabindex="-1" role="menu" aria-labelledby="more-btn" aria-hidden="true">
+                                                            <li class="more-menu-item" >
+                                                                <button onclick="handleUnSendMs('@currentUser.Id',@ms.Id, @currentChatroom.Id)" type="button" class="more-menu-btn" role="menuitem">Unsend</button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        }
                                     </div>
                                     <p class="message_item_date" style="text-align: right;" >@ms.Time</p>
                                 </div>
@@ -133,15 +166,27 @@
                                         <div class="message_item_img_container">
                                             <img src="@ms.ApplicationUser.ImageUrl" alt="user_image" />
                                         </div>
-                                        <p>
-                                            @ms.Text
-                                            @if (ms.Type != null)
-                                            {
-                                                <a asp-action="Room" asp-controller="Call" asp-route-roomId="@ms.connectionRoomCall" class="btn btn-outline-light call_icon">
-                                                    <i class="bi bi-telephone-outbound"></i>
-                                                </a>
-                                            }
-                                        </p>
+                                        @if ( ms.Text == "Unsended" ) {
+                                            <p class="long_text_unsend" id="message_text_@ms.Id">
+                                                @ms.Text
+                                                @if ( ms.Type != null )
+                                                {
+                                                    <a asp-action="Room" asp-controller="Call" asp-route-roomId="@ms.connectionRoomCall" class="btn btn-outline-light call_icon">
+                                                        <i class="bi bi-telephone-outbound"></i>
+                                                    </a>
+                                                }
+                                            </p>
+                                        } else {
+                                            <p class="long_text" id="message_text_@ms.Id">
+                                                @ms.Text
+                                                @if ( ms.Type != null )
+                                                {
+                                                    <a asp-action="Room" asp-controller="Call" asp-route-roomId="@ms.connectionRoomCall" class="btn btn-outline-light call_icon">
+                                                        <i class="bi bi-telephone-outbound"></i>
+                                                    </a>
+                                                }
+                                            </p>
+                                        }
                                     </div>
                                     <p class="message_item_date" style="text-align: left;">@ms.Time</p>
                                 </div>   
@@ -158,8 +203,28 @@
                 {
                     <input id="receiverId" value="@currentChatroom.Users[0].Id" hidden />
                 }
-                <div class="message_input_container">
-                    <input id="messageInput" onkeypress="handleSendMessage(event)" placeholder="Writing something ... " type="text" class="form-control message_input" />
+                <div class="message_image_input_container" id="message_image_input_container">
+                        
+                </div>
+                <div class="messsage_input_section">
+                    <div class="message_input_container">
+                        
+                        <input id="messageInput" onkeypress="handleSendMessage(event)" placeholder="Write something ... " type="text" class="form-control message_input" />
+                    </div>
+                    <div style="position: relative;">
+                        <div id="emoji_container" class="hidden emoji_container">
+
+                        </div>  
+                        <a onclick="handleToggleEmoji(event)" class="emoji_container_icon">
+                            <i class="icon bi bi-emoji-smile-fill"></i>
+                        </a>
+                        <label for="uploadImage">
+                            <a class="file_image_container_icon">
+                                <i class="icon bi bi-file-image"></i>
+                            </a>
+                        </label>
+                        <input hidden multiple type="file" accept="image/*" id="uploadImage">
+                    </div>
                 </div>
             </div>
         }
@@ -298,7 +363,33 @@
         </button> *@
     </div>
 }
+
+<script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
 <script>
+
+    const pickerOptions = { onEmojiSelect: (emo) => {
+        console.log(emo.native)
+        const messageInput = document.getElementById('messageInput')
+        messageInput.value += emo.native
+    }, 
+        navPosition: 'bottom', 
+        theme: 'light', 
+    }
+    const picker = new EmojiMart.Picker(pickerOptions)
+
+
+    const emoji_container = document.getElementById('emoji_container')
+
+    if ( emoji_container ) {
+
+        emoji_container.appendChild(picker)
+    }
+
+    if (!sessionStorage.getItem('theme')) {
+        var defaultTheme = '@Url.Content("~/css/site.css")'; // Giá trị mặc định, có thể là bất kỳ giá trị nào bạn muốn
+        sessionStorage.setItem('theme', defaultTheme);
+    }
+
     if (!sessionStorage.getItem('theme')) {
         var defaultTheme = '@Url.Content("~/css/site.css")'; // Giá trị mặc định, có thể là bất kỳ giá trị nào bạn muốn
         sessionStorage.setItem('theme', defaultTheme);

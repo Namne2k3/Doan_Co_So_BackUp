@@ -9,21 +9,26 @@
     var currentUser = ViewBag.currentUser;
     var friends = ViewBag.Friends;
 }
+
 <div class="body_container">
-    <div>
-        <h1 class="title_create_cr">Create ChatRoom</h1>
+    <div style="height: 5%">
+        @* <h1 class="title_create_cr">Create ChatRoom</h1> *@
         <div class="my-2">
             <a asp-action="Index" class="btn btn-outline-dark">Back to List</a>
         </div>
         
     </div>
-    <div class="create_friends_container_section">
-        <div id="addded_user_status" class="p-2 my-2 text-white text-warning bg-warning rounded-3 hidden_blog">
-            User has already added to group
-        </div>
-        <div id="warm_members_user_status" class="p-2 my-2 text-white text-warning bg-warning rounded-3 hidden_blog">
-            Chat Group must be 3 or more
-        </div>
+    <p id="not_found_user_status" class="w-50 p-2 text-white text-warning bg-warning rounded-3 hidden_blog">
+        Not found username
+    </p>
+    <p id="addded_user_status" class="p-2 my-2 text-white text-warning bg-warning rounded-3 hidden_blog">
+        User has already added to group
+    </p>
+    <p id="warm_members_user_status" class="p-2 my-2 text-white text-warning bg-warning rounded-3 hidden_blog">
+        Chat Group must be 3 or more
+    </p>
+    <div style="height: 90%" class="create_friends_container_section">
+        
 
         <div class="create_friends_container">
             <h3>Friends</h3>
@@ -78,17 +83,15 @@
                     <button type="submit" value="Create" class="btn btn-outline-success">Create</button>
                 </div>
             </form>
-            <div class="d-flex justify-content-center my-3 flex-column">
-                <h3 class="title_members">Members</h3>
+            <div class="d-flex justify-content-center mt-2 flex-column">
+                @* <h3 class="title_members">Members</h3> *@
                 <ul id="create_chatroom_listfriend" class="gap-2 create_chatroom_listfriend mt-2 list-group text-white w-100 p-0">
 
                 </ul>
             </div>
         </div>
     </div>
-    <div id="not_found_user_status" class="w-50 p-4 text-white text-warning bg-warning rounded-3 hidden_blog">
-        Not found username
-    </div>
+    
 </div>
 @section NavContent {
     <ul class="d-flex flex-column list-unstyled text-white gap-3 my-2 mx-2 navItems">

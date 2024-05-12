@@ -301,10 +301,7 @@
     </div>
 }
 <script>
-    if (!sessionStorage.getItem('theme')) {
-        var defaultTheme = '@Url.Content("~/css/site.css")'; // Giá trị mặc định, có thể là bất kỳ giá trị nào bạn muốn
-        sessionStorage.setItem('theme', defaultTheme);
-    }
+
     function handleChangeTheme() {
         var currentTheme = getSavedTheme();
         var newTheme = currentTheme.includes('site.css') ? '@Url.Content("~/css/light.css")' : '@Url.Content("~/css/site.css")';

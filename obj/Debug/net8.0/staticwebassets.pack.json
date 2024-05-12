@@ -337,14 +337,6 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\10-VHTT-1009463.jpg",
-      "PackagePath": "staticwebassets\\images\\10-VHTT-1009463.jpg"
-    },
-    {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\2024-cdc-issued-alert-u-791532-5624-8782-1711775510.png",
-      "PackagePath": "staticwebassets\\images\\2024-cdc-issued-alert-u-791532-5624-8782-1711775510.png"
-    },
-    {
       "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\20240326-21-1375991-l-jpeg-171-3190-7304-1711771395.jpg",
       "PackagePath": "staticwebassets\\images\\20240326-21-1375991-l-jpeg-171-3190-7304-1711771395.jpg"
     },
@@ -353,12 +345,12 @@
       "PackagePath": "staticwebassets\\images\\242808526_576030456926290_4222095203703955447_n.jpg"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\80105865-1-copy-9426-1713279744.jpg",
-      "PackagePath": "staticwebassets\\images\\80105865-1-copy-9426-1713279744.jpg"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\4bd44f9b-c3f9-421f-9553-a30d40c2656d.png",
+      "PackagePath": "staticwebassets\\images\\4bd44f9b-c3f9-421f-9553-a30d40c2656d.png"
     },
     {
-      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\BNDU3751 (2).JPEG",
-      "PackagePath": "staticwebassets\\images\\BNDU3751 (2).JPEG"
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\7438eeef-33dc-43eb-b8f8-d8436283f0c7.png",
+      "PackagePath": "staticwebassets\\images\\7438eeef-33dc-43eb-b8f8-d8436283f0c7.png"
     },
     {
       "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\BNDU3751.JPEG",
@@ -449,6 +441,10 @@
       "PackagePath": "staticwebassets\\images\\abc.jpg"
     },
     {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\afe3e8dc-9347-469b-a836-03598f664ab6.png",
+      "PackagePath": "staticwebassets\\images\\afe3e8dc-9347-469b-a836-03598f664ab6.png"
+    },
+    {
       "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\ai-baidu-6486-1678986788-9225-1713277277.jpg",
       "PackagePath": "staticwebassets\\images\\ai-baidu-6486-1678986788-9225-1713277277.jpg"
     },
@@ -461,12 +457,36 @@
       "PackagePath": "staticwebassets\\images\\amazon-5-4256-1713621257.jpg"
     },
     {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\c4fc468f-2b4e-44cc-84a3-071fd481bcee.png",
+      "PackagePath": "staticwebassets\\images\\c4fc468f-2b4e-44cc-84a3-071fd481bcee.png"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\c7a1d362-2d93-4611-9cee-7a7190074aee.png",
+      "PackagePath": "staticwebassets\\images\\c7a1d362-2d93-4611-9cee-7a7190074aee.png"
+    },
+    {
       "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\cau-chuyen-y-nghia-1.jpg",
       "PackagePath": "staticwebassets\\images\\cau-chuyen-y-nghia-1.jpg"
     },
     {
       "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\cdn-vox-cdn-7896-1710813178.png",
       "PackagePath": "staticwebassets\\images\\cdn-vox-cdn-7896-1710813178.png"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\dba5e379-f67e-4ca5-a2dd-82ff592920f3.png",
+      "PackagePath": "staticwebassets\\images\\dba5e379-f67e-4ca5-a2dd-82ff592920f3.png"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\e33e9d20-c730-4ce9-a845-c33f013923e0.png",
+      "PackagePath": "staticwebassets\\images\\e33e9d20-c730-4ce9-a845-c33f013923e0.png"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\ecb4f937-adde-41f7-9e1f-ecb4bf915648.png",
+      "PackagePath": "staticwebassets\\images\\ecb4f937-adde-41f7-9e1f-ecb4bf915648.png"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\ff86f771-51fe-48c6-8097-e310dad223e0.png",
+      "PackagePath": "staticwebassets\\images\\ff86f771-51fe-48c6-8097-e310dad223e0.png"
     },
     {
       "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\gr_chat.png",

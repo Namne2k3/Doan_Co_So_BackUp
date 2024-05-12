@@ -23,5 +23,6 @@ namespace Doan_Web_CK.Models
 
         public string? Type { get; set; }
         public string? connectionRoomCall { get; set; }
+        // public List<string>? MessageImage { get; set; }
     }
 }

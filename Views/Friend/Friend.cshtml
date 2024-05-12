@@ -10,21 +10,23 @@
     var currentUser = ViewBag.currentUser;
 }
 
-<div class="body_container mt-4">
-    <h1 class="friend_search_title">Friends</h1>
-    <nav class="nav nav-pills nav-justified gap-2">
-        <a asp-controller="Friend" asp-action="Index" class="btn btn-outline-light">My Friends</a>
-        <a asp-controller="Friend" asp-action="Friend" asp-route-search="" class="btn btn-outline-light active">Friends</a>
-    </nav>
-    <nav class="navbar">
-        <form class="container-fluid">
-            <div class="input-group">
-            <span style="box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;" class="input-group-text" id="basic-addon1">@@</span>
-            <input value="@search" onkeypress="handleSearchFriends(event)" type="text" class="form-control" placeholder="Search friends with username & email..." aria-label="Username" aria-describedby="basic-addon1">
-            </div>
-        </form>
-    </nav>
-    <div class="friends_container">
+<div class="body_container">
+    <div style="max-height: 20%">
+        <h1 class="friend_search_title">Friends</h1>
+        <nav class="nav nav-pills nav-justified gap-2">
+            <a asp-controller="Friend" asp-action="Index" class="btn btn-outline-light">My Friends</a>
+            <a asp-controller="Friend" asp-action="Friend" asp-route-search="" class="btn btn-outline-light active">Friends</a>
+        </nav>
+        <nav class="navbar">
+            <form class="container-fluid">
+                <div class="input-group">
+                <span style="box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;" class="input-group-text" id="basic-addon1">@@</span>
+                <input value="@search" onkeypress="handleSearchFriends(event)" type="text" class="form-control" placeholder="Search friends with username & email..." aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+            </form>
+        </nav>
+    </div>
+    <div style="max-height: 80%" class="friends_container">
         @if (currentUser != null )
         {
             foreach (var f in Model)
@@ -46,6 +48,9 @@
                                     @if (ViewBag.IsFriend(currentUser.Id, f.Id) == true) 
                                     {
                                         <a id="un_fr_profile_element_@f.Id" onclick="handleUnFriend('@currentUser.Id', '@f.Id')" class="btn btn-outline-light">Unfriend</a>
+                                        <a onclick="handleChangeToChatDetail('@currentUser.Id', '@f.Id')" class="btn btn-outline-light">
+                                            <i class="bi bi-messenger"></i>
+                                        </a>
                                     } 
                                     else 
                                     {

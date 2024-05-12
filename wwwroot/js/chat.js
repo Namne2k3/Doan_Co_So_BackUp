@@ -1,9 +1,92 @@
 ﻿"use strict";
-var connection = new signalR.HubConnectionBuilder().withUrl("/chatHub").build();
+var connection = new signalR
+    .HubConnectionBuilder()
+    .withUrl("/chatHub")
+    .withAutomaticReconnect()
+    .build();
+
+function createMenuOptionsMS(msId, userId, chatroomId) {
+    // console.log(msId, userId, chatroomId);
+    var ms = {
+        Id: msId // Thay đổi Id của tin nhắn theo cách bạn cần
+    };
+
+    var currentUser = {
+        Id: userId // Thay đổi Id của người dùng hiện tại theo cách bạn cần
+    };
+
+    var currentChatroom = {
+        Id: chatroomId // Thay đổi Id của phòng chat hiện tại theo cách bạn cần
+    };
+
+    var optionMessageIconContainer = document.createElement("div");
+    optionMessageIconContainer.className = "option_message_icon_container";
+
+    var moreContainer = document.createElement("div");
+    moreContainer.className = "more position-relative";
+    moreContainer.id = "more_" + ms.Id;
+
+    var moreButton = document.createElement("button");
+    moreButton.className = "more-btn";
+    moreButton.id = "more-btn_" + ms.Id;
+    moreButton.innerHTML = '<i class="bi bi-three-dots-vertical"></i>';
+    moreButton.onclick = function (event) {
+        showMenu(event, ms.Id);
+    };
+
+    var moreMenu = document.createElement("div");
+    moreMenu.className = "more-menu";
+    moreMenu.id = "more-menu_" + ms.Id;
+
+    var moreMenuCaret = document.createElement("div");
+    moreMenuCaret.className = "more-menu-caret";
+
+    var moreMenuCaretOuter = document.createElement("div");
+    moreMenuCaretOuter.className = "more-menu-caret-outer";
+
+    var moreMenuCaretInner = document.createElement("div");
+    moreMenuCaretInner.className = "more-menu-caret-inner";
+
+    moreMenuCaret.appendChild(moreMenuCaretOuter);
+    moreMenuCaret.appendChild(moreMenuCaretInner);
+
+    var moreMenuItems = document.createElement("ul");
+    moreMenuItems.className = "more-menu-items";
+    moreMenuItems.setAttribute("tabindex", "-1");
+    moreMenuItems.setAttribute("role", "menu");
+    moreMenuItems.setAttribute("aria-labelledby", "more-btn");
+    moreMenuItems.setAttribute("aria-hidden", "true");
+
+    var moreMenuItem = document.createElement("li");
+    moreMenuItem.className = "more-menu-item";
+
+    var unsendButton = document.createElement("button");
+    unsendButton.className = "more-menu-btn";
+    unsendButton.setAttribute("type", "button");
+    unsendButton.setAttribute("role", "menuitem");
+    unsendButton.innerHTML = "Unsend";
+    unsendButton.onclick = function () {
+        handleUnSendMs(currentUser.Id.toString(), parseInt(ms.Id), currentChatroom.Id);
+    };
+
+    moreMenuItem.appendChild(unsendButton);
+    moreMenuItems.appendChild(moreMenuItem);
+
+    moreMenu.appendChild(moreMenuCaret);
+    moreMenu.appendChild(moreMenuItems);
+
+    moreContainer.appendChild(moreButton);
+    moreContainer.appendChild(moreMenu);
+
+    optionMessageIconContainer.appendChild(moreContainer);
+
+    return optionMessageIconContainer;
+}
 
 //Disable send button until connection is established
 //document.getElementById("sendButton").disabled = true;
-connection.on("ReceiveMessage", function (user, message, imageUrl, leftOrRight, time, chatRoomGroupId, type, connectionRoomCall) {
+// userItem.Id, message, sender.ImageUrl, "right", time.ToString(), chatRoomGroup.Id, msId
+connection.on("ReceiveMessage", function (user, message, imageUrl, leftOrRight, time, chatRoomGroupId, type, connectionRoomCall, msId) {
     const url = window.location.href;
     var msg = message.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
     var encodedMsg = message;
@@ -81,6 +164,7 @@ connection.on("ReceiveMessage", function (user, message, imageUrl, leftOrRight, 
 
                 var pTextLeft = document.createElement("p");
                 pTextLeft.classList.add("long_text");
+                pTextLeft.id = `message_text_${msId}`
                 pTextLeft.textContent = encodedMsg;
 
                 // Ghép các phần tử vào nhau
@@ -174,12 +258,14 @@ connection.on("ReceiveMessage", function (user, message, imageUrl, leftOrRight, 
             divMessageItemImgContainer.appendChild(img);
 
             var pTextLeft = document.createElement("p");
+            pTextLeft.id = `message_text_${msId}`
             pTextLeft.classList.add("long_text");
             pTextLeft.textContent = encodedMsg;
 
             // Ghép các phần tử vào nhau
             divMessageItemFriendText.appendChild(divMessageItemImgContainer);
             divMessageItemFriendText.appendChild(pTextLeft);
+            divMessageItemFriendText.appendChild(createMenuOptionsMS(msId, user, chatRoomGroupId))
 
             document.getElementById("messageInput").value = ""
 
@@ -358,7 +444,7 @@ function handleSendMessage(event) {
             var message = document.getElementById("messageInput").value;
             var chatRoomId = document.getElementById('chatRoom_Id').value;
             if (message != " ") {
-                connection.invoke("SendToUser", user, message, chatRoomId).catch(function (err) {
+                connection.invoke("SendToUser", user, message, chatRoomId, arrayImageMessages).catch(function (err) {
                     return console.log(err.toString());
                 });
                 handleAddToastMessage(user, message, chatRoomId)
@@ -368,15 +454,100 @@ function handleSendMessage(event) {
     }
 }
 
+async function handleUnSendMs(userId, messageId, chatRoomId) {
+    console.log("Check >>> ", userId, messageId, chatRoomId);
+    try {
+        await fetch(`/Chat/UnsendMessage?messageId=${messageId}`)
+            .then(response => response.json())
+            .then(data => {
+                var message_text = document.getElementById(`message_text_${messageId}`)
+                if (message_text) {
+                    message_text.style.color = "white"
+                    message_text.textContent = "Unsended"
+                    console.log("Check unsendmessagetouser >>> ", userId, messageId, chatRoomId);
+                    connection.invoke("UnSendMessageToUser", userId, messageId, chatRoomId).catch(function (err) {
+                        return console.log(err.toString());
+                    });
+
+                }
+                console.log(data)
+            })
+    } catch (err) {
+        console.log(err.toString());
+    }
+}
+
+connection.on("ReceiveUnsendMessage", function (userId, messageId, chatRoomId) {
+    console.log("check messageId >>> ", messageId);
+    var message_text = document.getElementById(`message_text_${messageId}`)
+    if (message_text) {
+        message_text.style.color = "white"
+        message_text.textContent = "Unsended"
+    }
+})
+var arrayImageMessages = [];
+connection.on("ImageUploaded", function (imageData) {
+    // Handle newly uploaded image
+    arrayImageMessages.push(imageData);
+    console.log(arrayImageMessages);
+    const imgElement = document.createElement("img");
+    imgElement.src = imageData;
+    imgElement.classList.add('message_image')
+    var message_image_input_container = document.getElementById('message_image_input_container')
+    if (message_image_input_container) {
+        message_image_input_container.appendChild(imgElement);
+    }
+});
+
+
+
 connection.start().then(function () {
-    console.log("Connected");
     connection.invoke("GetConnectionId").then(function (id) {
-        //document.getElementById("connectionId").innerText = id;
+        console.log("Connected");
+        if (document.getElementById("uploadImage")) {
+            // document.getElementById("uploadImage").addEventListener("change", function (event) {
+            //     const file = event.target.files[0];
+            //     const reader = new FileReader();
+            //     reader.onload = function (event) {
+            //         const imageData = event.target.result;
+            //         if (connection.state === signalR.HubConnectionState.Connected) {
+            //             connection.invoke("UploadImage", imageData).catch(err => console.error(err));
+            //         } else {
+            //             console.error("Connection is not in the 'Connected' state.");
+            //             // Handle the situation appropriately, e.g., reconnect or notify the user
+            //         }
+
+            //     };
+            //     reader.readAsDataURL(file);
+            //     console.log('da doc file xong');
+            // });
+            document.getElementById("uploadImage").addEventListener("change", function (event) {
+                var userId = document.getElementById('userInput');
+                console.log(userId.value.toString());
+                const files = event.target.files;
+                for (let i = 0; i < files.length; i++) {
+                    const file = files[i];
+                    const reader = new FileReader();
+                    reader.onload = function (event) {
+                        const imageData = event.target.result;
+                        if (connection.state === signalR.HubConnectionState.Connected) {
+                            connection.invoke("UploadImage", imageData).catch(err => console.error(err));
+                        } else {
+                            console.error("Connection is not in the 'Connected' state.");
+                            // Handle the situation appropriately, e.g., reconnect or notify the user
+                        }
+                    };
+                    reader.readAsDataURL(file);
+                }
+                console.log('Đã đọc file xong');
+            });
+        }
     });
-    //document.getElementById("sendButton").disabled = false;
+
 }).catch(function (err) {
     return console.error(err.toString());
 });
+
 
 if (document.getElementById("sendButton") != null) {
     document.getElementById("sendButton").addEventListener("click", function (event) {

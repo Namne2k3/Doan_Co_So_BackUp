@@ -53,39 +53,6 @@
                 <div id="profile_request_friend" class="d-flex gap-2">
                     @if (currentUser.Id != account.Id)
                     {
-                        if (ViewBag.IsRequested(currentUser.Id, account.Id) == false)
-                        {
-                            if (ViewBag.IsFriend(currentUser.Id, account.Id) == true)
-                            {
-                                <div>
-                                    <a onclick="handleUnFriend('@currentUser.Id', '@account.Id')"
-                                        class="btn btn-outline-light">Unfriend</a>
-                                </div>
-                            }
-                            else
-                            {
-                                <div>
-                                    <a onclick="handleAddFriendProfile('@currentUser.Id', '@account.Id')"
-                                        class="btn btn-outline-light">Add friend</a>
-                                </div>
-                            }
-                        }
-                        else
-                        {
-                            if (ViewBag.IsBeingRequested(currentUser.Id, account.Id) == true)
-                            {
-                                <div>
-                                    <a asp-route-userId="@currentUser.Id" asp-route-friendId="@account.Id" asp-action="AcceptFriend"
-                                        asp-controller="Profile" class="btn btn-outline-light">Accept Friend Request</a>
-                                </div>
-                            }
-                            else
-                            {
-                                <div>
-                                    <a class="btn btn-outline-light disabled">Requested</a>
-                                </div>
-                            }
-                        }
                         <div>
                             <form asp-controller="Account" asp-action="Delete" asp-route-id="@account.Id" method="post">
                                 <button type="submit" class="btn btn-danger">Delete Account</button>

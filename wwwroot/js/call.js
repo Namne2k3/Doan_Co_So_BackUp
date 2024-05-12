@@ -81,10 +81,10 @@ const myPeer = new Peer();
 myPeer.on('open', id => {
     userId = id;
     console.log("Check userId >>> ", userId);
-    const startSignalR = async () => {
-        await callconnection.start();
-        await callconnection.invoke("JoinRoom", ROOM_ID, userId)
-    }
+    // const startSignalR = async () => {
+    //     await callconnection.start();
+    //     await callconnection.invoke("JoinRoom", ROOM_ID, userId)
+    // }
     startSignalR();
 })
 
@@ -95,6 +95,7 @@ myVideo.muted = false;
 
 // ( hàm này chỉ được gọi lần đầu tiên )
 function initLocalStream() {
+
     navigator.mediaDevices.getUserMedia({
         audio: true,
         video: true,
