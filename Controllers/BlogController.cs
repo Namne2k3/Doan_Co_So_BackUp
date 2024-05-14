@@ -324,43 +324,18 @@ namespace Doan_Web_CK.Controllers
             ViewBag.IsBeingRequested = new Func<string, string, bool>(IsBeingRequested);
             if (currentUser != null)
             {
-                ViewBag.MyBlogs = blogList.Where(p => p.AccountId == currentUser.Id);
+                ViewBag.MostIntBlogs = blogList
+                            .OrderByDescending(p => p.Likes.Count + p.Comments.Count)
+                            .ToList();
             }
             return View();
         }
         public async Task<IActionResult> Index()
         {
             var blogs = await _blogRepository.GetAllAsync();
-            var blogList = blogs.Where(p => p.IsAccepted == true).ToList();
+            var blogList = blogs.Where(p => p.IsAccepted == true).OrderByDescending(p => p.PublishDate).ToList();
             var categories = await _categoryRepository.GetAllAsync();
             var currentUser = await _userManager.GetUserAsync(User);
-
-            //var sdCats = new List<string>
-            //{
-            //    "Personal Stories",
-            //    "Travel Adventures",
-            //    "Food and Cooking",
-            //    "Health and Wellness",
-            //    "Technology and Gadgets",
-            //    "Fashion and Beauty", // Thời trang và làm đẹp
-            //    "DIY and Crafts", // Tự làm và nghệ thuật thủ công
-            //    "Parenting and Family", // Việc nuôi dạy con cái và gia đình
-            //    "Career and Professional Development", // Sự nghiệp và phát triển chuyên môn
-            //    "Literature and Writing", // Văn học và viết lách
-            //    "Environment and Sustainability", // Môi trường và bền vững
-            //    "Sports and Fitness", // Thể thao và thể dục
-            //    "Photography and Art", // Nhiếp ảnh và nghệ thuật
-            //    "Education and Learning", // Giáo dục và học hỏi
-            //    "Finance and Money Management" // Tài chính và quản lý tiền bạc
-            //};
-            //foreach (var item in sdCats)
-            //{
-            //    var cate = new Category
-            //    {
-            //        Name = item
-            //    };
-            //    await _categoryRepository.AddAsync(cate);
-            //}
 
             if (currentUser != null)
             {
@@ -380,10 +355,11 @@ namespace Doan_Web_CK.Controllers
             ViewBag.HasRelation = new Func<string, string, bool>(HasRelation);
             ViewBag.IsFriend = new Func<string, string, bool>(IsFriend);
             ViewBag.IsBeingRequested = new Func<string, string, bool>(IsBeingRequested);
-            if (currentUser != null)
-            {
-                ViewBag.MyBlogs = blogList.Where(p => p.AccountId == currentUser.Id);
-            }
+
+            ViewBag.MostIntBlogs = blogList
+                            .OrderByDescending(p => p.Likes.Count + p.Comments.Count)
+                            .ToList();
+
             return View();
         }
         public async Task<bool> HasRelationAsync(string userId, string friendId)

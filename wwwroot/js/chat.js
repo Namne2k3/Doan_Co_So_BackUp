@@ -4,7 +4,265 @@ var connection = new signalR
     .withUrl("/chatHub")
     .withAutomaticReconnect()
     .build();
+function createImageMessageElement(time, imageUrl, message, currentUserId, msId, currentChatroomId, leftOrRight, MessageImages) {
+    if (leftOrRight == 'right') {
 
+        // Tạo phần tử div message_item
+        var messageItemDiv = document.createElement("div");
+        messageItemDiv.className = "message_item";
+
+        // <div class="message_item_img_container">
+        //<img src="@ms.ApplicationUser.ImageUrl" alt="user_image" />
+        // </div>
+        var message_item_img_div = document.createElement('div');
+        message_item_img_div.className = "message_item_img_container"
+        var user_image_div = document.createElement('img')
+        user_image_div.src = imageUrl
+        user_image_div.alt = "user_image"
+        message_item_img_div.appendChild(user_image_div);
+
+        // Tạo phần tử div message_item_user_text
+        var userTextDiv = document.createElement("div");
+
+        userTextDiv.className = "message_item_user_text";
+        userTextDiv.appendChild(message_item_img_div);
+
+
+        // Tạo phần tử div message_item_images
+        var messageImagesDiv = document.createElement("div");
+        messageImagesDiv.id = "message_text_" + msId;
+        messageImagesDiv.className = "message_item_images";
+
+        if (message != "") {
+            var p_text = document.createElement('p')
+            p_text.className = "long_text"
+            p_text.innerText = message;
+            messageImagesDiv.appendChild(p_text)
+        }
+        // Thêm ảnh vào phần tử message_item_images
+        MessageImages.forEach(function (imgMs) {
+            var img = document.createElement("img");
+            img.src = imgMs;
+            img.className = "message_item_images_img";
+            img.alt = "message_image";
+            messageImagesDiv.appendChild(img);
+        });
+
+        // Tạo phần tử div option_message_icon_container
+        var optionMessageIconContainer = document.createElement("div");
+        optionMessageIconContainer.className = "option_message_icon_container";
+
+        // Tạo phần tử div more
+        var moreContainer = document.createElement("div");
+        moreContainer.className = "more position-relative";
+        moreContainer.id = "more_" + msId;
+
+        // Tạo nút more button
+        var moreButton = document.createElement("button");
+        moreButton.className = "more-btn";
+        moreButton.id = "more-btn_" + msId;
+        moreButton.innerHTML = '<i class="bi bi-three-dots-vertical"></i>';
+        moreButton.onclick = function (event) {
+            showMenu(event, msId);
+        };
+
+        // Tạo phần tử div more menu
+        var moreMenu = document.createElement("div");
+        moreMenu.className = "more-menu";
+        moreMenu.id = "more-menu_" + msId;
+
+        // Tạo phần tử div more menu caret
+        var moreMenuCaret = document.createElement("div");
+        moreMenuCaret.className = "more-menu-caret";
+
+        // Tạo phần tử div more menu caret outer
+        var moreMenuCaretOuter = document.createElement("div");
+        moreMenuCaretOuter.className = "more-menu-caret-outer";
+
+        // Tạo phần tử div more menu caret inner
+        var moreMenuCaretInner = document.createElement("div");
+        moreMenuCaretInner.className = "more-menu-caret-inner";
+
+        // Thêm more menu caret outer và inner vào more menu caret
+        moreMenuCaret.appendChild(moreMenuCaretOuter);
+        moreMenuCaret.appendChild(moreMenuCaretInner);
+
+        // Tạo phần tử ul more menu items
+        var moreMenuItemsUl = document.createElement("ul");
+        moreMenuItemsUl.className = "more-menu-items";
+        moreMenuItemsUl.setAttribute("tabindex", "-1");
+        moreMenuItemsUl.setAttribute("role", "menu");
+        moreMenuItemsUl.setAttribute("aria-labelledby", "more-btn");
+        moreMenuItemsUl.setAttribute("aria-hidden", "true");
+
+        // Tạo phần tử li more menu item
+        var moreMenuItemLi = document.createElement("li");
+        moreMenuItemLi.className = "more-menu-item";
+
+        // Tạo nút unsend
+        var unsendButton = document.createElement("button");
+        unsendButton.className = "more-menu-btn";
+        unsendButton.setAttribute("type", "button");
+        unsendButton.setAttribute("role", "menuitem");
+        unsendButton.innerHTML = "Unsend";
+        unsendButton.onclick = function () {
+            handleUnSendMs(currentUserId, msId, currentChatroomId);
+        };
+
+        // Thêm nút unsend vào more menu item
+        moreMenuItemLi.appendChild(unsendButton);
+
+        // Thêm more menu item vào more menu items
+        moreMenuItemsUl.appendChild(moreMenuItemLi);
+
+        // Thêm các phần tử vào nhau theo cấu trúc HTML
+        moreMenu.appendChild(moreMenuCaret);
+        moreMenu.appendChild(moreMenuItemsUl);
+
+        moreContainer.appendChild(moreButton);
+        moreContainer.appendChild(moreMenu);
+
+        optionMessageIconContainer.appendChild(moreContainer);
+
+        userTextDiv.appendChild(messageImagesDiv);
+        userTextDiv.appendChild(optionMessageIconContainer);
+        // <p class="message_item_date" style="text-align: right; font-size: 12px" >@ms.Time</p>
+        var timeElement = document.createElement('p')
+        timeElement.className = "message_item_date"
+        timeElement.style = "text-align: right; font-size: 12px"
+        timeElement.textContent = time.toString()
+        messageItemDiv.appendChild(userTextDiv);
+        messageItemDiv.appendChild(timeElement)
+        return messageItemDiv;
+    } else {
+        // Tạo phần tử div message_item
+        var messageItemDiv = document.createElement("div");
+        messageItemDiv.className = "message_item";
+
+        var message_item_img_div = document.createElement('div');
+        message_item_img_div.className = "message_item_img_container"
+        var user_image_div = document.createElement('img')
+        user_image_div.src = imageUrl
+        user_image_div.alt = "user_image"
+        message_item_img_div.appendChild(user_image_div);
+
+        // Tạo phần tử div message_item_user_text
+        var userTextDiv = document.createElement("div");
+
+        userTextDiv.className = "message_item_friend_text";
+        userTextDiv.appendChild(message_item_img_div)
+
+        // Tạo phần tử div message_item_images
+        var messageImagesDiv = document.createElement("div");
+        messageImagesDiv.id = "message_text_" + msId;
+        messageImagesDiv.className = "message_item_images";
+
+        if (message != "") {
+            var p_text = document.createElement('p')
+            p_text.className = "long_text"
+            p_text.innerText = message;
+            messageImagesDiv.appendChild(p_text)
+        }
+        // Thêm ảnh vào phần tử message_item_images
+        MessageImages.forEach(function (imgMs) {
+            var img = document.createElement("img");
+            img.src = imgMs;
+            img.className = "message_item_images_img";
+            img.alt = "message_image";
+            messageImagesDiv.appendChild(img);
+        });
+
+        // Tạo phần tử div option_message_icon_container
+        var optionMessageIconContainer = document.createElement("div");
+        optionMessageIconContainer.className = "option_message_icon_container";
+
+        // Tạo phần tử div more
+        var moreContainer = document.createElement("div");
+        moreContainer.className = "more position-relative";
+        moreContainer.id = "more_" + msId;
+
+        // Tạo nút more button
+        var moreButton = document.createElement("button");
+        moreButton.className = "more-btn";
+        moreButton.id = "more-btn_" + msId;
+        moreButton.innerHTML = '<i class="bi bi-three-dots-vertical"></i>';
+        moreButton.onclick = function (event) {
+            showMenu(event, msId);
+        };
+
+        // Tạo phần tử div more menu
+        var moreMenu = document.createElement("div");
+        moreMenu.className = "more-menu";
+        moreMenu.id = "more-menu_" + msId;
+
+        // Tạo phần tử div more menu caret
+        var moreMenuCaret = document.createElement("div");
+        moreMenuCaret.className = "more-menu-caret";
+
+        // Tạo phần tử div more menu caret outer
+        var moreMenuCaretOuter = document.createElement("div");
+        moreMenuCaretOuter.className = "more-menu-caret-outer";
+
+        // Tạo phần tử div more menu caret inner
+        var moreMenuCaretInner = document.createElement("div");
+        moreMenuCaretInner.className = "more-menu-caret-inner";
+
+        // Thêm more menu caret outer và inner vào more menu caret
+        moreMenuCaret.appendChild(moreMenuCaretOuter);
+        moreMenuCaret.appendChild(moreMenuCaretInner);
+
+        // Tạo phần tử ul more menu items
+        var moreMenuItemsUl = document.createElement("ul");
+        moreMenuItemsUl.className = "more-menu-items";
+        moreMenuItemsUl.setAttribute("tabindex", "-1");
+        moreMenuItemsUl.setAttribute("role", "menu");
+        moreMenuItemsUl.setAttribute("aria-labelledby", "more-btn");
+        moreMenuItemsUl.setAttribute("aria-hidden", "true");
+
+        // Tạo phần tử li more menu item
+        var moreMenuItemLi = document.createElement("li");
+        moreMenuItemLi.className = "more-menu-item";
+
+        // Tạo nút unsend
+        var unsendButton = document.createElement("button");
+        unsendButton.className = "more-menu-btn";
+        unsendButton.setAttribute("type", "button");
+        unsendButton.setAttribute("role", "menuitem");
+        unsendButton.innerHTML = "Unsend";
+        unsendButton.onclick = function () {
+            handleUnSendMs(currentUserId, msId, currentChatroomId);
+        };
+
+        // Thêm nút unsend vào more menu item
+        moreMenuItemLi.appendChild(unsendButton);
+
+        // Thêm more menu item vào more menu items
+        moreMenuItemsUl.appendChild(moreMenuItemLi);
+
+        // Thêm các phần tử vào nhau theo cấu trúc HTML
+        moreMenu.appendChild(moreMenuCaret);
+        moreMenu.appendChild(moreMenuItemsUl);
+
+        moreContainer.appendChild(moreButton);
+        moreContainer.appendChild(moreMenu);
+
+        optionMessageIconContainer.appendChild(moreContainer);
+
+        userTextDiv.appendChild(messageImagesDiv);
+        // userTextDiv.appendChild(optionMessageIconContainer);
+
+        // <p class="message_item_date" style="text-align: right; font-size: 12px" >@ms.Time</p>
+        var timeElement = document.createElement('p')
+        timeElement.className = "message_item_date"
+        timeElement.style = "text-align: right; font-size: 12px"
+        timeElement.textContent = time.toString()
+
+        messageItemDiv.appendChild(userTextDiv);
+        messageItemDiv.appendChild(timeElement);
+        return messageItemDiv;
+    }
+
+}
 function createMenuOptionsMS(msId, userId, chatroomId) {
     // console.log(msId, userId, chatroomId);
     var ms = {
@@ -85,8 +343,8 @@ function createMenuOptionsMS(msId, userId, chatroomId) {
 
 //Disable send button until connection is established
 //document.getElementById("sendButton").disabled = true;
-// userItem.Id, message, sender.ImageUrl, "right", time.ToString(), chatRoomGroup.Id, msId
-connection.on("ReceiveMessage", function (user, message, imageUrl, leftOrRight, time, chatRoomGroupId, type, connectionRoomCall, msId) {
+// userItem.Id, message, sender.ImageUrl, "right", time.ToString(), chatRoomGroup.Id, newMessage.Type, "", msId, newMessage.MessageImages
+connection.on("ReceiveMessage", function (user, message, imageUrl, leftOrRight, time, chatRoomGroupId, type, connectionRoomCall, msId, MessageImages) {
     const url = window.location.href;
     var msg = message.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
     var encodedMsg = message;
@@ -147,7 +405,17 @@ connection.on("ReceiveMessage", function (user, message, imageUrl, leftOrRight, 
                 if (messages_display_container) {
                     messages_display_container.scrollTop = messages_display_container.scrollHeight;
                 }
-            } else {
+            }
+            else if (type == 'image') {
+                console.log("Check image info >>> ", user, msId, chatRoomGroupId, leftOrRight);
+                var divMessageItem = createImageMessageElement(time, imageUrl, message, user, msId, chatRoomGroupId, leftOrRight, MessageImages)
+                document.getElementById("messages_display_container").appendChild(divMessageItem);
+                var messages_display_container = document.getElementById("messages_display_container")
+                if (messages_display_container) {
+                    messages_display_container.scrollTop = messages_display_container.scrollHeight;
+                }
+            }
+            else {
 
                 var divMessageItem = document.createElement("div");
                 divMessageItem.classList.add("message_item");
@@ -243,6 +511,18 @@ connection.on("ReceiveMessage", function (user, message, imageUrl, leftOrRight, 
             if (messages_display_container) {
                 messages_display_container.scrollTop = messages_display_container.scrollHeight;
             }
+        }
+        else if (type == 'image') {
+            if (MessageImages.length > 0) {
+                var divMessageItem = createImageMessageElement(time, imageUrl, message, user, msId, chatRoomGroupId, leftOrRight, MessageImages)
+                console.log(divMessageItem);
+                document.getElementById("messages_display_container").appendChild(divMessageItem);
+                var messages_display_container = document.getElementById("messages_display_container")
+                if (messages_display_container) {
+                    messages_display_container.scrollTop = messages_display_container.scrollHeight;
+                }
+            }
+
         } else {
             var divMessageItem = document.createElement("div");
             divMessageItem.classList.add("message_item");
@@ -435,7 +715,28 @@ function handleAddToastMessage(userId, message, chatRoomId) {
         return console.error(err.toString());
     })
 }
-
+function handleSendMessageByClick(event) {
+    var user = document.getElementById("userInput").value;
+    var receiverConnectionId = document.getElementById("receiverId").value;
+    var message = document.getElementById("messageInput").value;
+    var chatRoomId = document.getElementById('chatRoom_Id').value;
+    if (message != "" || arrayImageMessages.length > 0) {
+        connection.invoke("SendToUser", user, message, chatRoomId, arrayImageMessages).catch(function (err) {
+            return console.log(err.toString());
+        });
+        var message_image_input_container = document.getElementById('message_image_input_container')
+        if (message_image_input_container) {
+            // console.log("co message_image_input_container");
+            message_image_input_container.innerHTML = ''
+        }
+        arrayImageMessages = []
+        document.getElementById("messageInput").value = ""
+        // console.log("check arrayImageMessages >>> ", arrayImageMessages);
+        handleAddToastMessage(user, message, chatRoomId)
+        // console.log("send ms");
+    }
+    event.preventDefault();
+}
 function handleSendMessage(event) {
     if (event.keyCode == 13) {
         if (!event.shiftKey) {
@@ -443,11 +744,20 @@ function handleSendMessage(event) {
             var receiverConnectionId = document.getElementById("receiverId").value;
             var message = document.getElementById("messageInput").value;
             var chatRoomId = document.getElementById('chatRoom_Id').value;
-            if (message != " ") {
+            if (message != "" || arrayImageMessages.length > 0) {
                 connection.invoke("SendToUser", user, message, chatRoomId, arrayImageMessages).catch(function (err) {
                     return console.log(err.toString());
                 });
+                var message_image_input_container = document.getElementById('message_image_input_container')
+                if (message_image_input_container) {
+                    // console.log("co message_image_input_container");
+                    message_image_input_container.innerHTML = ''
+                }
+                arrayImageMessages = []
+                document.getElementById("messageInput").value = ""
+                // console.log("check arrayImageMessages >>> ", arrayImageMessages);
                 handleAddToastMessage(user, message, chatRoomId)
+
             }
             event.preventDefault();
         }
@@ -470,7 +780,7 @@ async function handleUnSendMs(userId, messageId, chatRoomId) {
                     });
 
                 }
-                console.log(data)
+                // console.log(data)
             })
     } catch (err) {
         console.log(err.toString());
@@ -487,15 +797,51 @@ connection.on("ReceiveUnsendMessage", function (userId, messageId, chatRoomId) {
 })
 var arrayImageMessages = [];
 connection.on("ImageUploaded", function (imageData) {
+    // // Handle newly uploaded image
+    // arrayImageMessages.push(imageData);
+    // console.log(arrayImageMessages);
+    // const imgElement = document.createElement("img");
+    // imgElement.src = imageData;
+    // imgElement.classList.add('message_image')
+    // var message_image_input_container = document.getElementById('message_image_input_container')
+    // if (message_image_input_container) {
+    //     message_image_input_container.appendChild(imgElement);
+    // }
+
     // Handle newly uploaded image
     arrayImageMessages.push(imageData);
     console.log(arrayImageMessages);
+
+    // Tạo container cho ảnh và icon xóa
+    var imgContainer = document.createElement("div");
+    imgContainer.className = 'message_image_container';
+
+    // Tạo thẻ img
     const imgElement = document.createElement("img");
     imgElement.src = imageData;
-    imgElement.classList.add('message_image')
-    var message_image_input_container = document.getElementById('message_image_input_container')
+    imgElement.classList.add('message_image');
+
+    // Tạo icon xóa
+    var deleteIcon = document.createElement('span');
+    deleteIcon.className = 'delete_icon';
+    deleteIcon.innerHTML = 'X';
+    deleteIcon.onclick = function () {
+        // Xử lý khi nhấn vào icon xóa
+        var index = arrayImageMessages.indexOf(imageData);
+        if (index > -1) {
+            arrayImageMessages.splice(index, 1);
+        }
+        imgContainer.remove(); // Hoặc bất kỳ xử lý xóa nào khác
+    };
+
+    // Thêm img và deleteIcon vào imgContainer
+    imgContainer.appendChild(imgElement);
+    imgContainer.appendChild(deleteIcon);
+
+    // Thêm imgContainer vào message_image_input_container
+    var message_image_input_container = document.getElementById('message_image_input_container');
     if (message_image_input_container) {
-        message_image_input_container.appendChild(imgElement);
+        message_image_input_container.appendChild(imgContainer);
     }
 });
 
@@ -505,22 +851,6 @@ connection.start().then(function () {
     connection.invoke("GetConnectionId").then(function (id) {
         console.log("Connected");
         if (document.getElementById("uploadImage")) {
-            // document.getElementById("uploadImage").addEventListener("change", function (event) {
-            //     const file = event.target.files[0];
-            //     const reader = new FileReader();
-            //     reader.onload = function (event) {
-            //         const imageData = event.target.result;
-            //         if (connection.state === signalR.HubConnectionState.Connected) {
-            //             connection.invoke("UploadImage", imageData).catch(err => console.error(err));
-            //         } else {
-            //             console.error("Connection is not in the 'Connected' state.");
-            //             // Handle the situation appropriately, e.g., reconnect or notify the user
-            //         }
-
-            //     };
-            //     reader.readAsDataURL(file);
-            //     console.log('da doc file xong');
-            // });
             document.getElementById("uploadImage").addEventListener("change", function (event) {
                 var userId = document.getElementById('userInput');
                 console.log(userId.value.toString());

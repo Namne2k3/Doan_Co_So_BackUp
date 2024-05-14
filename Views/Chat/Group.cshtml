@@ -13,11 +13,11 @@
     <div class="message_section_navigation">
         <a class="btn btn-outline-dark" asp-controller="Chat" asp-action="Index">Chat</a>
         <a class="btn btn-outline-dark active" asp-controller="Chat" asp-action="Group">Group Chat</a>
-        <input class="form-control mb-2" type="text" placeholder="Enter group name ###" />
+        <input value="@ViewBag.Search" onkeypress="handleSearchChatRoom(event)" class="form-control mb-2" type="text" placeholder="Press 'Enter' to search" />
     </div>
     <div class="message_section_container">
-        <div class="chatroom_container">
-            <a asp-controller="Chat" asp-action="Create" class="btn_create_group btn btn-outline-dark">Create Group</a>
+        <a asp-controller="Chat" asp-action="Create" class="btn_create_group btn btn-outline-dark">Create Group</a>
+        <div class="chatroom_container" id="chatroom_container">
             @if ( currentChatroom != null ) {
                 @foreach ( var cr in Model)
                 {

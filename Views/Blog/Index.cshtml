@@ -5,10 +5,10 @@
 @inject SignInManager<ApplicationUser> SignInManager
 @inject UserManager<ApplicationUser> UserManager
 @{
-    ViewData["Title"] = "Web Commun";
+    @* ViewData["Title"] = "Web Commun"; *@
     var blogList = ViewBag.BlogList;
     var currentUser = ViewBag?.CurrentUser;
-    var MyBlogs = ViewBag?.MyBlogs;
+    var MostIntBlogs = ViewBag?.MostIntBlogs;
 }
 <div class="body_blog_section d-flex gap-4 justify-content-center">
     <div class="body_container" style="width: 75%">
@@ -229,7 +229,7 @@
                         <div class="BlogCard_Img">
                             <img src="@item.BlogImageUrl" />
                         </div>
-
+                        
                         <div id="content_@item.Id" class="Blogcard_Content mt-4 temp_hidden">
                             <p>@Html.Raw(item.Content.Replace("\n", "<br>"))</p>
                         </div>
@@ -240,76 +240,78 @@
                             </a>
                         </div>
 
-                        <div class="blog_actions mt-2 d-flex flex-column">
-                            <div class="d-flex justify-content-around">
+                        @if ( currentUser != null ) {
+                            <div class="blog_actions mt-2 d-flex flex-column">
+                                <div class="d-flex justify-content-around">
 
-                                <!-- Start Section likes action-->
-                                <div class="action_container">
-                                        @if ( ViewBag.IsCurrentUserLiked(item.Id, currentUser?.Id) == true )
-                                        {
-                                            <a onclick="handleUnLike(@item.Id)" id="action_like_@item.Id" href="#" class="actions_item">
-                                                <p class="position-relative">
-                                                    Like
-                                                </p>
-                                                <i style="color: #c66b6b;" id="like_icon_@item.Id" class="bi bi-heart-fill"></i>
-                                            </a>
-                                            <p class="badge bg-secondary text-center">@ViewBag.GetBlogLikesCount(item.Id)</p>
-                                        } else
-                                        {
-                                            <a onclick="handleLike(@item.Id)" id="action_like_@item.Id" href="#" class="actions_item">
-                                                <p>Like</p>
-                                                <i style="color: #c66b6b;" id="like_icon_@item.Id" class="bi bi-heart"></i>
-                                            </a>
-                                            <p class="badge bg-secondary text-center">@ViewBag.GetBlogLikesCount(item.Id)</p>
-                                        }
-                                    <form id="like_form_@item.Id" hidden method="post">
-                                        <input type="text" value="@currentUser?.Id" name="like_accountId" />
-                                        <input type="number" value="@item.Id" name="like_blogId" />
-                                    </form>
-                                </div>
-                                <!-- End Section likes action-->
-
-                                <div class="action_container">
-                                    <label for="form_input_comment_@item.Id" class="actions_item">
-                                        <p>Comment</p>
-                                        <i class="bi bi-chat"></i>
-                                        <p class="badge bg-secondary text-center">@ViewBag.GetBlogCommentsCount(item.Id)</p>
-                                    </label>
-                                </div>
-
-
-                                <!-- Start Section share action-->
-                                @if ( currentUser?.Id != item.AccountId )
-                                {
-                                    <div class="action_container position-relative">
-                                        <a onclick="handleToggleShareActions(@item.Id)" href="#" class="actions_item">
-                                            <p>Share</p>
-                                            <i class="bi bi-share"></i>
-                                        </a>
-                                        <div id="share_actions_@item.Id" class="share_actions hidden position-absolute">
-                                            <a onclick="handleShareBlog(@item.Id)" class="btn btn-outline-light" href="#">Share blog</a>
-                                        </div>
-
-                                        <form id="share_form_@item.Id" hidden method="post" enctype="multipart/form-data">
-                                            <input value="@item.Id" type="number" name="share_blog_refId" />
-                                            <input value="@currentUser?.Id" type="text" name="share_blog_accountId" />
-                                            <input value="@item.Title" type="text" name="share_blog_title" />
-                                            <input value="@item.Description" type="text" name="share_blog_desc" />
-                                            <textarea type="text" name="share_blog_content">@item.Content</textarea>
-                                            <input type="text" value="@item.BlogImageUrl" name="share_blog_imageUrl" />
-                                            <select name="share_blog_categoryId" itemid="@item.CategoryId" asp-items="@ViewBag.Categories"></select>
+                                    <!-- Start Section likes action-->
+                                    <div class="action_container">
+                                            @if ( ViewBag.IsCurrentUserLiked(item.Id, currentUser?.Id) == true )
+                                            {
+                                                <a onclick="handleUnLike(@item.Id)" id="action_like_@item.Id" href="#" class="actions_item">
+                                                    <p class="position-relative">
+                                                        Like
+                                                    </p>
+                                                    <i style="color: #c66b6b;" id="like_icon_@item.Id" class="bi bi-heart-fill"></i>
+                                                </a>
+                                                <p class="badge bg-secondary text-center">@ViewBag.GetBlogLikesCount(item.Id)</p>
+                                            } else
+                                            {
+                                                <a onclick="handleLike(@item.Id)" id="action_like_@item.Id" href="#" class="actions_item">
+                                                    <p>Like</p>
+                                                    <i style="color: #c66b6b;" id="like_icon_@item.Id" class="bi bi-heart"></i>
+                                                </a>
+                                                <p class="badge bg-secondary text-center">@ViewBag.GetBlogLikesCount(item.Id)</p>
+                                            }
+                                        <form id="like_form_@item.Id" hidden method="post">
+                                            <input type="text" value="@currentUser?.Id" name="like_accountId" />
+                                            <input type="number" value="@item.Id" name="like_blogId" />
                                         </form>
                                     </div>
-                                }
-                                <!-- End Section share action-->
+                                    <!-- End Section likes action-->
+
+                                    <div class="action_container">
+                                        <label for="form_input_comment_@item.Id" class="actions_item">
+                                            <p>Comment</p>
+                                            <i class="bi bi-chat"></i>
+                                            <p class="badge bg-secondary text-center">@ViewBag.GetBlogCommentsCount(item.Id)</p>
+                                        </label>
+                                    </div>
+
+
+                                    <!-- Start Section share action-->
+                                    @if ( currentUser?.Id != item.AccountId )
+                                    {
+                                        <div class="action_container position-relative">
+                                            <a onclick="handleToggleShareActions(@item.Id)" href="#" class="actions_item">
+                                                <p>Share</p>
+                                                <i class="bi bi-share"></i>
+                                            </a>
+                                            <div id="share_actions_@item.Id" class="share_actions hidden position-absolute">
+                                                <a onclick="handleShareBlog(@item.Id)" class="btn btn-outline-light" href="#">Share blog</a>
+                                            </div>
+
+                                            <form id="share_form_@item.Id" hidden method="post" enctype="multipart/form-data">
+                                                <input value="@item.Id" type="number" name="share_blog_refId" />
+                                                <input value="@currentUser?.Id" type="text" name="share_blog_accountId" />
+                                                <input value="@item.Title" type="text" name="share_blog_title" />
+                                                <input value="@item.Description" type="text" name="share_blog_desc" />
+                                                <textarea type="text" name="share_blog_content">@item.Content</textarea>
+                                                <input type="text" value="@item.BlogImageUrl" name="share_blog_imageUrl" />
+                                                <select name="share_blog_categoryId" itemid="@item.CategoryId" asp-items="@ViewBag.Categories"></select>
+                                            </form>
+                                        </div>
+                                    }
+                                    <!-- End Section share action-->
+                                </div>
+                                <div class="share_status_success bg-success" id="share_status_success_@item.Id">
+                                    <p>You shared this blog</p>
+                                </div>
+                                <div class="share_status_failed bg-danger" id="share_status_failed_@item.Id">
+                                    <p>You haven't shared this blog</p>
+                                </div>
                             </div>
-                            <div class="share_status_success bg-success" id="share_status_success_@item.Id">
-                                <p>You shared this blog</p>
-                            </div>
-                            <div class="share_status_failed bg-danger" id="share_status_failed_@item.Id">
-                                <p>You haven't shared this blog</p>
-                            </div>
-                        </div>
+                        }
 
                         <div>
                             <a asp-controller="Blog" asp-action="Details" asp-route-id="@item.Id" class="btn btn-outline-darka detail_button text-white">See More</a>
@@ -336,7 +338,7 @@
                                 <div id="comment_container_lower_@item.Id" class="comment_container_lower">
                                     @foreach (var comment in ViewBag.GetAllBlogComments(item.Id))
                                     {
-                                        <div class="comment_card">
+                                        <div class="comment_card" id="comment_card_@comment.Id">
                                             <div class="comment_card_img_container">
                                                 <img src="@(ViewBag.GetPhotoById(comment.AccountId))" class="comment_card_img" />
                                             </div>
@@ -347,7 +349,7 @@
                                                     <input type="number" name="edit_cmt_id" hidden value="@comment.Id" />
                                                     <input type="text" name="edit_cmt_accountid" value="@comment.AccountId" hidden />
                                                     <input type="number" name="edit_cmt_blogid" value="@item.Id" hidden />
-                                                    <input onkeypress="handleKeyPressInputEditComment(event, @item.Id, @comment.Id)" type="text" name="edit_cmt_content" value="@comment.Content" id="comment_form_@comment.Id" class="text-white hidden comments_inputs p-2" style="border: none;" />
+                                                    <input onkeypress="handleKeyPressInputEditComment(event, @item.Id, @comment.Id)" type="text" name="edit_cmt_content" value="@comment.Content" id="comment_form_@comment.Id" class="hidden comments_inputs p-2" style="border: none;" />
                                                 </form>
                                             </div>
 
@@ -365,6 +367,9 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div id="update_success_comment_@comment.Id" class="p-4 text-white text-success bg-success rounded-3 hidden_blog">
+                                            Delete Success
+                                        </div>
                                     } 
                                 </div>
                             }
@@ -378,23 +383,23 @@
             }
         </div>
     </div>
-    <div class="recently_post_container" style="width: 25%">
-        @if ( MyBlogs != null ) {
-            <h2>Recently Blogs</h2>
-            foreach (var blog in MyBlogs )
-            {
-                <div id="@blog.Id" class="recent_card w-100">
-                    <a asp-controller="Blog" asp-action="Details" asp-route-id="@blog.Id">
-                        <p class="fw-bold" style="margin: 4px 0;">@blog.Title</p>
-                    </a>
-                    <p style="color: #ccc; font-style: italic; margin: 4px 0;">@blog.PublishDate.ToShortDateString()</p>
-                    <a asp-controller="Blog" asp-action="Details" asp-route-id="@blog.Id">
-                        <img src="@blog.BlogImageUrl" style="object-fit: contain; max-width: 100%; border-radius: 12px;" />
-                    </a>
-                </div>
-            }
-        }
-    </div>
+    @if ( MostIntBlogs != null ) {
+        <div class="recently_post_container" style="width: 25%">
+                <h2>Popular Blogs</h2>
+                @foreach (var blog in MostIntBlogs )
+                {
+                    <div id="@blog.Id" class="recent_card w-100">
+                        <a asp-controller="Blog" asp-action="Details" asp-route-id="@blog.Id">
+                            <p class="fw-bold" style="margin: 4px 0;">@blog.Title</p>
+                        </a>
+                        <p style="color: #ccc; font-style: italic; margin: 4px 0;">@blog.PublishDate.ToShortDateString()</p>
+                        @* <a asp-controller="Blog" asp-action="Details" asp-route-id="@blog.Id">
+                            <img src="@blog.BlogImageUrl" style="object-fit: contain; max-width: 100%; border-radius: 12px;" />
+                        </a> *@
+                    </div>
+                }
+        </div>
+    }
 </div>
 @section NavContent {
     <ul class="d-flex flex-column list-unstyled text-white gap-3 my-2 mx-2 navItems">
@@ -496,7 +501,6 @@
                                         </div>
                                         break;
                                     default:
-                                
                                         break;
                                 }
                             }

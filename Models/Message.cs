@@ -4,6 +4,10 @@ namespace Doan_Web_CK.Models
 {
     public class Message
     {
+        public Message()
+        {
+            MessageImages = new List<string>();
+        }
         public int Id { get; set; }
 
         [Required]
@@ -12,7 +16,7 @@ namespace Doan_Web_CK.Models
         public string UserImageUrl { get; set; }
 
         [Required]
-        public string Text { get; set; }
+        public string? Text { get; set; }
         public DateTime Time { get; set; }
 
         public string userId { get; set; }
@@ -23,6 +27,6 @@ namespace Doan_Web_CK.Models
 
         public string? Type { get; set; }
         public string? connectionRoomCall { get; set; }
-        // public List<string>? MessageImage { get; set; }
+        public List<string>? MessageImages { get; set; }
     }
 }

@@ -222,6 +222,9 @@ namespace Doan_Web_CK.Migrations
                     b.Property<int>("ChatRoomId")
                         .HasColumnType("int");
 
+                    b.Property<string>("MessageImages")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Text")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

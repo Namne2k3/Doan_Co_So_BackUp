@@ -59,7 +59,76 @@ async function handleCreateGroup(event) {
     }
 
 }
+function createUserRow(item) {
+    // Create <tr> element
+    var row = document.createElement("tr");
 
+    // Create <td> elements for each property of the user
+    var userNameCell = document.createElement("td");
+    userNameCell.textContent = item.userName;
+    row.appendChild(userNameCell);
+
+    var emailCell = document.createElement("td");
+    emailCell.textContent = item.email;
+    row.appendChild(emailCell);
+
+    var phoneNumberCell = document.createElement("td");
+    phoneNumberCell.textContent = item.phoneNumber;
+    row.appendChild(phoneNumberCell);
+
+    var dateCreatedCell = document.createElement("td");
+    dateCreatedCell.textContent = item.dateCreated;
+    row.appendChild(dateCreatedCell);
+
+    // Create buttons for Edit, Details, and Delete actions
+    var editButton = document.createElement("a");
+    editButton.setAttribute("class", "btn btn-outline-light");
+    editButton.setAttribute("href", "/Admin/Account/Edit/" + item.id);
+    editButton.textContent = "Edit";
+
+    var detailsButton = document.createElement("a");
+    detailsButton.setAttribute("class", "btn btn-outline-light");
+    detailsButton.setAttribute("href", "/Admin/Account/Details/" + item.id);
+    detailsButton.textContent = "Details";
+
+    var deleteButton = document.createElement("a");
+    deleteButton.setAttribute("class", "btn btn-outline-light");
+    deleteButton.setAttribute("href", "/Admin/Account/Delete/" + item.id);
+    deleteButton.textContent = "Delete";
+
+    var actionCell = document.createElement("td");
+    actionCell.appendChild(editButton);
+    actionCell.appendChild(detailsButton);
+    actionCell.appendChild(deleteButton);
+    row.appendChild(actionCell);
+
+    // Return the created <tr> element
+    return row;
+}
+
+var tbody = document.getElementById('tbody');
+function handleSearch(event) {
+    if (event.keyCode == 13) {
+        let search = event.target.value
+        fetch(`/Admin/Account/GetAllAccountAsync?search=${search}`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (tbody) {
+                    tbody.innerHTML = '';
+                    tbody.innerHTML = data.accounts
+                }
+
+            })
+            .catch(error => {
+                console.log('There was a problem with the fetch operation:', error);
+            });
+    }
+}
 function handleToggleEmoji(event) {
     const emoji_container = document.getElementById('emoji_container')
     if (emoji_container) {
@@ -194,6 +263,18 @@ async function isImageSensitive(file) {
         console.log("Check error >>> ", err.toString());
     }
 }
+
+async function handleSearchChatRoom(event) {
+    if (event.keyCode == 13) {
+        var href = window.location.href;
+        if (href.includes('/Chat/Group')) {
+            window.location.href = `/Chat/Group?search=${event.target.value}`
+        } else {
+            window.location.href = `/Chat?search=${event.target.value}`
+        }
+    }
+}
+
 async function isSensitiveContent(content) {
     const bodyData = new FormData()
     bodyData.append('text', content);
@@ -464,7 +545,7 @@ function handleToggleMessages(chatroomId) {
 $(document).ready(function () {
     var screenWidth = $(window).width();
     var screenHeight = $(window).height();
-    console.log("Check width" + screenWidth)
+    // console.log("Check width" + screenWidth)
 
     var ele = document.getElementById('nof_icon_container');
 
@@ -549,7 +630,7 @@ function handleDeleteComment(commentId, blogId) {
 
             var commentContainer = document.getElementById("comment_container_lower_" + blogId);
             if (data.message == 'success') {
-                showElement("update_success")
+                // showElement("update_success_comment_" + commentId)
                 commentContainer.innerHTML = ''
                 commentContainer.innerHTML = data.newHtml
             } else {

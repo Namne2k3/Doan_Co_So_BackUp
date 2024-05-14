@@ -14,10 +14,10 @@
     <div class="message_section_navigation">
         <a class="btn btn-outline-dark active" asp-controller="Chat" asp-action="Index">Chat</a>
         <a class="btn btn-outline-dark" asp-controller="Chat" asp-action="Group">Group Chat</a>
-        <input class="form-control mb-2" type="text" placeholder="Enter name ###" />
+        <input value="@ViewBag.Search" onkeypress="handleSearchChatRoom(event)" class="form-control mb-2" type="text" placeholder="Press 'Enter' to search" />
     </div>
     <div class="message_section_container">
-        <div class="chatroom_container">
+        <div class="chatroom_container" id="chatroom_container">
             
                 @foreach ( var cr in Model)
                 {
@@ -57,114 +57,6 @@
                 }
             
         </div>
-        
-        @if ( currentChatroom != null )
-        {
-            <div hidden class="messages_container">
-
-                <div class="messages_info_container">
-                    @if ( currentChatroom.Users.Count > 2 ) {
-                        <div class="messages_info_container_flex">
-                            <div class="messages_info_img_container">
-                                <img src="@currentChatroom.ChatRoomImage" alt="messages_info_img" />
-                            </div>
-                            <div class="messages_info">
-                                <a>@currentChatroom.roomName</a>
-                            </div>
-                        </div>
-                    } else {
-                        @if (currentUser.Id == currentChatroom.Users[0].Id)
-                        {
-                            <div class="messages_info_container_flex">
-                                <div class="messages_info_img_container">
-                                    <img src="@currentChatroom.Users[1].ImageUrl" alt="messages_info_img" />
-                                </div>
-                                <div class="messages_info">
-                                    <a asp-action="Index" asp-controller="Profile" asp-route-id="@currentChatroom.Users[1].Id" asp->@currentChatroom.Users[1].UserName</a>
-                                </div>
-                            </div>
-                        }
-                        else
-                        {
-                            <div class="messages_info_container_flex">
-                                <div class="messages_info_img_container">
-                                    <img src="@currentChatroom.Users[0].ImageUrl" alt="messages_info_img" />
-                                </div>
-                                <div class="messages_info">
-                                    <a asp-action="Index" asp-controller="Profile" asp-route-id="@currentChatroom.Users[0].Id" asp->@currentChatroom.Users[0].UserName</a>
-                                </div>
-                            </div>
-                        }
-                    }
-
-                    <div class="message_call_btn_container">
-                        <a onclick="handleSendCallMessage('@currentChatroom.ConnectionRoomCall', '@currentUser.UserName', '@currentChatroom.Id')" asp-action="Room" asp-controller="Call" asp-route-roomId="@currentChatroom.ConnectionRoomCall" class="btn btn-outline-light">
-                            <i class="bi bi-telephone"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div id="messages_display_container" class="messages_display_container">
-                    @if (currentChatroom?.Messages != null )
-                    {
-                        foreach ( var ms in currentChatroom?.Messages )
-                        {
-                            if ( ms.userId == currentUser.Id)
-                            {
-                                <div class="message_item">
-                                    <div class="message_item_user_text">
-                                        <div class="message_item_img_container">
-                                            <img src="@ms.ApplicationUser.ImageUrl" alt="user_image" />
-                                        </div>
-                                        <p class="long_text">
-                                            @ms.Text
-                                            @if ( ms.Type != null )
-                                            {
-                                                <a asp-action="Room" asp-controller="Call" asp-route-roomId="@ms.connectionRoomCall" class="btn btn-outline-light call_icon">
-                                                    <i class="bi bi-telephone-outbound"></i>
-                                                </a>
-                                            }
-                                        </p>
-                                    </div>
-                                    <p class="message_item_date" style="text-align: right;" >@ms.Time</p>
-                                </div>
-                            } else
-                            {
-                                <div class="message_item">
-                                    <div class="message_item_friend_text">
-                                        <div class="message_item_img_container">
-                                            <img src="@ms.ApplicationUser.ImageUrl" alt="user_image" />
-                                        </div>
-                                        <p>
-                                            @ms.Text
-                                            @if (ms.Type != null)
-                                            {
-                                                <a asp-action="Room" asp-controller="Call" asp-route-roomId="@ms.connectionRoomCall" class="btn btn-outline-light call_icon">
-                                                    <i class="bi bi-telephone-outbound"></i>
-                                                </a>
-                                            }
-                                        </p>
-                                    </div>
-                                    <p class="message_item_date" style="text-align: left;">@ms.Time</p>
-                                </div>   
-                            }
-                        }
-                    }
-                </div>
-                <input id="userInput" value="@currentUser.Id" hidden />
-                <input hidden id="chatRoom_Id" value="@currentChatroom.Id" />
-                @if (currentUser?.Id == currentChatroom.Users[0].Id)
-                {
-                    <input id="receiverId" value="@currentChatroom.Users[1].Id" hidden />
-                } else
-                {
-                    <input id="receiverId" value="@currentChatroom.Users[0].Id" hidden />
-                }
-                <div class="message_input_container">
-                    <input id="messageInput" onkeypress="handleSendMessage(event)" placeholder="Writing something ... " type="text" class="form-control message_input" />
-                </div>
-            </div>
-        }
     </div>
 </div>
 @section NavContent {

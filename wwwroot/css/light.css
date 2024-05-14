@@ -1,3 +1,20 @@
+.message_image_container {
+    position: relative;
+    display: inline-block;
+}
+
+.delete_icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 2px 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+}
+
 .more-menu {
     width: 100px;
 }
@@ -93,6 +110,24 @@
 
 .more-menu-item {
     display: block;
+}
+
+.message_item_images {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 60%;
+    gap: 8px;
+    /* background-color: #bcc0c5; */
+    /* padding: 12px; */
+    border-radius: 12px;
+    /* border: 1px; */
+}
+
+.message_item_images .message_item_images_img {
+    flex: 1;
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 12px;
 }
 
 .more-menu-btn {
@@ -643,7 +678,7 @@ main {
     padding: 8px;
     flex-direction: column;
     overflow-y: auto;
-    scrollbar-width: none;
+    /* scrollbar-width: none; */
     flex: 11;
     gap: 1rem;
     margin: 16px 0;
@@ -738,6 +773,7 @@ main {
 
 .message_item_friend_text {
     display: flex;
+    /* flex-direction: column; */
     justify-content: flex-start;
     gap: 8px;
 }
@@ -961,9 +997,9 @@ h3 {
 
 @media (max-width: 768px) {
 
-    em-emoji-picker {
+    /* em-emoji-picker {
         bottom: 7rem !important;
-    }
+    } */
 
     .create_chatromm_container {
         flex-direction: column-reverse;
@@ -1305,6 +1341,7 @@ body {
 
 .comments_inputs {
     background-color: #33373b;
+    color: #000;
 }
 
 .actions_item {
@@ -1418,11 +1455,10 @@ body {
     flex-direction: column;
     gap: 20px;
     padding: 0 16px 16px 16px;
-    /* margin: -16px; */
-    /* height: 100vh; */
+    height: 100vh;
     overflow-y: auto;
     scrollbar-width: none;
-    margin-top: 8px;
+    margin-top: 16px;
 }
 
 .recent_card {
@@ -1476,6 +1512,12 @@ body {
 
 .icon {
     font-size: 24px;
+    cursor: pointer;
+
+}
+
+.icon:hover {
+    opacity: 0.8;
 }
 
 .share_status_blog a {
@@ -1905,18 +1947,15 @@ form button {
 }
 
 em-emoji-picker {
-    position: fixed;
-    right: 2rem;
-    bottom: 6.5rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 @media (max-width: 550px) {
     em-emoji-picker {
-        position: fixed;
-        right: 2rem;
-        bottom: 5rem !important;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        max-width: 250px;
     }
 
     .chatroom_container_details {
@@ -1992,13 +2031,13 @@ em-emoji-picker {
     }
 
     .message_section_navigation {
-        height: 5%;
+        height: 10%;
     }
 
     .message_section_container {
         flex-direction: column;
         margin-top: 12px;
-        height: 94%;
+        height: 90%;
     }
 
     .comments_actions {

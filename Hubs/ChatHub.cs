@@ -111,40 +111,52 @@ namespace Doan_Web_CK.Hubs
         {
             var currentUser = await _accountRepository.GetByIdAsync(user);
             var chatRoomGroup = await _chatRoomRepository.GetByIdAsync(int.Parse(chatRoomId));
-            if (message != "")
+
+            var sender = await _accountRepository.GetByIdAsync(user);
+            var time = DateTime.Now;
+            var msId = "";
+            if (chatRoomGroup != null)
             {
-                var sender = await _accountRepository.GetByIdAsync(user);
-                var time = DateTime.Now;
-                var msId = "";
-                if (chatRoomGroup != null)
+                var newMessage = new Message
                 {
-                    var newMessage = new Message
+                    UserName = sender.UserName,
+                    UserImageUrl = sender.ImageUrl,
+                    Text = message,
+                    Time = DateTime.Now,
+                    userId = sender.Id,
+                    ApplicationUser = sender,
+                    ChatRoomId = chatRoomGroup.Id,
+                };
+                if (arrayImageMessages.Count > 0)
+                {
+                    if (newMessage.MessageImages == null)
                     {
-                        UserName = sender.UserName,
-                        UserImageUrl = sender.ImageUrl,
-                        Text = message,
-                        Time = DateTime.Now,
-                        userId = sender.Id,
-                        ApplicationUser = sender,
-                        ChatRoomId = chatRoomGroup.Id,
-                    };
-                    await _chatRoomRepository.AddMessagesAsync(chatRoomGroup, newMessage);
-                    time = newMessage.Time;
-                    msId = newMessage.Id.ToString();
+                        newMessage.MessageImages = new List<string>();
+                    }
+                    newMessage.Type = "image";
+                    foreach (var img in arrayImageMessages)
+                    {
+                        newMessage.MessageImages.Add(img);
+                    }
                 }
+                await _chatRoomRepository.AddMessagesAsync(chatRoomGroup, newMessage);
+                time = newMessage.Time;
+                msId = newMessage.Id.ToString();
 
                 foreach (var userItem in chatRoomGroup.Users)
                 {
                     if (userItem.Id == currentUser.Id)
                     {
-                        await Clients.User(userItem.Id).SendAsync("ReceiveMessage", userItem.Id, message, sender.ImageUrl, "right", time.ToString(), chatRoomGroup.Id, "", "", msId);
+                        await Clients.User(userItem.Id).SendAsync("ReceiveMessage", userItem.Id, message, sender.ImageUrl, "right", time.ToString(), chatRoomGroup.Id, newMessage.Type, "", msId, newMessage.MessageImages);
                     }
                     else
                     {
-                        await Clients.User(userItem.Id).SendAsync("ReceiveMessage", userItem.Id, message, sender.ImageUrl, "left", time.ToString(), chatRoomGroup.Id, "", "", msId);
+                        await Clients.User(userItem.Id).SendAsync("ReceiveMessage", userItem.Id, message, sender.ImageUrl, "left", time.ToString(), chatRoomGroup.Id, newMessage.Type, "", msId, newMessage.MessageImages);
                     }
                 }
             }
+
+
         }
         public async Task UploadImage(string imageData)
         {

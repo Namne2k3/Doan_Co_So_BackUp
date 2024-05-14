@@ -8,7 +8,7 @@
     ViewData["Title"] = "Web Commun";
     var blogList = ViewBag.BlogList;
     var currentUser = ViewBag?.CurrentUser;
-    var MyBlogs = ViewBag?.MyBlogs;
+    var MostIntBlogs = ViewBag?.MostIntBlogs;
     var listFriend = ViewBag?.ListFriends;
 }
 <div class="body_blog_section d-flex gap-4 justify-content-center">
@@ -357,23 +357,23 @@
             }
         </div>
     </div>
-    <div class="recently_post_container" style="width: 25%">
-        @if ( MyBlogs != null ) {
-            <h2>Recently Blogs</h2>
-            foreach (var blog in MyBlogs )
-            {
-                <div id="@blog.Id" class="recent_card w-100">
-                    <a asp-controller="Blog" asp-action="Details" asp-route-id="@blog.Id">
-                        <p class="fw-bold" style="margin: 4px 0;">@blog.Title</p>
-                    </a>
-                    <p style="color: #ccc; font-style: italic; margin: 4px 0;">@blog.PublishDate.ToShortDateString()</p>
-                    <a asp-controller="Blog" asp-action="Details" asp-route-id="@blog.Id">
-                        <img src="@blog.BlogImageUrl" style="object-fit: contain; max-width: 100%; border-radius: 12px;" />
-                    </a>
-                </div>
-            }
-        }
-    </div>
+    @if ( MostIntBlogs != null ) {
+        <div class="recently_post_container" style="width: 25%">
+                <h2>Popular Blogs</h2>
+                @foreach (var blog in MostIntBlogs )
+                {
+                    <div id="@blog.Id" class="recent_card w-100">
+                        <a asp-controller="Blog" asp-action="Details" asp-route-id="@blog.Id">
+                            <p class="fw-bold" style="margin: 4px 0;">@blog.Title</p>
+                        </a>
+                        <p style="color: #ccc; font-style: italic; margin: 4px 0;">@blog.PublishDate.ToShortDateString()</p>
+                        @* <a asp-controller="Blog" asp-action="Details" asp-route-id="@blog.Id">
+                            <img src="@blog.BlogImageUrl" style="object-fit: contain; max-width: 100%; border-radius: 12px;" />
+                        </a> *@
+                    </div>
+                }
+        </div>
+    }
 </div>
 @section NavContent {
     <ul class="d-flex flex-column list-unstyled text-white gap-3 my-2 mx-2 navItems">

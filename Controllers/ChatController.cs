@@ -212,7 +212,7 @@ namespace Doan_Web_CK.Controllers
             ViewBag.currentChatRoom = currentChatRoom;
             return View(ownChatRoom);
         }
-        public async Task<IActionResult> Group()
+        public async Task<IActionResult> Group(string search)
         {
             var account = await _accountRepository.GetByIdAsync(_userManager.GetUserId(User));
             var chatrooms = await _chatRoomRepository.GetAllAsync();
@@ -221,7 +221,15 @@ namespace Doan_Web_CK.Controllers
             ViewBag.IsRequested = new Func<string, string, bool>(IsRequested);
             ViewBag.GetAllNofOfUser = new Func<string, IEnumerable<Nofitication>>(GetAllNofOfUser);
             var ownChatRoom = await _chatRoomRepository.GetAllChatRoomByUserIdAsync(account?.Id);
-            ownChatRoom = ownChatRoom.Where(p => p.ChatRoomImage != null).ToList();
+
+            if (search == null)
+            {
+                ownChatRoom = ownChatRoom.Where(p => p.ChatRoomImage != null).ToList();
+            }
+            else
+            {
+                ownChatRoom = ownChatRoom.Where(p => p.ChatRoomImage != null && p.roomName.ToLower().Contains(search.ToLower())).ToList();
+            }
             var currentChatRoom = ownChatRoom.FirstOrDefault();
             ViewBag.currentChatRoom = currentChatRoom;
             if (currentChatRoom == null)
@@ -231,16 +239,40 @@ namespace Doan_Web_CK.Controllers
 
             return View(ownChatRoom);
         }
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string search)
         {
+
             var account = await _accountRepository.GetByIdAsync(_userManager.GetUserId(User));
             var chatrooms = await _chatRoomRepository.GetAllAsync();
             ViewBag.currentUser = account;
             ViewBag.GetUserName = new Func<string, string>(GetUserName);
             ViewBag.IsRequested = new Func<string, string, bool>(IsRequested);
             ViewBag.GetAllNofOfUser = new Func<string, IEnumerable<Nofitication>>(GetAllNofOfUser);
+            ViewBag.Search = search;
             var ownChatRoom = await _chatRoomRepository.GetAllChatRoomByUserIdAsync(account?.Id);
-            ownChatRoom = ownChatRoom.Where(p => p.ChatRoomImage == null).ToList();
+
+
+            if (search == null)
+            {
+                ownChatRoom = ownChatRoom.Where(p => p.ChatRoomImage == null).ToList();
+            }
+            else
+            {
+                ownChatRoom = ownChatRoom.Where(p => p.ChatRoomImage == null).ToList();
+                var newListCR = new List<ChatRoom>();
+                foreach (var cr in ownChatRoom)
+                {
+                    foreach (var user in cr.Users)
+                    {
+                        if (user.UserName.ToLower().Contains(search.ToLower()) || search.ToLower().Contains(user.UserName.ToLower()))
+                        {
+                            newListCR.Add(cr);
+                        }
+                    }
+                }
+                ownChatRoom = newListCR.ToList();
+
+            }
             var currentChatRoom = ownChatRoom.FirstOrDefault();
             ViewBag.currentChatRoom = currentChatRoom;
             if (ownChatRoom == null)

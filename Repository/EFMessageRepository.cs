@@ -25,7 +25,8 @@ namespace Doan_Web_CK.Repository
 
         public async Task<Message> GetAsync(int id)
         {
-            return await _context.Messages.SingleOrDefaultAsync(p => p.Id == id);
+            return await _context.Messages
+                .SingleOrDefaultAsync(p => p.Id == id);
         }
 
         public async Task UpdateAsync(Message message)

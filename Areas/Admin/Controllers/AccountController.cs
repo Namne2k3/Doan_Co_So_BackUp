@@ -1,4 +1,5 @@
-﻿using Doan_Web_CK.Models;
+﻿using System.Text;
+using Doan_Web_CK.Models;
 using Doan_Web_CK.Repository;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -76,6 +77,61 @@ namespace Doan_Web_CK.Areas.Admin.Controllers
             await _accountRepository.UpdateAsync(user);
             return RedirectToAction("Index");
         }
+        private string GenerateUserHtml(List<ApplicationUser> users)
+        {
+            var sb = new StringBuilder();
+
+            foreach (var item in users)
+            {
+                var lockStatus = item.LockoutEnd >= DateTime.Now ? "UnlockUser" : "LockUser";
+                var lockButtonClass = item.LockoutEnd >= DateTime.Now ? "btn-outline-success" : "btn-outline-warning";
+                var lockIconClass = item.LockoutEnd >= DateTime.Now ? "bi-unlock-fill" : "bi-lock-fill";
+
+                sb.Append($@"
+                    <div class=""admin_account_item"">
+                        <div class=""admin_account_header_container"">
+                            <div class=""admin_account_item_img_container"">
+                                <img src=""{item.ImageUrl}"" alt=""image account"" />
+                            </div>
+                            <div class=""admin_account_item_username_container"">
+                                <p>{item.UserName}</p>
+                            </div>
+                        </div>
+                        <div class=""admin_account_action"">
+                            <a href=""/Admin/Account/Details?id={item.Id}"" class=""admin_account_action_item btn btn-outline-info"">Details</a>
+                            <button data-bs-target=""#exampleModal_{item.Id}"" data-bs-toggle=""modal""
+                                class=""admin_account_action_item btn btn-outline-danger"">Delete
+                            </button>
+                            <a href=""/Admin/Account/{lockStatus}?email={item.Email}"" class=""btn {lockButtonClass}"">
+                                <i class=""bi {lockIconClass}""></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class=""modal fade text-black"" id=""exampleModal_{item.Id}"" tabindex=""-1"" aria-labelledby=""exampleModalLabel""
+                        aria-hidden=""true"">
+                        <div class=""modal-dialog"">
+                            <div class=""modal-content"">
+                                <div class=""modal-header"">
+                                    <h5 class=""modal-title"" id=""exampleModalLabel"">Confirm Deleting</h5>
+                                    <button type=""button"" class=""btn-close"" data-bs-dismiss=""modal"" aria-label=""Close""></button>
+                                </div>
+                                <div class=""modal-body"">
+                                    Are you sure to delete this user <span class=""badge text-bg-danger"">{item.UserName}</span>
+                                </div>
+                                <div class=""modal-footer"">
+                                    <button type=""button"" class=""btn btn-secondary"" data-bs-dismiss=""modal"">Close</button>
+                                    <form action=""/Admin/Account/Delete?id={item.Id}"" method=""post"">
+                                        <button type=""submit"" class=""btn btn-danger"">Confirm Delete</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                ");
+            }
+
+            return sb.ToString();
+        }
         [HttpGet]
         [Route("/Admin/Account/GetAllAccountAsync")]
         public async Task<IActionResult> GetAllAccountAsync(string search)
@@ -88,7 +144,7 @@ namespace Doan_Web_CK.Areas.Admin.Controllers
                 return Json(new
                 {
                     message = "Found",
-                    accounts = filterd
+                    accounts = GenerateUserHtml(filterd)
                 });
             }
             var matched = filterd.Where(p => p.UserName.ToLower().Contains(search.ToLower()) || p.Email.ToLower().Contains(search.ToLower())).ToList();
@@ -96,7 +152,7 @@ namespace Doan_Web_CK.Areas.Admin.Controllers
             return Json(new
             {
                 message = "Found",
-                accounts = matched
+                accounts = GenerateUserHtml(matched)
             });
         }
 
