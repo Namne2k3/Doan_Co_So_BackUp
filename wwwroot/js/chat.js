@@ -106,7 +106,7 @@ function createImageMessageElement(time, imageUrl, message, currentUserId, msId,
         unsendButton.setAttribute("role", "menuitem");
         unsendButton.innerHTML = "Unsend";
         unsendButton.onclick = function () {
-            handleUnSendMs(currentUserId, msId, currentChatroomId);
+            handleUnSendMs(currentUserId, parseInt(msId), currentChatroomId);
         };
 
         // Thêm nút unsend vào more menu item
@@ -765,7 +765,7 @@ function handleSendMessage(event) {
 }
 
 async function handleUnSendMs(userId, messageId, chatRoomId) {
-    console.log("Check >>> ", userId, messageId, chatRoomId);
+    console.log(userId, messageId, chatRoomId);
     try {
         await fetch(`/Chat/UnsendMessage?messageId=${messageId}`)
             .then(response => response.json())
@@ -774,13 +774,11 @@ async function handleUnSendMs(userId, messageId, chatRoomId) {
                 if (message_text) {
                     message_text.style.color = "white"
                     message_text.textContent = "Unsended"
-                    console.log("Check unsendmessagetouser >>> ", userId, messageId, chatRoomId);
                     connection.invoke("UnSendMessageToUser", userId, messageId, chatRoomId).catch(function (err) {
                         return console.log(err.toString());
                     });
-
                 }
-                // console.log(data)
+
             })
     } catch (err) {
         console.log(err.toString());
@@ -788,7 +786,7 @@ async function handleUnSendMs(userId, messageId, chatRoomId) {
 }
 
 connection.on("ReceiveUnsendMessage", function (userId, messageId, chatRoomId) {
-    console.log("check messageId >>> ", messageId);
+
     var message_text = document.getElementById(`message_text_${messageId}`)
     if (message_text) {
         message_text.style.color = "white"
@@ -797,16 +795,6 @@ connection.on("ReceiveUnsendMessage", function (userId, messageId, chatRoomId) {
 })
 var arrayImageMessages = [];
 connection.on("ImageUploaded", function (imageData) {
-    // // Handle newly uploaded image
-    // arrayImageMessages.push(imageData);
-    // console.log(arrayImageMessages);
-    // const imgElement = document.createElement("img");
-    // imgElement.src = imageData;
-    // imgElement.classList.add('message_image')
-    // var message_image_input_container = document.getElementById('message_image_input_container')
-    // if (message_image_input_container) {
-    //     message_image_input_container.appendChild(imgElement);
-    // }
 
     // Handle newly uploaded image
     arrayImageMessages.push(imageData);

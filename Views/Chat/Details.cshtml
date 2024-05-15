@@ -193,8 +193,9 @@
                                 }
                             } else
                             {
-                                if ( ms.Type == "image" ) {
+                                if ( ms.Type == "image" && ms.Text != "Unsended") {
                                     <div class="message_item">
+                                        
                                         <div class="message_item_friend_text">
                                             <div class="message_item_img_container">
                                                 <img src="@ms.ApplicationUser.ImageUrl" alt="user_image" />
@@ -208,23 +209,18 @@
                                                 }
                                             </div>
                                         </div>
+                                        <p class="message_item_date" style="text-align: left; font-size: 12px" >@ms.Time</p>
                                     </div>
-                                    <p class="message_item_date" style="text-align: left; font-size: 12px" >@ms.Time</p>
                                 } else {
                                     <div class="message_item">
                                         <div class="message_item_friend_text">
+                                            
                                             <div class="message_item_img_container">
                                                 <img src="@ms.ApplicationUser.ImageUrl" alt="user_image" />
                                             </div>
                                             @if ( ms.Text == "Unsended" ) {
                                                 <p class="long_text_unsend" id="message_text_@ms.Id">
                                                     @ms.Text
-                                                    @if ( ms.Type != null )
-                                                    {
-                                                        <a asp-action="Room" asp-controller="Call" asp-route-roomId="@ms.connectionRoomCall" class="btn btn-outline-light call_icon">
-                                                            <i class="bi bi-telephone-outbound"></i>
-                                                        </a>
-                                                    }
                                                 </p>
                                             } else {
                                                 <p class="long_text" id="message_text_@ms.Id">
@@ -237,9 +233,18 @@
                                                     }
                                                 </p>
                                             }
+                                            @if ( ms.Type != "call" ) {
+                                                <div class="option_message_icon_container">
+                                                    <div class="more position-relative" id="more_@ms.Id" >
+                                                        <button onclick="showMenu(event, @ms.Id)" id="more-btn_@ms.Id" class="more-btn">
+                                                            <i class="bi bi-three-dots-vertical"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            }
                                         </div>
-                                        <p class="message_item_date" style="text-align: left;">@ms.Time</p>
-                                    </div>   
+                                        <p class="message_item_date" style="text-align: left;" >@ms.Time</p>
+                                    </div>
                                 }
                             }
                         }

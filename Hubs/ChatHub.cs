@@ -100,10 +100,7 @@ namespace Doan_Web_CK.Hubs
             {
                 foreach (var user in chatRoom.Users)
                 {
-                    if (user.Id != currentUser.Id)
-                    {
-                        Clients.User(user.Id).SendAsync("ReceiveUnsendMessage", userId, messageId, chatRoomId);
-                    }
+                    Clients.User(user.Id).SendAsync("ReceiveUnsendMessage", userId, messageId, chatRoomId);
                 }
             }
         }

@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .message_image_container {
     position: relative;
     display: inline-block;
@@ -175,9 +179,9 @@ html {
     border-radius: 12px;
 }
 
-.message_section_navigation {
+/* .message_section_navigation {
     height: 15%;
-}
+} */
 
 .message_section_navigation a {
     margin-bottom: 8px;
@@ -803,7 +807,7 @@ main {
 .message_section_container {
     display: flex;
     gap: 16px;
-    height: 80%;
+    height: 90%;
 
 }
 
@@ -1555,7 +1559,7 @@ body {
 }
 
 .body_container {
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     max-height: 100vh;
     scrollbar-width: none;
     height: 100%;
@@ -1626,6 +1630,11 @@ body {
 .nav_container {
     max-height: 100vh;
     display: flex;
+    /* Giúp các phần tử con xếp chồng lên nhau theo chiều dọc */
+    overflow: hidden;
+    /* Ngăn chặn phần tử con vượt quá kích thước của thẻ cha */
+    box-sizing: border-box;
+    /* Bao gồm padding và border trong chiều cao và chiều rộng */
 }
 
 img {
@@ -2030,14 +2039,14 @@ em-emoji-picker {
         margin-bottom: 12px;
     }
 
-    .message_section_navigation {
+    /* .message_section_navigation {
         height: 10%;
-    }
+    } */
 
     .message_section_container {
         flex-direction: column;
         margin-top: 12px;
-        height: 90%;
+        height: 85%;
     }
 
     .comments_actions {
@@ -2305,10 +2314,6 @@ em-emoji-picker {
         top: 100% !important;
         left: -100px !important;
         width: 200px;
-    }
-
-    .body_section {
-        margin-top: 55px;
     }
 
     #newestBlogCb {

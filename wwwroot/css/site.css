@@ -2,6 +2,10 @@
     width: 100px;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /* More Button / Dropdown Menu */
 
 .more-btn,
@@ -160,16 +164,15 @@ html {
 
 .chatroom_card_item {
     padding: 6px;
-    border: 1px solid #455a64;
+    border: 1px solid #fff;
     /* Darker border */
     border-radius: 12px;
-    background-color: #263238;
     /* Dark background */
 }
 
-.message_section_navigation {
+/* .message_section_navigation {
     height: 15%;
-}
+} */
 
 .message_section_navigation a {
     margin-bottom: 8px;
@@ -814,7 +817,7 @@ main {
 .message_section_container {
     display: flex;
     gap: 16px;
-    height: 80%;
+    height: 90%;
 }
 
 #update_fail_blog,
@@ -1921,6 +1924,11 @@ body {
 .nav_container {
     max-height: 100vh;
     display: flex;
+    /* Giúp các phần tử con xếp chồng lên nhau theo chiều dọc */
+    overflow: hidden;
+    /* Ngăn chặn phần tử con vượt quá kích thước của thẻ cha */
+    box-sizing: border-box;
+    /* Bao gồm padding và border trong chiều cao và chiều rộng */
 }
 
 img {
@@ -2367,14 +2375,14 @@ em-emoji-picker {
         margin-bottom: 12px;
     }
 
-    .message_section_navigation {
+    /* .message_section_navigation {
         height: 10%;
-    }
+    } */
 
     .message_section_container {
         flex-direction: column;
         margin-top: 12px;
-        height: 90%;
+        height: 85%;
     }
 
     .comments_actions {
