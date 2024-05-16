@@ -15,8 +15,8 @@
         <a class="btn btn-outline-dark active" asp-controller="Chat" asp-action="Group">Group Chat</a>
         <input value="@ViewBag.Search" onkeypress="handleSearchChatRoom(event)" class="form-control mb-2" type="text" placeholder="Press 'Enter' to search" />
     </div>
+    <a asp-controller="Chat" asp-action="Create" class="btn_create_group btn btn-outline-dark">New Group Chat</a>
     <div class="message_section_container">
-        <a asp-controller="Chat" asp-action="Create" class="btn_create_group btn btn-outline-dark">Create Group</a>
         <div class="chatroom_container" id="chatroom_container">
             @if ( currentChatroom != null ) {
                 @foreach ( var cr in Model)

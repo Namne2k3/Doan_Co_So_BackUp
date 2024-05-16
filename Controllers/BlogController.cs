@@ -630,11 +630,19 @@ namespace Doan_Web_CK.Controllers
         public async Task<IActionResult> Delete(int blogId)
         {
             var blog = await _blogRepository.GetByIdAsync(blogId);
+            var blogs = await _blogRepository.GetAllAsync();
             if (blog != null)
             {
                 blog.Likes.Clear();
                 blog.Comments.Clear();
                 await _blogRepository.DeleteAsync(blogId);
+                foreach (var b in blogs)
+                {
+                    if (b.ReferenceId == blog.Id)
+                    {
+                        await _blogRepository.DeleteAsync(b.Id);
+                    }
+                }
                 return Json(new
                 {
                     message = "success"
@@ -873,10 +881,23 @@ namespace Doan_Web_CK.Controllers
         }
         public async Task<IActionResult> Edit(int id)
         {
+            var currentUser = await _userManager.GetUserAsync(User);
             var blog = await _blogRepository.GetByIdAsync(id);
+
             if (blog == null)
             {
                 return NotFound();
+            }
+            else
+            {
+                if (blog.AccountId != currentUser.Id)
+                {
+                    if (blog.ReferenceId != null)
+                    {
+                        return NotFound();
+                    }
+                    return NotFound();
+                }
             }
 
             var categories = await _categoryRepository.GetAllAsync();

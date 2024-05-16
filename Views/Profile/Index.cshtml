@@ -151,8 +151,10 @@
                                 <a class="text-white" href="#" onclick="handleToggle(@item.Id)">
                                     <i style="font-size: 32px;" class="bi bi-three-dots-vertical"></i>
                                 </a>
-                                <div id="@item.Id" class="hidden actions_ud" style="top:-10px; right: 20px; position: absolute; background-color: #282b2d; padding: 16px; border-radius: 12px 12px 0 0;" aria-hidden="true">
-                                    <a asp-controller="Blog" asp-route-id="@item.Id" asp-action="Edit" class="btn btn-outline-light">Edit</a>
+                                <div id="@item.Id" class="hidden actions_ud" style="top:-10px; right: 30px; position: absolute; background-color: #282b2d; padding: 4px; border-radius: 12px 12px 0 0;" aria-hidden="true">
+                                    @if ( item.ReferenceId == null){
+                                        <a asp-controller="Blog" asp-route-id="@item.Id" asp-action="Edit" class="btn btn-outline-light">Edit</a>
+                                    }
                                     <a onclick="handleDeleteBlog(@item.Id)" class="btn btn-outline-light">Delete</a>
                                 </div>
                             </div>

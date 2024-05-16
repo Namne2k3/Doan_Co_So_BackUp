@@ -69,7 +69,9 @@
                             <i style="font-size: 32px;" class="bi bi-three-dots-vertical"></i>
                         </a>
                         <div id="@Model.Id" class="hidden actions_ud" style="top:-10px; right: 20px; position: absolute; background-color: #282b2d; padding: 16px; border-radius: 12px 12px 0 0;" aria-hidden="true">
-                            <a asp-controller="Blog" asp-route-id="@Model.Id" asp-action="Edit" class="btn btn-outline-light">Edit</a>
+                            @if ( Model.ReferenceId == null ) {
+                                <a asp-controller="Blog" asp-route-id="@Model.Id" asp-action="Edit" class="btn btn-outline-light">Edit</a>
+                            }
                             <a onclick="handleDeleteBlogDetail(@Model.Id)" class="btn btn-outline-light">Delete</a>
                         </div>
                     </div>
@@ -179,7 +181,7 @@
                         </div>
 
                         @* <form id="form_comment_@item.Id" asp-action="AddComment" method="post"> *@
-                        <form id="form_comment_@Model.Id" method="post">
+                        <form class="form_comment" id="form_comment_@Model.Id" method="post">
                             <input value="@Model.Id" type="number" hidden name="comment_blogid" />
                             <input value="@currentUser.Id" type="text" hidden name="comment_accountid" />
                             <input id="form_input_comment_@Model.Id" onkeypress="handleKeyPress(event, @Model.Id)" type="text" name="comment_content" style="background-color: #282b2d" class="form-control text-white" placeholder="Add comment..." />

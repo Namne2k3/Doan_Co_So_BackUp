@@ -393,6 +393,10 @@
       "PackagePath": "staticwebassets\\images\\120a7786-44ce-41ad-ac9a-3741e02c60c5.png"
     },
     {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\137b5209-e06e-4357-a544-58680347630a.png",
+      "PackagePath": "staticwebassets\\images\\137b5209-e06e-4357-a544-58680347630a.png"
+    },
+    {
       "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\1b0124cc-6c3c-451c-a7e4-f12fd7a2eed0.png",
       "PackagePath": "staticwebassets\\images\\1b0124cc-6c3c-451c-a7e4-f12fd7a2eed0.png"
     },
@@ -415,6 +419,10 @@
     {
       "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\200662ac-363e-4a98-bb86-413564085d50.png",
       "PackagePath": "staticwebassets\\images\\200662ac-363e-4a98-bb86-413564085d50.png"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\20d257d8-27a4-4fef-86e1-a2fb15691771.png",
+      "PackagePath": "staticwebassets\\images\\20d257d8-27a4-4fef-86e1-a2fb15691771.png"
     },
     {
       "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\23632f95-0b80-474e-a418-44ec15d90b2f.png",
@@ -481,6 +489,14 @@
       "PackagePath": "staticwebassets\\images\\418e791b-77cc-4cb8-9bb9-03fa1e35c725.png"
     },
     {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\47ec0227-4518-4ef3-a640-6455357618b1.png",
+      "PackagePath": "staticwebassets\\images\\47ec0227-4518-4ef3-a640-6455357618b1.png"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\4c366bab-3638-4029-bc9b-b65dadb28499.png",
+      "PackagePath": "staticwebassets\\images\\4c366bab-3638-4029-bc9b-b65dadb28499.png"
+    },
+    {
       "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\4cd45328-3c26-4fc7-9678-166509c1d0d8.png",
       "PackagePath": "staticwebassets\\images\\4cd45328-3c26-4fc7-9678-166509c1d0d8.png"
     },
@@ -491,6 +507,10 @@
     {
       "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\4f2cad5d-1cf7-425d-807b-8eb5e5cb24a8.png",
       "PackagePath": "staticwebassets\\images\\4f2cad5d-1cf7-425d-807b-8eb5e5cb24a8.png"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\53d1e130-b860-414a-b8a7-8b41dacf6224.png",
+      "PackagePath": "staticwebassets\\images\\53d1e130-b860-414a-b8a7-8b41dacf6224.png"
     },
     {
       "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\55372883-bd2a-4d18-a304-ce69af1c0e51.png",
@@ -569,8 +589,16 @@
       "PackagePath": "staticwebassets\\images\\7a69e396-07bf-44a3-a36d-acd785efad7a.png"
     },
     {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\7a7689e5-e53a-46ed-bb82-c8fc775d6b4d.png",
+      "PackagePath": "staticwebassets\\images\\7a7689e5-e53a-46ed-bb82-c8fc775d6b4d.png"
+    },
+    {
       "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\7fa980a1-76ea-4b83-acd3-2170a9608279.png",
       "PackagePath": "staticwebassets\\images\\7fa980a1-76ea-4b83-acd3-2170a9608279.png"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\7fcae34f-cb16-4bd5-80cb-cb4f0a8bf5fc.png",
+      "PackagePath": "staticwebassets\\images\\7fcae34f-cb16-4bd5-80cb-cb4f0a8bf5fc.png"
     },
     {
       "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\8137270a-dac3-44ff-9873-946fac400a81.png",
@@ -581,12 +609,28 @@
       "PackagePath": "staticwebassets\\images\\813c59a3-1c91-4858-b0ae-c49575d07f9f.png"
     },
     {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\82192db0-7a9c-4717-9ab8-9a9e4c31630d.png",
+      "PackagePath": "staticwebassets\\images\\82192db0-7a9c-4717-9ab8-9a9e4c31630d.png"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\86d344ea-09d9-421a-8c85-211e3c6a355b.png",
+      "PackagePath": "staticwebassets\\images\\86d344ea-09d9-421a-8c85-211e3c6a355b.png"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\88af96d9-e19a-4519-9b68-b4edaf0aece4.png",
+      "PackagePath": "staticwebassets\\images\\88af96d9-e19a-4519-9b68-b4edaf0aece4.png"
+    },
+    {
       "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\8f3e6b29-84e5-4664-9172-f1200484abf0.png",
       "PackagePath": "staticwebassets\\images\\8f3e6b29-84e5-4664-9172-f1200484abf0.png"
     },
     {
       "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\8ff83fe5-6cf9-472b-a037-ce1d4954f640.png",
       "PackagePath": "staticwebassets\\images\\8ff83fe5-6cf9-472b-a037-ce1d4954f640.png"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\949f389a-dc34-4903-abf8-3f2581e248a1.png",
+      "PackagePath": "staticwebassets\\images\\949f389a-dc34-4903-abf8-3f2581e248a1.png"
     },
     {
       "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\9a5960bb-7a19-4222-a254-8603676780bd.png",
@@ -833,8 +877,20 @@
       "PackagePath": "staticwebassets\\images\\d3daff34-7b7b-4033-aa1b-5ed0b5d118d8.png"
     },
     {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\d5b805f0-e124-4370-bce0-e21a5a57ce22.png",
+      "PackagePath": "staticwebassets\\images\\d5b805f0-e124-4370-bce0-e21a5a57ce22.png"
+    },
+    {
       "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\d5ed8ff7-273d-4cac-8038-1fef75eadf43.png",
       "PackagePath": "staticwebassets\\images\\d5ed8ff7-273d-4cac-8038-1fef75eadf43.png"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\da8c0128-9b0a-4149-8441-9206dc29f6e8.png",
+      "PackagePath": "staticwebassets\\images\\da8c0128-9b0a-4149-8441-9206dc29f6e8.png"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\e107b258-0e25-4791-8ee1-9baf0e2c32af.png",
+      "PackagePath": "staticwebassets\\images\\e107b258-0e25-4791-8ee1-9baf0e2c32af.png"
     },
     {
       "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\e1f572ca-1a91-40fb-8cf1-145877788284.png",
@@ -849,12 +905,20 @@
       "PackagePath": "staticwebassets\\images\\e369c384-3218-404d-8805-76472aab5fcf.png"
     },
     {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\e4799a8a-43a0-4ce1-8529-eb6439fb0038.png",
+      "PackagePath": "staticwebassets\\images\\e4799a8a-43a0-4ce1-8529-eb6439fb0038.png"
+    },
+    {
       "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\e818fd01-5d0e-48cc-9376-cff01205dcd3.png",
       "PackagePath": "staticwebassets\\images\\e818fd01-5d0e-48cc-9376-cff01205dcd3.png"
     },
     {
       "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\ecb4f937-adde-41f7-9e1f-ecb4bf915648.png",
       "PackagePath": "staticwebassets\\images\\ecb4f937-adde-41f7-9e1f-ecb4bf915648.png"
+    },
+    {
+      "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\ed701c1c-9fb5-48bc-9698-7efb2871cf79.png",
+      "PackagePath": "staticwebassets\\images\\ed701c1c-9fb5-48bc-9698-7efb2871cf79.png"
     },
     {
       "Id": "D:\\File\\Code\\ASP .NET Core\\Doan_Co_So\\wwwroot\\images\\ee1189f6-7151-41b2-b8bc-da3564f321f9.png",

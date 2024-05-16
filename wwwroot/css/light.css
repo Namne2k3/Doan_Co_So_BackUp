@@ -1001,10 +1001,6 @@ h3 {
 
 @media (max-width: 768px) {
 
-    /* em-emoji-picker {
-        bottom: 7rem !important;
-    } */
-
     .create_chatromm_container {
         flex-direction: column-reverse;
         height: unset;
@@ -1345,7 +1341,7 @@ body {
 
 .comments_inputs {
     background-color: #33373b;
-    color: #000;
+    color: #000 !important;
 }
 
 .actions_item {
@@ -1559,7 +1555,7 @@ body {
 }
 
 .body_container {
-    /* overflow-y: scroll; */
+    overflow-y: scroll;
     max-height: 100vh;
     scrollbar-width: none;
     height: 100%;
@@ -1964,7 +1960,7 @@ em-emoji-picker {
 
 @media (max-width: 550px) {
     em-emoji-picker {
-        max-width: 250px;
+        max-width: 300px;
     }
 
     .chatroom_container_details {
