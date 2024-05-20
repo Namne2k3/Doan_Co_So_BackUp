@@ -1158,9 +1158,6 @@ namespace Doan_Web_CK.Controllers
         {
             var categories = await _categoryRepository.GetAllAsync();
             ViewBag.Categories = new SelectList(categories, "Id", "Name");
-
-
-
             return View();
         }
 

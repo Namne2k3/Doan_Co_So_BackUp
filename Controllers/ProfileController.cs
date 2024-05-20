@@ -377,7 +377,7 @@ namespace Doan_Web_CK.Controllers
         {
             var friendShips = await _friendShipRepository.GetAllAsync();
             var nofs = await _notifiticationRepository.GetAllNotifitions();
-
+            var allChatRooms = await _chatRoomRepository.GetAllAsync();
             var finded = friendShips.SingleOrDefault(p => p.UserId == userId && p.FriendId == friendId || p.UserId == friendId && p.FriendId == userId && p.IsConfirmed == false);
             var findedNof = nofs.SingleOrDefault(p => p.SenderAccountId == userId && p.RecieveAccountId == friendId || p.SenderAccountId == friendId && p.RecieveAccountId == userId && p.Type == "Addfriend");
 
@@ -386,17 +386,20 @@ namespace Doan_Web_CK.Controllers
                 finded.IsConfirmed = true;
                 await _friendShipRepository.UpdateAsync(finded);
 
-                var chatroom = new ChatRoom
+                if (allChatRooms.Any(p => p.Users.Contains(finded.Friend) && p.Users.Contains(finded.User)) == false)
                 {
-                    roomName = finded.User.UserName,
-                    Users = new List<ApplicationUser>(),
-                    Messages = new List<Message>(),
-                    ConnectionRoomCall = Guid.NewGuid().ToString(),
-                };
-                chatroom.Users.Add(finded.Friend);
-                chatroom.Users.Add(finded.User);
+                    var chatroom = new ChatRoom
+                    {
+                        roomName = finded.User.UserName,
+                        Users = new List<ApplicationUser>(),
+                        Messages = new List<Message>(),
+                        ConnectionRoomCall = Guid.NewGuid().ToString(),
+                    };
+                    chatroom.Users.Add(finded.Friend);
+                    chatroom.Users.Add(finded.User);
 
-                await _chatRoomRepository.AddAsync(chatroom);
+                    await _chatRoomRepository.AddAsync(chatroom);
+                }
 
                 if (findedNof != null)
                 {

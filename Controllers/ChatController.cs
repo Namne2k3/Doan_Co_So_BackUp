@@ -186,29 +186,37 @@ namespace Doan_Web_CK.Controllers
         }
         public async Task<IActionResult> DetailsGroup(int id)
         {
-            var account = await _accountRepository.GetByIdAsync(_userManager.GetUserId(User));
+            var currentUser = await _accountRepository.GetByIdAsync(_userManager.GetUserId(User));
             var chatrooms = await _chatRoomRepository.GetAllAsync();
-            ViewBag.currentUser = account;
+            ViewBag.currentUser = currentUser;
             ViewBag.GetUserName = new Func<string, string>(GetUserName);
             ViewBag.IsRequested = new Func<string, string, bool>(IsRequested);
             ViewBag.GetAllNofOfUser = new Func<string, IEnumerable<Nofitication>>(GetAllNofOfUser);
-            var ownChatRoom = await _chatRoomRepository.GetAllChatRoomByUserIdAsync(account?.Id);
+            var ownChatRoom = await _chatRoomRepository.GetAllChatRoomByUserIdAsync(currentUser?.Id);
             ownChatRoom = ownChatRoom.Where(p => p.ChatRoomImage != null).ToList();
             var currentChatRoom = await _chatRoomRepository.GetByIdAsync(id);
+            if (!currentChatRoom.Users.Contains(currentUser))
+            {
+                return NotFound();
+            }
             ViewBag.currentChatRoom = currentChatRoom;
             return View(ownChatRoom);
         }
         public async Task<IActionResult> Details(int id)
         {
-            var account = await _accountRepository.GetByIdAsync(_userManager.GetUserId(User));
+            var currentUser = await _accountRepository.GetByIdAsync(_userManager.GetUserId(User));
             var chatrooms = await _chatRoomRepository.GetAllAsync();
-            ViewBag.currentUser = account;
+            ViewBag.currentUser = currentUser;
             ViewBag.GetUserName = new Func<string, string>(GetUserName);
             ViewBag.IsRequested = new Func<string, string, bool>(IsRequested);
             ViewBag.GetAllNofOfUser = new Func<string, IEnumerable<Nofitication>>(GetAllNofOfUser);
-            var ownChatRoom = await _chatRoomRepository.GetAllChatRoomByUserIdAsync(account?.Id);
+            var ownChatRoom = await _chatRoomRepository.GetAllChatRoomByUserIdAsync(currentUser?.Id);
             ownChatRoom = ownChatRoom.Where(p => p.ChatRoomImage == null).ToList();
             var currentChatRoom = await _chatRoomRepository.GetByIdAsync(id);
+            if (!currentChatRoom.Users.Contains(currentUser))
+            {
+                return NotFound();
+            }
             ViewBag.currentChatRoom = currentChatRoom;
             return View(ownChatRoom);
         }

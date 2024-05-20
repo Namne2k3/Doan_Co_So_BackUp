@@ -127,7 +127,7 @@ function createImageMessageElement(time, imageUrl, message, currentUserId, msId,
         userTextDiv.appendChild(messageImagesDiv);
         userTextDiv.appendChild(optionMessageIconContainer);
         // <p class="message_item_date" style="text-align: right; font-size: 12px" >@ms.Time</p>
-        var timeElement = document.createElement('p')
+        const timeElement = document.createElement('p')
         timeElement.className = "message_item_date"
         timeElement.style = "text-align: right; font-size: 12px"
         timeElement.textContent = time.toString()
@@ -252,9 +252,9 @@ function createImageMessageElement(time, imageUrl, message, currentUserId, msId,
         // userTextDiv.appendChild(optionMessageIconContainer);
 
         // <p class="message_item_date" style="text-align: right; font-size: 12px" >@ms.Time</p>
-        var timeElement = document.createElement('p')
+        const timeElement = document.createElement('p')
         timeElement.className = "message_item_date"
-        timeElement.style = "text-align: right; font-size: 12px"
+        timeElement.style = "text-align: left; font-size: 12px"
         timeElement.textContent = time.toString()
 
         messageItemDiv.appendChild(userTextDiv);
