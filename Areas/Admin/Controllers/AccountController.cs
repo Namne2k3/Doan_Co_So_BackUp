@@ -156,6 +156,21 @@ namespace Doan_Web_CK.Areas.Admin.Controllers
             });
         }
 
+        public async Task<IActionResult> ChangeRoleUser(string id, string role)
+        {
+            var user = await _accountRepository.GetByIdAsync(id);
+
+            var findedUser = await _userManager.FindByIdAsync(user.Id);
+
+            if (findedUser != null)
+            {
+                await _userManager.AddToRoleAsync(findedUser, "Member");
+                return RedirectToAction("Index");
+            }
+
+            return NotFound();
+        }
+
         [HttpPost]
         public async Task<IActionResult> Delete(string id)
         {

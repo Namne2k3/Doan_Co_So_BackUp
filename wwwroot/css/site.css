@@ -1841,6 +1841,8 @@ body {
     overflow-y: auto;
     scrollbar-width: none;
     scroll-behavior: smooth;
+    max-width: 80%;
+    margin: auto;
 }
 
 .blog_card_section {
@@ -2297,6 +2299,10 @@ em-emoji-picker {
 }
 
 @media (max-width: 550px) {
+    .body_blog_section {
+        max-width: 100% !important;
+    }
+
     em-emoji-picker {
         max-width: 250px;
     }

@@ -4,6 +4,7 @@ var connection = new signalR
     .withUrl("/chatHub")
     .withAutomaticReconnect()
     .build();
+
 function createImageMessageElement(time, imageUrl, message, currentUserId, msId, currentChatroomId, leftOrRight, MessageImages) {
     if (leftOrRight == 'right') {
 

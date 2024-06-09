@@ -130,7 +130,7 @@ using (var scope = app.Services.CreateScope())
         admin.DateCreated = DateTime.Now;
         admin.ImageUrl = "https://w7.pngwing.com/pngs/178/595/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png";
         await UserManager.CreateAsync(admin, password);
-        await UserManager.AddToRoleAsync(admin, "Admin");
+        await UserManager.AddToRoleAsync(admin, "Member");
 
     }
     if (await UserManager.FindByEmailAsync(email2) == null)

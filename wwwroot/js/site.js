@@ -252,7 +252,7 @@ async function isImageSensitive(file) {
             body: bodyData
         });
         const data = await response.json();
-        console.log("Check data sensitive >>> ", data);
+        // console.log("Check image sensitive >>> ", data);
 
         if (data.message) {
             return data.message;
@@ -285,7 +285,7 @@ async function isSensitiveContent(content) {
             body: bodyData
         });
         const data = await response.json();
-        console.log("Check content sensitive >>> ", data);
+        // console.log("Check content sensitive >>> ", data);
         if (data.sentiment < -0.1) {
             return true;
         } else {
@@ -789,6 +789,9 @@ async function editblog(event) {
 async function handleAddBlog(event) {
     event.preventDefault();
     const form = event.target;
+    // console.log("Check form >>> ", form.Title.value)
+    const title = form.Title.value;
+    const desc = form.Description.value;
     const formContent = document.querySelector('.ck-content');
     console.log(formContent.innerHTML);
 
@@ -799,9 +802,27 @@ async function handleAddBlog(event) {
 
     const isAdultImage = await isImageSensitive(file);
     const isAdultContent = await isSensitiveContent(formContent.innerHTML.toString())
+    const isAdultTitle = await isSensitiveContent(title)
+    const isAdultDesc = await isSensitiveContent(desc)
 
-    console.log("IsAdultImage >>> ", isAdultImage)
-    if (isAdultImage == false && isAdultContent == false) {
+    console.log("isAdultImage >>> ", isAdultImage);
+    console.log("isAdultContent >>> ", isAdultContent);
+    console.log("isAdultTitle >>> ", isAdultTitle);
+    console.log("isAdultDesc >>> ", isAdultDesc);
+
+    if (isAdultContent == true || isAdultTitle == true || isAdultDesc == true) {
+        showElement('sensitive_content');
+    }
+
+    if (isAdultImage == true) {
+        showElement('sensitive_content_image')
+    }
+
+    if (file == null) {
+        showElement('warning_not_image_upload')
+    }
+
+    if (isAdultImage == false && isAdultContent == false && isAdultTitle == false && isAdultDesc == false) {
 
         const bodyData = new FormData();
         bodyData.append('Title', form.Title.value);
@@ -822,15 +843,7 @@ async function handleAddBlog(event) {
             console.log(err.toString());
         }
     }
-    else if (isAdultContent == true) {
-        showElement('sensitive_content');
-    }
-    else if (isAdultImage == true) {
-        showElement('sensitive_content_image')
-    }
-    else {
-        showElement('warning_not_image_upload')
-    }
+
 }
 
 async function saveImage(imageUrl) {

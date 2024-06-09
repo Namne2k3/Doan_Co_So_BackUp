@@ -1107,7 +1107,6 @@ namespace Doan_Web_CK.Controllers
                 update.BlogImageUrl = await SaveImage(imageFile);
             }
 
-
             await _blogRepository.UpdateAsync(update);
 
             return Json(new
@@ -1171,5 +1170,66 @@ namespace Doan_Web_CK.Controllers
             Console.WriteLine("/images/" + imageFile.FileName);
             return "/images/" + imageFile.FileName;
         }
+
+        [HttpPost]
+        [Route("blog/upload")]
+        public async Task<IActionResult> Upload(IFormFile upload)
+        {
+            var isSensitive = ValidationUpload(upload);
+            if (isSensitive == false)
+            {
+                var savePath = Path.Combine("wwwroot/images", upload.FileName);
+                using (var fileStream = new FileStream(savePath, FileMode.Create))
+                {
+                    await upload.CopyToAsync(fileStream);
+                }
+                return Json(new
+                {
+                    uploaded = 1,
+                    fileName = upload.FileName,
+                    url = "/images/" + upload.FileName
+                });
+            }
+            else
+            {
+                return Json(new
+                {
+                    uploaded = 0,
+                });
+            }
+        }
+
+
+        public bool ValidationUpload(IFormFile imageFile)
+        {
+            if (imageFile != null && imageFile.Length > 0)
+            {
+                var credentials = GoogleCredential.FromFile("credentials.json");
+                // Tạo phiên làm việc với API Vision
+                var clientBuilder = new ImageAnnotatorClientBuilder
+                {
+                    CredentialsPath = "credentials.json"
+                };
+                var client = clientBuilder.Build();
+
+                // Đọc dữ liệu hình ảnh từ IFormFile
+                using (var stream = imageFile.OpenReadStream())
+                {
+                    var image = Image.FromStream(stream);
+
+                    // Phân tích hình ảnh
+                    var response = client.DetectSafeSearch(image);
+
+                    // Kiểm tra xem hình ảnh có chứa nội dung nhạy cảm người lớn hay không
+                    var adultContentLikelihood = response.Adult;
+                    var isAdultContent = adultContentLikelihood != Likelihood.VeryUnlikely && adultContentLikelihood != Likelihood.Unknown;
+
+                    // Xử lý kết quả
+                    return isAdultContent;
+                }
+            }
+            return false;
+        }
+
     }
 }

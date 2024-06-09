@@ -22,7 +22,13 @@
             </div>
             <div class="admin_account_action">
                 <a asp-action="Details" asp-route-id="@item.Id" asp-controller="Account"
-                    class="admin_account_action_item btn btn-outline-info">Details</a>
+                    class="admin_account_action_item btn btn-outline-info">
+                    Details
+                </a>
+                <button data-bs-target="#changeRole_@item.Id" data-bs-toggle="modal"
+                    class="admin_account_action_item btn btn-outline-secondary">
+                    Change Role
+                </button>
                 <button data-bs-target="#exampleModal_@item.Id" data-bs-toggle="modal"
                     class="admin_account_action_item btn btn-outline-danger">Delete
                 </button>
@@ -40,6 +46,30 @@
                         <i class="bi bi-lock-fill"></i>
                     </a>
                 }
+            </div>
+        </div>
+        <div class="modal fade text-black" id="changeRole_@item.Id" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Confirm Deleting</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Are you sure to update role for user <span class="badge text-bg-danger">@item.UserName</span>
+                    </div>
+                    <div class="modal-footer">
+                        <a asp-action="ChangeRoleUser" asp-route-id="@item.Id" asp-route-role="Admin"
+                            asp-controller="Account" class="admin_account_action_item btn btn-outline-info">
+                            Admin
+                        </a>
+                        <a asp-action="ChangeRoleUser" asp-route-id="@item.Id" asp-route-role="Member"
+                            asp-controller="Account" class="admin_account_action_item btn btn-outline-info">
+                            Member
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="modal fade text-black" id="exampleModal_@item.Id" tabindex="-1" aria-labelledby="exampleModalLabel"

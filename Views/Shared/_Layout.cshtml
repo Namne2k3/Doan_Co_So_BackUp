@@ -49,19 +49,22 @@
     <script src="~/js/signalr/dist/browser/signalr.js"></script>
     <script src="~/js/chat.js"></script>
     <script src="https://cdn.ckeditor.com/ckeditor5/41.3.1/classic/ckeditor.js"></script>
+    <script src="https://ckeditor.com/apps/ckfinder/3.5.1/ckfinder.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 <script>
 
     ClassicEditor
         .create(document.querySelector('#editor'), {
-
+            ckfinder: {
+                uploadUrl: '/blog/upload'
+            }
         })
         .then(editor => {
-            window.editor = editor;
+            console.log('Editor was initialized', editor);
         })
-        .catch(err => {
-            console.log(err.stack);
+        .catch(error => {
+            console.error(error.stack);
         });
 
 </script>

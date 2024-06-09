@@ -1546,6 +1546,8 @@ body {
     overflow-y: auto;
     scrollbar-width: none;
     scroll-behavior: smooth;
+    max-width: 80%;
+    margin: auto;
 }
 
 .blog_card_section {
@@ -1961,6 +1963,10 @@ em-emoji-picker {
 @media (max-width: 550px) {
     em-emoji-picker {
         max-width: 300px;
+    }
+
+    .body_blog_section {
+        max-width: 100% !important;
     }
 
     .chatroom_container_details {
